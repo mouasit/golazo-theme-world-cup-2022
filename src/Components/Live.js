@@ -1,4 +1,7 @@
-const Live = () =>(
-    <h1>Live matches</h1>
+import Nav from "./Nav";
 
+const Live = () =>(
+    <Nav />
 )
+
+export default Live;
