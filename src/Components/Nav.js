@@ -2,7 +2,7 @@ import logo from "../assets/logo.svg"
 const Nav = () =>(
     <nav className="side-nav">
         <a href="/" aria-label="Golazo">
-            <img src={logo} alt=""/>
+            <img className="logo" src={logo} alt=""/>
         </a>
         <ul>
             <li>
