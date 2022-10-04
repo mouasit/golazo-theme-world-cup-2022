@@ -1,4 +1,9 @@
+
 $color-text:#80192E;
+$background-active:#E32052;
+$white: #EEEEE4;
+
+@import url('http://fonts.cdnfonts.com/css/qatar2022-arabic');
 
 *{
   box-sizing: border-box;
@@ -12,6 +17,7 @@ html{
 
 body{
   background: linear-gradient(36.2711deg,#901831,#310818);
+  font-family: 'Qatar2022 Arabic', sans-serif;
 }
 
 #root{
@@ -23,7 +29,7 @@ body{
 
 .side-nav{
   height: 100vh;
-  width: 10.5rem;
+  width: 11rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,7 +37,7 @@ body{
   position: fixed;
 
   .logo{
-    width: 10.5rem;
+    width: 100%;
   }
 
   ul{
@@ -40,5 +46,29 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 7rem;
+    
+    li{
+      list-style: none;
+      a{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+          position: absolute;
+          font-family: 'Qatar2022 Arabic', sans-serif;
+          color:$white ;
+          font-size: 1.2rem;
+
+        }
+      }
+    }
   }
+
+}
+
+.active{
+  #Path_1611{
+    fill: $background-active;
+    }
 }

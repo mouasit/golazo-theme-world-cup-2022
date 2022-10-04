@@ -1,4 +1,5 @@
 import logo from "../assets/logo.svg"
+import Background from "./Background"
 const Nav = () =>{
     return(
         <nav className="side-nav">
@@ -7,23 +8,27 @@ const Nav = () =>{
         </a>
         <ul>
             <li>
-                <a href="/">
-                    Live
+                <a href="/" className="active">
+                    <Background />
+                   <span>Live</span>
                 </a>
             </li>
             <li>
                 <a href="/">
-                    Ranking
+                    <Background />
+                    <span>Ranking</span>
                 </a>
             </li>
             <li>
                 <a href="/">
-                    Matches
+                    <Background />
+                    <span>Matches</span>
                 </a>
         </li>
         <li>
             <a href="/">
-                Stadiums
+                <Background />
+                <span>Stadiums</span>
                 </a>
             </li>
         </ul>
