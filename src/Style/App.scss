@@ -32,87 +32,99 @@ body{
 }
 
 .side-nav{
-  min-height: 100vh;
-  width: 14rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 2rem;
-  position: fixed;
-  padding: $size-padding;
-  padding-right: 0rem;
-
-  .logo{
-    width: 100%;
-  }
-
-  ul{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5rem;
-    
-    li{
-      list-style: none;
-      a{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        span{
-          position: absolute;
-          font-family: $font;
-          color:$white ;
-          font-size: 1.1rem;
-
-        }
-      }
-    }
-  }
-
-  button {
-    background: none;
-    border: none;
-    position: relative;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-
-    .name-flag{
-      position: absolute;
-      left: 1.5rem;
-      display: flex;
-      align-items: center;
-      gap: .5rem;
-      img{
-        width: 2.2rem;
-      }
-      span{
-        font-family: $font;
-        color:$white ;
-        font-size: 1.1rem;
-        color: $color-text;
-      }
-    }
-
-    .arrow{
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      right: .5rem;
-      svg:last-child{
-        position: absolute;
-        color: $white;
-      }
-    }
-  }
-
+  display: none;
 }
+
 
 .active{
   #Path_1611{
     fill: $background-active;
     }
+}
+
+
+
+
+/* Responsive */
+
+@media screen and (min-width: 1000px){
+  .side-nav{
+    min-height: 100vh;
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    position: fixed;
+    padding: $size-padding;
+    padding-right: 0rem;
+  
+    .logo{
+      width: 100%;
+    }
+  
+    ul{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5rem;
+      
+      li{
+        list-style: none;
+        a{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          span{
+            position: absolute;
+            font-family: $font;
+            color:$white ;
+            font-size: 1.1rem;
+  
+          }
+        }
+      }
+    }
+  
+    button {
+      background: none;
+      border: none;
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+  
+      .name-flag{
+        position: absolute;
+        left: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        img{
+          width: 2.2rem;
+        }
+        span{
+          font-family: $font;
+          color:$white ;
+          font-size: 1.1rem;
+          color: $color-text;
+        }
+      }
+  
+      .arrow{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: .5rem;
+        svg:last-child{
+          position: absolute;
+          color: $white;
+        }
+      }
+    }
+  
+  }
 }
