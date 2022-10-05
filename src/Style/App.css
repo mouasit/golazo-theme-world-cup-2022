@@ -15,51 +15,14 @@ body {
 }
 
 #root {
-  max-width: 180rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  padding: 0rem;
-  padding-right: 1.5rem;
+  padding: 1.5rem;
 }
 
-.side-nav {
-  min-height: 100vh;
-  width: 14rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 2rem;
-  position: fixed;
-  padding: 1.5rem;
-  padding-right: 0rem;
+.active #Path_1611 {
+  fill: #E32052;
 }
-.side-nav .logo {
-  width: 100%;
-}
-.side-nav ul {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5rem;
-}
-.side-nav ul li {
-  list-style: none;
-}
-.side-nav ul li a {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.side-nav ul li a span {
-  position: absolute;
-  font-family: "Qatar2022 Arabic", sans-serif;
-  color: #EEEEE4;
-  font-size: 1.1rem;
-}
-.side-nav button {
+
+.dropdown {
   background: none;
   border: none;
   position: relative;
@@ -67,34 +30,97 @@ body {
   align-items: center;
   cursor: pointer;
 }
-.side-nav button .name-flag {
+.dropdown .name-flag {
   position: absolute;
-  left: 1.5rem;
+  left: 0.7rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.side-nav button .name-flag img {
+.dropdown .name-flag img {
   width: 2.2rem;
 }
-.side-nav button .name-flag span {
+.dropdown .name-flag span {
   font-family: "Qatar2022 Arabic", sans-serif;
   color: #EEEEE4;
   font-size: 1.1rem;
   color: #80192E;
 }
-.side-nav button .arrow {
+.dropdown .arrow {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 0.5rem;
+  right: 0.7rem;
 }
-.side-nav button .arrow svg:last-child {
+.dropdown .arrow svg:last-child {
   position: absolute;
   color: #EEEEE4;
 }
 
-.active #Path_1611 {
-  fill: #E32052;
+.side-nav {
+  display: none;
+}
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-header img {
+  width: 11rem;
+}
+
+/* Responsive */
+@media screen and (min-width: 1000px) {
+  #root {
+    max-width: 180rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 0rem;
+    padding-right: 1.5rem;
+  }
+  .mobile-header {
+    display: none;
+  }
+  .side-nav {
+    min-height: 100vh;
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    position: fixed;
+    padding: 1.5rem;
+    padding-right: 0rem;
+  }
+  .side-nav .logo {
+    width: 100%;
+  }
+  .side-nav ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .side-nav ul li {
+    list-style: none;
+  }
+  .side-nav ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .side-nav ul li a span {
+    position: absolute;
+    font-family: "Qatar2022 Arabic", sans-serif;
+    color: #EEEEE4;
+    font-size: 1.1rem;
+  }
+  .side-nav .dropdown .name-flag {
+    left: 1.7rem;
+  }
 }/*# sourceMappingURL=App.css.map */
