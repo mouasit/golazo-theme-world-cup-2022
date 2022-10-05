@@ -5,6 +5,10 @@ import Button from "./Button"
 import englishFlag from "../assets/flags/languages/english.svg"
 import { BiChevronRight } from "react-icons/bi";
 import { BiChevronDown } from "react-icons/bi";
+import {BiTv} from "react-icons/bi"
+import {BiBarChartAlt2} from "react-icons/bi"
+import{BiCalendar} from "react-icons/bi"
+import{TbSoccerField} from "react-icons/tb"
 
 
 const Nav = () =>{
@@ -74,6 +78,30 @@ const Nav = () =>{
                 </span>
             </button>
         </header>
+        <nav className="mobile-nav">
+            <ul>
+                <li>
+                    <a href="/" className="active">
+                        <BiTv />
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <BiBarChartAlt2 />
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <BiCalendar />
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <TbSoccerField />
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </React.Fragment>
     )
 }

@@ -18,10 +18,6 @@ body {
   padding: 1.5rem;
 }
 
-.active #Path_1611 {
-  fill: #E32052;
-}
-
 .dropdown {
   background: none;
   border: none;
@@ -71,6 +67,35 @@ body {
   width: 11rem;
 }
 
+.mobile-nav {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 1.2rem;
+  background-color: #EEEEE4;
+}
+.mobile-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-nav ul li {
+  list-style: none;
+}
+.mobile-nav ul li a {
+  display: flex;
+  font-size: 2rem;
+  color: #80192E;
+}
+.mobile-nav ul li .active {
+  color: #E32052;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  border-bottom: 0.3rem solid #E32052;
+  padding-bottom: 0.3rem;
+}
+
 /* Responsive */
 @media screen and (min-width: 1000px) {
   #root {
@@ -82,6 +107,9 @@ body {
     padding-right: 1.5rem;
   }
   .mobile-header {
+    display: none;
+  }
+  .mobile-nav {
     display: none;
   }
   .side-nav {
@@ -119,6 +147,9 @@ body {
     font-family: "Qatar2022 Arabic", sans-serif;
     color: #EEEEE4;
     font-size: 1.1rem;
+  }
+  .side-nav ul li .active #Path_1611 {
+    fill: #E32052;
   }
   .side-nav .dropdown .name-flag {
     left: 1.7rem;

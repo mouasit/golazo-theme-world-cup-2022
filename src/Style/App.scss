@@ -26,12 +26,6 @@ body{
   padding: $size-padding;
 }
 
-.active{
-  #Path_1611{
-    fill: $background-active;
-    }
-}
-
 .dropdown {
   background: none;
   border: none;
@@ -84,6 +78,36 @@ body{
   }
 }
 
+.mobile-nav{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 1.2rem;
+  background-color: $white;
+  ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li{
+      list-style: none;
+      a{
+        display: flex;
+        font-size: 2rem;
+        color: $color-text;
+      }
+      .active{
+        color: $background-active;
+        border-bottom-left-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+        border-bottom: .3rem solid $background-active;
+        padding-bottom: .3rem;
+      }
+    }
+  }
+}
+
 
 /* Responsive */
 
@@ -98,6 +122,9 @@ body{
   }
 
   .mobile-header{
+    display: none;
+  }
+  .mobile-nav{
     display: none;
   }
   .side-nav{
@@ -136,6 +163,11 @@ body{
             font-size: 1.1rem;
   
           }
+        }
+        .active{
+          #Path_1611{
+            fill: $background-active;
+            }
         }
       }
     }
