@@ -83,7 +83,7 @@ body{
   width: 100%;
   bottom: 0;
   left: 0;
-  padding: 1.2rem;
+  padding: 1rem;
   background-color: $white;
   ul{
     display: flex;
@@ -98,11 +98,15 @@ body{
         color: $color-text;
       }
       .active{
-        color: $background-active;
+        /*color: $background-active;
         border-bottom-left-radius: .3rem;
         border-bottom-right-radius: .3rem;
         border-bottom: .3rem solid $background-active;
-        padding-bottom: .3rem;
+        padding-bottom: .3rem;*/
+        background-color: $background-active;
+        color: $white;
+        border-radius: 3.125rem;
+        padding: .8rem;
       }
     }
   }
