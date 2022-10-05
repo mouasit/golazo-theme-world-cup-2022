@@ -15,24 +15,75 @@ body {
 }
 
 #root {
-  max-width: 180rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  padding: 0rem;
-  padding-right: 1.5rem;
-}
-
-.side-nav {
-  display: none;
+  padding: 1.5rem;
 }
 
 .active #Path_1611 {
   fill: #E32052;
 }
 
+.dropdown {
+  background: none;
+  border: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.dropdown .name-flag {
+  position: absolute;
+  left: 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dropdown .name-flag img {
+  width: 2.2rem;
+}
+.dropdown .name-flag span {
+  font-family: "Qatar2022 Arabic", sans-serif;
+  color: #EEEEE4;
+  font-size: 1.1rem;
+  color: #80192E;
+}
+.dropdown .arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0.7rem;
+}
+.dropdown .arrow svg:last-child {
+  position: absolute;
+  color: #EEEEE4;
+}
+
+.side-nav {
+  display: none;
+}
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-header img {
+  width: 11rem;
+}
+
 /* Responsive */
 @media screen and (min-width: 1000px) {
+  #root {
+    max-width: 180rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 0rem;
+    padding-right: 1.5rem;
+  }
+  .mobile-header {
+    display: none;
+  }
   .side-nav {
     min-height: 100vh;
     width: 14rem;
@@ -69,39 +120,7 @@ body {
     color: #EEEEE4;
     font-size: 1.1rem;
   }
-  .side-nav button {
-    background: none;
-    border: none;
-    position: relative;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
-  .side-nav button .name-flag {
-    position: absolute;
-    left: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .side-nav button .name-flag img {
-    width: 2.2rem;
-  }
-  .side-nav button .name-flag span {
-    font-family: "Qatar2022 Arabic", sans-serif;
-    color: #EEEEE4;
-    font-size: 1.1rem;
-    color: #80192E;
-  }
-  .side-nav button .arrow {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: 0.5rem;
-  }
-  .side-nav button .arrow svg:last-child {
-    position: absolute;
-    color: #EEEEE4;
+  .side-nav .dropdown .name-flag {
+    left: 1.7rem;
   }
 }/*# sourceMappingURL=App.css.map */
