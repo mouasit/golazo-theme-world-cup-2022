@@ -1,5 +1,5 @@
 import './Style/App.css';
-import Live from './Components/Live';
+import Live from './Components/Live/Live';
 
 function App() {
   return(
