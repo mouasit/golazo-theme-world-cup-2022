@@ -84,7 +84,7 @@ body{
       cursor: pointer;
       border-radius: .3rem;
       padding: .4rem;
-      &:hover{
+      &:hover,&:focus{
         background-color: rgb(211, 208, 208);
       }
       img{
@@ -247,10 +247,13 @@ body{
         position: absolute;
         bottom: -.5rem;
         left: 13rem;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         overflow: hidden;
+      }
+      .show{
+        display: flex;
       }
     }
   }

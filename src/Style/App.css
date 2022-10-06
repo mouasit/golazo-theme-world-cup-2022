@@ -75,7 +75,7 @@ body {
   border-radius: 0.3rem;
   padding: 0.4rem;
 }
-.layout-dropdown .item button:hover {
+.layout-dropdown .item button:hover, .layout-dropdown .item button:focus {
   background-color: rgb(211, 208, 208);
 }
 .layout-dropdown .item button img {
@@ -222,9 +222,12 @@ body {
     position: absolute;
     bottom: -0.5rem;
     left: 13rem;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+  }
+  .side-nav .layout-dropdown .show {
+    display: flex;
   }
 }/*# sourceMappingURL=App.css.map */
