@@ -1,14 +1,16 @@
-import React from "react"
-import logo from "../assets/logo.svg"
-import Background from "./Background"
-import Button from "./Button"
-import englishFlag from "../assets/flags/languages/english.svg"
+import React from "react";
+import logo from "../assets/logo.svg";
+import Background from "./Background";
+import Button from "./Button";
+import englishFlag from "../assets/flags/languages/english.svg";
+import frenshFlag from "../assets/flags/languages/frensh.svg";
+import arabicFlag from "../assets/flags/languages/arabic.svg";
 import { BiChevronRight } from "react-icons/bi";
 import { BiChevronDown } from "react-icons/bi";
-import {BiTv} from "react-icons/bi"
-import {BiBarChartAlt2} from "react-icons/bi"
-import{BiCalendar} from "react-icons/bi"
-import{TbSoccerField} from "react-icons/tb"
+import {BiTv} from "react-icons/bi";
+import {BiBarChartAlt2} from "react-icons/bi";
+import{BiCalendar} from "react-icons/bi";
+import{TbSoccerField} from "react-icons/tb";
 
 
 const Nav = () =>{
@@ -59,17 +61,17 @@ const Nav = () =>{
                     </span>
                 </button>
                 <div className="list-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="216.347" height="149.127" viewBox="0 0 216.347 149.127">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="180" height="149.127" viewBox="0 0 216.347 149.127">
                         <path id="Path_7097" data-name="Path 7097" d="M476.471,776.232A947.7,947.7,0,0,1,378.5,771.12l-2.345-.247-.524-2.3a309.161,309.161,0,0,1,0-133.809l.524-2.3,2.345-.247a941.443,941.443,0,0,1,195.956,0l2.345.247.524,2.3a309.131,309.131,0,0,1,0,133.809l-.524,2.3-2.345.247a947.7,947.7,0,0,1-97.973,5.112Z" transform="translate(-368.305 -627.105)" fill="#eeeee4"/>
                     </svg>
                     <div className="item">
                         <button>
-                            <img src={englishFlag} alt="" />
-                            <span>English</span>
+                            <img src={frenshFlag} alt="" />
+                            <span>Frensh</span>
                         </button>
                         <button>
-                            <img src={englishFlag} alt="" />
-                            <span>English</span>
+                            <img src={arabicFlag} alt="" />
+                            <span>Arabic</span>
                         </button>
                     </div>
                 </div>
@@ -96,9 +98,20 @@ const Nav = () =>{
                     </span>
                 </button>
                 <div className="list-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="216.347" height="149.127" viewBox="0 0 216.347 149.127">
-                        <path id="Path_7097" data-name="Path 7097" d="M476.471,776.232A947.7,947.7,0,0,1,378.5,771.12l-2.345-.247-.524-2.3a309.161,309.161,0,0,1,0-133.809l.524-2.3,2.345-.247a941.443,941.443,0,0,1,195.956,0l2.345.247.524,2.3a309.131,309.131,0,0,1,0,133.809l-.524,2.3-2.345.247a947.7,947.7,0,0,1-97.973,5.112Z" transform="translate(-368.305 -627.105)" fill="#eeeee4"/>
-                    </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="198.901" viewBox="0 0 216.347 198.901">
+  <path id="Path_7097" data-name="Path 7097" d="M476.471,826.005a713.164,713.164,0,0,1-97.971-6.818l-2.345-.33-.524-3.068a547.12,547.12,0,0,1,0-178.47l.524-3.068,2.345-.329a707.35,707.35,0,0,1,195.956,0l2.345.329.524,3.068a547.063,547.063,0,0,1,0,178.47l-.524,3.068-2.345.329a713.134,713.134,0,0,1-97.973,6.818Z" transform="translate(-368.305 -627.105)" fill="#eeeee4"/>
+</svg>
+
+                    <div className="item">
+                        <button>
+                            <img src={frenshFlag} alt="" />
+                            <span>Fr</span>
+                        </button>
+                        <button>
+                            <img src={arabicFlag} alt="" />
+                            <span>Ar</span>
+                        </button>
+                    </div>
                 </div>
             </div>
 

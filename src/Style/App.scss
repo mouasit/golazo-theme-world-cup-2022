@@ -61,6 +61,41 @@ body{
       color: $color-text;
     }
   }
+
+  .item{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: .8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    button{
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      border-radius: .3rem;
+      padding: .4rem;
+      &:hover{
+        background-color: rgb(211, 208, 208);
+      }
+      img{
+        width: 2.2rem;
+      }
+      span{
+        font-family: $font;
+        font-size: 1.1rem;
+        color: $color-text;
+      }
+    }
+  }
 }
 
 
@@ -81,13 +116,23 @@ body{
     .list-item{
       position: absolute;
       right: 0;
-      top: 3.6rem;
+      top: .8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      .item{
+        gap: .4rem;
+        button{
+          padding: .4rem;
+        }
+      }
     }
   }
 }
 
 .mobile-nav{
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -196,35 +241,10 @@ body{
         position: absolute;
         bottom: -.5rem;
         left: 13rem;
-        .item{
-          position: absolute;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          padding: 1rem;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          gap: 1.5rem;
-          button{
-            display: flex;
-            align-items: center;
-            gap: .5rem;
-            width: 100%;
-            background: none;
-            border: none;
-            cursor: pointer;
-            img{
-              width: 2.2rem;
-            }
-            span{
-              font-family: $font;
-              font-size: 1.1rem;
-              color: $color-text;
-            }
-          }
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
       }
     }
   
