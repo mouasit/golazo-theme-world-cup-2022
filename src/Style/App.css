@@ -87,6 +87,7 @@ body {
   color: #80192E;
 }
 
+/* ------------------------------ Style Navigation ------------------------------ */
 .side-nav {
   display: none;
 }
@@ -161,6 +162,7 @@ body {
     padding: 0rem;
     padding-right: 1.5rem;
   }
+  /* ------------------------------ Style Navigation ------------------------------ */
   .mobile-header {
     display: none;
   }

@@ -26,6 +26,7 @@ body{
   padding: $size-padding;
 }
 
+
 .layout-dropdown{
   .dropdown {
     background: none;
@@ -61,7 +62,7 @@ body{
       color: $color-text;
     }
   }
-
+  
   .item{
     position: absolute;
     top: 0;
@@ -97,6 +98,9 @@ body{
     }
   }
 }
+
+
+/* ------------------------------ Style Navigation ------------------------------ */
 
 
 .side-nav{
@@ -177,6 +181,8 @@ body{
     padding: 0rem;
     padding-right: $size-padding;
   }
+
+/* ------------------------------ Style Navigation ------------------------------ */
 
   .mobile-header{
     display: none;
