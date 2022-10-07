@@ -11,54 +11,69 @@ import { useEffect} from "react";
 const SideNav = () => {
     useEffect(()=>{
         let btn = document.querySelector(".dropdown");
+        let listDropdown = btn.parentElement.querySelector(".list-item");
+        let  listButtons = listDropdown.querySelectorAll("button");
         let lock = true;
         let useKey = false;
         let index = 0;
+        let currentIndex = 0;
 
-        let listDropdown = btn.parentElement.querySelector(".list-item");
         btn.addEventListener("click", ()=>{
-            listDropdown.classList.toggle("show");
+
+            if(listDropdown.style.display === "flex")
+                listDropdown.style.display = "none";
+            else
+                listDropdown.style.display = "flex";
             useKey = true;
         });
         
         btn.addEventListener("blur", ()=>{
             lock = false;
         });
+
+        btn.addEventListener("mousemove",()=>{
+            lock = true;
+        })
         
         document.addEventListener("click", ()=>{
+           // console.log("lock: ",lock);
             if(!lock)
             {
-                listDropdown.classList.toggle("show");
+                listDropdown.style.display = "none";
                 lock = true;
                 useKey = false;
             }
-            document.addEventListener("keydown",(e)=>{
-            if(useKey && (e.key === "ArrowDown" || e.key === "ArrowUp"))
+        });
+
+        document.addEventListener("keydown",(e)=>{
+            if(useKey && (e.key === "ArrowDown" || e.key === "ArrowUp" || e.key === "Tab"))
             {
                 let items = listDropdown.querySelector(".item").querySelectorAll("button");
 
-                if (e.key === "ArrowDown")
+                if (e.key === "Tab")
                 {
-                    //console.log(++index);
-                    if (index <= 1)
-                    {
-                        console.log(index);
-                        items[++index].focus();
-                    }
+                    index++;
+                    currentIndex = index - 1;
                 }
 
+                if (e.key === "ArrowDown")
+                {
+                    if(index > items.length - 1)
+                        index = 0;
+                    items[index++].focus();
+                    currentIndex = index - 1;
+                }
+                
                 if (e.key === "ArrowUp")
                 {
-                    //console.log(--index);
-                    if(index >= 0 && index <= 1)
-                    {
-                        console.log(index);
-                        items[--index].focus();
-                    }
+                    if(currentIndex === 0)
+                    currentIndex = items.length;
+                    items[--currentIndex].focus();
+                    index = currentIndex + 1;
                 }
             }
-        })
-        })
+        });
+
     },[])
     return (
         <nav className="side-nav">
