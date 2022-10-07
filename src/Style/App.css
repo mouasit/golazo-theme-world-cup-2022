@@ -63,6 +63,11 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
+  background-color: green;
+  opacity: 0.5;
+  top: 0.8rem;
+  height: 7.7rem;
+  cursor: pointer;
 }
 .layout-dropdown .item button {
   display: flex;
@@ -226,7 +231,6 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: green;
   }
   .side-nav .layout-dropdown .show {
     display: flex;

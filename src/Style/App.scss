@@ -74,6 +74,22 @@ body{
     align-items: center;
     justify-content: center;
     gap: .8rem;
+
+
+    background-color: green;
+    opacity: 0.5;
+    top: .8rem;
+    height: 7.7rem;
+    cursor: pointer;
+
+
+
+
+
+
+
+
+
     button{
       display: flex;
       align-items: center;
@@ -251,9 +267,6 @@ body{
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        background-color: green;
-        svg:first-child{
-        }
       }
       .show{
         display: flex;
