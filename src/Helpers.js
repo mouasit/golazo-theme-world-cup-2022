@@ -1,4 +1,5 @@
-export const handleDropdown = (buttonId) =>{
+export const handleDropdown = (buttonId,setArrow) =>{
+
     let listDropdown = buttonId.parentElement.querySelector(".list-item");
     let  listButtons = listDropdown.querySelectorAll("button");
     let lock = true;
@@ -11,12 +12,14 @@ export const handleDropdown = (buttonId) =>{
         if(listDropdown.style.display === "flex")
         {
             listDropdown.style.display = "none";
+            setArrow("close");
             lock = false;
             useKey = false;
         }
         else
         {
             listDropdown.style.display = "flex";
+            setArrow("open");
             lock = true;
             useKey = true;
         }
@@ -38,6 +41,7 @@ export const handleDropdown = (buttonId) =>{
         if(!lock)
         {
             listDropdown.style.display = "none";
+            setArrow("close");
             lock = true;
             useKey = false;
         }
@@ -53,6 +57,7 @@ export const handleDropdown = (buttonId) =>{
                 if (listButtons[listButtons.length - 1] === document.activeElement)
                 {
                     listDropdown.style.display = "none";
+                    setArrow("close");
                     lock = true;
                     useKey = false;
                     index = 0;
@@ -67,7 +72,6 @@ export const handleDropdown = (buttonId) =>{
 
             if (e.key === "ArrowDown")
             {
-                console.log("index: ", index);
                 if(index > items.length - 1)
                     index = 0;
                 items[index++].focus();
@@ -76,7 +80,6 @@ export const handleDropdown = (buttonId) =>{
             
             if (e.key === "ArrowUp")
             {
-                console.log(currentIndex);
                 if(currentIndex === 0)
                     currentIndex = items.length;
                 items[--currentIndex].focus();

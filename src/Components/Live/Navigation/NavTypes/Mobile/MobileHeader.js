@@ -4,13 +4,15 @@ import englishFlag from "../../../../../assets/flags/languages/english.svg";
 import frenshFlag from "../../../../../assets/flags/languages/frensh.svg";
 import arabicFlag from "../../../../../assets/flags/languages/arabic.svg";
 import { BiChevronDown } from "react-icons/bi";
+import { BiChevronUp } from "react-icons/bi";
 import { handleDropdown } from "../../../../../Helpers";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const MobileHeader = () => {
+    const [arrow,setArrow] = useState("close");
     useEffect(()=>{
 
-       //handleDropdown(document.getElementById("dropdownMobileHeader"))
+       handleDropdown(document.getElementById("dropdownMobileHeader"),setArrow)
 
     },[])
     return(
@@ -31,7 +33,9 @@ const MobileHeader = () => {
                     <svg xmlns="http://www.w3.org/2000/svg" width="21.293" height="24.286" viewBox="0 0 21.293 24.286">
                         <path id="Path_1738" data-name="Path 1738" d="M793.082,1047.652,782.435,1059.8l10.647,12.143,10.646-12.143Z" transform="translate(-782.435 -1047.652)" fill="#47b7ab"/>
                     </svg>
-                    <BiChevronDown />
+                    {
+                        (arrow === "close")?(<BiChevronDown />):(<BiChevronUp />)
+                    }
                 </span>
             </button>
             <div className="list-item">
