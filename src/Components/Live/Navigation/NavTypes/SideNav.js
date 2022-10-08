@@ -7,72 +7,12 @@ import frenshFlag from "../../../../assets/flags/languages/frensh.svg";
 import arabicFlag from "../../../../assets/flags/languages/arabic.svg";
 import { BiChevronRight } from "react-icons/bi";
 import { useEffect} from "react";
+import {handleDropdown} from "../../../../Helpers"
 
 const SideNav = () => {
     useEffect(()=>{
-        let btn = document.querySelector(".dropdown");
-        let listDropdown = btn.parentElement.querySelector(".list-item");
-        let  listButtons = listDropdown.querySelectorAll("button");
-        let lock = true;
-        let useKey = false;
-        let index = 0;
-        let currentIndex = 0;
 
-        btn.addEventListener("click", ()=>{
-
-            if(listDropdown.style.display === "flex")
-                listDropdown.style.display = "none";
-            else
-                listDropdown.style.display = "flex";
-            useKey = true;
-        });
-        
-        btn.addEventListener("blur", ()=>{
-            lock = false;
-        });
-
-        btn.addEventListener("mousemove",()=>{
-            lock = true;
-        })
-        
-        document.addEventListener("click", ()=>{
-           // console.log("lock: ",lock);
-            if(!lock)
-            {
-                listDropdown.style.display = "none";
-                lock = true;
-                useKey = false;
-            }
-        });
-
-        document.addEventListener("keydown",(e)=>{
-            if(useKey && (e.key === "ArrowDown" || e.key === "ArrowUp" || e.key === "Tab"))
-            {
-                let items = listDropdown.querySelector(".item").querySelectorAll("button");
-
-                if (e.key === "Tab")
-                {
-                    index++;
-                    currentIndex = index - 1;
-                }
-
-                if (e.key === "ArrowDown")
-                {
-                    if(index > items.length - 1)
-                        index = 0;
-                    items[index++].focus();
-                    currentIndex = index - 1;
-                }
-                
-                if (e.key === "ArrowUp")
-                {
-                    if(currentIndex === 0)
-                    currentIndex = items.length;
-                    items[--currentIndex].focus();
-                    index = currentIndex + 1;
-                }
-            }
-        });
+        handleDropdown(document.getElementById("dropdownSidNav"))
 
     },[])
     return (
@@ -106,7 +46,7 @@ const SideNav = () => {
                     </a>
                 </li>
             </ul>
-            <div className="layout-dropdown">
+            <div id="dropdownSidNav" className="layout-dropdown">
                 <button className="dropdown">
                     <Button />
                     <span className="name-flag">
