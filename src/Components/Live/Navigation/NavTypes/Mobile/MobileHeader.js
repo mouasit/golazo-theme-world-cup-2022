@@ -4,14 +4,22 @@ import englishFlag from "../../../../../assets/flags/languages/english.svg";
 import frenshFlag from "../../../../../assets/flags/languages/frensh.svg";
 import arabicFlag from "../../../../../assets/flags/languages/arabic.svg";
 import { BiChevronDown } from "react-icons/bi";
+import { handleDropdown } from "../../../../../Helpers";
+import { useEffect } from "react";
 
-const MobileHeader = () => (
+const MobileHeader = () => {
+    useEffect(()=>{
+
+       //handleDropdown(document.getElementById("dropdownMobileHeader"))
+
+    },[])
+    return(
     <header  className="mobile-header">
         <a href="/" aria-label="Golazo">
             <img src={logo} alt=""/>
         </a>
         <div className="layout-dropdown">
-            <button className="dropdown">
+            <button id="dropdownMobileHeader" className="dropdown">
                 <svg xmlns="http://www.w3.org/2000/svg" width="120.358" height="44.903" viewBox="0 0 120.358 44.903">
                     <path id="Path_1613" data-name="Path 1613" d="M377.484,766.07H489.109l4.367,22.451-4.367,22.451H377.484l-4.367-22.451Z" transform="translate(-373.118 -766.07)" fill="#eeeee4"/>
                 </svg>
@@ -27,7 +35,7 @@ const MobileHeader = () => (
                 </span>
             </button>
             <div className="list-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="198.901" viewBox="0 0 216.347 198.901">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 216.347 198.901">
                     <path id="Path_7097" data-name="Path 7097" d="M476.471,826.005a713.164,713.164,0,0,1-97.971-6.818l-2.345-.33-.524-3.068a547.12,547.12,0,0,1,0-178.47l.524-3.068,2.345-.329a707.35,707.35,0,0,1,195.956,0l2.345.329.524,3.068a547.063,547.063,0,0,1,0,178.47l-.524,3.068-2.345.329a713.134,713.134,0,0,1-97.973,6.818Z" transform="translate(-368.305 -627.105)" fill="#eeeee4"/>
                 </svg>
                 <div className="item">
@@ -43,6 +51,7 @@ const MobileHeader = () => (
             </div>
         </div>
     </header>
-)
+    )
+}
 
 export default MobileHeader;

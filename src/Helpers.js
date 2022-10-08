@@ -9,10 +9,17 @@ export const handleDropdown = (buttonId) =>{
     buttonId.addEventListener("click", ()=>{
 
         if(listDropdown.style.display === "flex")
+        {
             listDropdown.style.display = "none";
+            lock = false;
+            useKey = false;
+        }
         else
+        {
             listDropdown.style.display = "flex";
-        useKey = true;
+            lock = true;
+            useKey = true;
+        }
     });
     
     buttonId.addEventListener("blur", ()=>{
@@ -44,13 +51,23 @@ export const handleDropdown = (buttonId) =>{
             if (e.key === "Tab")
             {
                 if (listButtons[listButtons.length - 1] === document.activeElement)
+                {
                     listDropdown.style.display = "none";
-                index++;
-                currentIndex = index - 1;
+                    lock = true;
+                    useKey = false;
+                    index = 0;
+                    currentIndex = 0;
+                }
+                else
+                {
+                    index++;
+                    currentIndex = index - 1;
+                }
             }
 
             if (e.key === "ArrowDown")
             {
+                console.log("index: ", index);
                 if(index > items.length - 1)
                     index = 0;
                 items[index++].focus();
@@ -59,8 +76,9 @@ export const handleDropdown = (buttonId) =>{
             
             if (e.key === "ArrowUp")
             {
+                console.log(currentIndex);
                 if(currentIndex === 0)
-                currentIndex = items.length;
+                    currentIndex = items.length;
                 items[--currentIndex].focus();
                 index = currentIndex + 1;
             }

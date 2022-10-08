@@ -46,8 +46,8 @@ const SideNav = () => {
                     </a>
                 </li>
             </ul>
-            <div id="dropdownSidNav" className="layout-dropdown">
-                <button className="dropdown">
+            <div className="layout-dropdown">
+                <button id="dropdownSidNav" className="dropdown">
                     <Button />
                     <span className="name-flag">
                         <img src={englishFlag} alt="" />

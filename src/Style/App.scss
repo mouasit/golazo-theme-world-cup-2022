@@ -74,8 +74,6 @@ body{
     align-items: center;
     justify-content: center;
     gap: .8rem;
-    top: .8rem;
-    height: 7.7rem;
     button{
       display: flex;
       align-items: center;
@@ -122,11 +120,8 @@ body{
     .list-item{
       position: absolute;
       right: 0;
-      top: .8rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
+      display: none;
+      top: 3.5rem;
       .item{
         gap: .4rem;
         button{
@@ -253,6 +248,10 @@ body{
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        .item{
+          top: .8rem;
+          height: 7.7rem;
+        }
       }
       .show{
         display: flex;

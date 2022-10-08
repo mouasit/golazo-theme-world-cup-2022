@@ -63,8 +63,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
-  top: 0.8rem;
-  height: 7.7rem;
 }
 .layout-dropdown .item button {
   display: flex;
@@ -108,11 +106,8 @@ body {
 .mobile-header .layout-dropdown .list-item {
   position: absolute;
   right: 0;
-  top: 0.8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  display: none;
+  top: 3.5rem;
 }
 .mobile-header .layout-dropdown .list-item .item {
   gap: 0.4rem;
@@ -228,6 +223,10 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+  }
+  .side-nav .layout-dropdown .list-item .item {
+    top: 0.8rem;
+    height: 7.7rem;
   }
   .side-nav .layout-dropdown .show {
     display: flex;
