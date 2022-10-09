@@ -24,32 +24,32 @@ const SideNav = () => {
             </a>
             <ul>
                 <li>
-                    <a href="/" className="active">
+                    <a href="/" className="active" aria-label="Live">
                         <Background />
                         <span>Live</span>
                     </a>
                 </li>
                  <li>
-                    <a href="/">
+                    <a href="/" aria-label="Ranking">
                         <Background />
                         <span>Ranking</span>
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="/" aria-label="Matches">
                         <Background />
                         <span>Matches</span>
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="/" aria-label="Stadiums">
                         <Background />
                         <span>Stadiums</span>
                     </a>
                 </li>
             </ul>
             <div className="layout-dropdown">
-                <button id="dropdownSidNav" className="dropdown">
+                <button id="dropdownSidNav" className="dropdown" aria-label="Languages">
                     <Button />
                     <span className="name-flag">
                         <img src={englishFlag} alt="" />
@@ -69,11 +69,11 @@ const SideNav = () => {
                         <path id="Path_7097" data-name="Path 7097" d="M476.471,776.232A947.7,947.7,0,0,1,378.5,771.12l-2.345-.247-.524-2.3a309.161,309.161,0,0,1,0-133.809l.524-2.3,2.345-.247a941.443,941.443,0,0,1,195.956,0l2.345.247.524,2.3a309.131,309.131,0,0,1,0,133.809l-.524,2.3-2.345.247a947.7,947.7,0,0,1-97.973,5.112Z" transform="translate(-368.305 -627.105)" fill="#eeeee4"/>
                     </svg>
                     <div className="item">
-                        <button>
+                        <button aria-label="Frensh">
                             <img src={frenshFlag} alt="" />
                             <span>Frensh</span>
                         </button>
-                        <button>
+                        <button aria-label="Arabic">
                             <img src={arabicFlag} alt="" />
                             <span>Arabic</span>
                         </button>

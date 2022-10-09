@@ -8,22 +8,22 @@ const MobileNav = () => (
     <nav className="mobile-nav">
         <ul>
             <li>
-                <a href="/" className="active">
+                <a href="/" className="active" aria-label="Live">
                     <BiTv />
                 </a>
             </li>
             <li>
-                <a href="/">
+                <a href="/" aria-label="Ranking">
                     <BiBarChartAlt2 />
                 </a>
             </li>
             <li>
-                <a href="/">
+                <a href="/" aria-label="Matches">
                     <BiCalendar />
                 </a>
             </li>
             <li>
-                <a href="/">
+                <a href="/" aria-aria-label="Stadiums">
                     <TbSoccerField />
                 </a>
             </li>
