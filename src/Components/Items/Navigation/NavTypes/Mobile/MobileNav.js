@@ -3,29 +3,30 @@ import {BiTv} from "react-icons/bi";
 import {BiBarChartAlt2} from "react-icons/bi";
 import{BiCalendar} from "react-icons/bi";
 import{TbSoccerField} from "react-icons/tb";
+import { NavLink } from "react-router-dom";
 
 const MobileNav = () => (
     <nav className="mobile-nav">
         <ul>
             <li>
-                <a href="/" className="active" aria-label="Live">
+                <NavLink to="/" aria-label="Live">
                     <BiTv />
-                </a>
+                </NavLink>
             </li>
             <li>
-                <a href="/" aria-label="Ranking">
+                <NavLink to="/Ranking" aria-label="Ranking">
                     <BiBarChartAlt2 />
-                </a>
+                </NavLink>
             </li>
             <li>
-                <a href="/" aria-label="Matches">
+                <NavLink to="/Matches" aria-label="Matches">
                     <BiCalendar />
-                </a>
+                </NavLink>
             </li>
             <li>
-                <a href="/" aria-aria-label="Stadiums">
+                <NavLink to="/Stadiums" aria-label="Stadiums">
                     <TbSoccerField />
-                </a>
+                </NavLink>
             </li>
         </ul>
     </nav>

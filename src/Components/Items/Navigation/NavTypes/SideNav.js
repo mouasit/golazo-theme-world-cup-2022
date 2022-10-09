@@ -1,7 +1,7 @@
 
 import logo from "../../../../assets/logo.svg";
-import Background from "../../Items/Background";
-import Button from "../../Items/Button";
+import Background from "../../../Items/Background";
+import Button from "../../../Items/Button";
 import englishFlag from "../../../../assets/flags/languages/english.svg";
 import frenshFlag from "../../../../assets/flags/languages/frensh.svg";
 import arabicFlag from "../../../../assets/flags/languages/arabic.svg";
@@ -9,6 +9,7 @@ import { BiChevronRight } from "react-icons/bi";
 import { BiChevronLeft } from "react-icons/bi";
 import { useEffect,useState} from "react";
 import {handleDropdown} from "../../../../Helpers"
+import { NavLink } from "react-router-dom";
 
 const SideNav = () => {
     const [arrow,setArrow] = useState("close");
@@ -19,33 +20,33 @@ const SideNav = () => {
     },[])
     return (
         <nav className="side-nav">
-            <a href="/" aria-label="Golazo">
+            <NavLink to="/" aria-label="Golazo">
                 <img className="logo" src={logo} alt=""/>
-            </a>
+            </NavLink>
             <ul>
                 <li>
-                    <a href="/" className="active" aria-label="Live">
+                    <NavLink to="/" aria-label="Live">
                         <Background />
                         <span>Live</span>
-                    </a>
+                    </NavLink>
                 </li>
                  <li>
-                    <a href="/" aria-label="Ranking">
+                    <NavLink to="/Ranking" aria-label="Ranking">
                         <Background />
                         <span>Ranking</span>
-                    </a>
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="/" aria-label="Matches">
+                    <NavLink to="/Matches" aria-label="Matches">
                         <Background />
                         <span>Matches</span>
-                    </a>
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="/" aria-label="Stadiums">
+                    <NavLink to="/Stadiums" aria-label="Stadiums">
                         <Background />
                         <span>Stadiums</span>
-                    </a>
+                    </NavLink>
                 </li>
             </ul>
             <div className="layout-dropdown">

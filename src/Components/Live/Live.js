@@ -1,10 +1,5 @@
-import React from "react";
-import Nav from "./Navigation/Nav";
-
 const Live = () =>(
-    <React.Fragment>
-        <Nav />
-    </React.Fragment>
+    <h1>Live</h1>
 )
 
 export default Live;

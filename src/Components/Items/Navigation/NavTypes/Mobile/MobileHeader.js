@@ -7,6 +7,7 @@ import { BiChevronDown } from "react-icons/bi";
 import { BiChevronUp } from "react-icons/bi";
 import { handleDropdown } from "../../../../../Helpers";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const MobileHeader = () => {
     const [arrow,setArrow] = useState("close");
@@ -17,9 +18,9 @@ const MobileHeader = () => {
     },[])
     return(
     <header  className="mobile-header">
-        <a href="/" aria-label="Golazo">
+        <NavLink to="/" aria-label="Golazo">
             <img src={logo} alt=""/>
-        </a>
+        </NavLink>
         <div className="layout-dropdown">
             <button id="dropdownMobileHeader" className="dropdown" aria-label="Languages">
                 <svg xmlns="http://www.w3.org/2000/svg" width="120.358" height="44.903" viewBox="0 0 120.358 44.903">
