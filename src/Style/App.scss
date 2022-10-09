@@ -111,6 +111,13 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .dropdown{
+    &:hover{
+      opacity: 0.9;
+     transform: scale(0.9);
+    transition: all 0.3s;
+    }
+  }
   img{
     width: 11rem;
   }
@@ -150,6 +157,11 @@ body{
         display: flex;
         font-size: 2rem;
         color: $color-text;
+        &:hover{
+          color: rgba($color-text,0.9);
+          transform: scale(0.9);
+          transition: all 0.3s;
+        }
       }
       .active{
         /*color: $background-active;
@@ -161,6 +173,10 @@ body{
         color: $white;
         border-radius: 3.125rem;
         padding: .8rem;
+        &:hover{
+          color: #fff;
+          opacity: 0.9;
+        }
       }
     }
   }
@@ -216,6 +232,14 @@ body{
           display: flex;
           justify-content: center;
           align-items: center;
+          svg{
+            fill: #60071e;
+          }
+          &:hover{
+            opacity: 0.9;
+            transform: scale(0.9);
+            transition: all 0.3s;
+          }
           span{
             position: absolute;
             font-family: $font;
@@ -236,6 +260,11 @@ body{
       position: relative;
       .dropdown{
         width: 12.5rem;
+        &:hover{
+          opacity: 0.9;
+         transform: scale(0.9);
+        transition: all 0.3s;
+        }
         .name-flag{
           left: 1.7rem;
         }

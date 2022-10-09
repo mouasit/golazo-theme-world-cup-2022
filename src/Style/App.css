@@ -97,6 +97,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.mobile-header .dropdown:hover {
+  opacity: 0.9;
+  transform: scale(0.9);
+  transition: all 0.3s;
+}
 .mobile-header img {
   width: 11rem;
 }
@@ -137,6 +142,11 @@ body {
   font-size: 2rem;
   color: #80192E;
 }
+.mobile-nav ul li a:hover {
+  color: rgba(128, 25, 46, 0.9);
+  transform: scale(0.9);
+  transition: all 0.3s;
+}
 .mobile-nav ul li .active {
   /*color: $background-active;
   border-bottom-left-radius: .3rem;
@@ -147,6 +157,10 @@ body {
   color: #EEEEE4;
   border-radius: 3.125rem;
   padding: 0.8rem;
+}
+.mobile-nav ul li .active:hover {
+  color: #fff;
+  opacity: 0.9;
 }
 
 /* Responsive */
@@ -196,6 +210,14 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .side-nav ul li a svg {
+    fill: #60071e;
+  }
+  .side-nav ul li a:hover {
+    opacity: 0.9;
+    transform: scale(0.9);
+    transition: all 0.3s;
+  }
   .side-nav ul li a span {
     position: absolute;
     font-family: "Qatar2022 Arabic", sans-serif;
@@ -211,6 +233,11 @@ body {
   }
   .side-nav .layout-dropdown .dropdown {
     width: 12.5rem;
+  }
+  .side-nav .layout-dropdown .dropdown:hover {
+    opacity: 0.9;
+    transform: scale(0.9);
+    transition: all 0.3s;
   }
   .side-nav .layout-dropdown .dropdown .name-flag {
     left: 1.7rem;
