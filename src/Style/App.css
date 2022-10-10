@@ -87,6 +87,10 @@ body {
   color: #80192E;
 }
 
+.separtor {
+  display: none;
+}
+
 /* ------------------------------ Style Navigation ------------------------------ */
 .side-nav {
   display: none;
@@ -257,5 +261,14 @@ body {
   }
   .side-nav .layout-dropdown .show {
     display: flex;
+  }
+  .separtor {
+    height: 100vh;
+    padding: 1.5rem 0 1.5rem 0;
+    position: fixed;
+    margin-left: 17.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=App.css.map */

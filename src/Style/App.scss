@@ -99,6 +99,10 @@ body{
   }
 }
 
+.separtor{
+  display: none;
+}
+
 
 /* ------------------------------ Style Navigation ------------------------------ */
 
@@ -286,5 +290,15 @@ body{
         display: flex;
       }
     }
+  }
+
+  .separtor{
+    height: 100vh;
+    padding: $size-padding 0 $size-padding 0;
+    position: fixed;
+    margin-left: 17.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
