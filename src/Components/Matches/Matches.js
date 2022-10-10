@@ -1,5 +1,7 @@
 const Matches = () =>(
-    <h1>Matches</h1>
+    <main>
+        <h1>Matches</h1>
+    </main>
 )
 
 export default Matches

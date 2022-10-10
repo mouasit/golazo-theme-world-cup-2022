@@ -271,4 +271,36 @@ body {
     justify-content: center;
     align-items: center;
   }
+  main {
+    margin-left: 22.4rem;
+    padding-top: 1.5rem;
+    width: 100%;
+    height: 100vh;
+  }
+  main .group-matches .group-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .group-matches .match .match-info {
+    display: flex;
+  }
+  main .group-matches .match .match-info .item-info {
+    background-color: green;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  main .group-matches .match .match-info .item-info .name-stadium {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    width: 12.9rem;
+    color: #EEEEE4;
+    font-size: 1.1rem;
+    margin-left: 3.7rem;
+  }
 }/*# sourceMappingURL=App.css.map */

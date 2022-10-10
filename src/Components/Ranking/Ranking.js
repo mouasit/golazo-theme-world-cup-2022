@@ -1,5 +1,7 @@
 const Ranking = () =>(
-    <h2>Ranking</h2>
+    <main>
+        <h1>Ranking</h1>
+    </main>
 )
 
 export default Ranking
