@@ -1,9 +1,9 @@
 const LocatoinBackground = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="266.594" height="60.373" viewBox="0 0 266.594 60.373">
+<svg xmlns="http://www.w3.org/2000/svg" width="192.809" height="43.663" viewBox="0 0 192.809 43.663">
   <g id="Group_4536" data-name="Group 4536" transform="translate(-687 -256.388)">
-    <path id="Path_1770" data-name="Path 1770" d="M381.838,766.069h222.91l8.72,24.336-8.72,24.336H381.838l-8.72-24.336Z" transform="translate(340.126 -503.681)" fill="#e32052"/>
-    <rect id="Rectangle_148" data-name="Rectangle 148" width="41.433" height="43.946" transform="matrix(-0.707, 0.707, -0.707, -0.707, 747.373, 287.463)" fill="#47b7ab"/>
-    <path id="Path_30" data-name="Path 30" d="M91.6,30.947a8.3,8.3,0,0,0-8.048,8.518c0,6.672,7.292,13.566,7.6,13.856a.648.648,0,0,0,.894,0c.309-.291,7.6-7.181,7.6-13.856A8.3,8.3,0,0,0,91.6,30.947Zm0,13.156a4.7,4.7,0,1,1,4.471-4.7A4.59,4.59,0,0,1,91.6,44.1Z" transform="translate(626.451 244.441)" fill="#fff"/>
+    <path id="Path_1770" data-name="Path 1770" d="M379.424,766.069H540.64l6.306,17.6-6.306,17.6H379.424l-6.306-17.6Z" transform="translate(332.863 -505.342)" fill="#e32052"/>
+    <rect id="Rectangle_148" data-name="Rectangle 148" width="29.966" height="31.783" transform="matrix(-0.707, 0.707, -0.707, -0.707, 730.663, 278.862)" fill="#47b7ab"/>
+    <path id="Path_30" data-name="Path 30" d="M89.37,30.947a6.006,6.006,0,0,0-5.821,6.161c0,4.825,5.273,9.812,5.5,10.021a.469.469,0,0,0,.647,0c.224-.211,5.5-5.194,5.5-10.021A6.006,6.006,0,0,0,89.37,30.947Zm0,9.515a3.4,3.4,0,1,1,3.234-3.4A3.319,3.319,0,0,1,89.37,40.462Z" transform="translate(620.085 239.183)" fill="#fff"/>
   </g>
 </svg>
 

@@ -316,22 +316,24 @@ body{
       .match{
         .match-info{
           display: flex;
+          align-items: center;
+          justify-content: space-between;
           .item-info{
-            background-color: green;
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
-            .name-stadium{
+            .name-item-info{
               position: absolute;
+              display: flex;
+              justify-content: center;
               left: 0;
-              text-align: center;
               width: 100%;
-              width: 12.9rem;
+              width: 9.4rem;
               color: $white;
               font-size: 1.1rem;
-              margin-left: 3.7rem;
+              margin-left: 2.7rem;
             }
           }
         }
