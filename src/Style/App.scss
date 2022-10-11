@@ -304,16 +304,22 @@ body{
 
   main{
     margin-left: 22.4rem;
-    padding-top: $size-padding;
+    padding-top: 3.5rem;
     width: 100%;
     height: 100vh;
     .group-matches{
-      .group-header{
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+      .group-head{
         display: flex;
         justify-content: center;
         align-items: center;
       }
-      .match{
+      .group-body{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
         .match-info{
           display: flex;
           align-items: center;
@@ -332,9 +338,39 @@ body{
               width: 100%;
               width: 9.4rem;
               color: $white;
-              font-size: 1.1rem;
+              font-size: 1rem;
               margin-left: 2.7rem;
             }
+          }
+        }
+        .match-play{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .team{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 0.8rem;
+            flex: 1;
+            img{
+              width: 8rem;
+            }
+            span{
+              color: $white;
+              font-size: 1.8rem;
+            }
+          }
+          .team-right{
+            flex-direction: row-reverse;
+            
+          }
+          .play-button{
+            display: flex;
+            background: none;
+            border: none;
+            border-radius: 3.125rem;
+            cursor: pointer;
           }
         }
       }

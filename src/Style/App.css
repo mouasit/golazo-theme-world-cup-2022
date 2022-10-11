@@ -273,28 +273,38 @@ body {
   }
   main {
     margin-left: 22.4rem;
-    padding-top: 1.5rem;
+    padding-top: 3.5rem;
     width: 100%;
     height: 100vh;
   }
-  main .group-matches .group-header {
+  main .group-matches {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+  main .group-matches .group-head {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  main .group-matches .match .match-info {
+  main .group-matches .group-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main .group-matches .group-body .match-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  main .group-matches .match .match-info .item-info {
+  main .group-matches .group-body .match-info .item-info {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
   }
-  main .group-matches .match .match-info .item-info .name-item-info {
+  main .group-matches .group-body .match-info .item-info .name-item-info {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -302,7 +312,36 @@ body {
     width: 100%;
     width: 9.4rem;
     color: #EEEEE4;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-left: 2.7rem;
+  }
+  main .group-matches .group-body .match-play {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .group-matches .group-body .match-play .team {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.8rem;
+    flex: 1;
+  }
+  main .group-matches .group-body .match-play .team img {
+    width: 8rem;
+  }
+  main .group-matches .group-body .match-play .team span {
+    color: #EEEEE4;
+    font-size: 1.8rem;
+  }
+  main .group-matches .group-body .match-play .team-right {
+    flex-direction: row-reverse;
+  }
+  main .group-matches .group-body .match-play .play-button {
+    display: flex;
+    background: none;
+    border: none;
+    border-radius: 3.125rem;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=App.css.map */
