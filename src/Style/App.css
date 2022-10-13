@@ -306,7 +306,7 @@ body {
   main .group-matches .all-matches .match .match-info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   main .group-matches .all-matches .match .match-info .item-info {
     position: relative;
@@ -328,7 +328,7 @@ body {
   }
   main .group-matches .all-matches .match .match-play {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
   main .group-matches .all-matches .match .match-play .team {
@@ -336,7 +336,6 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 0.8rem;
-    flex: 1;
   }
   main .group-matches .all-matches .match .match-play .team img {
     width: 8rem;

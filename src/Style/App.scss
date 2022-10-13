@@ -334,7 +334,8 @@ body{
           .match-info{
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            //justify-content: space-between;
+            justify-content: space-around;
             .item-info{
               position: relative;
               display: flex;
@@ -356,14 +357,15 @@ body{
           }
           .match-play{
             display: flex;
-            justify-content: space-between;
+            //justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             .team{
               display: flex;
               justify-content: flex-start;
               align-items: center;
               gap: 0.8rem;
-              flex: 1;
+              //flex: 1;
               img{
                 width: 8rem;
               }
