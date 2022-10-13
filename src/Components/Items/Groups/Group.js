@@ -1,4 +1,4 @@
-const GroupF = ()=>(
+const GroupF = (props)=>(
   <svg xmlns="http://www.w3.org/2000/svg" width="362.391" height="46.639" viewBox="0 0 362.391 46.639">
   <g id="Group_872" data-name="Group 872" transform="translate(-906 -257.468)">
     <g id="Group_831" data-name="Group 831" transform="translate(906 257.468)">
@@ -28,7 +28,7 @@ const GroupF = ()=>(
         <rect id="Rectangle_147-2" data-name="Rectangle 147" width="3.832" height="3.832" transform="matrix(0.707, -0.707, 0.707, 0.707, 64.854, 7.96)" fill="#47b7ab"/>
       </g>
     </g>
-    <text id="F" transform="translate(1094 284)" fill="#fff" font-size="21" font-family="Qatar2022Arabic-Bold, Qatar2022 Arabic" font-weight="700"><tspan x="0" y="0">F</tspan></text>
+    <text id="F" transform="translate(1094 284)" fill="#fff" font-size="21" font-family="Qatar2022Arabic-Bold, Qatar2022 Arabic" font-weight="700"><tspan x="0" y="0">{props.nameGroup}</tspan></text>
   </g>
 </svg>
 )

@@ -273,13 +273,14 @@ body {
   }
   main {
     margin-left: 22.4rem;
-    padding-top: 3.5rem;
     width: 100%;
-    height: 100vh;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
   main .group-matches {
     display: flex;
     flex-direction: column;
+    margin-top: 6rem;
     gap: 3.5rem;
   }
   main .group-matches .group-head {
@@ -287,24 +288,29 @@ body {
     justify-content: center;
     align-items: center;
   }
-  main .group-matches .group-body {
+  main .group-matches .all-matches {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  main .group-matches .all-matches .match {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
-  main .group-matches .group-body .match-info {
+  main .group-matches .all-matches .match .match-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  main .group-matches .group-body .match-info .item-info {
+  main .group-matches .all-matches .match .match-info .item-info {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
   }
-  main .group-matches .group-body .match-info .item-info .name-item-info {
+  main .group-matches .all-matches .match .match-info .item-info .name-item-info {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -315,33 +321,36 @@ body {
     font-size: 1rem;
     margin-left: 2.7rem;
   }
-  main .group-matches .group-body .match-play {
+  main .group-matches .all-matches .match .match-play {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  main .group-matches .group-body .match-play .team {
+  main .group-matches .all-matches .match .match-play .team {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 0.8rem;
     flex: 1;
   }
-  main .group-matches .group-body .match-play .team img {
+  main .group-matches .all-matches .match .match-play .team img {
     width: 8rem;
   }
-  main .group-matches .group-body .match-play .team span {
+  main .group-matches .all-matches .match .match-play .team span {
     color: #EEEEE4;
     font-size: 1.8rem;
   }
-  main .group-matches .group-body .match-play .team-right {
+  main .group-matches .all-matches .match .match-play .team-right {
     flex-direction: row-reverse;
   }
-  main .group-matches .group-body .match-play .play-button {
+  main .group-matches .all-matches .match .match-play .play-button {
     display: flex;
     background: none;
     border: none;
     border-radius: 3.125rem;
     cursor: pointer;
+  }
+  main .group-matches:first-child {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=App.css.map */
