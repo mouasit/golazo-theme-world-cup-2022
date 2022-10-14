@@ -305,28 +305,24 @@ body{
   main{
     margin-left: 18.5rem;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     padding: 3.5rem 3.4rem 3.5rem 3.4rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 5rem;
+    gap: 6rem;
     .group-matches{
-      height: 100%;
       display: flex;
       flex-direction: column;
-      gap: 3.5rem;
+      gap: 6rem;
       .group-head{
         display: flex;
         justify-content: center;
         align-items: center;
       }
       .all-matches{
-        height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 5rem;
+        gap: 2rem;
         .match{
           display: flex;
           flex-direction: column;
@@ -334,7 +330,6 @@ body{
           .match-info{
             display: flex;
             align-items: center;
-            //justify-content: space-between;
             justify-content: space-around;
             .item-info{
               position: relative;
