@@ -293,7 +293,7 @@ body{
   }
 
   .separtor{
-    height: 100vh;
+    min-height: 100vh;
     padding: $size-padding 0 $size-padding 0;
     position: fixed;
     margin-left: 17.5rem;

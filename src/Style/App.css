@@ -262,7 +262,7 @@ body {
     display: flex;
   }
   .separtor {
-    height: 100vh;
+    min-height: 100vh;
     padding: 1.5rem 0 1.5rem 0;
     position: fixed;
     margin-left: 17.5rem;

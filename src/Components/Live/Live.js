@@ -1,5 +1,5 @@
 
-import Group from "../Items/Groups/Group"
+import Group from "../Items/Group"
 import LocatoinBackground from "../Items/Location";
 import ChanelBackground from "../Items/ChanelBackground";
 import CommentatorBackground from "../Items/CommentatorBackground";
