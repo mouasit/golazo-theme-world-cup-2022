@@ -317,9 +317,9 @@ body {
     justify-content: center;
     left: 0;
     width: 100%;
-    width: 9.4rem;
+    width: 8.7rem;
     color: #EEEEE4;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-left: 2.7rem;
   }
   main .group-matches .all-matches .match .match-play {
@@ -334,11 +334,11 @@ body {
     gap: 0.8rem;
   }
   main .group-matches .all-matches .match .match-play .team img {
-    width: 8rem;
+    width: 7.5rem;
   }
   main .group-matches .all-matches .match .match-play .team span {
     color: #EEEEE4;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   main .group-matches .all-matches .match .match-play .team-right {
     flex-direction: row-reverse;
