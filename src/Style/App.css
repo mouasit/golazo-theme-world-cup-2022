@@ -292,7 +292,7 @@ body {
   main .group-matches .all-matches {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
   }
   main .group-matches .all-matches .match {
     display: flex;
@@ -332,7 +332,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 0.8rem;
+    padding-right: 0.8rem;
   }
   main .group-matches .all-matches .match .match-play .team img {
     width: 7.5rem;
@@ -340,9 +340,19 @@ body {
   main .group-matches .all-matches .match .match-play .team span {
     color: #EEEEE4;
     font-size: 1.6rem;
+    width: 11.9vw;
+    overflow: hidden;
+    margin-left: 0.8rem;
   }
   main .group-matches .all-matches .match .match-play .team-right {
     flex-direction: row-reverse;
+    padding-right: 0;
+    padding-left: 0.8rem;
+  }
+  main .group-matches .all-matches .match .match-play .team-right span {
+    margin-left: 0;
+    margin-right: 0.8rem;
+    text-align: right;
   }
   main .group-matches .all-matches .match .match-play .play-button {
     display: flex;
