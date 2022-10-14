@@ -335,20 +335,21 @@ body{
               position: relative;
               display: flex;
               align-items: center;
-            /*  display: flex;
-              justify-content: center;
-              align-items: center;
-              overflow: hidden;*/
               .name-item-info{
                 position: absolute;
                 left: 2.5rem;
-                width: 8.9rem;
+                width: 9rem;
                 text-align: center;
                 color: $white;
                 font-size: .9rem;
                 overflow: auto;
                 padding-left: 0.5rem;
                 padding-right: 0.5rem;
+              }
+            }
+            .item-info:first-child{
+              .name-item-info{
+                width: 8.9rem;
               }
             }
           }
@@ -385,9 +386,6 @@ body{
           }
         }
       }
-    }
-    .group-matches:first-child{
-      margin-top: 0;
     }
   }
 }
