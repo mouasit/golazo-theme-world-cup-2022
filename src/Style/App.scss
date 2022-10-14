@@ -334,19 +334,21 @@ body{
             .item-info{
               position: relative;
               display: flex;
+              align-items: center;
+            /*  display: flex;
               justify-content: center;
               align-items: center;
-              overflow: hidden;
+              overflow: hidden;*/
               .name-item-info{
                 position: absolute;
-                display: flex;
-                justify-content: center;
-                left: 0;
-                width: 100%;
-                width: 8.7rem;
+                left: 2.5rem;
+                width: 8.9rem;
+                text-align: center;
                 color: $white;
                 font-size: .9rem;
-                margin-left: 2.7rem;
+                overflow: auto;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
               }
             }
           }

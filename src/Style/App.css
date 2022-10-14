@@ -307,20 +307,22 @@ body {
   main .group-matches .all-matches .match .match-info .item-info {
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /*  display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;*/
   }
   main .group-matches .all-matches .match .match-info .item-info .name-item-info {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    left: 0;
-    width: 100%;
-    width: 8.7rem;
+    left: 2.5rem;
+    width: 8.9rem;
+    text-align: center;
     color: #EEEEE4;
     font-size: 0.9rem;
-    margin-left: 2.7rem;
+    overflow: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
   main .group-matches .all-matches .match .match-play {
     display: flex;
