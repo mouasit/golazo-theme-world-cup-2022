@@ -11,7 +11,8 @@ body {
 }
 
 #root {
-  padding: 1.5rem;
+  padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+  width: 527px;
 }
 
 .layout-dropdown .dropdown {
@@ -148,11 +149,6 @@ body {
   transition: all 0.3s;
 }
 .mobile-nav ul li .active {
-  /*color: $background-active;
-  border-bottom-left-radius: .3rem;
-  border-bottom-right-radius: .3rem;
-  border-bottom: .3rem solid $background-active;
-  padding-bottom: .3rem;*/
   background-color: #E32052;
   color: #EEEEE4;
   border-radius: 3.125rem;
@@ -161,6 +157,104 @@ body {
 .mobile-nav ul li .active:hover {
   color: #fff;
   opacity: 0.9;
+}
+
+main {
+  padding: 3.5rem 0rem 3.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+main .group-matches {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+main .group-matches .group-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .group-matches .all-matches {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main .group-matches .all-matches .match {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .group-matches .all-matches .match .match-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*remove */
+  gap: 0.5rem;
+}
+main .group-matches .all-matches .match .match-info .item-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+main .group-matches .all-matches .match .match-info .item-info svg {
+  width: 8.5rem;
+}
+main .group-matches .all-matches .match .match-info .item-info .name-item-info {
+  position: absolute;
+  left: 2rem;
+  width: 6.5rem;
+  text-align: center;
+  color: #EEEEE4;
+  font-size: 0.7rem;
+  overflow: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+main .group-matches .all-matches .match .match-info .item-info:first-child .name-item-info {
+  width: 6.5rem;
+}
+main .group-matches .all-matches .match .match-play {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .group-matches .all-matches .match .match-play .team {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 0.8rem;
+}
+main .group-matches .all-matches .match .match-play .team img {
+  width: 6rem;
+}
+main .group-matches .all-matches .match .match-play .team span {
+  color: #EEEEE4;
+  font-size: 1.3rem;
+  width: 6.2rem;
+  overflow: hidden;
+  margin-left: 0.8rem;
+}
+main .group-matches .all-matches .match .match-play .team-right {
+  flex-direction: row-reverse;
+  padding-right: 0;
+  padding-left: 0.8rem;
+}
+main .group-matches .all-matches .match .match-play .team-right span {
+  margin-left: 0;
+  margin-right: 0.8rem;
+  text-align: right;
+}
+main .group-matches .all-matches .match .match-play .play-button {
+  display: flex;
+  background: none;
+  border: none;
+  border-radius: 3.125rem;
+  cursor: pointer;
+}
+main .group-matches .all-matches .match .match-play .play-button svg {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 /* Responsive */
@@ -284,77 +378,5 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  main .group-matches .all-matches {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-  }
-  main .group-matches .all-matches .match {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  main .group-matches .all-matches .match .match-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  main .group-matches .all-matches .match .match-info .item-info {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  main .group-matches .all-matches .match .match-info .item-info .name-item-info {
-    position: absolute;
-    left: 2.5rem;
-    width: 9rem;
-    text-align: center;
-    color: #EEEEE4;
-    font-size: 0.9rem;
-    overflow: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-  main .group-matches .all-matches .match .match-info .item-info:first-child .name-item-info {
-    width: 8.9rem;
-  }
-  main .group-matches .all-matches .match .match-play {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  main .group-matches .all-matches .match .match-play .team {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-right: 0.8rem;
-  }
-  main .group-matches .all-matches .match .match-play .team img {
-    width: 7.5rem;
-  }
-  main .group-matches .all-matches .match .match-play .team span {
-    color: #EEEEE4;
-    font-size: 1.6rem;
-    width: 11.9vw;
-    overflow: hidden;
-    margin-left: 0.8rem;
-  }
-  main .group-matches .all-matches .match .match-play .team-right {
-    flex-direction: row-reverse;
-    padding-right: 0;
-    padding-left: 0.8rem;
-  }
-  main .group-matches .all-matches .match .match-play .team-right span {
-    margin-left: 0;
-    margin-right: 0.8rem;
-    text-align: right;
-  }
-  main .group-matches .all-matches .match .match-play .play-button {
-    display: flex;
-    background: none;
-    border: none;
-    border-radius: 3.125rem;
-    cursor: pointer;
   }
 }/*# sourceMappingURL=App.css.map */
