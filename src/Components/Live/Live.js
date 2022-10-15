@@ -8,6 +8,9 @@ import flagCanada from "../../assets/flags/teams/canada.svg";
 import flagBelgium from "../../assets/flags/teams/belgium.svg";
 import flagCroatia from "../../assets/flags/teams/croatia.svg";
 import flagBrazil from "../../assets/flags/teams/brazil.svg";
+import flagSwitzerland from "../../assets/flags/teams/switzerland.svg";
+import flagSerbia from "../../assets/flags/teams/serbia.svg";
+import flagCameroon from "../../assets/flags/teams/cameroon.svg";
 import PlayIcon from "../Items/Icons/PlayIcon";
 
 const Live = () =>(
@@ -106,8 +109,8 @@ const Live = () =>(
                                 <PlayIcon />
                             </button>
                             <span className="team team-right">
-                                <img src={flagCanada} alt="Flag Morocco" />
-                                <span className="team-name">Canada</span>
+                                <img src={flagSwitzerland} alt="Flag Morocco" />
+                                <span className="team-name">Switzerland</span>
                             </span>
                         </div>
                 </div>
@@ -128,15 +131,15 @@ const Live = () =>(
                         </div>
                         <div className="match-play">
                             <span className="team">
-                                <img src={flagBelgium} alt="Flag Morocco" />
-                                <span className="team-name">Belgium</span>
+                                <img src={flagSerbia} alt="Flag Morocco" />
+                                <span className="team-name">Serbia</span>
                             </span>
                             <button className="play-button" aria-label="Play Button">
                                 <PlayIcon />
                             </button>
                             <span className="team team-right">
-                                <img src={flagCroatia} alt="Flag Morocco" />
-                                <span className="team-name">Croatia</span>
+                                <img src={flagCameroon} alt="Flag Morocco" />
+                                <span className="team-name">Cameroon</span>
                             </span>
                         </div>
                 </div>
