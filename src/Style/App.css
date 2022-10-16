@@ -33,11 +33,11 @@ body {
   justify-content: space-between;
 }
 .mobile-header .logo {
-  width: 50%;
+  width: 40vw;
 }
 .mobile-header .layout-dropdown {
   position: relative;
-  width: 28%;
+  width: 28vw;
 }
 .mobile-header .layout-dropdown button {
   background: none;
@@ -89,8 +89,8 @@ body {
 }
 .mobile-header .layout-dropdown .list-item {
   position: absolute;
-  display: flex;
-  margin-top: 0.5rem;
+  display: none;
+  margin-top: 2vw;
 }
 .mobile-header .layout-dropdown .list-item .item {
   position: absolute;
@@ -101,6 +101,7 @@ body {
   justify-content: center;
   padding-left: 1.5vw;
   padding-right: 1.5vw;
+  gap: 1.5vw;
   width: 100%;
 }
 .mobile-header .layout-dropdown .list-item .item button {
@@ -124,4 +125,45 @@ body {
   font-family: "Qatar2022 Arabic", sans-serif;
   font-size: 4vw;
   color: #80192E;
+}
+
+.mobile-nav {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.3rem;
+  background-color: #EEEEE4;
+  z-index: 1;
+}
+.mobile-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-nav ul li {
+  list-style: none;
+}
+.mobile-nav ul li a {
+  display: flex;
+  color: #80192E;
+  font-size: 8vw;
+  border-radius: 3.125rem;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-nav ul li a:hover {
+  color: rgba(128, 25, 46, 0.9);
+  transform: scale(0.9);
+  transition: all 0.3s;
+}
+.mobile-nav ul li .active {
+  background-color: #E32052;
+  color: #EEEEE4;
+}
+.mobile-nav ul li .active:hover {
+  color: #fff;
+  opacity: 0.9;
 }/*# sourceMappingURL=App.css.map */

@@ -47,12 +47,12 @@ body{
   align-items: center;
   justify-content: space-between;
   .logo{
-    width: 50%;
+    width: 40vw;
   }
 
   .layout-dropdown{
     position: relative;
-    width: 28%;
+    width: 28vw;
     button{
       background:none;
       border: none;
@@ -103,8 +103,8 @@ body{
     }
     .list-item{
       position: absolute;
-      display: flex;
-      margin-top: .5rem;
+      display: none;
+      margin-top: 2vw;
       .item{
         position: absolute;
         top: 0;
@@ -114,6 +114,7 @@ body{
         justify-content: center;
         padding-left: 1.5vw;
         padding-right: 1.5vw;
+        gap: 1.5vw;
         width: 100%;
         button{
           display: flex;
@@ -136,6 +137,50 @@ body{
             font-size: 4vw;
             color: $color-text;
           }
+        }
+      }
+    }
+  }
+}
+
+.mobile-nav{
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: .3rem;
+  background-color: $white;
+  z-index: 1;
+  ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li{
+      list-style: none;
+      a{
+        display: flex;
+        color: $color-text;
+        font-size: 8vw;
+        border-radius: 3.125rem;
+        padding: .5rem;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+          color: rgba($color-text,0.9);
+          transform: scale(0.9);
+          transition: all 0.3s;
+        }
+      }
+
+      .active{
+        background-color: $background-active;
+        color: $white;
+      
+        &:hover{
+          color: #fff;
+          opacity: 0.9;
         }
       }
     }
