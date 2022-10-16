@@ -11,8 +11,7 @@ body {
 }
 
 #root {
-  padding: 1.5rem 0.5rem 1.5rem 0.5rem;
-  width: 527px;
+  padding: 1.5rem 0.8rem 1.5rem 0.8rem;
 }
 
 .layout-dropdown .dropdown {
@@ -127,8 +126,9 @@ body {
   width: 100%;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+  padding: 0.4rem;
   background-color: #EEEEE4;
+  z-index: 1;
 }
 .mobile-nav ul {
   display: flex;
@@ -160,15 +160,15 @@ body {
 }
 
 main {
-  padding: 3.5rem 0rem 3.5rem 0rem;
+  padding: 3rem 0rem 3rem 0rem;
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 5rem;
 }
 main .group-matches {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 5rem;
 }
 main .group-matches .group-head {
   display: flex;
@@ -198,21 +198,18 @@ main .group-matches .all-matches .match .match-info .item-info {
   align-items: center;
 }
 main .group-matches .all-matches .match .match-info .item-info svg {
-  width: 8.5rem;
+  width: 10rem;
 }
 main .group-matches .all-matches .match .match-info .item-info .name-item-info {
   position: absolute;
-  left: 2rem;
-  width: 6.5rem;
+  left: 2.2rem;
+  width: 7.8rem;
   text-align: center;
   color: #EEEEE4;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   overflow: auto;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-main .group-matches .all-matches .match .match-info .item-info:first-child .name-item-info {
-  width: 6.5rem;
 }
 main .group-matches .all-matches .match .match-play {
   display: flex;
@@ -258,6 +255,14 @@ main .group-matches .all-matches .match .match-play .play-button svg {
 }
 
 /* Responsive */
+@media screen and (max-width: 527px) {
+  #root {
+    width: 509px;
+    padding: 0;
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+  }
+}
 @media screen and (min-width: 1000px) {
   #root {
     max-width: 180rem;

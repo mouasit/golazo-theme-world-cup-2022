@@ -19,8 +19,7 @@ body{
 }
 
 #root{
-  padding: $size-padding 0.5rem $size-padding 0.5rem;
-  width: 527px;
+  padding: $size-padding .8rem $size-padding .8rem;
 }
 
 .layout-dropdown{
@@ -144,8 +143,9 @@ body{
   width: 100%;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+  padding: .4rem;
   background-color: $white;
+  z-index: 1;
   ul{
     display: flex;
     justify-content: space-between;
@@ -178,15 +178,15 @@ body{
 }
 
 main{
-  padding: 3.5rem 0rem 3.5rem 0rem;
+  padding: 3rem 0rem 3rem 0rem;
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 5rem;
   //width: 475px;
   .group-matches{
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 5rem;
     .group-head{
       display: flex;
       justify-content: center;
@@ -215,7 +215,7 @@ main{
 
 
             svg{
-              width: 8.5rem;
+              width: 10rem;
             }
 
 
@@ -224,22 +224,16 @@ main{
             .name-item-info{
               position: absolute;
               //left: 2.5rem;
-              left: 2rem;
+              left: 2.2rem;
               //width: 9rem;
-              width: 6.5rem;
+              width: 7.8rem;
               text-align: center;
               color: $white;
               //font-size: .9rem;
-              font-size: .7rem;
+              font-size: .9rem;
               overflow: auto;
               padding-left: 0.5rem;
               padding-right: 0.5rem;
-            }
-          }
-          .item-info:first-child{
-            .name-item-info{
-              //width: 8.9rem;
-              width: 6.5rem;
             }
           }
         }
@@ -300,7 +294,14 @@ main{
 }
 
 /* Responsive */
-
+@media screen and (max-width: 527px){
+  #root{
+    width: 509px;
+    padding: 0;
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+  }
+}
 @media screen and (min-width: 1000px){
   #root{
     max-width: 180rem;
