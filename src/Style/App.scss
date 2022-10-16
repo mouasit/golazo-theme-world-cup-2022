@@ -5,6 +5,13 @@ $white: #EEEEE4;
 $size-padding : 1.5rem;
 $font: 'Qatar2022 Arabic', sans-serif;
 
+@import url('http://fonts.cdnfonts.com/css/qatar2022-arabic');
+$color-text:#80192E;
+$background-active:#E32052;
+$white: #EEEEE4;
+$size-padding : 1.5rem;
+$font: 'Qatar2022 Arabic', sans-serif;
+
 
 
 *{
@@ -13,424 +20,123 @@ $font: 'Qatar2022 Arabic', sans-serif;
   margin: 0;
 }
 
+html,body{
+  height: 100%;
+}
+
 body{
-  background: linear-gradient(36.2711deg,#901831,#310818);
+  background-color: #711329;
   font-family: $font;
 }
 
 #root{
-  padding: $size-padding .8rem $size-padding .8rem;
+  padding: 0.5rem;
 }
-
-.layout-dropdown{
-  .dropdown {
-    background: none;
-    border: none;
-    position: relative;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    .arrow{
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      right: .7rem;
-      svg:last-child{
-        position: absolute;
-        color: $white;
-      }
-    }
-  }
-  .name-flag{
-    position: absolute;
-    left: .7rem;
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    img{
-      width: 2.2rem;
-    }
-    span{
-      font-family: $font;
-      font-size: 1.1rem;
-      color: $color-text;
-    }
-  }
-  
-  .item{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    padding: .8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: .8rem;
-    button{
-      display: flex;
-      align-items: center;
-      gap: .5rem;
-      width: 100%;
-      background: none;
-      border: none;
-      cursor: pointer;
-      border-radius: .3rem;
-      padding: .4rem;
-      &:hover,&:focus{
-        background-color: rgb(211, 208, 208);
-      }
-      img{
-        width: 2.2rem;
-      }
-      span{
-        font-family: $font;
-        font-size: 1.1rem;
-        color: $color-text;
-      }
-    }
-  }
-}
-
-.separtor{
-  display: none;
-}
-
-
-/* ------------------------------ Style Navigation ------------------------------ */
 
 
 .side-nav{
   display: none;
 }
 
+.separtor{
+  display: none;
+}
+
 .mobile-header{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  .dropdown{
-    &:hover{
-      opacity: 0.9;
-     transform: scale(0.9);
-    transition: all 0.3s;
-    }
-  }
-  img{
-    width: 11rem;
+  justify-content: space-between;
+  .logo{
+    width: 50%;
   }
 
   .layout-dropdown{
     position: relative;
-    .list-item{
-      position: absolute;
-      right: 0;
-      display: none;
-      top: 3.5rem;
-      .item{
-        gap: .4rem;
-        button{
-          padding: .4rem;
-        }
-      }
-    }
-  }
-}
-
-.mobile-nav{
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  padding: .4rem;
-  background-color: $white;
-  z-index: 1;
-  ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    li{
-      list-style: none;
-      a{
-        display: flex;
-        font-size: 2rem;
-        color: $color-text;
-        &:hover{
-          color: rgba($color-text,0.9);
-          transform: scale(0.9);
-          transition: all 0.3s;
-        }
-      }
-      .active{
-        background-color: $background-active;
-        color: $white;
-        border-radius: 3.125rem;
-        padding: .8rem;
-        &:hover{
-          color: #fff;
-          opacity: 0.9;
-        }
-      }
-    }
-  }
-}
-
-main{
-  padding: 3rem 0rem 3rem 0rem;
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-  //width: 475px;
-  .group-matches{
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    .group-head{
+    width: 28%;
+    button{
+      background:none;
+      border: none;
+      position: relative;
       display: flex;
-      justify-content: center;
       align-items: center;
-    }
-    .all-matches{
-      display: flex;
-      flex-direction: column;
-      gap: 3rem;
-      .match{
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        .match-info{
-          display: flex;
-          align-items: center;
-          //justify-content: space-around;
-          justify-content: space-between;
-
-          /*remove */
-          gap: .5rem;
-          .item-info{
-            position: relative;
-            display: flex;
-            align-items: center;
-
-
-            svg{
-              width: 10rem;
-            }
-
-
-
-
-            .name-item-info{
-              position: absolute;
-              //left: 2.5rem;
-              left: 2.2rem;
-              //width: 9rem;
-              width: 7.8rem;
-              text-align: center;
-              color: $white;
-              //font-size: .9rem;
-              font-size: .9rem;
-              overflow: auto;
-              padding-left: 0.5rem;
-              padding-right: 0.5rem;
-            }
-          }
-        }
-        .match-play{
-          display: flex;
-          //justify-content: space-around;
-          justify-content: space-between;
-          align-items: center;
-          .team{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding-right: 0.8rem;
-            //gap: 0.8rem;
-            //flex: 1;
-            img{
-              //width: 7.5rem;
-              width: 6rem;
-            }
-            span{
-              color: $white;
-              //font-size: 1.6rem;
-              font-size: 1.3rem;
-              //width: 11.9vw;
-              width: 6.2rem;
-              overflow: hidden;
-              margin-left: 0.8rem;
-            }
-          }
-          .team-right{
-            flex-direction: row-reverse;
-            padding-right: 0;
-            padding-left: 0.8rem;
-            span{
-              margin-left: 0;
-              margin-right: 0.8rem;
-              text-align: right;
-            }
-            
-          }
-          .play-button{
-            display: flex;
-            background: none;
-            border: none;
-            border-radius: 3.125rem;
-            cursor: pointer;
-            svg{
-            //width: 3.079rem;
-            //height: 3.079rem;
-            width: 2.5rem;
-            height: 2.5rem;
-            }
-          }
-        }
+      cursor: pointer;
+      svg:first-child{
+        width: 100%;
+        height: 100%;
       }
-    }
-  }
-}
-
-/* Responsive */
-@media screen and (max-width: 527px){
-  #root{
-    width: 509px;
-    padding: 0;
-    padding-right: 0.4rem;
-    padding-left: 0.4rem;
-  }
-}
-@media screen and (min-width: 1000px){
-  #root{
-    max-width: 180rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    padding: 0rem;
-    //padding-right: $size-padding;
-  }
-
-/* ------------------------------ Style Navigation ------------------------------ */
-
-  .mobile-header{
-    display: none;
-  }
-  .mobile-nav{
-    display: none;
-  }
-  .side-nav{
-    min-height: 100vh;
-    width: 14rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 2rem;
-    position: fixed;
-    padding: $size-padding;
-    padding-right: 0rem;
-  
-    .logo{
-      width: 100%;
-    }
-  
-    ul{
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 5rem;
-      
-      li{
-        list-style: none;
-        a{
-          position: relative;
+      .content-button{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        .arrow{
           display: flex;
           justify-content: center;
           align-items: center;
-          svg{
-            fill: #60071e;
+          svg:first-child{
+            width: 5vw;
           }
-          &:hover{
-            opacity: 0.9;
-            transform: scale(0.9);
-            transition: all 0.3s;
-          }
-          span{
+          svg:last-child{
             position: absolute;
-            font-family: $font;
-            color:$white ;
-            font-size: 1.1rem;
-  
+            color: $white;
           }
-        }
-        .active{
-          #Path_1611{
-            fill: $background-active;
-            }
-        }
-      }
-    }
-    .layout-dropdown{
-      display: flex;
-      position: relative;
-      .dropdown{
-        width: 12.5rem;
-        &:hover{
-          opacity: 0.9;
-         transform: scale(0.9);
-        transition: all 0.3s;
         }
         .name-flag{
-          left: 1.7rem;
+          display: flex;
+          align-items: center;
+          gap: .3rem;
+          img{
+            width: 8vw;
+          }
+          span{
+            font-family: $font;
+            font-size: 4vw;
+            color: $color-text;
+          }
         }
-      }
-      .list-item{
-        position: absolute;
-        bottom: -.5rem;
-        left: 13rem;
-        display: none;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        .item{
-          top: .8rem;
-          height: 7.7rem;
-        }
-      }
-      .show{
-        display: flex;
       }
     }
-  }
-
-  .separtor{
-    min-height: 100vh;
-    padding: $size-padding 0 $size-padding 0;
-    position: fixed;
-    margin-left: 17.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  main{
-    margin-left: 18.5rem;
-    width: 100%;
-    min-height: 100vh;
-    padding: 3.5rem 3.4rem 3.5rem 3.4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
-    .group-matches{
+    .list-item{
+      position: absolute;
       display: flex;
-      flex-direction: column;
-      gap: 6rem;
-      .group-head{
+      margin-top: .5rem;
+      .item{
+        position: absolute;
+        top: 0;
+        bottom: 0;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        width: 100%;
+        button{
+          display: flex;
+          align-items: center;
+          gap: .3rem;
+          width: 100%;
+          background: none;
+          border: none;
+          cursor: pointer;
+          border-radius: .3rem;
+          padding: 1vw;
+          &:hover,&:focus{
+            background-color: rgb(211, 208, 208);
+          }
+          img{
+            width: 8vw;
+          }
+          span{
+            font-family: $font;
+            font-size: 4vw;
+            color: $color-text;
+          }
+        }
       }
     }
   }

@@ -1,387 +1,127 @@
 @import url("http://fonts.cdnfonts.com/css/qatar2022-arabic");
+@import url("http://fonts.cdnfonts.com/css/qatar2022-arabic");
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
-  background: linear-gradient(36.2711deg, #901831, #310818);
+  background-color: #711329;
   font-family: "Qatar2022 Arabic", sans-serif;
 }
 
 #root {
-  padding: 1.5rem 0.8rem 1.5rem 0.8rem;
+  padding: 0.5rem;
 }
 
-.layout-dropdown .dropdown {
-  background: none;
-  border: none;
-  position: relative;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-.layout-dropdown .dropdown .arrow {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  right: 0.7rem;
-}
-.layout-dropdown .dropdown .arrow svg:last-child {
-  position: absolute;
-  color: #EEEEE4;
-}
-.layout-dropdown .name-flag {
-  position: absolute;
-  left: 0.7rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.layout-dropdown .name-flag img {
-  width: 2.2rem;
-}
-.layout-dropdown .name-flag span {
-  font-family: "Qatar2022 Arabic", sans-serif;
-  font-size: 1.1rem;
-  color: #80192E;
-}
-.layout-dropdown .item {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0.8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.8rem;
-}
-.layout-dropdown .item button {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  width: 100%;
-  background: none;
-  border: none;
-  cursor: pointer;
-  border-radius: 0.3rem;
-  padding: 0.4rem;
-}
-.layout-dropdown .item button:hover, .layout-dropdown .item button:focus {
-  background-color: rgb(211, 208, 208);
-}
-.layout-dropdown .item button img {
-  width: 2.2rem;
-}
-.layout-dropdown .item button span {
-  font-family: "Qatar2022 Arabic", sans-serif;
-  font-size: 1.1rem;
-  color: #80192E;
+.side-nav {
+  display: none;
 }
 
 .separtor {
   display: none;
 }
 
-/* ------------------------------ Style Navigation ------------------------------ */
-.side-nav {
-  display: none;
-}
-
 .mobile-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
-.mobile-header .dropdown:hover {
-  opacity: 0.9;
-  transform: scale(0.9);
-  transition: all 0.3s;
-}
-.mobile-header img {
-  width: 11rem;
+.mobile-header .logo {
+  width: 50%;
 }
 .mobile-header .layout-dropdown {
   position: relative;
+  width: 28%;
 }
-.mobile-header .layout-dropdown .list-item {
-  position: absolute;
-  right: 0;
-  display: none;
-  top: 3.5rem;
+.mobile-header .layout-dropdown button {
+  background: none;
+  border: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
-.mobile-header .layout-dropdown .list-item .item {
-  gap: 0.4rem;
-}
-.mobile-header .layout-dropdown .list-item .item button {
-  padding: 0.4rem;
-}
-
-.mobile-nav {
-  position: fixed;
+.mobile-header .layout-dropdown button svg:first-child {
   width: 100%;
-  bottom: 0;
-  left: 0;
-  padding: 0.4rem;
-  background-color: #EEEEE4;
-  z-index: 1;
+  height: 100%;
 }
-.mobile-nav ul {
+.mobile-header .layout-dropdown button .content-button {
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
 }
-.mobile-nav ul li {
-  list-style: none;
-}
-.mobile-nav ul li a {
-  display: flex;
-  font-size: 2rem;
-  color: #80192E;
-}
-.mobile-nav ul li a:hover {
-  color: rgba(128, 25, 46, 0.9);
-  transform: scale(0.9);
-  transition: all 0.3s;
-}
-.mobile-nav ul li .active {
-  background-color: #E32052;
-  color: #EEEEE4;
-  border-radius: 3.125rem;
-  padding: 0.8rem;
-}
-.mobile-nav ul li .active:hover {
-  color: #fff;
-  opacity: 0.9;
-}
-
-main {
-  padding: 3rem 0rem 3rem 0rem;
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-}
-main .group-matches {
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-}
-main .group-matches .group-head {
+.mobile-header .layout-dropdown button .content-button .arrow {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .group-matches .all-matches {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+.mobile-header .layout-dropdown button .content-button .arrow svg:first-child {
+  width: 5vw;
 }
-main .group-matches .all-matches .match {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-main .group-matches .all-matches .match .match-info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /*remove */
-  gap: 0.5rem;
-}
-main .group-matches .all-matches .match .match-info .item-info {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-main .group-matches .all-matches .match .match-info .item-info svg {
-  width: 10rem;
-}
-main .group-matches .all-matches .match .match-info .item-info .name-item-info {
+.mobile-header .layout-dropdown button .content-button .arrow svg:last-child {
   position: absolute;
-  left: 2.2rem;
-  width: 7.8rem;
-  text-align: center;
   color: #EEEEE4;
-  font-size: 0.9rem;
-  overflow: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
-main .group-matches .all-matches .match .match-play {
+.mobile-header .layout-dropdown button .content-button .name-flag {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 0.3rem;
 }
-main .group-matches .all-matches .match .match-play .team {
+.mobile-header .layout-dropdown button .content-button .name-flag img {
+  width: 8vw;
+}
+.mobile-header .layout-dropdown button .content-button .name-flag span {
+  font-family: "Qatar2022 Arabic", sans-serif;
+  font-size: 4vw;
+  color: #80192E;
+}
+.mobile-header .layout-dropdown .list-item {
+  position: absolute;
   display: flex;
-  justify-content: flex-start;
+  margin-top: 0.5rem;
+}
+.mobile-header .layout-dropdown .list-item .item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  width: 100%;
+}
+.mobile-header .layout-dropdown .list-item .item button {
+  display: flex;
   align-items: center;
-  padding-right: 0.8rem;
-}
-main .group-matches .all-matches .match .match-play .team img {
-  width: 6rem;
-}
-main .group-matches .all-matches .match .match-play .team span {
-  color: #EEEEE4;
-  font-size: 1.3rem;
-  width: 6.2rem;
-  overflow: hidden;
-  margin-left: 0.8rem;
-}
-main .group-matches .all-matches .match .match-play .team-right {
-  flex-direction: row-reverse;
-  padding-right: 0;
-  padding-left: 0.8rem;
-}
-main .group-matches .all-matches .match .match-play .team-right span {
-  margin-left: 0;
-  margin-right: 0.8rem;
-  text-align: right;
-}
-main .group-matches .all-matches .match .match-play .play-button {
-  display: flex;
+  gap: 0.3rem;
+  width: 100%;
   background: none;
   border: none;
-  border-radius: 3.125rem;
   cursor: pointer;
+  border-radius: 0.3rem;
+  padding: 1vw;
 }
-main .group-matches .all-matches .match .match-play .play-button svg {
-  width: 2.5rem;
-  height: 2.5rem;
+.mobile-header .layout-dropdown .list-item .item button:hover, .mobile-header .layout-dropdown .list-item .item button:focus {
+  background-color: rgb(211, 208, 208);
 }
-
-/* Responsive */
-@media screen and (max-width: 527px) {
-  #root {
-    width: 509px;
-    padding: 0;
-    padding-right: 0.4rem;
-    padding-left: 0.4rem;
-  }
+.mobile-header .layout-dropdown .list-item .item button img {
+  width: 8vw;
 }
-@media screen and (min-width: 1000px) {
-  #root {
-    max-width: 180rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    padding: 0rem;
-  }
-  /* ------------------------------ Style Navigation ------------------------------ */
-  .mobile-header {
-    display: none;
-  }
-  .mobile-nav {
-    display: none;
-  }
-  .side-nav {
-    min-height: 100vh;
-    width: 14rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 2rem;
-    position: fixed;
-    padding: 1.5rem;
-    padding-right: 0rem;
-  }
-  .side-nav .logo {
-    width: 100%;
-  }
-  .side-nav ul {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5rem;
-  }
-  .side-nav ul li {
-    list-style: none;
-  }
-  .side-nav ul li a {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .side-nav ul li a svg {
-    fill: #60071e;
-  }
-  .side-nav ul li a:hover {
-    opacity: 0.9;
-    transform: scale(0.9);
-    transition: all 0.3s;
-  }
-  .side-nav ul li a span {
-    position: absolute;
-    font-family: "Qatar2022 Arabic", sans-serif;
-    color: #EEEEE4;
-    font-size: 1.1rem;
-  }
-  .side-nav ul li .active #Path_1611 {
-    fill: #E32052;
-  }
-  .side-nav .layout-dropdown {
-    display: flex;
-    position: relative;
-  }
-  .side-nav .layout-dropdown .dropdown {
-    width: 12.5rem;
-  }
-  .side-nav .layout-dropdown .dropdown:hover {
-    opacity: 0.9;
-    transform: scale(0.9);
-    transition: all 0.3s;
-  }
-  .side-nav .layout-dropdown .dropdown .name-flag {
-    left: 1.7rem;
-  }
-  .side-nav .layout-dropdown .list-item {
-    position: absolute;
-    bottom: -0.5rem;
-    left: 13rem;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-  .side-nav .layout-dropdown .list-item .item {
-    top: 0.8rem;
-    height: 7.7rem;
-  }
-  .side-nav .layout-dropdown .show {
-    display: flex;
-  }
-  .separtor {
-    min-height: 100vh;
-    padding: 1.5rem 0 1.5rem 0;
-    position: fixed;
-    margin-left: 17.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  main {
-    margin-left: 18.5rem;
-    width: 100%;
-    min-height: 100vh;
-    padding: 3.5rem 3.4rem 3.5rem 3.4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
-  }
-  main .group-matches {
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
-  }
-  main .group-matches .group-head {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.mobile-header .layout-dropdown .list-item .item button span {
+  font-family: "Qatar2022 Arabic", sans-serif;
+  font-size: 4vw;
+  color: #80192E;
 }/*# sourceMappingURL=App.css.map */
