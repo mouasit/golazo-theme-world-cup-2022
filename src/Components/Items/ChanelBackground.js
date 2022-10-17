@@ -1,5 +1,5 @@
 const ChanelBackground = () => (
-<svg xmlns="http://www.w3.org/2000/svg" width="182.832" height="41.494" viewBox="0 0 182.832 41.494">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182.832 41.494">
   <g id="Group_4537" data-name="Group 4537" transform="translate(-1002.379 -256.388)">
     <path id="Path_1771" data-name="Path 1771" d="M379.113,766.069H532.319l5.992,16.727-5.992,16.727H379.113L373.121,782.8Z" transform="translate(646.9 -505.557)" fill="#e32052"/>
     <rect id="Rectangle_149" data-name="Rectangle 149" width="28.477" height="30.204" transform="translate(1043.873 277.746) rotate(135)" fill="#47b7ab"/>

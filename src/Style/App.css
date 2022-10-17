@@ -37,7 +37,7 @@ body {
 }
 .mobile-header .layout-dropdown {
   position: relative;
-  width: 28vw;
+  width: 27vw;
 }
 .mobile-header .layout-dropdown button {
   background: none;
@@ -166,4 +166,76 @@ body {
 .mobile-nav ul li .active:hover {
   color: #fff;
   opacity: 0.9;
+}
+
+main {
+  padding-top: 8vw;
+}
+main .group-matches .group-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .group-matches .group-head svg {
+  width: 70vw;
+}
+main .group-matches .all-matches .match .match-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+main .group-matches .all-matches .match .match-info .item-info {
+  display: flex;
+  width: 100vw;
+  position: relative;
+  align-items: center;
+}
+main .group-matches .all-matches .match .match-info .item-info svg {
+  width: 100%;
+  height: 100%;
+}
+main .group-matches .all-matches .match .match-info .item-info span {
+  position: absolute;
+  padding-left: 6.4vw;
+  width: 100%;
+  font-size: 2.5vw;
+  color: #EEEEE4;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+main .group-matches .all-matches .match .match-play {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .group-matches .all-matches .match .match-play .team {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.3rem;
+}
+main .group-matches .all-matches .match .match-play .team img {
+  width: 15vw;
+}
+main .group-matches .all-matches .match .match-play .team span {
+  font-size: 4vw;
+  color: #EEEEE4;
+}
+main .group-matches .all-matches .match .match-play .team-right {
+  flex-direction: row-reverse;
+}
+main .group-matches .all-matches .match .match-play .play-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 3.125rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+main .group-matches .all-matches .match .match-play .play-button svg {
+  width: 7vw;
 }/*# sourceMappingURL=App.css.map */
