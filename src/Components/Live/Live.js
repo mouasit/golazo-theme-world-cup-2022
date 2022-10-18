@@ -32,7 +32,7 @@ const Live = () =>(
                             </div>
                             <div className="item-info">
                                 <CommentatorBackground />
-                                <span className="name-item-info">Issam Chaoualgfgasdfasdfi</span>
+                                <span className="name-item-info">Issam Chaouali</span>
                             </div>
                         </div>
                         <div className="match-play">

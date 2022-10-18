@@ -59,8 +59,8 @@ body {
   top: 0;
   bottom: 0;
   width: 100%;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
+  padding-left: 1.7vw;
+  padding-right: 1.7vw;
 }
 .mobile-header .layout-dropdown button .content-button .arrow {
   display: flex;
@@ -73,6 +73,8 @@ body {
 .mobile-header .layout-dropdown button .content-button .arrow svg:last-child {
   position: absolute;
   color: #EEEEE4;
+  width: 4vw;
+  height: 4vw;
 }
 .mobile-header .layout-dropdown button .content-button .name-flag {
   display: flex;
@@ -99,9 +101,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
-  gap: 1.5vw;
+  padding-left: 1.7vw;
+  padding-right: 1.7vw;
+  gap: 1.7vw;
   width: 100%;
 }
 .mobile-header .layout-dropdown .list-item .item button {
@@ -129,7 +131,7 @@ body {
 
 .mobile-nav {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -169,7 +171,16 @@ body {
 }
 
 main {
-  padding-top: 8vw;
+  padding-top: 1.5rem;
+  padding-bottom: 15vw;
+  display: flex;
+  flex-direction: column;
+  gap: 9vw;
+}
+main .group-matches {
+  display: flex;
+  flex-direction: column;
+  gap: 9vw;
 }
 main .group-matches .group-head {
   display: flex;
@@ -178,6 +189,16 @@ main .group-matches .group-head {
 }
 main .group-matches .group-head svg {
   width: 70vw;
+}
+main .group-matches .all-matches {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+main .group-matches .all-matches .match {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
 }
 main .group-matches .all-matches .match .match-info {
   display: flex;
@@ -202,6 +223,7 @@ main .group-matches .all-matches .match .match-info .item-info span {
   font-size: 2.5vw;
   color: #EEEEE4;
   overflow: hidden;
+  text-overflow: ellipsis;
   text-align: center;
   white-space: nowrap;
 }
@@ -210,12 +232,12 @@ main .group-matches .all-matches .match .match-play {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.3rem;
 }
 main .group-matches .all-matches .match .match-play .team {
   display: flex;
   align-items: center;
   width: 100%;
-  gap: 0.3rem;
 }
 main .group-matches .all-matches .match .match-play .team img {
   width: 15vw;
@@ -223,6 +245,9 @@ main .group-matches .all-matches .match .match-play .team img {
 main .group-matches .all-matches .match .match-play .team span {
   font-size: 4vw;
   color: #EEEEE4;
+  width: 26.8vw;
+  text-align: center;
+  overflow: hidden;
 }
 main .group-matches .all-matches .match .match-play .team-right {
   flex-direction: row-reverse;
@@ -238,4 +263,10 @@ main .group-matches .all-matches .match .match-play .play-button {
 }
 main .group-matches .all-matches .match .match-play .play-button svg {
   width: 7vw;
+}
+
+@media screen and (max-width: 252px) {
+  #root {
+    width: 252px;
+  }
 }/*# sourceMappingURL=App.css.map */

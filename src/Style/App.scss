@@ -72,8 +72,8 @@ body{
         top: 0;
         bottom: 0;
         width: 100%;
-        padding-left: 1.5vw;
-        padding-right: 1.5vw;
+        padding-left: 1.7vw;
+        padding-right: 1.7vw;
         .arrow{
           display: flex;
           justify-content: center;
@@ -84,6 +84,8 @@ body{
           svg:last-child{
             position: absolute;
             color: $white;
+            width: 4vw;
+            height: 4vw;
           }
         }
         .name-flag{
@@ -112,9 +114,9 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 1.5vw;
-        padding-right: 1.5vw;
-        gap: 1.5vw;
+        padding-left: 1.7vw;
+        padding-right: 1.7vw;
+        gap: 1.7vw;
         width: 100%;
         button{
           display: flex;
@@ -145,7 +147,7 @@ body{
 
 .mobile-nav{
   position: fixed;
-  width: 100vw;
+  width: 100%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -187,10 +189,16 @@ body{
   }
 }
 
-
 main{
-  padding-top: 8vw;
+  padding-top: 1.5rem;
+  padding-bottom: 15vw;
+  display: flex;
+  flex-direction: column;
+  gap: 9vw;
   .group-matches{
+    display: flex;
+    flex-direction: column;
+    gap: 9vw;
     .group-head{
       display: flex;
       justify-content: center;
@@ -200,7 +208,13 @@ main{
       }
     }
     .all-matches{
+      display: flex;
+      flex-direction: column;
+      gap: 5vw;
       .match{
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
         .match-info{
           display: flex;
           justify-content: space-between;
@@ -221,7 +235,8 @@ main{
               width: 100%;
               font-size: 2.5vw;
               color: $white;
-              overflow: hidden;
+              overflow:hidden;
+              text-overflow: ellipsis;
               text-align:center;
               white-space: nowrap;
             }
@@ -232,17 +247,20 @@ main{
           display: flex;
           justify-content: space-between;
           align-items: center;
+          gap: .3rem;
           .team{
             display: flex;
             align-items: center;
             width: 100%;
-            gap: .3rem;
             img{
               width: 15vw;
             }
             span{
               font-size: 4vw;
               color: $white;
+              width:26.8vw;
+              text-align: center;
+              overflow: hidden;
             }
           }
 
@@ -267,3 +285,9 @@ main{
     }
   }
 }
+
+@media screen and (max-width: 252px){
+  #root{
+    width: 252px;
+  }
+  }
