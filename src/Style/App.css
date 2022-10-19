@@ -37,7 +37,7 @@ body {
 }
 .mobile-header .layout-dropdown {
   position: relative;
-  width: 27vw;
+  width: 26vw;
 }
 .mobile-header .layout-dropdown button {
   background: none;
@@ -79,7 +79,7 @@ body {
 .mobile-header .layout-dropdown button .content-button .name-flag {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 1.2vw;
 }
 .mobile-header .layout-dropdown button .content-button .name-flag img {
   width: 8vw;
@@ -109,7 +109,7 @@ body {
 .mobile-header .layout-dropdown .list-item .item button {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 1.2vw;
   width: 100%;
   background: none;
   border: none;
@@ -176,6 +176,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 9vw;
+  overflow: hidden;
 }
 main .group-matches {
   display: flex;
@@ -350,14 +351,14 @@ main .group-matches .all-matches .match .match-time .start-time {
   flex: 1;
   justify-content: center;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 1.5vw;
 }
 main .group-matches .all-matches .match .match-time .start-time svg {
   width: 10vw;
 }
 main .group-matches .all-matches .match .match-time .start-time .time {
   display: flex;
-  gap: 0.3rem;
+  gap: 1vw;
   width: 20.8vw;
   overflow: hidden;
 }

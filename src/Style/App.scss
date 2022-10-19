@@ -52,7 +52,7 @@ body{
 
   .layout-dropdown{
     position: relative;
-    width: 27vw;
+    width: 26vw;
     button{
       background:none;
       border: none;
@@ -91,7 +91,7 @@ body{
         .name-flag{
           display: flex;
           align-items: center;
-          gap: .3rem;
+          gap: 1.2vw;
           img{
             width: 8vw;
           }
@@ -121,7 +121,7 @@ body{
         button{
           display: flex;
           align-items: center;
-          gap: .3rem;
+          gap: 1.2vw;
           width: 100%;
           background: none;
           border: none;
@@ -195,6 +195,7 @@ main{
   display: flex;
   flex-direction: column;
   gap: 9vw;
+  overflow: hidden;
   .group-matches{
     display: flex;
     flex-direction: column;
@@ -323,13 +324,13 @@ main{
             flex: 1;
             justify-content: center;
             align-items: flex-start;
-            gap: 1rem;
+            gap: 1.5vw;
             svg{
               width: 10vw;
             }
             .time{
               display: flex;
-              gap: .3rem;
+              gap: 1vw;
               width: 20.8vw;
               overflow: hidden;
               span{
