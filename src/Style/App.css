@@ -200,6 +200,16 @@ main .group-matches .all-matches .match {
   flex-direction: column;
   gap: 3vw;
 }
+main .group-matches .all-matches .match img {
+  width: 15vw;
+}
+main .group-matches .all-matches .match .team-name {
+  font-size: 4vw;
+  color: #EEEEE4;
+  width: 26.8vw;
+  text-align: center;
+  overflow: hidden;
+}
 main .group-matches .all-matches .match .match-info {
   display: flex;
   justify-content: space-between;
@@ -239,16 +249,6 @@ main .group-matches .all-matches .match .match-play .team {
   align-items: center;
   width: 100%;
 }
-main .group-matches .all-matches .match .match-play .team img {
-  width: 15vw;
-}
-main .group-matches .all-matches .match .match-play .team span {
-  font-size: 4vw;
-  color: #EEEEE4;
-  width: 26.8vw;
-  text-align: center;
-  overflow: hidden;
-}
 main .group-matches .all-matches .match .match-play .team-right {
   flex-direction: row-reverse;
 }
@@ -263,6 +263,53 @@ main .group-matches .all-matches .match .match-play .play-button {
 }
 main .group-matches .all-matches .match .match-play .play-button svg {
   width: 7vw;
+}
+main .group-matches .all-matches .match .match-time {
+  display: flex;
+}
+main .group-matches .all-matches .match .match-time .teams {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 1;
+}
+main .group-matches .all-matches .match .match-time .teams .team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+main .group-matches .all-matches .match .match-time .teams .team .team-name {
+  width: 20.2vw;
+  overflow: hidden;
+}
+main .group-matches .all-matches .match .match-time .teams .vs {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+main .group-matches .all-matches .match .match-time .teams .vs svg {
+  width: 7vw;
+}
+main .group-matches .all-matches .match .match-time .start-time {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+main .group-matches .all-matches .match .match-time .start-time svg {
+  width: 10vw;
+}
+main .group-matches .all-matches .match .match-time .start-time .time {
+  display: flex;
+  gap: 0.3rem;
+}
+main .group-matches .all-matches .match .match-time .start-time .time span {
+  color: #EEEEE4;
+  font-size: 7vw;
 }
 
 @media screen and (max-width: 252px) {

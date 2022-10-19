@@ -215,6 +215,20 @@ main{
         display: flex;
         flex-direction: column;
         gap: 3vw;
+
+
+        img{
+          width: 15vw;
+        }
+        .team-name{
+          font-size: 4vw;
+          color: $white;
+          width:26.8vw;
+          text-align: center;
+          overflow: hidden;
+        }
+
+
         .match-info{
           display: flex;
           justify-content: space-between;
@@ -252,16 +266,6 @@ main{
             display: flex;
             align-items: center;
             width: 100%;
-            img{
-              width: 15vw;
-            }
-            span{
-              font-size: 4vw;
-              color: $white;
-              width:26.8vw;
-              text-align: center;
-              overflow: hidden;
-            }
           }
 
           .team-right{
@@ -278,6 +282,54 @@ main{
             cursor: pointer;
             svg{
               width: 7vw;
+            }
+          }
+        }
+        .match-time{
+          display: flex;
+          .teams{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex: 1;
+            .team{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: .3rem;
+              .team-name{
+                width: 20.2vw;
+                overflow: hidden;
+              }
+            }
+            .vs{
+              height: 100%;
+              display: flex;
+              align-items: flex-start;
+              justify-content: center;
+              svg{
+                width: 7vw;
+              }
+            }
+          }
+
+          .start-time{
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1rem;
+            svg{
+              width: 10vw;
+            }
+            .time{
+              display: flex;
+              gap: .3rem;
+              span{
+                color: $white;
+                font-size: 7vw;
+              }
             }
           }
         }
