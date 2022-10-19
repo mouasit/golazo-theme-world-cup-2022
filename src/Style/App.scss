@@ -285,6 +285,61 @@ main{
             }
           }
         }
+
+        .match-time{
+          display: flex;
+          .teams{
+            flex: 1;
+            display: flex;
+            justify-content:space-between ;
+            align-items: flex-start;
+            .team{
+              display: flex;
+              align-items: flex-start;
+              flex-direction: column;
+              gap: .3rem;
+              span{
+                width: 15vw;
+                font-size: 3.5vw;
+                color: $white;
+                text-align: center;
+                overflow: hidden;
+                text-transform: uppercase;
+              }
+            }
+            .vs{
+              height: 100%;
+              display: flex;
+              align-items: flex-start;
+              justify-content: center;
+              svg{
+                width: 7vw;
+              }
+            }
+          }
+
+          .start-time{
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1rem;
+            svg{
+              width: 10vw;
+            }
+            .time{
+              display: flex;
+              gap: .3rem;
+              width: 20.8vw;
+              overflow: hidden;
+              span{
+                color: $white;
+                font-size: 7vw;
+              }
+            }
+          }
+        }
+        /*
         .match-time{
           display: flex;
           .teams{
@@ -332,10 +387,14 @@ main{
               }
             }
           }
-        }
+        }*/
       }
     }
   }
+}
+
+.test{
+  background-color: red;
 }
 
 @media screen and (max-width: 252px){

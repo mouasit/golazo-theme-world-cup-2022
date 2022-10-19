@@ -46,8 +46,8 @@ const Live = () =>(
                                 <PlayIcon />
                             </button>
                             <span className="team team-right">
-                                <img src={flagCanada} alt="Flag Morocco" />
-                                <span className="team-name">Canada</span>
+                                <img src={flagCroatia} alt="Flag Morocco" />
+                                <span className="team-name">Croatia</span>
                             </span>
                         </div>
                 </div>
@@ -69,15 +69,15 @@ const Live = () =>(
                     <div className="match-time">
                         <div className="teams">
                             <div className="team">
-                                <img src={flagMorocco} alt="" />
-                                <span className="team-name">Morocco</span>
+                                <img src={flagBelgium} alt="" />
+                                <span>bel</span>
                             </div>
                             <span className="vs">
                                 <Vs />
                             </span>
                             <div className="team">
-                                <img src={flagMorocco} alt="" />
-                                <span className="team-name">manchister city</span>
+                                <img src={flagCanada} alt="" />
+                                <span>can</span>
                             </div>
                         </div>
                         <div className="start-time">
@@ -94,42 +94,42 @@ const Live = () =>(
         </section>
         <section className="group-matches" aria-label="Group Matches">
             <div className="group-head">
-                <Group nameGroup="F" />
+                <Group nameGroup="G" />
             </div>
             <div className="all-matches">
                 <div className="match">
                     <div className="match-info">
                             <div className="item-info">
                                 <LocatoinBackground />
-                                <span className="name-item-info">Al Bayt</span>
+                                <span className="name-item-info">Ahmad Bin Ali</span>
                             </div>
                             <div className="item-info">
                                 <ChanelBackground />
-                                <span className="name-item-info">Beinsport 04</span>
+                                <span className="name-item-info">Beinsport 02</span>
                             </div>
                             <div className="item-info">
                                 <CommentatorBackground />
-                                <span className="name-item-info">Issam Chaouali</span>
+                                <span className="name-item-info">Ali Mohamed</span>
                             </div>
                         </div>
                         <div className="match-time">
                         <div className="teams">
                             <div className="team">
-                                <img src={flagMorocco} alt="" />
-                                <span className="team-name">Morocco</span>
+                                <img src={flagSwitzerland} alt="" />
+                                <span className="team-name">sui</span>
                             </div>
                             <span className="vs">
                                 <Vs />
                             </span>
                             <div className="team">
-                                <img src={flagMorocco} alt="" />
-                                <span className="team-name">Morocco</span>
+                                <img src={flagCameroon} alt="" />
+                                <span className="team-name">cmr</span>
                             </div>
                         </div>
                         <div className="start-time">
                             <Clock />
                             <div className="time">
-                                <span>17</span>
+                                <span>18</span>
                                 <span>:</span>
                                 <span>00</span>
                             </div>
@@ -140,35 +140,35 @@ const Live = () =>(
                     <div className="match-info">
                         <div className="item-info">
                             <LocatoinBackground />
-                            <span className="name-item-info">Lusail</span>
+                            <span className="name-item-info">Al Janoub</span>
                         </div>
                         <div className="item-info">
                             <ChanelBackground />
-                            <span className="name-item-info">Beinsport 05</span>
+                            <span className="name-item-info">Beinsport 01</span>
                         </div>
                         <div className="item-info">
                             <CommentatorBackground />
-                            <span className="name-item-info">Hafid Derradji</span>
+                            <span className="name-item-info">Raouf Khaleef</span>
                         </div>
                     </div>
                     <div className="match-time">
                         <div className="teams">
                             <div className="team">
-                                <img src={flagMorocco} alt="" />
-                                <span className="team-name">Morocco</span>
+                                <img src={flagBrazil} alt="" />
+                                <span className="team-name">bra</span>
                             </div>
                             <span className="vs">
                                 <Vs />
                             </span>
                             <div className="team">
-                                <img src={flagMorocco} alt="" />
-                                <span className="team-name">Camerooonooon</span>
+                                <img src={flagSerbia} alt="" />
+                                <span className="team-name">srb</span>
                             </div>
                         </div>
                         <div className="start-time">
                             <Clock />
                             <div className="time">
-                                <span>17</span>
+                                <span>21</span>
                                 <span>:</span>
                                 <span>00</span>
                             </div>
