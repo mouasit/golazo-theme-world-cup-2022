@@ -20,10 +20,6 @@ $font: 'Qatar2022 Arabic', sans-serif;
   margin: 0;
 }
 
-html,body{
-  height: 100%;
-}
-
 body{
   background-color: #711329;
   font-family: $font;
@@ -32,6 +28,7 @@ body{
 #root{
   padding: 0.5rem;
 }
+
 
 
 .side-nav{
@@ -340,55 +337,6 @@ main{
             }
           }
         }
-        /*
-        .match-time{
-          display: flex;
-          .teams{
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            flex: 1;
-            .team{
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              gap: .3rem;
-              .team-name{
-                width: 20.2vw;
-                overflow: hidden;
-              }
-            }
-            .vs{
-              height: 100%;
-              display: flex;
-              align-items: flex-start;
-              justify-content: center;
-              svg{
-                width: 7vw;
-              }
-            }
-          }
-
-          .start-time{
-            display: flex;
-            flex: 1;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 1rem;
-            svg{
-              width: 10vw;
-            }
-            .time{
-              display: flex;
-              gap: .3rem;
-              span{
-                color: $white;
-                font-size: 7vw;
-              }
-            }
-          }
-        }*/
       }
     }
   }
@@ -402,4 +350,309 @@ main{
   #root{
     width: 252px;
   }
+}
+
+@media screen and (min-width: 1000px){
+  #root{
+    max-width: 180rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 0rem;
+    //padding-right: $size-padding;
   }
+  .mobile-header{
+    display: none;
+  }
+  .mobile-nav{
+    display: none;
+  }
+
+  .side-nav{
+    min-height: 100vh;
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    position: fixed;
+    padding: $size-padding;
+    padding-right: 0rem;
+    z-index: 1;
+  
+    .logo{
+      width: 100%;
+    }
+  
+    ul{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5rem;
+      
+      li{
+        list-style: none;
+        a{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          svg{
+            fill: #60071e;
+          }
+          &:hover{
+            opacity: 0.9;
+            transform: scale(0.9);
+            transition: all 0.3s;
+          }
+          span{
+            position: absolute;
+            font-family: $font;
+            color:$white ;
+            font-size: 1.1rem;
+  
+          }
+        }
+        .active{
+          #Path_1611{
+            fill: $background-active;
+            }
+        }
+      }
+    }
+
+    .layout-dropdown{
+      display: flex;
+      position: relative;
+      .dropdown {
+        background: none;
+        border: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        width: 12.5rem;
+        &:hover{
+          opacity: 0.9;
+         transform: scale(0.9);
+        transition: all 0.3s;
+        }
+        .arrow{
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          right: .7rem;
+          svg:last-child{
+            position: absolute;
+            color: $white;
+          }
+        }
+      }
+      .name-flag{
+        position: absolute;
+        left: 1.7rem;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        img{
+          width: 2.2rem;
+        }
+        span{
+          font-family: $font;
+          font-size: 1.1rem;
+          color: $color-text;
+        }
+      }
+      .list-item{
+        position: absolute;
+        bottom: -.5rem;
+        left: 13rem;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        .item{
+          position: absolute;
+          width: 100%;
+          top: .8rem;
+          height: 7.7rem;
+          padding: .8rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: .8rem;
+          button{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            width: 100%;
+            background: none;
+            border: none;
+            cursor: pointer;
+            border-radius: .3rem;
+            padding: .4rem;
+            &:hover,&:focus{
+              background-color: rgb(211, 208, 208);
+            }
+            img{
+              width: 2.2rem;
+            }
+            span{
+              font-family: $font;
+              font-size: 1.1rem;
+              color: $color-text;
+            }
+          }
+        }
+      }
+      .show{
+        display: flex;
+      }
+    }
+  }
+
+  .separtor{
+    min-height: 100vh;
+    padding: $size-padding 0 $size-padding 0;
+    position: fixed;
+    margin-left: 17.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main{
+    margin-left: 18.5rem;
+    padding: 3.5rem 3.4rem 3.5rem 3.4rem;
+    gap: 6rem;
+    .group-matches{
+      gap: 6rem;
+      .group-head{
+        svg{
+          width:28.782rem;
+          height: 3.704rem;
+        }
+      }
+
+      .all-matches{
+        gap: 3rem;
+        .match{
+          gap: 2rem;
+  
+          img{
+            width: 7.5rem;
+          }
+          .team-name{
+            font-size: 1.6rem;
+            color: $white;
+            width: auto;
+          }
+          .match-info{
+            justify-content: space-around;
+            gap: .5rem;
+            .item-info{
+              display: flex;
+              width: auto;
+              position: relative;
+              align-items: center;
+              svg{
+                width:225.809px;
+                height: 51.136px;
+              }
+              span{
+                position: absolute;
+                padding-left:6.4vw;
+                width: 100%;
+                font-size: .9rem;
+                color: $white;
+                overflow:hidden;
+                text-overflow: ellipsis;
+                text-align:center;
+                white-space: nowrap;
+              }
+            }
+          }
+          .match-play{
+            justify-content: space-around;
+            .team{
+              display: flex;
+              align-items: center;
+              width: auto;
+            }
+  
+            .play-button{
+              display: flex;
+              align-items: center;
+              border: none;
+              border-radius: 3.125rem;
+              background: none;
+              border: none;
+              cursor: pointer;
+              svg{
+                width: 49.27px;
+                height:49.27px;
+              }
+            }
+          }
+  
+          .match-time{
+            display: flex;
+            .teams{
+              flex: 1;
+              display: flex;
+              justify-content:space-between ;
+              align-items: flex-start;
+              .team{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: .3rem;
+                span{
+                  width: 15vw;
+                  font-size: 3.5vw;
+                  color: $white;
+                  text-align: center;
+                  overflow: hidden;
+                  text-transform: uppercase;
+                }
+              }
+              .vs{
+                height: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                svg{
+                  width: 7vw;
+                }
+              }
+            }
+  
+            .start-time{
+              display: flex;
+              flex: 1;
+              justify-content: center;
+              align-items: flex-start;
+              gap: 1.5vw;
+              svg{
+                width: 10vw;
+              }
+              .time{
+                display: flex;
+                gap: 1vw;
+                width: 20.8vw;
+                overflow: hidden;
+                span{
+                  color: $white;
+                  font-size: 7vw;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
