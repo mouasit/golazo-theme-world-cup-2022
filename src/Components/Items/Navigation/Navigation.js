@@ -4,10 +4,10 @@ import SideNav from "./NavTypes/SideNav";
 import MobileHeader from "./NavTypes/Mobile/MobileHeader";
 import MobileNav from "./NavTypes/Mobile/MobileNav"
 
-const Nav = () =>{
+const Nav = (props) =>{
     return(
     <React.Fragment>
-        <SideNav />
+        <SideNav lang={props.lang} />
         <MobileHeader />
         <MobileNav />
     </React.Fragment>

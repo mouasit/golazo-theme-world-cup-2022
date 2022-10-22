@@ -6,18 +6,21 @@ import Live from './Components/Live/Live';
 import Ranking from "./Components/Ranking/Ranking";
 import Matches from "./Components/Matches/Matches";
 import Stadiums from "./Components/Stadiums/Stadiums";
+import { useState } from 'react';
 
 
 function App() {
+  const [lang,setLang] = useState("english");
+  console.log(lang);
   return(
     <BrowserRouter>
-    <Navigation />
+    <Navigation lang={{language: lang, set:setLang}} />
     <Separator />
       <Routes>
-        <Route path='/' element={<Live />} />
-        <Route path='/Ranking' element={<Ranking />} />
-        <Route path='/Matches' element={<Matches />} />
-        <Route path='/Stadiums' element={<Stadiums />} />
+        <Route path='/' element={<Live lang = {lang} />} />
+        <Route path='/Ranking' element={<Ranking lang = {lang} />} />
+        <Route path='/Matches' element={<Matches lang = {lang} />} />
+        <Route path='/Stadiums' element={<Stadiums lang = {lang} />} />
       </Routes>
     </BrowserRouter>
   )

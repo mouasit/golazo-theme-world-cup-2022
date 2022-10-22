@@ -10,9 +10,12 @@ import { BiChevronLeft } from "react-icons/bi";
 import { useEffect,useState} from "react";
 import {handleDropdown} from "../../../../Helpers"
 import { NavLink } from "react-router-dom";
+import Language from "../../Language";
 
-const SideNav = () => {
+const SideNav = (props) => {
     const [arrow,setArrow] = useState("close");
+    const [firstLang,setFirstLang] = useState("frensh");
+    const [secondLang,setSecondLang] = useState("arabic");
     useEffect(()=>{
 
         handleDropdown(document.getElementById("dropdownSidNav"),setArrow)
@@ -53,8 +56,7 @@ const SideNav = () => {
                 <button id="dropdownSidNav" className="dropdown" aria-label="Languages">
                     <Button />
                     <span className="name-flag">
-                        <img src={englishFlag} alt="" />
-                        <span>English</span>
+                        <Language lang={props.lang.language}/>
                     </span>
                     <span className="arrow">
                         <svg xmlns="http://www.w3.org/2000/svg" width="21.293" height="24.286" viewBox="0 0 21.293 24.286">
@@ -70,13 +72,17 @@ const SideNav = () => {
                         <path id="Path_7097" data-name="Path 7097" d="M476.471,776.232A947.7,947.7,0,0,1,378.5,771.12l-2.345-.247-.524-2.3a309.161,309.161,0,0,1,0-133.809l.524-2.3,2.345-.247a941.443,941.443,0,0,1,195.956,0l2.345.247.524,2.3a309.131,309.131,0,0,1,0,133.809l-.524,2.3-2.345.247a947.7,947.7,0,0,1-97.973,5.112Z" transform="translate(-368.305 -627.105)" fill="#eeeee4"/>
                     </svg>
                     <div className="item">
-                        <button aria-label="Frensh">
-                            <img src={frenshFlag} alt="" />
-                            <span>Frensh</span>
+                        <button aria-label={firstLang} onClick={(e) => {
+                            props.lang.set(firstLang);
+
+                            }}>
+                                <Language  lang={{language: firstLang,set:setFirstLang}} />
                         </button>
-                        <button aria-label="Arabic">
-                            <img src={arabicFlag} alt="" />
-                            <span>Arabic</span>
+                        <button aria-label={secondLang} onClick={(e) => {
+                            props.lang.set(secondLang);
+
+                            }}>
+                                <Language lang={secondLang} />
                         </button>
                     </div>
                 </div>

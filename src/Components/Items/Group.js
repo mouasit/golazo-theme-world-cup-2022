@@ -11,7 +11,7 @@ const GroupF = (props)=>(
     </g>
     <g id="Group_820" data-name="Group 820" transform="translate(723.995 187.365)">
       <rect id="Rectangle_143" data-name="Rectangle 143" width="27.93" height="27.93" transform="translate(39.498 19.749) rotate(135)" fill="#47b7ab"/>
-      <text transform="translate(19.2 26.532)" text-anchor="middle" fill="#fff" font-size="21" font-family="Qatar2022Arabic-Bold, Qatar2022 Arabic" font-weight="700"><tspan x="0" y="0">{props.nameGroup}</tspan></text>
+      <text transform="translate(19.2 26.532)" textAnchor="middle" fill="#fff" fontSize="21" fontFamily="Qatar2022Arabic-Bold, Qatar2022 Arabic" fontWeight="700"><tspan x="0" y="0">{props.nameGroup}</tspan></text>
     </g>
     <g id="Group_829" data-name="Group 829" transform="translate(619.274 218.645) rotate(180)">
       <rect id="Rectangle_144" data-name="Rectangle 144" width="11.258" height="11.258" transform="translate(0 7.96) rotate(-45)" fill="#47b7ab"/>

@@ -15,8 +15,9 @@ import PlayIcon from "../Items/Icons/PlayIcon";
 import Vs from "../../Components/Items/Icons/Vs";
 import Clock from "../Items/Icons/Clock";
 
-const Live = () =>(
-    <main>
+const Live = (props) =>{
+    return(
+        <main>
         <section className="group-matches" aria-label="Group Matches">
             <div className="group-head">
                 <Group nameGroup="F" />
@@ -178,6 +179,7 @@ const Live = () =>(
             </div>
         </section>
     </main>
-)
+    )
+}
 
 export default Live;
