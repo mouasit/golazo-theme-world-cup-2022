@@ -35,7 +35,7 @@ body {
   position: relative;
   width: 26vw;
 }
-.mobile-header .layout-dropdown button {
+.mobile-header .layout-dropdown .dropdown {
   background: none;
   border: none;
   position: relative;
@@ -43,11 +43,11 @@ body {
   align-items: center;
   cursor: pointer;
 }
-.mobile-header .layout-dropdown button svg:first-child {
+.mobile-header .layout-dropdown .dropdown svg:first-child {
   width: 100%;
   height: 100%;
 }
-.mobile-header .layout-dropdown button .content-button {
+.mobile-header .layout-dropdown .dropdown .content-button {
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -58,32 +58,37 @@ body {
   padding-left: 1.7vw;
   padding-right: 1.7vw;
 }
-.mobile-header .layout-dropdown button .content-button .arrow {
+.mobile-header .layout-dropdown .dropdown .content-button .arrow {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.mobile-header .layout-dropdown button .content-button .arrow svg:first-child {
+.mobile-header .layout-dropdown .dropdown .content-button .arrow svg:first-child {
   width: 5vw;
 }
-.mobile-header .layout-dropdown button .content-button .arrow svg:last-child {
+.mobile-header .layout-dropdown .dropdown .content-button .arrow svg:last-child {
   position: absolute;
   color: #EEEEE4;
   width: 4vw;
   height: 4vw;
 }
-.mobile-header .layout-dropdown button .content-button .name-flag {
+.mobile-header .layout-dropdown .dropdown .content-button .name-flag {
   display: flex;
   align-items: center;
   gap: 1.2vw;
 }
-.mobile-header .layout-dropdown button .content-button .name-flag img {
+.mobile-header .layout-dropdown .dropdown .content-button .name-flag img {
   width: 8vw;
 }
-.mobile-header .layout-dropdown button .content-button .name-flag span {
+.mobile-header .layout-dropdown .dropdown .content-button .name-flag span {
   font-family: "Qatar2022 Arabic", sans-serif;
   font-size: 4vw;
   color: #80192E;
+}
+.mobile-header .layout-dropdown .dropdown:hover {
+  opacity: 0.9;
+  transform: scale(0.9);
+  transition: all 0.3s;
 }
 .mobile-header .layout-dropdown .list-item {
   position: absolute;

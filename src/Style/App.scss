@@ -50,7 +50,7 @@ body{
   .layout-dropdown{
     position: relative;
     width: 26vw;
-    button{
+    .dropdown{
       background:none;
       border: none;
       position: relative;
@@ -98,6 +98,11 @@ body{
             color: $color-text;
           }
         }
+      }
+      &:hover{
+        opacity: 0.9;
+        transform: scale(0.9);
+        transition: all 0.3s
       }
     }
     .list-item{
