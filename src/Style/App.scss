@@ -187,8 +187,8 @@ body{
 }
 
 main{
-  padding-top: 1.5rem;
-  padding-bottom: 15vw;
+  padding-top: 2rem;
+  padding-bottom: 15.5vw;
   display: flex;
   flex-direction: column;
   gap: 9vw;
@@ -234,7 +234,7 @@ main{
           gap: 1rem;
           .item-info{
             display: flex;
-            width: 100vw;
+            width: auto;
             position: relative;
             align-items: center;
             svg{
@@ -286,11 +286,13 @@ main{
 
         .match-time{
           display: flex;
+          justify-content: space-between;
           .teams{
             flex: 1;
             display: flex;
-            justify-content:space-between ;
+            justify-content: space-between ;
             align-items: flex-start;
+            gap: .5rem;
             .team{
               display: flex;
               align-items: flex-start;
@@ -311,7 +313,7 @@ main{
               align-items: flex-start;
               justify-content: center;
               svg{
-                width: 7vw;
+                width: 5.5vw;
               }
             }
           }
@@ -342,9 +344,6 @@ main{
   }
 }
 
-.test{
-  background-color: red;
-}
 
 @media screen and (max-width: 252px){
   #root{
@@ -354,11 +353,11 @@ main{
 
 @media screen and (min-width: 1000px){
   #root{
-    max-width: 180rem;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     padding: 0rem;
+    max-width: 180rem;
     //padding-right: $size-padding;
   }
   .mobile-header{
@@ -528,6 +527,7 @@ main{
     margin-left: 18.5rem;
     padding: 3.5rem 3.4rem 3.5rem 3.4rem;
     gap: 6rem;
+    width: 100%;
     .group-matches{
       gap: 6rem;
       .group-head{
@@ -554,24 +554,13 @@ main{
             justify-content: space-around;
             gap: .5rem;
             .item-info{
-              display: flex;
-              width: auto;
-              position: relative;
-              align-items: center;
               svg{
-                width:225.809px;
-                height: 51.136px;
+                width: 12.047rem;
+                height: 2.728rem;
               }
               span{
-                position: absolute;
-                padding-left:6.4vw;
-                width: 100%;
-                font-size: .9rem;
-                color: $white;
-                overflow:hidden;
-                text-overflow: ellipsis;
-                text-align:center;
-                white-space: nowrap;
+                padding-left:2.7rem;
+                font-size: 1rem;
               }
             }
           }
@@ -580,7 +569,11 @@ main{
             .team{
               display: flex;
               align-items: center;
-              width: auto;
+              flex: 1;
+              gap: .3rem;
+              span{
+                width: 8.7rem;
+              }
             }
   
             .play-button{
@@ -600,53 +593,32 @@ main{
   
           .match-time{
             display: flex;
+            justify-content: space-around;
             .teams{
-              flex: 1;
-              display: flex;
-              justify-content:space-between ;
-              align-items: flex-start;
               .team{
-                display: flex;
-                align-items: flex-start;
-                flex-direction: column;
                 gap: .3rem;
                 span{
-                  width: 15vw;
-                  font-size: 3.5vw;
-                  color: $white;
-                  text-align: center;
-                  overflow: hidden;
-                  text-transform: uppercase;
+                  width: 7.5rem;
+                  font-size: 1.5rem;
                 }
               }
               .vs{
-                height: 100%;
-                display: flex;
-                align-items: flex-start;
-                justify-content: center;
                 svg{
-                  width: 7vw;
+                  width: 2.1rem;
                 }
               }
             }
   
             .start-time{
-              display: flex;
-              flex: 1;
-              justify-content: center;
-              align-items: flex-start;
-              gap: 1.5vw;
               svg{
-                width: 10vw;
+                width: 4rem;
               }
               .time{
-                display: flex;
-                gap: 1vw;
-                width: 20.8vw;
-                overflow: hidden;
+                gap: .5rem;
+                width: auto;
+                width: 9.2rem;
                 span{
-                  color: $white;
-                  font-size: 7vw;
+                  font-size: 3rem;
                 }
               }
             }

@@ -167,8 +167,8 @@ body {
 }
 
 main {
-  padding-top: 1.5rem;
-  padding-bottom: 15vw;
+  padding-top: 2rem;
+  padding-bottom: 15.5vw;
   display: flex;
   flex-direction: column;
   gap: 9vw;
@@ -215,7 +215,7 @@ main .group-matches .all-matches .match .match-info {
 }
 main .group-matches .all-matches .match .match-info .item-info {
   display: flex;
-  width: 100vw;
+  width: auto;
   position: relative;
   align-items: center;
 }
@@ -263,12 +263,14 @@ main .group-matches .all-matches .match .match-play .play-button svg {
 }
 main .group-matches .all-matches .match .match-time {
   display: flex;
+  justify-content: space-between;
 }
 main .group-matches .all-matches .match .match-time .teams {
   flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 0.5rem;
 }
 main .group-matches .all-matches .match .match-time .teams .team {
   display: flex;
@@ -291,7 +293,7 @@ main .group-matches .all-matches .match .match-time .teams .vs {
   justify-content: center;
 }
 main .group-matches .all-matches .match .match-time .teams .vs svg {
-  width: 7vw;
+  width: 5.5vw;
 }
 main .group-matches .all-matches .match .match-time .start-time {
   display: flex;
@@ -314,10 +316,6 @@ main .group-matches .all-matches .match .match-time .start-time .time span {
   font-size: 7vw;
 }
 
-.test {
-  background-color: red;
-}
-
 @media screen and (max-width: 252px) {
   #root {
     width: 252px;
@@ -325,11 +323,11 @@ main .group-matches .all-matches .match .match-time .start-time .time span {
 }
 @media screen and (min-width: 1000px) {
   #root {
-    max-width: 180rem;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     padding: 0rem;
+    max-width: 180rem;
   }
   .mobile-header {
     display: none;
@@ -488,6 +486,7 @@ main .group-matches .all-matches .match .match-time .start-time .time span {
     margin-left: 18.5rem;
     padding: 3.5rem 3.4rem 3.5rem 3.4rem;
     gap: 6rem;
+    width: 100%;
   }
   main .group-matches {
     gap: 6rem;
@@ -514,26 +513,13 @@ main .group-matches .all-matches .match .match-time .start-time .time span {
     justify-content: space-around;
     gap: 0.5rem;
   }
-  main .group-matches .all-matches .match .match-info .item-info {
-    display: flex;
-    width: auto;
-    position: relative;
-    align-items: center;
-  }
   main .group-matches .all-matches .match .match-info .item-info svg {
-    width: 225.809px;
-    height: 51.136px;
+    width: 12.047rem;
+    height: 2.728rem;
   }
   main .group-matches .all-matches .match .match-info .item-info span {
-    position: absolute;
-    padding-left: 6.4vw;
-    width: 100%;
-    font-size: 0.9rem;
-    color: #EEEEE4;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: center;
-    white-space: nowrap;
+    padding-left: 2.7rem;
+    font-size: 1rem;
   }
   main .group-matches .all-matches .match .match-play {
     justify-content: space-around;
@@ -541,7 +527,11 @@ main .group-matches .all-matches .match .match-time .start-time .time span {
   main .group-matches .all-matches .match .match-play .team {
     display: flex;
     align-items: center;
-    width: auto;
+    flex: 1;
+    gap: 0.3rem;
+  }
+  main .group-matches .all-matches .match .match-play .team span {
+    width: 8.7rem;
   }
   main .group-matches .all-matches .match .match-play .play-button {
     display: flex;
@@ -558,54 +548,27 @@ main .group-matches .all-matches .match .match-time .start-time .time span {
   }
   main .group-matches .all-matches .match .match-time {
     display: flex;
-  }
-  main .group-matches .all-matches .match .match-time .teams {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-around;
   }
   main .group-matches .all-matches .match .match-time .teams .team {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
     gap: 0.3rem;
   }
   main .group-matches .all-matches .match .match-time .teams .team span {
-    width: 15vw;
-    font-size: 3.5vw;
-    color: #EEEEE4;
-    text-align: center;
-    overflow: hidden;
-    text-transform: uppercase;
-  }
-  main .group-matches .all-matches .match .match-time .teams .vs {
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    width: 7.5rem;
+    font-size: 1.5rem;
   }
   main .group-matches .all-matches .match .match-time .teams .vs svg {
-    width: 7vw;
-  }
-  main .group-matches .all-matches .match .match-time .start-time {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1.5vw;
+    width: 2.1rem;
   }
   main .group-matches .all-matches .match .match-time .start-time svg {
-    width: 10vw;
+    width: 4rem;
   }
   main .group-matches .all-matches .match .match-time .start-time .time {
-    display: flex;
-    gap: 1vw;
-    width: 20.8vw;
-    overflow: hidden;
+    gap: 0.5rem;
+    width: auto;
+    width: 9.2rem;
   }
   main .group-matches .all-matches .match .match-time .start-time .time span {
-    color: #EEEEE4;
-    font-size: 7vw;
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=App.css.map */
