@@ -14,6 +14,8 @@ import flagCameroon from "../../assets/flags/teams/cameroon.svg";
 import PlayIcon from "../Items/Icons/PlayIcon";
 import Vs from "../../Components/Items/Icons/Vs";
 import Clock from "../Items/Icons/Clock";
+import Translate from "../../Translate.json";
+import TranslateName from "../Items/TranslateName";
 
 const Live = (props) =>{
     return(
@@ -27,28 +29,28 @@ const Live = (props) =>{
                     <div className="match-info">
                             <div className="item-info">
                                 <LocatoinBackground />
-                                <span className="name-item-info">Al Bayt</span>
+                                <TranslateName name={Translate.matches.matche01.stadium} lang={props.lang} classItem={"name-item-info"} />
                             </div>
                             <div className="item-info">
                                 <ChanelBackground />
-                                <span className="name-item-info">Beinsport 04</span>
+                                <TranslateName name={Translate.matches.matche01.channel} lang={props.lang} classItem={"name-item-info"} />
                             </div>
                             <div className="item-info">
                                 <CommentatorBackground />
-                                <span className="name-item-info">Issam Chaouali</span>
+                                <TranslateName name={Translate.matches.matche01.commentator} lang={props.lang} classItem={"name-item-info"}  />
                             </div>
                         </div>
                         <div className="match-play">
                             <span className="team">
                                 <img src={flagMorocco} alt="Flag Morocco" />
-                                <span className="team-name">Morocco</span>
+                                <TranslateName name={Translate.matches.matche01.team01} lang={props.lang} classItem={"team-name"}  />
                             </span>
                             <button className="play-button" aria-label="Play Button">
                                 <PlayIcon />
                             </button>
                             <span className="team team-right">
                                 <img src={flagCroatia} alt="Flag Morocco" />
-                                <span className="team-name">Croatia</span>
+                                <TranslateName name={Translate.matches.matche01.team02} lang={props.lang} classItem={"team-name"}  />
                             </span>
                         </div>
                 </div>
@@ -56,15 +58,15 @@ const Live = (props) =>{
                     <div className="match-info">
                         <div className="item-info">
                             <LocatoinBackground />
-                            <span className="name-item-info">Lusail</span>
+                            <TranslateName name={Translate.matches.matche02.stadium} lang={props.lang} classItem={"name-item-info"} />
                         </div>
                         <div className="item-info">
                             <ChanelBackground />
-                            <span className="name-item-info">Beinsport 05</span>
+                            <TranslateName name={Translate.matches.matche02.channel} lang={props.lang} classItem={"name-item-info"} />
                         </div>
                         <div className="item-info">
                             <CommentatorBackground />
-                            <span className="name-item-info">Hafid Derradji</span>
+                            <TranslateName name={Translate.matches.matche02.commentator} lang={props.lang} classItem={"name-item-info"} />
                         </div>
                     </div>
                     <div className="match-time">
@@ -102,15 +104,15 @@ const Live = (props) =>{
                     <div className="match-info">
                             <div className="item-info">
                                 <LocatoinBackground />
-                                <span className="name-item-info">Ahmad Bin Ali</span>
+                                <TranslateName name={Translate.matches.matche03.stadium} lang={props.lang} classItem={"name-item-info"} />
                             </div>
                             <div className="item-info">
                                 <ChanelBackground />
-                                <span className="name-item-info">Beinsport 02</span>
+                                <TranslateName name={Translate.matches.matche03.channel} lang={props.lang} classItem={"name-item-info"} />
                             </div>
                             <div className="item-info">
                                 <CommentatorBackground />
-                                <span className="name-item-info">Ali Mohamed</span>
+                                <TranslateName name={Translate.matches.matche03.commentator} lang={props.lang} classItem={"name-item-info"} />
                             </div>
                         </div>
                         <div className="match-time">
@@ -141,15 +143,15 @@ const Live = (props) =>{
                     <div className="match-info">
                         <div className="item-info">
                             <LocatoinBackground />
-                            <span className="name-item-info">Al Janoub</span>
+                            <TranslateName name={Translate.matches.matche04.stadium} lang={props.lang} classItem={"name-item-info"} />
                         </div>
                         <div className="item-info">
                             <ChanelBackground />
-                            <span className="name-item-info">Beinsport 01</span>
+                            <TranslateName name={Translate.matches.matche04.channel} lang={props.lang} classItem={"name-item-info"} />
                         </div>
                         <div className="item-info">
                             <CommentatorBackground />
-                            <span className="name-item-info">Raouf Khaleef</span>
+                            <TranslateName name={Translate.matches.matche04.commentator} lang={props.lang} classItem={"name-item-info"} />
                         </div>
                     </div>
                     <div className="match-time">
