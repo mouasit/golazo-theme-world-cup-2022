@@ -10,8 +10,7 @@ import { useState } from 'react';
 
 
 function App() {
-  const [lang,setLang] = useState("english");
-  console.log(lang);
+  const [lang,setLang] = useState("en");
   return(
     <BrowserRouter>
     <Navigation lang={{language: lang, set:setLang}} />

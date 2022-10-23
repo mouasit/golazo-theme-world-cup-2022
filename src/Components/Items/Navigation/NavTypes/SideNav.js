@@ -2,9 +2,6 @@
 import logo from "../../../../assets/logo.svg";
 import Background from "../../../Items/Background";
 import Button from "../../../Items/Button";
-import englishFlag from "../../../../assets/flags/languages/english.svg";
-import frenshFlag from "../../../../assets/flags/languages/frensh.svg";
-import arabicFlag from "../../../../assets/flags/languages/arabic.svg";
 import { BiChevronRight } from "react-icons/bi";
 import { BiChevronLeft } from "react-icons/bi";
 import { useEffect,useState} from "react";
@@ -12,10 +9,12 @@ import {handleDropdown} from "../../../../Helpers"
 import { NavLink } from "react-router-dom";
 import Language from "../../Language";
 
+
 const SideNav = (props) => {
     const [arrow,setArrow] = useState("close");
-    const [firstLang,setFirstLang] = useState("frensh");
-    const [secondLang,setSecondLang] = useState("arabic");
+    const [firstLang,setFirstLang] = useState("fr");
+    const [secondLang,setSecondLang] = useState("ar");
+    const [typeText,setTypeText] = useState("en");
     useEffect(()=>{
 
         handleDropdown(document.getElementById("dropdownSidNav"),setArrow)
@@ -56,7 +55,7 @@ const SideNav = (props) => {
                 <button id="dropdownSidNav" className="dropdown" aria-label="Languages">
                     <Button />
                     <span className="name-flag">
-                        <Language lang={props.lang.language}/>
+                        <Language lang={{language: props.lang.language}}/>
                     </span>
                     <span className="arrow">
                         <svg xmlns="http://www.w3.org/2000/svg" width="21.293" height="24.286" viewBox="0 0 21.293 24.286">
@@ -73,16 +72,41 @@ const SideNav = (props) => {
                     </svg>
                     <div className="item">
                         <button aria-label={firstLang} onClick={(e) => {
+                            if(props.lang.language === "en")
+                            {
+                                setFirstLang("en");
+                                setSecondLang("ar");
+                                setTypeText("fr");
+                            }
+                            if(props.lang.language === "fr" || props.lang.language === "ar")
+                            {
+                                setFirstLang("fr");
+                                setSecondLang("ar");
+                                setTypeText("en");
+                            }
                             props.lang.set(firstLang);
 
                             }}>
-                                <Language  lang={{language: firstLang,set:setFirstLang}} />
+                                <Language  lang={{language: firstLang,typeText}} />
                         </button>
                         <button aria-label={secondLang} onClick={(e) => {
-                            props.lang.set(secondLang);
+                            if(props.lang.language === "en" || props.lang.language === "fr")
+                            {
+                                setFirstLang("en");
+                                setSecondLang("fr");
+                                setTypeText("ar");
+                            }
 
+                            if(props.lang.language === "ar")
+                            {
+                                setFirstLang("en");
+                                setSecondLang("ar");
+                                setTypeText("fr");
+
+                            }
+                            props.lang.set(secondLang);
                             }}>
-                                <Language lang={secondLang} />
+                                <Language  lang={{language: secondLang,typeText}} />
                         </button>
                     </div>
                 </div>

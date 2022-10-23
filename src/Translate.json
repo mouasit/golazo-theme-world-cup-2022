@@ -1,0 +1,19 @@
+{
+    "dropdownLanguages":{
+        "english":{
+            "en":"English",
+            "fr":"Frensh",
+            "ar": "Arabic"
+        },
+        "frensh":{
+            "en":"Anglais",
+            "fr":"Français",
+            "ar": "Arabe"
+        },
+        "arabic":{
+            "en":"الانجليزية",
+            "fr":"الفرنسية",
+            "ar": "العربية"
+        }
+    }
+}
