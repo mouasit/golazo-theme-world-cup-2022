@@ -10,7 +10,13 @@ import { useState } from 'react';
 
 
 function App() {
-  const [lang,setLang] = useState("en");
+  let languageStart = localStorage.getItem("language");
+  if (!languageStart)
+  {
+    localStorage.setItem("language", "en");
+    languageStart = "en";
+  }
+  const [lang,setLang] = useState(languageStart);
   return(
     <BrowserRouter>
     <Navigation lang={{language: lang, set:setLang}} />

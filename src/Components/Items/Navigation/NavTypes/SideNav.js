@@ -12,9 +12,16 @@ import Language from "../../Language";
 
 const SideNav = (props) => {
     const [arrow,setArrow] = useState("close");
-    const [firstLang,setFirstLang] = useState("fr");
-    const [secondLang,setSecondLang] = useState("ar");
-    const [typeText,setTypeText] = useState("en");
+    let getFirstLang =  localStorage.getItem("firstLang");
+    let getSecondLang = localStorage.getItem("secondLang");
+    getFirstLang = getFirstLang || "fr";
+    getSecondLang = getSecondLang || "ar";
+
+    console.log("first : " + getFirstLang);
+    console.log("last : " + getSecondLang);
+    const [firstLang,setFirstLang] = useState(getFirstLang);
+    const [secondLang,setSecondLang] = useState(getSecondLang);
+    const [typeText,setTypeText] = useState(props.lang.language);
     useEffect(()=>{
 
         handleDropdown(document.getElementById("dropdownSidNav"),setArrow)
@@ -75,17 +82,21 @@ const SideNav = (props) => {
                             if(props.lang.language === "en")
                             {
                                 setFirstLang("en");
+                                localStorage.setItem("firstLang","en");
                                 setSecondLang("ar");
+                                localStorage.setItem("secondLang","ar");
                                 setTypeText("fr");
                             }
                             if(props.lang.language === "fr" || props.lang.language === "ar")
                             {
                                 setFirstLang("fr");
+                                localStorage.setItem("firstLang","fr");
                                 setSecondLang("ar");
+                                localStorage.setItem("secondLang","ar");
                                 setTypeText("en");
                             }
                             props.lang.set(firstLang);
-
+                            localStorage.setItem("language",firstLang);
                             }}>
                                 <Language  lang={{language: firstLang,typeText}} />
                         </button>
@@ -93,18 +104,23 @@ const SideNav = (props) => {
                             if(props.lang.language === "en" || props.lang.language === "fr")
                             {
                                 setFirstLang("en");
+                                localStorage.setItem("firstLang","en");
                                 setSecondLang("fr");
+                                localStorage.setItem("secondLang","fr");
                                 setTypeText("ar");
                             }
 
                             if(props.lang.language === "ar")
                             {
                                 setFirstLang("en");
+                                localStorage.setItem("firstLang","en");
                                 setSecondLang("ar");
+                                localStorage.setItem("secondLang","ar");
                                 setTypeText("fr");
 
                             }
                             props.lang.set(secondLang);
+                            localStorage.setItem("language",secondLang);
                             }}>
                                 <Language  lang={{language: secondLang,typeText}} />
                         </button>
