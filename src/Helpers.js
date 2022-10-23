@@ -29,6 +29,15 @@ export const handleDropdown = (buttonId,setArrow) =>{
         lock = false;
     });
 
+    listButtons.forEach(e => {
+        e.addEventListener("click", () => {
+            listDropdown.style.display = "none";
+            setArrow("close");
+            lock = false;
+            useKey = false;
+        })
+    });
+
     listDropdown.querySelector(".item").addEventListener("click",()=>{
         lock = true;
     });

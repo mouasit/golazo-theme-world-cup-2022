@@ -15,5 +15,25 @@
             "fr":"الفرنسية",
             "ar": "العربية"
         }
+    },
+    "sideNav":{
+        "english" : {
+            "live": "Live",
+            "ranking": "Ranking",
+            "matches": "Matches",
+            "stadiums":"Stadiums"
+        },
+        "frensh":{
+            "live": "Directe",
+            "ranking":"Classement",
+            "matches":"Matches",
+            "stadiums":"Stades"
+        },
+        "arabic":{
+            "live": "مباشر",
+            "ranking":"الترتيب",
+            "matches":"المباريات",
+            "stadiums":"الملاعب"
+        }
     }
 }

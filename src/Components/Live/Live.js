@@ -17,7 +17,7 @@ import Clock from "../Items/Icons/Clock";
 
 const Live = (props) =>{
     return(
-        <main>
+    <main>
         <section className="group-matches" aria-label="Group Matches">
             <div className="group-head">
                 <Group nameGroup="F" />

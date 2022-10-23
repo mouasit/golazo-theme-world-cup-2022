@@ -1,6 +1,5 @@
 
 import logo from "../../../../assets/logo.svg";
-import Background from "../../../Items/Background";
 import Button from "../../../Items/Button";
 import { BiChevronRight } from "react-icons/bi";
 import { BiChevronLeft } from "react-icons/bi";
@@ -8,6 +7,10 @@ import { useEffect,useState} from "react";
 import {handleDropdown} from "../../../../Helpers"
 import { NavLink } from "react-router-dom";
 import Language from "../../Language";
+import LinkLive from "../../LinkLive";
+import LinkRanking from "../../LinkRanking";
+import LinkMatches from "../../LinkMatches";
+import LinkStadiums from "../../LinkStadiums";
 
 
 const SideNav = (props) => {
@@ -16,9 +19,6 @@ const SideNav = (props) => {
     let getSecondLang = localStorage.getItem("secondLang");
     getFirstLang = getFirstLang || "fr";
     getSecondLang = getSecondLang || "ar";
-
-    console.log("first : " + getFirstLang);
-    console.log("last : " + getSecondLang);
     const [firstLang,setFirstLang] = useState(getFirstLang);
     const [secondLang,setSecondLang] = useState(getSecondLang);
     const [typeText,setTypeText] = useState(props.lang.language);
@@ -34,28 +34,16 @@ const SideNav = (props) => {
             </NavLink>
             <ul>
                 <li>
-                    <NavLink to="/" aria-label="Live">
-                        <Background />
-                        <span>Live</span>
-                    </NavLink>
+                    <LinkLive lang = {props.lang.language}/>
                 </li>
                  <li>
-                    <NavLink to="/Ranking" aria-label="Ranking">
-                        <Background />
-                        <span>Ranking</span>
-                    </NavLink>
+                    <LinkRanking lang = {props.lang.language}/>
                 </li>
                 <li>
-                    <NavLink to="/Matches" aria-label="Matches">
-                        <Background />
-                        <span>Matches</span>
-                    </NavLink>
+                    <LinkMatches lang = {props.lang.language} />
                 </li>
                 <li>
-                    <NavLink to="/Stadiums" aria-label="Stadiums">
-                        <Background />
-                        <span>Stadiums</span>
-                    </NavLink>
+                    <LinkStadiums lang = {props.lang.language} />
                 </li>
             </ul>
             <div className="layout-dropdown">
