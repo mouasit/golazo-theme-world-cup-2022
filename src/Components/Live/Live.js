@@ -1,5 +1,5 @@
 
-import Group from "../Items/Group"
+import Group from "../Items/Group";
 import LocatoinBackground from "../Items/Location";
 import ChanelBackground from "../Items/ChanelBackground";
 import CommentatorBackground from "../Items/CommentatorBackground";
@@ -22,7 +22,7 @@ const Live = (props) =>{
     <main>
         <section className="group-matches" aria-label="Group Matches">
             <div className="group-head">
-                <Group nameGroup="F" />
+                <Group nameGroup="F" lang={props.lang} />
             </div>
             <div className="all-matches">
                 <div className="match">
@@ -97,7 +97,7 @@ const Live = (props) =>{
         </section>
         <section className="group-matches" aria-label="Group Matches">
             <div className="group-head">
-                <Group nameGroup="G" />
+                <Group nameGroup="G" lang={props.lang}/>
             </div>
             <div className="all-matches">
                 <div className="match">
