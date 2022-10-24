@@ -4,6 +4,7 @@ export const handleDropdown = (buttonDropdown,setArrow) =>{
     let useKey = false;
     let index = 0;
     let currentIndex = 0;
+    let click = false;
 
     buttonDropdown.addEventListener("click", ()=>{
         let toggle = false;
@@ -23,7 +24,6 @@ export const handleDropdown = (buttonDropdown,setArrow) =>{
         }
         else
         {
-            console.log(toggle);
             listDropdown.forEach((element)=>{element.style.display = "flex"});
             setArrow("open");
             lock = true;
@@ -41,6 +41,7 @@ export const handleDropdown = (buttonDropdown,setArrow) =>{
             e.addEventListener("click", () => {
                 listDropdown.forEach((element)=>{element.style.display = "none"});
                 setArrow("close");
+                click = true;
                 lock = false;
                 useKey = false;
             })
@@ -55,7 +56,8 @@ export const handleDropdown = (buttonDropdown,setArrow) =>{
 
     listDropdown.forEach((e) => {
         e.querySelector(".item").addEventListener("mouseout",()=>{
-            lock = false;
+            if (!click)
+                lock = false;
         });
     })
     
@@ -106,16 +108,22 @@ export const handleDropdown = (buttonDropdown,setArrow) =>{
             }
 
             if (e.key === "ArrowDown")
-            {
+            { 
+                e.preventDefault();
                 if(index > items.length - 1)
                     index = 0;
                 let i = index++;
-                items.forEach((e)=>{e[i].focus();})
+                
+                items.forEach((e)=>{
+                    console.log(e[i]);
+                    e[i].focus();
+                })
                 currentIndex = index - 1;
             }
             
             if (e.key === "ArrowUp")
             {
+                e.preventDefault();
                 if(currentIndex === 0)
                     currentIndex = items.length;
                 let i = --currentIndex;

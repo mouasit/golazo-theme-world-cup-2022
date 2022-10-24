@@ -9,7 +9,6 @@ import {handleDropdown} from "../../../Helpers";
 const Nav = (props) =>{
     const [arrow,setArrow] = useState("close");
     useEffect(()=>{
-
         const buttonDropdown = document.getElementsByClassName("btn-dropdown");
         handleDropdown(buttonDropdown[0],setArrow);
         handleDropdown(buttonDropdown[1],setArrow);

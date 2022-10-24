@@ -42,7 +42,7 @@ const GroupFr = (props) => (
         <g id="Group_820" data-name="Group 820" transform="translate(0 0)">
           <rect id="Rectangle_143" data-name="Rectangle 143" width="28.085" height="28.085" transform="translate(39.712 19.856) rotate(135)" fill="#47b7ab"/>
         </g>
-        <text  transform="translate(19.2 26.532)" textAnchor="middle" fill="#eeeee4" fontSize="21" font-family="Qatar2022Arabic-Bold, Qatar2022 Arabic" font-weight="700"><tspan x="0" y="0">{props.nameGroup}</tspan></text>
+        <text  transform="translate(19.2 26.532)" textAnchor="middle" fill="#eeeee4" fontSize="21" fontFamily="Qatar2022Arabic-Bold, Qatar2022 Arabic" fontWeight="700"><tspan x="0" y="0">{props.nameGroup}</tspan></text>
       </g>
     </g>
   </g>
