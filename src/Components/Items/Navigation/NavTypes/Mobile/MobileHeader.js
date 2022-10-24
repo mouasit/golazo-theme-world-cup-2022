@@ -5,24 +5,16 @@ import frenshFlag from "../../../../../assets/flags/languages/frensh.svg";
 import arabicFlag from "../../../../../assets/flags/languages/arabic.svg";
 import { BiChevronDown } from "react-icons/bi";
 import { BiChevronUp } from "react-icons/bi";
-import { handleDropdown } from "../../../../../Helpers";
-import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const MobileHeader = () => {
-    const [arrow,setArrow] = useState("close");
-    useEffect(()=>{
-
-       handleDropdown(document.getElementById("dropdownMobileHeader"),setArrow)
-
-    },[])
+const MobileHeader = (props) => {
     return(
     <header  className="mobile-header">
         <NavLink to="/" aria-label="Golazo">
             <img className="logo" src={logo} alt=""/>
         </NavLink>
         <div className="layout-dropdown">
-            <button id="dropdownMobileHeader" className="dropdown" aria-label="Languages">
+            <button  className="dropdown btn-dropdown" aria-label="Languages">
                 <svg xmlns="http://www.w3.org/2000/svg" /*width="120.358" height="44.903"*/ viewBox="0 0 120.358 44.903">
                     <path id="Path_1613" data-name="Path 1613" d="M377.484,766.07H489.109l4.367,22.451-4.367,22.451H377.484l-4.367-22.451Z" transform="translate(-373.118 -766.07)" fill="#eeeee4"/>
                 </svg>
@@ -36,7 +28,7 @@ const MobileHeader = () => {
                         <path id="Path_1738" data-name="Path 1738" d="M793.082,1047.652,782.435,1059.8l10.647,12.143,10.646-12.143Z" transform="translate(-782.435 -1047.652)" fill="#47b7ab"/>
                     </svg>
                     {
-                        (arrow === "close")?(<BiChevronDown />):(<BiChevronUp />)
+                        (props.arrow === "close")?(<BiChevronDown />):(<BiChevronUp />)
                     }
                 </span>
                 </div>

@@ -2,7 +2,6 @@ import GroupEn from "./GroupEN";
 import GroupAr from "./GroupAr";
 import GroupFr from "./GroupFr";
 const Group = (props) =>{
-    console.log(props.lang);
     if(props.lang === "en")
         return(<GroupEn nameGroup={props.nameGroup} />);
     if (props.lang === "fr")

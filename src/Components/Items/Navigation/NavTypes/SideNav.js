@@ -3,8 +3,7 @@ import logo from "../../../../assets/logo.svg";
 import Button from "../../../Items/Button";
 import { BiChevronRight } from "react-icons/bi";
 import { BiChevronLeft } from "react-icons/bi";
-import { useEffect,useState} from "react";
-import {handleDropdown} from "../../../../Helpers"
+import { useState} from "react";
 import { NavLink } from "react-router-dom";
 import Language from "../../Language";
 import LinkLive from "../../LinkLive";
@@ -14,7 +13,6 @@ import LinkStadiums from "../../LinkStadiums";
 
 
 const SideNav = (props) => {
-    const [arrow,setArrow] = useState("close");
     let getFirstLang =  localStorage.getItem("firstLang");
     let getSecondLang = localStorage.getItem("secondLang");
     getFirstLang = getFirstLang || "fr";
@@ -22,11 +20,6 @@ const SideNav = (props) => {
     const [firstLang,setFirstLang] = useState(getFirstLang);
     const [secondLang,setSecondLang] = useState(getSecondLang);
     const [typeText,setTypeText] = useState(props.lang.language);
-    useEffect(()=>{
-
-        handleDropdown(document.getElementById("dropdownSidNav"),setArrow)
-
-    },[])
     return (
         <nav className="side-nav">
             <NavLink to="/" aria-label="Golazo">
@@ -47,7 +40,7 @@ const SideNav = (props) => {
                 </li>
             </ul>
             <div className="layout-dropdown">
-                <button id="dropdownSidNav" className="dropdown" aria-label="Languages">
+                <button  className="dropdown btn-dropdown" aria-label="Languages">
                     <Button />
                     <span className="name-flag">
                         <Language lang={{language: props.lang.language}}/>
@@ -57,7 +50,8 @@ const SideNav = (props) => {
                             <path id="Path_1738" data-name="Path 1738" d="M793.082,1047.652,782.435,1059.8l10.647,12.143,10.646-12.143Z" transform="translate(-782.435 -1047.652)" fill="#47b7ab"/>
                         </svg>
                         {
-                            (arrow === "close")?(<BiChevronRight />):(<BiChevronLeft />)
+                            
+                            (props.arrow === "close")?(<BiChevronRight />):(<BiChevronLeft />)
                         }
                     </span>
                 </button>
