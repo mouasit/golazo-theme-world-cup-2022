@@ -3,7 +3,6 @@ import logo from "../../../../assets/logo.svg";
 import Button from "../../../Items/Button";
 import { BiChevronRight } from "react-icons/bi";
 import { BiChevronLeft } from "react-icons/bi";
-import { useState} from "react";
 import { NavLink } from "react-router-dom";
 import Language from "../../Language";
 import LinkLive from "../../LinkLive";
@@ -13,13 +12,6 @@ import LinkStadiums from "../../LinkStadiums";
 
 
 const SideNav = (props) => {
-    let getFirstLang =  localStorage.getItem("firstLang");
-    let getSecondLang = localStorage.getItem("secondLang");
-    getFirstLang = getFirstLang || "fr";
-    getSecondLang = getSecondLang || "ar";
-    const [firstLang,setFirstLang] = useState(getFirstLang);
-    const [secondLang,setSecondLang] = useState(getSecondLang);
-    const [typeText,setTypeText] = useState(props.lang.language);
     return (
         <nav className="side-nav">
             <NavLink to="/" aria-label="Golazo">
@@ -60,51 +52,51 @@ const SideNav = (props) => {
                         <path id="Path_7097" data-name="Path 7097" d="M476.471,776.232A947.7,947.7,0,0,1,378.5,771.12l-2.345-.247-.524-2.3a309.161,309.161,0,0,1,0-133.809l.524-2.3,2.345-.247a941.443,941.443,0,0,1,195.956,0l2.345.247.524,2.3a309.131,309.131,0,0,1,0,133.809l-.524,2.3-2.345.247a947.7,947.7,0,0,1-97.973,5.112Z" transform="translate(-368.305 -627.105)" fill="#eeeee4"/>
                     </svg>
                     <div className="item">
-                        <button aria-label={firstLang} onClick={(e) => {
+                        <button aria-label={props.firstLang.firstLang} onClick={(e) => {
                             if(props.lang.language === "en")
                             {
-                                setFirstLang("en");
+                                props.firstLang.set("en");
                                 localStorage.setItem("firstLang","en");
-                                setSecondLang("ar");
+                                props.secondLang.set("ar");
                                 localStorage.setItem("secondLang","ar");
-                                setTypeText("fr");
+                                props.typeText.set("fr");
                             }
                             if(props.lang.language === "fr" || props.lang.language === "ar")
                             {
-                                setFirstLang("fr");
+                                props.firstLang.set("fr");
                                 localStorage.setItem("firstLang","fr");
-                                setSecondLang("ar");
+                                props.secondLang.set("ar");
                                 localStorage.setItem("secondLang","ar");
-                                setTypeText("en");
+                                props.typeText.set("en");
                             }
-                            props.lang.set(firstLang);
-                            localStorage.setItem("language",firstLang);
+                            props.lang.set(props.firstLang.firstLang);
+                            localStorage.setItem("language",props.firstLang.firstLang);
                             }}>
-                                <Language  lang={{language: firstLang,typeText}} />
+                                <Language  lang={{language: props.firstLang.firstLang,typeText:props.typeText.typeText}} />
                         </button>
-                        <button aria-label={secondLang} onClick={(e) => {
+                        <button aria-label={props.secondLang.secondLang} onClick={(e) => {
                             if(props.lang.language === "en" || props.lang.language === "fr")
                             {
-                                setFirstLang("en");
+                                props.firstLang.set("en");
                                 localStorage.setItem("firstLang","en");
-                                setSecondLang("fr");
+                                props.secondLang.set("fr");
                                 localStorage.setItem("secondLang","fr");
-                                setTypeText("ar");
+                                props.typeText.set("ar");
                             }
 
                             if(props.lang.language === "ar")
                             {
-                                setFirstLang("en");
+                                props.firstLang.set("en");
                                 localStorage.setItem("firstLang","en");
-                                setSecondLang("ar");
+                                props.secondLang.set("ar");
                                 localStorage.setItem("secondLang","ar");
-                                setTypeText("fr");
+                                props.typeText.set("fr");
 
                             }
-                            props.lang.set(secondLang);
-                            localStorage.setItem("language",secondLang);
+                            props.lang.set(props.secondLang.secondLang);
+                            localStorage.setItem("language",props.secondLang.secondLang);
                             }}>
-                                <Language  lang={{language: secondLang,typeText}} />
+                                <Language  lang={{language: props.secondLang.secondLang,typeText:props.typeText.typeText}} />
                         </button>
                     </div>
                 </div>

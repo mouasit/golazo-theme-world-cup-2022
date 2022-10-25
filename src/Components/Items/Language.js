@@ -7,13 +7,16 @@ import Translate from "../../../src/Translate.json";
 
 const Language = (props) => {
 
+    console.log(props.shortLetter);
+
     if(props.lang.language === "en")
     {
         return (
             <React.Fragment>
             <img src={englishFlag} alt="" />
             {
-                (props.lang.typeText === "en")?(<span>{Translate.dropdownLanguages.english.en}</span>)
+                (props.shortLetter)?(<span>En</span>)
+                :(props.lang.typeText === "en")?(<span>{Translate.dropdownLanguages.english.en}</span>)
                 :(props.lang.typeText === "fr")?(<span>{Translate.dropdownLanguages.frensh.en}</span>)
                 :(props.lang.typeText === "ar")?(<span>{Translate.dropdownLanguages.arabic.en}</span>)
                 :<span>{Translate.dropdownLanguages.english.en}</span>
@@ -27,7 +30,8 @@ const Language = (props) => {
             <React.Fragment>
             <img src={frenshFlag} alt="" />
             {
-                (props.lang.typeText === "en")?(<span>{Translate.dropdownLanguages.english.fr}</span>)
+                (props.shortLetter)?(<span>Fr</span>)
+                :(props.lang.typeText === "en")?(<span>{Translate.dropdownLanguages.english.fr}</span>)
                 :(props.lang.typeText === "fr")?(<span>{Translate.dropdownLanguages.frensh.fr}</span>)
                 :(props.lang.typeText === "ar")?(<span>{Translate.dropdownLanguages.arabic.fr}</span>)
                 :<span>{Translate.dropdownLanguages.frensh.fr}</span>
@@ -41,7 +45,8 @@ const Language = (props) => {
             <React.Fragment>
             <img src={arabicFlag} alt="" />
             {
-                (props.lang.typeText === "en")?(<span>{Translate.dropdownLanguages.english.ar}</span>)
+                (props.shortLetter)?(<span>Ar</span>)
+                :(props.lang.typeText === "en")?(<span>{Translate.dropdownLanguages.english.ar}</span>)
                 :(props.lang.typeText === "fr")?(<span>{Translate.dropdownLanguages.frensh.ar}</span>)
                 :(props.lang.typeText === "ar")?(<span>{Translate.dropdownLanguages.arabic.ar}</span>)
                 :<span>{Translate.dropdownLanguages.arabic.ar}</span>
