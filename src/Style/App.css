@@ -413,7 +413,12 @@ main .group-matches .all-matches .match .match-time .start-time .time span {
     align-items: center;
     right: 0.7rem;
   }
-  .side-nav .layout-dropdown .dropdown .arrow svg:last-child {
+  .side-nav .layout-dropdown .dropdown .arrow .content-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .side-nav .layout-dropdown .dropdown .arrow .content-arrow svg:last-child {
     position: absolute;
     color: #EEEEE4;
   }
@@ -575,5 +580,36 @@ main .group-matches .all-matches .match .match-time .start-time .time span {
   }
   main .group-matches .all-matches .match .match-time .start-time .time span {
     font-size: 3rem;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  .reverse .side-nav {
+    padding-right: 1.5rem;
+    padding-left: 0rem;
+  }
+  .reverse .side-nav .layout-dropdown .dropdown .arrow {
+    right: 0;
+    left: 0.7rem;
+    justify-content: flex-start;
+  }
+  .reverse .side-nav .layout-dropdown .dropdown .name-flag {
+    left: 0;
+    right: 1.7rem;
+    flex-direction: row-reverse;
+  }
+  .reverse .side-nav .list-item {
+    left: -12rem;
+  }
+  .reverse .side-nav .list-item .item button {
+    flex-direction: row-reverse;
+  }
+  .reverse .separtor {
+    margin-left: 0;
+    margin-right: 17.5rem;
+  }
+  .reverse main {
+    margin-left: 0;
+    margin-right: 18.5rem;
   }
 }/*# sourceMappingURL=App.css.map */

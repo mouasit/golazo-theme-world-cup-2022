@@ -31,6 +31,8 @@ body{
 
 
 
+
+
 .side-nav{
   display: none;
 }
@@ -447,9 +449,14 @@ main{
           justify-content: center;
           align-items: center;
           right: .7rem;
-          svg:last-child{
-            position: absolute;
-            color: $white;
+          .content-arrow{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg:last-child{
+              position: absolute;
+              color: $white;
+            }
           }
         }
       }
@@ -629,6 +636,44 @@ main{
           }
         }
       }
+    }
+  }
+
+  .reverse{
+    flex-direction: row-reverse;
+    .side-nav{
+      padding-right: $size-padding;
+      padding-left: 0rem;
+      .layout-dropdown{
+        .dropdown{
+          .arrow{
+            right: 0;
+            left: .7rem;
+            justify-content: flex-start;
+          }
+          .name-flag{
+            left: 0;
+            right: 1.7rem;
+            flex-direction: row-reverse;
+          }
+        }
+      }
+      .list-item{
+        left: -12rem;
+        .item{
+          button{
+            flex-direction: row-reverse;
+          }
+        }
+      }
+    }
+    .separtor{
+      margin-left: 0;
+      margin-right: 17.5rem;
+    }
+    main{
+      margin-left: 0;
+      margin-right: 18.5rem;
     }
   }
 }

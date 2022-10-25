@@ -1,6 +1,7 @@
 
 import logo from "../../../../assets/logo.svg";
 import Button from "../../../Items/Button";
+import ButtonReverse from "../../ButtonReverse";
 import { BiChevronRight } from "react-icons/bi";
 import { BiChevronLeft } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
@@ -37,18 +38,24 @@ const SideNav = (props) => {
             </ul>
             <div className="layout-dropdown">
                 <button  className="dropdown btn-dropdown" aria-label="Languages">
-                    <Button />
+                {(props.lang.language != "ar")?(<Button />):(<ButtonReverse/>)}
                     <span className="name-flag">
                         <Language lang={{language: props.lang.language}}/>
                     </span>
                     <span className="arrow">
+                        <span className="content-arrow">
                         <svg xmlns="http://www.w3.org/2000/svg" width="21.293" height="24.286" viewBox="0 0 21.293 24.286">
                             <path id="Path_1738" data-name="Path 1738" d="M793.082,1047.652,782.435,1059.8l10.647,12.143,10.646-12.143Z" transform="translate(-782.435 -1047.652)" fill="#47b7ab"/>
                         </svg>
                         {
-                            
-                            (props.arrow === "close")?(<BiChevronRight />):(<BiChevronLeft />)
+                            (props.lang.language != "ar")?(
+                                (props.arrow === "close")?(<BiChevronRight />):(<BiChevronLeft />)
+                            ):
+                            (
+                                (props.arrow === "close")?(<BiChevronLeft />):(<BiChevronRight />)
+                            )
                         }
+                        </span>
                     </span>
                 </button>
                 <div className="list-item">
