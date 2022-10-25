@@ -1,5 +1,5 @@
 const CommentatorBackgroundReverse = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="182.606" height="41.428" viewBox="0 0 182.606 41.428">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182.606 41.428">
   <g id="Group_4537" data-name="Group 4537" transform="translate(1500.01 297.817) rotate(180)">
     <path id="Path_1772" data-name="Path 1772" d="M379.1,766.069H532.069l5.984,16.7-5.984,16.7H379.1l-5.984-16.7Z" transform="translate(961.957 -505.563)" fill="#e32052"/>
     <rect id="Rectangle_150" data-name="Rectangle 150" width="28.432" height="30.156" transform="translate(1358.832 277.712) rotate(135)" fill="#47b7ab"/>
