@@ -115,7 +115,6 @@ export const handleDropdown = (buttonDropdown,setArrow) =>{
                 let i = index++;
                 
                 items.forEach((e)=>{
-                    console.log(e[i]);
                     e[i].focus();
                 })
                 currentIndex = index - 1;

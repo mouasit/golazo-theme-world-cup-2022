@@ -12,6 +12,10 @@ import LinkStadiums from "../../LinkStadiums";
 
 
 const SideNav = (props) => {
+    if (props.lang.language === "ar")
+        document.getElementById("root").classList.add("reverse");
+    else
+        document.getElementById("root").removeAttribute("class");
     return (
         <nav className="side-nav">
             <NavLink to="/" aria-label="Golazo">

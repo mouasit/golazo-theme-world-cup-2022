@@ -6,9 +6,7 @@ import Translate from "../../../src/Translate.json";
 
 
 const Language = (props) => {
-
-    console.log(props.shortLetter);
-
+    
     if(props.lang.language === "en")
     {
         return (
