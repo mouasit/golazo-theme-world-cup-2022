@@ -674,6 +674,16 @@ main{
     main{
       margin-left: 0;
       margin-right: 18.5rem;
+      .match{
+        .match-info{
+          flex-direction: row-reverse;
+          .item-info{
+            span{
+              background-color: green;
+            }
+          }
+        }
+      }
     }
   }
 }

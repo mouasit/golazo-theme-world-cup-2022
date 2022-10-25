@@ -612,4 +612,10 @@ main .group-matches .all-matches .match .match-time .start-time .time span {
     margin-left: 0;
     margin-right: 18.5rem;
   }
+  .reverse main .match .match-info {
+    flex-direction: row-reverse;
+  }
+  .reverse main .match .match-info .item-info span {
+    background-color: green;
+  }
 }/*# sourceMappingURL=App.css.map */

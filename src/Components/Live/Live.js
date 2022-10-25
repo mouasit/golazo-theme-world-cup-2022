@@ -1,8 +1,11 @@
 
 import Group from "../Items/Group";
-import LocatoinBackground from "../Items/Location";
+import LocatoinBackground from "../Items/LocationBackground";
+import LocationBackgroundReverse from "../Items/LocationReverse";
 import ChanelBackground from "../Items/ChanelBackground";
+import ChanelBackgroundReverse from "../Items/ChanelBackgroundReverse";
 import CommentatorBackground from "../Items/CommentatorBackground";
+import CommentatorBackgroundReverse from "../Items/CommentatorBackgroundReverse";
 import flagMorocco from "../../assets/flags/teams/morocco.svg";
 import flagCanada from "../../assets/flags/teams/canada.svg";
 import flagBelgium from "../../assets/flags/teams/belgium.svg";
@@ -28,15 +31,15 @@ const Live = (props) =>{
                 <div className="match">
                     <div className="match-info">
                             <div className="item-info">
-                                <LocatoinBackground />
+                                {(props.lang != "ar")?(<LocatoinBackground />):(<LocationBackgroundReverse/>)}
                                 <TranslateName name={Translate.matches.matche01.stadium} lang={props.lang} classItem={"name-item-info"} />
                             </div>
                             <div className="item-info">
-                                <ChanelBackground />
+                            {(props.lang != "ar")?(<ChanelBackground />):(<ChanelBackgroundReverse/>)}
                                 <TranslateName name={Translate.matches.matche01.channel} lang={props.lang} classItem={"name-item-info"} />
                             </div>
                             <div className="item-info">
-                                <CommentatorBackground />
+                            {(props.lang != "ar")?(<CommentatorBackground />):(<CommentatorBackgroundReverse/>)}
                                 <TranslateName name={Translate.matches.matche01.commentator} lang={props.lang} classItem={"name-item-info"}  />
                             </div>
                         </div>
@@ -57,15 +60,15 @@ const Live = (props) =>{
                 <div className="match">
                     <div className="match-info">
                         <div className="item-info">
-                            <LocatoinBackground />
+                        {(props.lang != "ar")?(<LocatoinBackground />):(<LocationBackgroundReverse/>)}
                             <TranslateName name={Translate.matches.matche02.stadium} lang={props.lang} classItem={"name-item-info"} />
                         </div>
                         <div className="item-info">
-                            <ChanelBackground />
+                        {(props.lang != "ar")?(<ChanelBackground />):(<ChanelBackgroundReverse/>)}
                             <TranslateName name={Translate.matches.matche02.channel} lang={props.lang} classItem={"name-item-info"} />
                         </div>
                         <div className="item-info">
-                            <CommentatorBackground />
+                        {(props.lang != "ar")?(<CommentatorBackground />):(<CommentatorBackgroundReverse/>)}
                             <TranslateName name={Translate.matches.matche02.commentator} lang={props.lang} classItem={"name-item-info"} />
                         </div>
                     </div>
@@ -103,15 +106,15 @@ const Live = (props) =>{
                 <div className="match">
                     <div className="match-info">
                             <div className="item-info">
-                                <LocatoinBackground />
+                            {(props.lang != "ar")?(<LocatoinBackground />):(<LocationBackgroundReverse/>)}
                                 <TranslateName name={Translate.matches.matche03.stadium} lang={props.lang} classItem={"name-item-info"} />
                             </div>
                             <div className="item-info">
-                                <ChanelBackground />
+                            {(props.lang != "ar")?(<ChanelBackground />):(<ChanelBackgroundReverse/>)}
                                 <TranslateName name={Translate.matches.matche03.channel} lang={props.lang} classItem={"name-item-info"} />
                             </div>
                             <div className="item-info">
-                                <CommentatorBackground />
+                            {(props.lang != "ar")?(<CommentatorBackground />):(<CommentatorBackgroundReverse/>)}
                                 <TranslateName name={Translate.matches.matche03.commentator} lang={props.lang} classItem={"name-item-info"} />
                             </div>
                         </div>
@@ -142,15 +145,15 @@ const Live = (props) =>{
                 <div className="match">
                     <div className="match-info">
                         <div className="item-info">
-                            <LocatoinBackground />
+                        {(props.lang != "ar")?(<LocatoinBackground />):(<LocationBackgroundReverse/>)}
                             <TranslateName name={Translate.matches.matche04.stadium} lang={props.lang} classItem={"name-item-info"} />
                         </div>
                         <div className="item-info">
-                            <ChanelBackground />
+                        {(props.lang != "ar")?(<ChanelBackground />):(<ChanelBackgroundReverse/>)}
                             <TranslateName name={Translate.matches.matche04.channel} lang={props.lang} classItem={"name-item-info"} />
                         </div>
                         <div className="item-info">
-                            <CommentatorBackground />
+                        {(props.lang != "ar")?(<CommentatorBackground />):(<CommentatorBackgroundReverse/>)}
                             <TranslateName name={Translate.matches.matche04.commentator} lang={props.lang} classItem={"name-item-info"} />
                         </div>
                     </div>
