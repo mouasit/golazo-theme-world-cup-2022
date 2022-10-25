@@ -1,4 +1,4 @@
-const NameChannel = (props) => {
+const TranslateName = (props) => {
     if(props.lang === "en")
     {
         return(
@@ -19,4 +19,4 @@ const NameChannel = (props) => {
     }
 }
 
-export default NameChannel;
+export default TranslateName;

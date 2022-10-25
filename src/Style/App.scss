@@ -351,6 +351,25 @@ main{
   }
 }
 
+.reverse{
+  main{
+    .all-matches{
+      .match{
+        .match-info{
+          .item-info{
+            span{
+              padding-left: 0;
+              padding-right: 6.4vw;
+              direction: rtl;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 
 @media screen and (max-width: 252px){
   #root{
@@ -674,12 +693,15 @@ main{
     main{
       margin-left: 0;
       margin-right: 18.5rem;
-      .match{
-        .match-info{
-          flex-direction: row-reverse;
-          .item-info{
-            span{
-              background-color: green;
+      .all-matches{
+        .match{
+          .match-info{
+            flex-direction: row-reverse;
+            .item-info{
+              span{
+                padding-left: 0;
+                padding-right: 2.7rem;
+              }
             }
           }
         }
