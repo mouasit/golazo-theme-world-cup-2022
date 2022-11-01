@@ -38,7 +38,7 @@ const SideNav = (props) => {
             </ul>
             <div className="layout-dropdown">
                 <button  className="dropdown btn-dropdown" aria-label="Languages">
-                {(props.lang.language != "ar")?(<Button />):(<ButtonReverse/>)}
+                {(props.lang.language !== "ar")?(<Button />):(<ButtonReverse/>)}
                     <span className="name-flag">
                         <Language lang={{language: props.lang.language}}/>
                     </span>
@@ -48,7 +48,7 @@ const SideNav = (props) => {
                             <path id="Path_1738" data-name="Path 1738" d="M793.082,1047.652,782.435,1059.8l10.647,12.143,10.646-12.143Z" transform="translate(-782.435 -1047.652)" fill="#47b7ab"/>
                         </svg>
                         {
-                            (props.lang.language != "ar")?(
+                            (props.lang.language !== "ar")?(
                                 (props.arrow === "close")?(<BiChevronRight />):(<BiChevronLeft />)
                             ):
                             (

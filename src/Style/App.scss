@@ -20,6 +20,11 @@ $font: 'Qatar2022 Arabic', sans-serif;
   margin: 0;
 }
 
+html{
+  scrollbar-width: normal;
+  scrollbar-color: red green;
+}
+
 body{
   background-color: #711329;
   font-family: $font;
