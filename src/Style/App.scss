@@ -365,6 +365,27 @@ main{
             }
           }
         }
+        .match-play{
+          flex-direction: row-reverse;
+          .team{
+            flex-direction: row;
+            &:first-child{
+              flex-direction: row-reverse;
+            }
+            .team-name{
+              direction: rtl;
+            }
+          }
+        }
+        .match-time{
+          flex-direction: row-reverse;
+          .teams{
+            flex-direction: row-reverse;
+          }
+        }
+        .start-time{
+          flex-direction: row-reverse;
+        }
       }
     }
   }

@@ -6,11 +6,6 @@
   margin: 0;
 }
 
-html {
-  scrollbar-width: normal;
-  scrollbar-color: red green;
-}
-
 body {
   background-color: #711329;
   font-family: "Qatar2022 Arabic", sans-serif;
@@ -331,6 +326,27 @@ main .group-matches .all-matches .match .match-time .start-time .time span {
   padding-right: 6.4vw;
   direction: rtl;
   right: 0;
+}
+.reverse main .all-matches .match .match-play {
+  flex-direction: row-reverse;
+}
+.reverse main .all-matches .match .match-play .team {
+  flex-direction: row;
+}
+.reverse main .all-matches .match .match-play .team:first-child {
+  flex-direction: row-reverse;
+}
+.reverse main .all-matches .match .match-play .team .team-name {
+  direction: rtl;
+}
+.reverse main .all-matches .match .match-time {
+  flex-direction: row-reverse;
+}
+.reverse main .all-matches .match .match-time .teams {
+  flex-direction: row-reverse;
+}
+.reverse main .all-matches .match .start-time {
+  flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 252px) {
