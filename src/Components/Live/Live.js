@@ -19,6 +19,7 @@ import Vs from "../../Components/Items/Icons/Vs";
 import Clock from "../Items/Icons/Clock";
 import Translate from "../../Translate.json";
 import TranslateName from "../Items/TranslateName";
+import { NavLink } from "react-router-dom";
 
 const Live = (props) =>{
     return(
@@ -42,15 +43,15 @@ const Live = (props) =>{
                             {(props.lang !== "ar")?(<CommentatorBackground />):(<CommentatorBackgroundReverse/>)}
                                 <TranslateName name={Translate.matches.matche01.commentator} lang={props.lang} classItem={"name-item-info"}  />
                             </div>
-                        </div>
+                    </div>
                         <div className="match-play">
                             <span className="team">
                                 <img src={flagMorocco} alt="Flag Morocco" />
                                 <TranslateName name={Translate.matches.matche01.team01} lang={props.lang} classItem={"team-name"}  />
                             </span>
-                            <button className="play-button" aria-label="Play Button">
+                            <NavLink to="/Stream" className="play-button" aria-label="Play Button">
                                 <PlayIcon />
-                            </button>
+                            </NavLink>
                             <span className="team team-right">
                                 <img src={flagCroatia} alt="Flag Morocco" />
                                 <TranslateName name={Translate.matches.matche01.team02} lang={props.lang} classItem={"team-name"}  />

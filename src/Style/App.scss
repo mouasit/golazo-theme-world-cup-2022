@@ -42,9 +42,11 @@ body{
 }
 
 .mobile-header{
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 1;
   .logo{
     width: 40vw;
   }
@@ -232,35 +234,6 @@ main{
           text-align: center;
           overflow: hidden;
         }
-
-
-        .match-info{
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          gap: 1rem;
-          .item-info{
-            display: flex;
-            width: auto;
-            position: relative;
-            align-items: center;
-            svg{
-              width: 100%;
-              height: 100%;
-            }
-            span{
-              position: absolute;
-              padding-left:6.4vw;
-              width: 100%;
-              font-size: 2.5vw;
-              color: $white;
-              overflow:hidden;
-              text-overflow: ellipsis;
-              text-align:center;
-              white-space: nowrap;
-            }
-          }
-        }
         .match-play{
           width: 100%;
           display: flex;
@@ -349,22 +322,50 @@ main{
       }
     }
   }
+
+  .match-stream{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    video{
+      width: 100%;
+      border-radius: .5rem;
+    }
+  }
+
+  .match-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    .item-info{
+      display: flex;
+      width: auto;
+      position: relative;
+      align-items: center;
+      svg{
+        width: 100%;
+        height: 100%;
+      }
+      span{
+        position: absolute;
+        padding-left:6.4vw;
+        width: 100%;
+        font-size: 2.5vw;
+        color: $white;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        text-align:center;
+        white-space: nowrap;
+      }
+    }
+  }
 }
 
 .reverse{
   main{
     .all-matches{
       .match{
-        .match-info{
-          .item-info{
-            span{
-              padding-left: 0;
-              padding-right: 6.4vw;
-              direction: rtl;
-              right: 0;
-            }
-          }
-        }
         .match-play{
           flex-direction: row-reverse;
           .team{
@@ -385,6 +386,17 @@ main{
         }
         .start-time{
           flex-direction: row-reverse;
+        }
+      }
+    }
+    .match-info{
+      flex-direction: row-reverse;
+      .item-info{
+        span{
+          padding-left: 0;
+          padding-right: 6.4vw;
+          direction: rtl;
+          right: 0;
         }
       }
     }
@@ -601,20 +613,6 @@ main{
             color: $white;
             width: auto;
           }
-          .match-info{
-            justify-content: space-around;
-            gap: .5rem;
-            .item-info{
-              svg{
-                width: 12.047rem;
-                height: 2.728rem;
-              }
-              span{
-                padding-left:2.7rem;
-                font-size: 1rem;
-              }
-            }
-          }
           .match-play{
             justify-content: space-around;
             .team{
@@ -678,6 +676,21 @@ main{
         }
       }
     }
+
+    .match-info{
+      justify-content: space-around;
+      gap: .5rem;
+      .item-info{
+        svg{
+          width: 12.047rem;
+          height: 2.728rem;
+        }
+        span{
+          padding-left:2.7rem;
+          font-size: 1rem;
+        }
+      }
+    }
   }
 
   .reverse{
@@ -715,16 +728,11 @@ main{
     main{
       margin-left: 0;
       margin-right: 18.5rem;
-      .all-matches{
-        .match{
-          .match-info{
-            flex-direction: row-reverse;
-            .item-info{
-              span{
-                padding-left: 0;
-                padding-right: 2.7rem;
-              }
-            }
+      .match-info{
+        .item-info{
+          span{
+            padding-left: 0;
+            padding-right: 2.7rem;
           }
         }
       }

@@ -6,6 +6,7 @@ import Live from './Components/Live/Live';
 import Ranking from "./Components/Ranking/Ranking";
 import Matches from "./Components/Matches/Matches";
 import Stadiums from "./Components/Stadiums/Stadiums";
+import Stream from "./Components/Live/Stream";
 import { useState } from 'react';
 
 
@@ -23,6 +24,7 @@ function App() {
     <Separator />
       <Routes>
         <Route path='/' element={<Live lang = {lang} />} />
+        <Route path='/Stream' element={<Stream lang = {lang} />} />
         <Route path='/Ranking' element={<Ranking lang = {lang} />} />
         <Route path='/Matches' element={<Matches lang = {lang} />} />
         <Route path='/Stadiums' element={<Stadiums lang = {lang} />} />
