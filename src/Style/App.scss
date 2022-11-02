@@ -328,9 +328,10 @@ main{
           .start-time{
             display: flex;
             flex: 1;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: flex-start;
             gap: 1.5vw;
+            
             svg{
               width: 10vw;
             }
@@ -661,6 +662,7 @@ main{
             }
   
             .start-time{
+              gap: 1.4rem;
               svg{
                 width: 4rem;
               }

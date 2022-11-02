@@ -303,7 +303,7 @@ main .group-matches .all-matches .match .match-time .teams .vs svg {
 main .group-matches .all-matches .match .match-time .start-time {
   display: flex;
   flex: 1;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start;
   gap: 1.5vw;
 }
@@ -597,6 +597,9 @@ main .group-matches .all-matches .match .match-time .start-time .time span {
   }
   main .group-matches .all-matches .match .match-time .teams .vs svg {
     width: 2.1rem;
+  }
+  main .group-matches .all-matches .match .match-time .start-time {
+    gap: 1.4rem;
   }
   main .group-matches .all-matches .match .match-time .start-time svg {
     width: 4rem;
