@@ -39,6 +39,7 @@ const Stream = (props) =>{
                 <button className=" show">
                     <ActiveButton />
                 </button>
+                <div className="hide"></div>
                 <button>
                     <BackgroundButton />
                 </button>

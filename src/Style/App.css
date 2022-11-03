@@ -140,7 +140,7 @@ body {
   right: 0;
   padding: 0.3rem;
   background-color: #EEEEE4;
-  z-index: 1;
+  z-index: 2;
 }
 .mobile-nav ul {
   display: flex;
@@ -307,7 +307,7 @@ main .match-stream video {
 main .details-match {
   display: flex;
   flex-direction: column;
-  gap: 3vw;
+  gap: 6vw;
 }
 main .details-match .group {
   display: flex;
@@ -318,13 +318,24 @@ main .details-match .group svg {
   width: 70vw;
 }
 main .details-match .btn-switch {
-  background-color: green;
   display: flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+main .details-match .btn-switch .hide {
+  background-color: #60071E;
+  position: absolute;
+  width: 2.8vw;
+  height: 100%;
 }
 main .details-match .btn-switch button {
   background: none;
   border: none;
   width: 40vw;
+  z-index: 1;
+  display: flex;
 }
 main .match-info {
   display: flex;
