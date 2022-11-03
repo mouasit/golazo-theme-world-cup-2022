@@ -317,25 +317,61 @@ main .details-match .group {
 main .details-match .group svg {
   width: 70vw;
 }
-main .details-match .btn-display {
+main .details-match .view-gam-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .details-match .view-gam-plan .teams-gam-plan {
+  flex: 1;
+}
+main .details-match .view-gam-plan .teams-gam-plan .info-team {
+  display: flex;
+  gap: 2vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .info-team .team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .info-team .team img {
+  width: 17vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .info-team .team .team-name {
+  color: #EEEEE4;
+  font-size: 3.2vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .info-team .gam-plan {
+  display: flex;
+  color: #EEEEE4;
+  position: relative;
+  top: 1vw;
+  font-size: 3.2vw;
+}
+main .details-match .view-gam-plan .team-gam-plan-right .info-team {
+  flex-direction: row-reverse;
+}
+main .btn-display {
   display: flex;
   position: relative;
   overflow: hidden;
   justify-content: center;
   align-items: center;
 }
-main .details-match .btn-display .hide {
+main .btn-display .hide {
   background-color: #60071E;
   position: absolute;
   height: 100%;
 }
-main .details-match .btn-display .hide-left {
+main .btn-display .hide-left {
   width: 2.8vw;
 }
-main .details-match .btn-display .hide-right {
-  width: 5.1vw;
+main .btn-display .hide-right {
+  width: 5.2vw;
 }
-main .details-match .btn-display button {
+main .btn-display button {
   background: none;
   border: none;
   width: 40vw;
@@ -345,23 +381,20 @@ main .details-match .btn-display button {
   align-items: center;
   cursor: pointer;
 }
-main .details-match .btn-display button span {
+main .btn-display button span {
   position: absolute;
   color: #EEEEE4;
   font-family: "Qatar2022 Arabic", sans-serif;
   font-size: 3.5vw;
 }
-main .details-match .btn-display .show span {
+main .btn-display .show span {
   color: #60071E;
 }
-main .details-match .btn-display .hide-item-left span {
-  padding-left: 2.8vw;
+main .btn-display .hide-item-left span {
+  padding-left: 5.2vw;
 }
-main .details-match .btn-display .hide-item-right span {
+main .btn-display .hide-item-right span {
   padding-right: 2.8vw;
-  /*
-  padding-right: 0;
-  padding-left: 2.8vw;*/
 }
 main .match-info {
   display: flex;

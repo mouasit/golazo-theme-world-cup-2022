@@ -8,11 +8,9 @@ import Translate from "../../Translate.json";
 import TranslateName from "../Items/TranslateName";
 import Video from "../../assets/morocco.mp4";
 import Group from "../Items/Group";
-import BackgroundButton from "../Items/BackgournButton";
-import ActiveButton from "../Items/ActiveButton";
-import { useState } from "react";
+import ButtonSwitchers from "../Items/ButtonSwitchers";
+import flagMorocoo from "../../assets/flags/teams/morocco.svg";
 const Stream = (props) =>{
-    const [showLeft, setShowLeft] = useState(true);
     return(
         <main>
         <section className="match-stream">
@@ -37,22 +35,30 @@ const Stream = (props) =>{
             <div className="group">
             <Group nameGroup="G" lang={props.lang}/>
             </div>
-            <div className="btn-display">
-                <button className={(showLeft)?("show"):("hide-item-left")}  onClick={(e) => {
-                    setShowLeft(true);
-                    }}>
-                    {
-                        (showLeft)?(<ActiveButton />):(<BackgroundButton />)
-                    }
-                    <span>Gam Plan</span>
-                </button>
-                <div className={(!showLeft)?("hide hide-right"):("hide hide-left")}></div>
-                <button className={(!showLeft)?("show"):("hide-item-right")}  onClick={() => {setShowLeft(false)}}>
-                    {
-                        (!showLeft)?(<ActiveButton />):(<BackgroundButton />)
-                    }
-                    <span>Stats</span>
-                </button>
+            <ButtonSwitchers leftName="Gam Plan" rightName="Stats"/>
+            <div id="gam-plan" className="view-gam-plan">
+                <div className="teams-gam-plan">
+                    <div className="info-team">
+                        <div className="team">
+                            <img src={flagMorocoo} alt="" />
+                            <span className="team-name">Mar</span>
+                        </div>
+                        <div className="gam-plan">
+                            4-2-3-1
+                        </div>
+                    </div>
+                </div>
+                <div className="teams-gam-plan team-gam-plan-right">
+                    <div className="info-team">
+                        <div className="team">
+                            <img src={flagMorocoo} alt="" />
+                            <span className="team-name">Mar</span>
+                        </div>
+                        <div className="gam-plan">
+                            4-3-3
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

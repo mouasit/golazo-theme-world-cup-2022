@@ -345,59 +345,96 @@ main{
         width: 70vw;
       }
     }
-    .btn-display{
+
+    .view-gam-plan{
       display: flex;
-      position: relative;
-      overflow: hidden;
+      justify-content: space-between;
+      align-items: center;
+      .teams-gam-plan{
+        flex: 1;
+        .info-team{
+          display: flex;
+          gap: 2vw;
+          .team{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1vw;
+            img{
+              width: 17vw;
+            }
+            .team-name{
+              color: $white;
+              font-size: 3.2vw;
+            }
+          }
+          .gam-plan{
+            display: flex;
+            color: $white;
+            position: relative;
+            top: 1vw;
+            font-size: 3.2vw;
+          }
+        }
+      }
+      .team-gam-plan-right{
+        .info-team{
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+
+  .btn-display{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    .hide{
+      background-color: #60071E;
+      position: absolute;
+      height: 100%;
+    }
+    .hide-left{
+      width: 2.8vw;
+    }
+    .hide-right{
+      width: 5.2vw;
+    }
+    button{
+      background: none;
+      border: none;
+      width: 40vw;
+      z-index: 1;
+      display: flex;
       justify-content: center;
       align-items: center;
-      .hide{
-        background-color: #60071E;
+      cursor: pointer;
+      span{
         position: absolute;
-        height: 100%;
+        color: $white;
+        font-family: $font;
+        font-size: 3.5vw;
       }
-      .hide-left{
-        width: 2.8vw;
-      }
-      .hide-right{
-        width: 5.1vw;
-      }
-      button{
-        background: none;
-        border: none;
-        width: 40vw;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        span{
-          position: absolute;
-          color: $white;
-          font-family: $font;
-          font-size: 3.5vw;
-        }
-      }
+    }
 
-      .show{
-        span{
-          color: #60071E;
-        }
+    .show{
+      span{
+        color: #60071E;
       }
-      
-      .hide-item-left{
-        span{
-          padding-left: 2.8vw;
-        }
+    }
+    
+    .hide-item-left{
+      span{
+        padding-left: 5.2vw;
       }
+    }
 
-      .hide-item-right{
-        span{
-          padding-right: 2.8vw;
-          /*
-          padding-right: 0;
-          padding-left: 2.8vw;*/
-        }
+    .hide-item-right{
+      span{
+        padding-right: 2.8vw;
       }
     }
   }
