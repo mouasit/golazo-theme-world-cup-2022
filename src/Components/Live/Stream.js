@@ -10,7 +10,9 @@ import Video from "../../assets/morocco.mp4";
 import Group from "../Items/Group";
 import BackgroundButton from "../Items/BackgournButton";
 import ActiveButton from "../Items/ActiveButton";
+import { useState } from "react";
 const Stream = (props) =>{
+    const [showLeft, setShowLeft] = useState(true);
     return(
         <main>
         <section className="match-stream">
@@ -35,13 +37,21 @@ const Stream = (props) =>{
             <div className="group">
             <Group nameGroup="G" lang={props.lang}/>
             </div>
-            <div className="btn-switch">
-                <button className=" show">
-                    <ActiveButton />
+            <div className="btn-display">
+                <button className={(showLeft)?("show"):("hide-item-left")}  onClick={(e) => {
+                    setShowLeft(true);
+                    }}>
+                    {
+                        (showLeft)?(<ActiveButton />):(<BackgroundButton />)
+                    }
+                    <span>Gam Plan</span>
                 </button>
-                <div className="hide"></div>
-                <button>
-                    <BackgroundButton />
+                <div className={(!showLeft)?("hide hide-right"):("hide hide-left")}></div>
+                <button className={(!showLeft)?("show"):("hide-item-right")}  onClick={() => {setShowLeft(false)}}>
+                    {
+                        (!showLeft)?(<ActiveButton />):(<BackgroundButton />)
+                    }
+                    <span>Stats</span>
                 </button>
             </div>
         </section>

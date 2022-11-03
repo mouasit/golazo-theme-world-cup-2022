@@ -345,7 +345,7 @@ main{
         width: 70vw;
       }
     }
-    .btn-switch{
+    .btn-display{
       display: flex;
       position: relative;
       overflow: hidden;
@@ -354,8 +354,13 @@ main{
       .hide{
         background-color: #60071E;
         position: absolute;
-        width: 2.8vw;
         height: 100%;
+      }
+      .hide-left{
+        width: 2.8vw;
+      }
+      .hide-right{
+        width: 5.1vw;
       }
       button{
         background: none;
@@ -363,6 +368,36 @@ main{
         width: 40vw;
         z-index: 1;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        span{
+          position: absolute;
+          color: $white;
+          font-family: $font;
+          font-size: 3.5vw;
+        }
+      }
+
+      .show{
+        span{
+          color: #60071E;
+        }
+      }
+      
+      .hide-item-left{
+        span{
+          padding-left: 2.8vw;
+        }
+      }
+
+      .hide-item-right{
+        span{
+          padding-right: 2.8vw;
+          /*
+          padding-right: 0;
+          padding-left: 2.8vw;*/
+        }
       }
     }
   }
