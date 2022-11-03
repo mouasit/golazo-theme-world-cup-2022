@@ -49,7 +49,7 @@ const Live = (props) =>{
                                 <img src={flagMorocco} alt="Flag Morocco" />
                                 <TranslateName name={Translate.matches.matche01.team01} lang={props.lang} classItem={"team-name"}  />
                             </span>
-                            <NavLink to="/Stream" className="play-button" aria-label="Play Button">
+                            <NavLink to= '/Stream'className="play-button" aria-label="Play Button">
                                 <PlayIcon />
                             </NavLink>
                             <span className="team team-right">

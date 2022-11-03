@@ -304,6 +304,28 @@ main .match-stream video {
   width: 100%;
   border-radius: 0.5rem;
 }
+main .details-match {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+main .details-match .group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .details-match .group svg {
+  width: 70vw;
+}
+main .details-match .btn-switch {
+  background-color: green;
+  display: flex;
+}
+main .details-match .btn-switch button {
+  background: none;
+  border: none;
+  width: 40vw;
+}
 main .match-info {
   display: flex;
   justify-content: space-between;
@@ -613,6 +635,13 @@ main .match-info .item-info span {
   }
   main .group-matches .all-matches .match .match-time .start-time .time span {
     font-size: 3rem;
+  }
+  main .match-stream {
+    gap: 1.5rem;
+  }
+  main .details-match .group svg {
+    width: 28.782rem;
+    height: 3.704rem;
   }
   main .match-info {
     justify-content: space-around;

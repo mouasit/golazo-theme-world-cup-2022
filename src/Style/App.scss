@@ -333,6 +333,29 @@ main{
     }
   }
 
+  .details-match{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    .group{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg{
+        width: 70vw;
+      }
+    }
+    .btn-switch{
+      background-color: green;
+      display: flex;
+      button{
+        background: none;
+        border: none;
+        width: 40vw;
+      }
+    }
+  }
+
   .match-info{
     display: flex;
     justify-content: space-between;
@@ -673,6 +696,19 @@ main{
               }
             }
           }
+        }
+      }
+    }
+
+    .match-stream{
+      gap: 1.5rem;
+    }
+  
+    .details-match{
+      .group{
+        svg{
+          width:28.782rem;
+          height: 3.704rem;
         }
       }
     }

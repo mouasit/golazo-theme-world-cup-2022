@@ -7,8 +7,12 @@ import CommentatorBackgroundReverse from "../Items/CommentatorBackgroundReverse"
 import Translate from "../../Translate.json";
 import TranslateName from "../Items/TranslateName";
 import Video from "../../assets/morocco.mp4";
-const Stream = (props) =>(
-    <main>
+import Group from "../Items/Group";
+import BackgroundButton from "../Items/BackgournButton";
+import ActiveButton from "../Items/ActiveButton";
+const Stream = (props) =>{
+    return(
+        <main>
         <section className="match-stream">
             <div className="match-info">
                 <div className="item-info">
@@ -27,7 +31,21 @@ const Stream = (props) =>(
             <video src= {Video} controls>
             </video>
         </section>
+        <section className="details-match">
+            <div className="group">
+            <Group nameGroup="G" lang={props.lang}/>
+            </div>
+            <div className="btn-switch">
+                <button className=" show">
+                    <ActiveButton />
+                </button>
+                <button>
+                    <BackgroundButton />
+                </button>
+            </div>
+        </section>
     </main>
-)
+    )
+}
 
 export default Stream
