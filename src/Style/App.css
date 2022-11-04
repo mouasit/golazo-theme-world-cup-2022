@@ -307,7 +307,7 @@ main .match-stream video {
 main .details-match {
   display: flex;
   flex-direction: column;
-  gap: 6vw;
+  gap: 8vw;
 }
 main .details-match .group {
   display: flex;
@@ -320,14 +320,17 @@ main .details-match .group svg {
 main .details-match .view-gam-plan {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 main .details-match .view-gam-plan .teams-gam-plan {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
 }
 main .details-match .view-gam-plan .teams-gam-plan .info-team {
   display: flex;
-  gap: 2vw;
+  gap: 2.5vw;
 }
 main .details-match .view-gam-plan .teams-gam-plan .info-team .team {
   display: flex;
@@ -349,9 +352,107 @@ main .details-match .view-gam-plan .teams-gam-plan .info-team .gam-plan {
   position: relative;
   top: 1vw;
   font-size: 3.2vw;
+  display: flex;
+  align-items: flex-start;
+  gap: 1vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .info-team .gam-plan svg {
+  position: relative;
+  top: 0.5vw;
+  width: 2.5vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .btn-display .hide-left {
+  width: 1.5vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .btn-display .hide-right {
+  width: 2.5vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .btn-display button {
+  width: 100%;
+}
+main .details-match .view-gam-plan .teams-gam-plan .btn-display button span {
+  font-size: 2vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .btn-display .hide-item-right span {
+  padding-right: 1.5vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .btn-display .hide-item-left span {
+  padding-left: 2.5vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .team-players {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .titlePosition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .titlePosition svg {
+  width: 12.8vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .titlePosition span {
+  color: #EEEEE4;
+  font-size: 3vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player {
+  display: flex;
+  gap: 2vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player img {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 3.125rem;
+}
+main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player {
+  display: flex;
+  flex-direction: column;
+}
+main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .name-player {
+  color: #EEEEE4;
+  font-size: 2.8vw;
+}
+main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .number-player {
+  position: relative;
+  display: flex;
+  width: 8vw;
+  justify-content: center;
+  align-items: center;
+}
+main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .number-player svg {
+  fill: #47B7AB;
+}
+main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .number-player .number {
+  position: absolute;
+  color: #EEEEE4;
+  font-size: 2.3vw;
+  height: 100%;
+}
+main .details-match .view-gam-plan .vs {
+  width: 7vw;
 }
 main .details-match .view-gam-plan .team-gam-plan-right .info-team {
   flex-direction: row-reverse;
+}
+main .details-match .view-gam-plan .team-gam-plan-right .number-player-right svg {
+  fill: #E32052 !important;
 }
 main .btn-display {
   display: flex;
