@@ -198,7 +198,7 @@ body{
 main{
   padding-top: 2rem;
   //padding-bottom: 15.5vw;
-  padding-bottom: 4.5rem;
+  padding-bottom: 6rem;
   display: flex;
   flex-direction: column;
   gap: 9vw;
@@ -348,7 +348,6 @@ main{
     }
 
     .view-gam-plan{
-      display: flex;
       justify-content: space-between;
       align-items: flex-start;
       display: none;
@@ -481,6 +480,12 @@ main{
               }
             }
           }
+          .show-list{
+            display: flex;
+          }
+          .hide-list{
+            display: none;
+          }
         }
       }
       .vs{
@@ -498,9 +503,9 @@ main{
       }
     }
     .view-stats{
-      display: flex;
       flex-direction: column;
       gap: 5vw;
+      display: none;
       .teams-stats{
         flex: 1;
         display: flex;
@@ -546,19 +551,14 @@ main{
           .info-stats{
             display: flex;
             justify-content: space-between;
-            gap: 5vw;
+            position: relative;
             .stat-team{
-              position: relative;
-              background-color: #E32052;
+              position: absolute;
+              background-color: #47B7AB;
               border-radius: 3.125rem;
-              flex: 1;
+              width: 60%;
               height: 1.2vw;
-              .line-stat{
-                width: 50%;
-                height: 100%;
-                background-color: #47B7AB;
-              border-radius: 3.125rem;
-              }
+              z-index: 1;
               span{
                 position: absolute;
                 top: -4.3vw;
@@ -568,17 +568,37 @@ main{
               }
             }
             .stat-team-right{
-              .line-stat{
-                width: 50%;
-              }
+              right: 0;
+              width: 50%;
+              background-color: #E32052;
+              z-index: -1;
               span{
                 left: auto;
                 right: 0;
               }
             }
           }
+
+          .equal{
+            .stat-team{
+              border-top-right-radius: 0;
+              border-bottom-right-radius: 0;
+            }
+            .stat-team-right{
+              border-radius: 3.125rem;
+              border-top-left-radius: 0;
+              border-bottom-left-radius: 0;
+            }
+          }
         }
       }
+    }
+
+    .show-list{
+      display: flex;
+    }
+    .hide-list{
+      display: none;
     }
   }
 
@@ -594,15 +614,15 @@ main{
       height: 100%;
     }
     .hide-left{
-      width: 2.8vw;
+      width: 2vw;
     }
     .hide-right{
-      width: 5.2vw;
+      width: 4.4vw;
     }
     button{
       background: none;
       border: none;
-      width: 40vw;
+      width: 34vw;
       z-index: 1;
       display: flex;
       justify-content: center;
@@ -612,7 +632,7 @@ main{
         position: absolute;
         color: $white;
         font-family: $font;
-        font-size: 3.5vw;
+        font-size: 3vw;
       }
     }
 
@@ -624,13 +644,13 @@ main{
     
     .hide-item-left{
       span{
-        padding-left: 5.2vw;
+        padding-left: 4.4vw;
       }
     }
 
     .hide-item-right{
       span{
-        padding-right: 2.8vw;
+        padding-right: 2vw;
       }
     }
   }

@@ -175,7 +175,7 @@ body {
 
 main {
   padding-top: 2rem;
-  padding-bottom: 4.5rem;
+  padding-bottom: 6rem;
   display: flex;
   flex-direction: column;
   gap: 9vw;
@@ -318,7 +318,6 @@ main .details-match .group svg {
   width: 70vw;
 }
 main .details-match .view-gam-plan {
-  display: flex;
   justify-content: space-between;
   align-items: flex-start;
   display: none;
@@ -446,6 +445,12 @@ main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions
   font-size: 2.3vw;
   height: 100%;
 }
+main .details-match .view-gam-plan .teams-gam-plan .team-players .show-list {
+  display: flex;
+}
+main .details-match .view-gam-plan .teams-gam-plan .team-players .hide-list {
+  display: none;
+}
 main .details-match .view-gam-plan .vs {
   width: 7vw;
 }
@@ -456,9 +461,9 @@ main .details-match .view-gam-plan .team-gam-plan-right .number-player-right svg
   fill: #E32052 !important;
 }
 main .details-match .view-stats {
-  display: flex;
   flex-direction: column;
   gap: 5vw;
+  display: none;
 }
 main .details-match .view-stats .teams-stats {
   flex: 1;
@@ -507,20 +512,15 @@ main .details-match .view-stats .stats .stat-type .title-stat svg {
 main .details-match .view-stats .stats .stat-type .info-stats {
   display: flex;
   justify-content: space-between;
-  gap: 5vw;
+  position: relative;
 }
 main .details-match .view-stats .stats .stat-type .info-stats .stat-team {
-  position: relative;
-  background-color: #E32052;
-  border-radius: 3.125rem;
-  flex: 1;
-  height: 1.2vw;
-}
-main .details-match .view-stats .stats .stat-type .info-stats .stat-team .line-stat {
-  width: 50%;
-  height: 100%;
+  position: absolute;
   background-color: #47B7AB;
   border-radius: 3.125rem;
+  width: 60%;
+  height: 1.2vw;
+  z-index: 1;
 }
 main .details-match .view-stats .stats .stat-type .info-stats .stat-team span {
   position: absolute;
@@ -529,12 +529,30 @@ main .details-match .view-stats .stats .stat-type .info-stats .stat-team span {
   color: #B5B4B4;
   font-size: 2.5vw;
 }
-main .details-match .view-stats .stats .stat-type .info-stats .stat-team-right .line-stat {
+main .details-match .view-stats .stats .stat-type .info-stats .stat-team-right {
+  right: 0;
   width: 50%;
+  background-color: #E32052;
+  z-index: -1;
 }
 main .details-match .view-stats .stats .stat-type .info-stats .stat-team-right span {
   left: auto;
   right: 0;
+}
+main .details-match .view-stats .stats .stat-type .equal .stat-team {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+main .details-match .view-stats .stats .stat-type .equal .stat-team-right {
+  border-radius: 3.125rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+main .details-match .show-list {
+  display: flex;
+}
+main .details-match .hide-list {
+  display: none;
 }
 main .btn-display {
   display: flex;
@@ -549,15 +567,15 @@ main .btn-display .hide {
   height: 100%;
 }
 main .btn-display .hide-left {
-  width: 2.8vw;
+  width: 2vw;
 }
 main .btn-display .hide-right {
-  width: 5.2vw;
+  width: 4.4vw;
 }
 main .btn-display button {
   background: none;
   border: none;
-  width: 40vw;
+  width: 34vw;
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -568,16 +586,16 @@ main .btn-display button span {
   position: absolute;
   color: #EEEEE4;
   font-family: "Qatar2022 Arabic", sans-serif;
-  font-size: 3.5vw;
+  font-size: 3vw;
 }
 main .btn-display .show span {
   color: #60071E;
 }
 main .btn-display .hide-item-left span {
-  padding-left: 5.2vw;
+  padding-left: 4.4vw;
 }
 main .btn-display .hide-item-right span {
-  padding-right: 2.8vw;
+  padding-right: 2vw;
 }
 main .match-info {
   display: flex;
