@@ -197,7 +197,8 @@ body{
 
 main{
   padding-top: 2rem;
-  padding-bottom: 15.5vw;
+  //padding-bottom: 15.5vw;
+  padding-bottom: 4.5rem;
   display: flex;
   flex-direction: column;
   gap: 9vw;
@@ -350,6 +351,7 @@ main{
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      display: none;
       .teams-gam-plan{
         flex: 1;
         display: flex;
@@ -491,6 +493,89 @@ main{
         .number-player-right{
           svg{
             fill: #E32052 !important;
+          }
+        }
+      }
+    }
+    .view-stats{
+      display: flex;
+      flex-direction: column;
+      gap: 5vw;
+      .teams-stats{
+        flex: 1;
+        display: flex;
+        gap: 5vw;
+        .team{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 1vw;
+          flex: 1;
+          img{
+            width: 17vw;
+          }
+          span{
+            color: $white;
+            font-size: 3.2vw;
+          }
+        }
+        .vs{
+          width: 7vw;
+        }
+      }
+      .stats{
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+        .stat-type{
+          display: flex;
+          flex-direction: column;
+          gap: 2.5vw;
+          .title-stat{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            font-size: 3vw;
+            gap: 1vw;
+            svg{
+              width: 3.5vw;
+            }
+          }
+          .info-stats{
+            display: flex;
+            justify-content: space-between;
+            gap: 5vw;
+            .stat-team{
+              position: relative;
+              background-color: #E32052;
+              border-radius: 3.125rem;
+              flex: 1;
+              height: 1.2vw;
+              .line-stat{
+                width: 50%;
+                height: 100%;
+                background-color: #47B7AB;
+              border-radius: 3.125rem;
+              }
+              span{
+                position: absolute;
+                top: -4.3vw;
+                left: 0;
+                color: #B5B4B4;
+                font-size: 2.5vw;
+              }
+            }
+            .stat-team-right{
+              .line-stat{
+                width: 50%;
+              }
+              span{
+                left: auto;
+                right: 0;
+              }
+            }
           }
         }
       }

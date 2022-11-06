@@ -16,6 +16,8 @@ import Vs from "../Items/Vs";
 import TitlePositon from "../Items/TitlePosition";
 import ziyach from "../../assets/Players/ziyach.png";
 import BackgroundNumber from "../Items/BackgroundNumber";
+import RedCard from "../Items/RedCard";
+import YellowCard from "../Items/YellowCard";
 const Stream = (props) =>{
     return(
         <main>
@@ -43,7 +45,7 @@ const Stream = (props) =>{
             </div>
             <ButtonSwitchers leftName="Gam Plan" rightName="Stats"/>
             <div id="gamPlan" className="view-gam-plan">
-            <div className="teams-gam-plan">
+                <div className="teams-gam-plan">
                     <div className="info-team">
                         <div className="team">
                             <img src={flagMorocoo} alt="" />
@@ -176,6 +178,73 @@ const Stream = (props) =>{
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="view-stats">
+                <div className="teams-stats">
+                    <div className="team">
+                        <img src={flagMorocoo} alt="" />
+                        <span>MAR</span>
+                    </div>
+                    <Vs />
+                    <div className="team">
+                        <img src={flagCroatia} alt="" />
+                        <span>COR</span>
+                    </div>
+                </div>
+                <div className="stats">
+                    <div className="stat-type">
+                        <div className="title-stat">Possession</div>
+                        <div className="info-stats">
+                            <div className="stat-team">
+                                <div className="line-stat"></div>
+                                <span>50%</span>
+                            </div>
+                            <div className="stat-team stat-team-right">
+                                <div className="line-stat"></div>
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="stat-type">
+                        <div className="title-stat">Possession</div>
+                        <div className="info-stats">
+                            <div className="stat-team">
+                                <div className="line-stat"></div>
+                                <span>50%</span>
+                            </div>
+                            <div className="stat-team stat-team-right">
+                                <div className="line-stat"></div>
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="stat-type">
+                        <div className="title-stat">Cards <YellowCard /> </div>
+                        <div className="info-stats">
+                            <div className="stat-team">
+                                <div className="line-stat"></div>
+                                <span>50%</span>
+                            </div>
+                            <div className="stat-team stat-team-right">
+                                <div className="line-stat"></div>
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="stat-type">
+                        <div className="title-stat">Cards <RedCard /> </div>
+                        <div className="info-stats">
+                            <div className="stat-team">
+                                <div className="line-stat"></div>
+                                <span>50%</span>
+                            </div>
+                            <div className="stat-team stat-team-right">
+                                <div className="line-stat"></div>
+                                <span>50%</span>
                             </div>
                         </div>
                     </div>

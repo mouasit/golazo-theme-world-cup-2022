@@ -175,7 +175,7 @@ body {
 
 main {
   padding-top: 2rem;
-  padding-bottom: 15.5vw;
+  padding-bottom: 4.5rem;
   display: flex;
   flex-direction: column;
   gap: 9vw;
@@ -321,6 +321,7 @@ main .details-match .view-gam-plan {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  display: none;
 }
 main .details-match .view-gam-plan .teams-gam-plan {
   flex: 1;
@@ -453,6 +454,87 @@ main .details-match .view-gam-plan .team-gam-plan-right .info-team {
 }
 main .details-match .view-gam-plan .team-gam-plan-right .number-player-right svg {
   fill: #E32052 !important;
+}
+main .details-match .view-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+main .details-match .view-stats .teams-stats {
+  flex: 1;
+  display: flex;
+  gap: 5vw;
+}
+main .details-match .view-stats .teams-stats .team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  flex: 1;
+}
+main .details-match .view-stats .teams-stats .team img {
+  width: 17vw;
+}
+main .details-match .view-stats .teams-stats .team span {
+  color: #EEEEE4;
+  font-size: 3.2vw;
+}
+main .details-match .view-stats .teams-stats .vs {
+  width: 7vw;
+}
+main .details-match .view-stats .stats {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+main .details-match .view-stats .stats .stat-type {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vw;
+}
+main .details-match .view-stats .stats .stat-type .title-stat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #EEEEE4;
+  font-size: 3vw;
+  gap: 1vw;
+}
+main .details-match .view-stats .stats .stat-type .title-stat svg {
+  width: 3.5vw;
+}
+main .details-match .view-stats .stats .stat-type .info-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 5vw;
+}
+main .details-match .view-stats .stats .stat-type .info-stats .stat-team {
+  position: relative;
+  background-color: #E32052;
+  border-radius: 3.125rem;
+  flex: 1;
+  height: 1.2vw;
+}
+main .details-match .view-stats .stats .stat-type .info-stats .stat-team .line-stat {
+  width: 50%;
+  height: 100%;
+  background-color: #47B7AB;
+  border-radius: 3.125rem;
+}
+main .details-match .view-stats .stats .stat-type .info-stats .stat-team span {
+  position: absolute;
+  top: -4.3vw;
+  left: 0;
+  color: #B5B4B4;
+  font-size: 2.5vw;
+}
+main .details-match .view-stats .stats .stat-type .info-stats .stat-team-right .line-stat {
+  width: 50%;
+}
+main .details-match .view-stats .stats .stat-type .info-stats .stat-team-right span {
+  left: auto;
+  right: 0;
 }
 main .btn-display {
   display: flex;
