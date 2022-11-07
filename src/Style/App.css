@@ -449,12 +449,6 @@ main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions
   font-size: 2.3vw;
   height: 100%;
 }
-main .details-match .view-gam-plan .teams-gam-plan .team-players .show-list {
-  display: flex;
-}
-main .details-match .view-gam-plan .teams-gam-plan .team-players .hide-list {
-  display: none;
-}
 main .details-match .view-gam-plan .vs {
   width: 7vw;
 }
@@ -463,94 +457,6 @@ main .details-match .view-gam-plan .team-gam-plan-right .info-team {
 }
 main .details-match .view-gam-plan .team-gam-plan-right .number-player-right svg {
   fill: #E32052 !important;
-}
-main .details-match .view-stats {
-  flex-direction: column;
-  gap: 5vw;
-  display: none;
-}
-main .details-match .view-stats .teams-stats {
-  flex: 1;
-  display: flex;
-  gap: 5vw;
-}
-main .details-match .view-stats .teams-stats .team {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1vw;
-  flex: 1;
-}
-main .details-match .view-stats .teams-stats .team img {
-  width: 17vw;
-}
-main .details-match .view-stats .teams-stats .team span {
-  color: #EEEEE4;
-  font-size: 3.2vw;
-}
-main .details-match .view-stats .teams-stats .vs {
-  width: 7vw;
-}
-main .details-match .view-stats .stats {
-  display: flex;
-  flex-direction: column;
-  gap: 5vw;
-}
-main .details-match .view-stats .stats .stat-type {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5vw;
-}
-main .details-match .view-stats .stats .stat-type .title-stat {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #EEEEE4;
-  font-size: 3vw;
-  gap: 1vw;
-}
-main .details-match .view-stats .stats .stat-type .title-stat svg {
-  width: 3.5vw;
-}
-main .details-match .view-stats .stats .stat-type .info-stats {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-main .details-match .view-stats .stats .stat-type .info-stats .stat-team {
-  position: absolute;
-  background-color: #47B7AB;
-  border-radius: 3.125rem;
-  width: 60%;
-  height: 1.2vw;
-  z-index: 1;
-}
-main .details-match .view-stats .stats .stat-type .info-stats .stat-team span {
-  position: absolute;
-  top: -4.3vw;
-  left: 0;
-  color: #B5B4B4;
-  font-size: 2.5vw;
-}
-main .details-match .view-stats .stats .stat-type .info-stats .stat-team-right {
-  right: 0;
-  width: 50%;
-  background-color: #E32052;
-  z-index: -1;
-}
-main .details-match .view-stats .stats .stat-type .info-stats .stat-team-right span {
-  left: auto;
-  right: 0;
-}
-main .details-match .view-stats .stats .stat-type .equal .stat-team {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-main .details-match .view-stats .stats .stat-type .equal .stat-team-right {
-  border-radius: 3.125rem;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
 }
 main .details-match .show-list {
   display: flex;
@@ -658,6 +564,103 @@ main .match-info .item-info span {
   padding-right: 6.4vw;
   direction: rtl;
   right: 0;
+}
+
+.view-stats {
+  flex-direction: column;
+  gap: 5vw;
+  display: none;
+}
+.view-stats .teams-stats {
+  flex: 1;
+  display: flex;
+  gap: 5vw;
+}
+.view-stats .teams-stats .team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  flex: 1;
+}
+.view-stats .teams-stats .team img {
+  width: 17vw;
+}
+.view-stats .teams-stats .team span {
+  color: #EEEEE4;
+  font-size: 3.2vw;
+}
+.view-stats .teams-stats .vs {
+  width: 7vw;
+}
+.view-stats .stats {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+.view-stats .stats .stat-type {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vw;
+}
+.view-stats .stats .stat-type .title-stat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #EEEEE4;
+  font-size: 3vw;
+  gap: 1vw;
+}
+.view-stats .stats .stat-type .title-stat svg {
+  width: 3.5vw;
+}
+.view-stats .stats .stat-type .info-stats {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.view-stats .stats .stat-type .info-stats .stat-team {
+  position: absolute;
+  background-color: #47B7AB;
+  border-radius: 3.125rem;
+  width: 60%;
+  height: 1.2vw;
+  z-index: 1;
+}
+.view-stats .stats .stat-type .info-stats .stat-team span {
+  position: absolute;
+  top: -4.3vw;
+  left: 0;
+  color: #B5B4B4;
+  font-size: 2.5vw;
+}
+.view-stats .stats .stat-type .info-stats .stat-team-right {
+  right: 0;
+  width: 50%;
+  background-color: #E32052;
+  z-index: -1;
+}
+.view-stats .stats .stat-type .info-stats .stat-team-right span {
+  left: auto;
+  right: 0;
+}
+.view-stats .stats .stat-type .equal .stat-team {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.view-stats .stats .stat-type .equal .stat-team-right {
+  border-radius: 3.125rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.show-list {
+  display: flex;
+}
+
+.hide-list {
+  display: none;
 }
 
 @media screen and (max-width: 252px) {
@@ -934,8 +937,92 @@ main .match-info .item-info span {
     display: none;
   }
   main .stream-desktop {
-    display: block;
-    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    /*
+          display: flex;
+          .stream-gam-plan{
+            width: 100%;
+            background-color: green;
+            .match-info{
+              justify-content: space-between;
+            }
+          }
+          .view-stats{
+            flex: 1;
+            background-color: orange;
+            .teams-stats{
+              align-items: flex-start;
+              .team{
+                img{
+                  width: 5rem;
+                }
+                span{
+                  font-size: 1.2rem;
+                }
+              }
+            }
+            .vs{
+              width: 2.1rem;
+            }
+          }*/
+  }
+  main .stream-desktop .stream-gam-plan {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  main .stream-desktop .stream-gam-plan .match-info {
+    justify-content: space-between;
+  }
+  main .stream-desktop .stream-gam-plan video {
+    width: 100%;
+    border-radius: 0.7rem;
+  }
+  main .stream-desktop .view-stats {
+    flex: 1;
+    gap: 0.8rem;
+  }
+  main .stream-desktop .view-stats .teams-stats {
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 0;
+  }
+  main .stream-desktop .view-stats .teams-stats .team {
+    flex: 0;
+    gap: 0.3rem;
+  }
+  main .stream-desktop .view-stats .teams-stats .team img {
+    width: 5rem;
+  }
+  main .stream-desktop .view-stats .teams-stats .team span {
+    font-size: 1.2rem;
+  }
+  main .stream-desktop .view-stats .teams-stats .vs {
+    width: 2.1rem;
+  }
+  main .stream-desktop .view-stats .stats {
+    gap: 3rem;
+  }
+  main .stream-desktop .view-stats .stats .stat-type {
+    gap: 1rem;
+  }
+  main .stream-desktop .view-stats .stats .stat-type .title-stat {
+    gap: 0.5rem;
+    font-size: 1.2rem;
+  }
+  main .stream-desktop .view-stats .stats .stat-type .title-stat svg {
+    width: 1rem;
+  }
+  main .stream-desktop .view-stats .stats .stat-type .info-stats .stat-team {
+    height: 0.3rem;
+  }
+  main .stream-desktop .view-stats .stats .stat-type .info-stats span {
+    top: -1.4rem;
+    font-size: 0.9rem;
   }
   main .match-info {
     justify-content: space-around;

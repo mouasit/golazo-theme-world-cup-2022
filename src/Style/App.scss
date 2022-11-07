@@ -483,12 +483,6 @@ main{
               }
             }
           }
-          .show-list{
-            display: flex;
-          }
-          .hide-list{
-            display: none;
-          }
         }
       }
       .vs{
@@ -501,97 +495,6 @@ main{
         .number-player-right{
           svg{
             fill: #E32052 !important;
-          }
-        }
-      }
-    }
-    .view-stats{
-      flex-direction: column;
-      gap: 5vw;
-      display: none;
-      .teams-stats{
-        flex: 1;
-        display: flex;
-        gap: 5vw;
-        .team{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: 1vw;
-          flex: 1;
-          img{
-            width: 17vw;
-          }
-          span{
-            color: $white;
-            font-size: 3.2vw;
-          }
-        }
-        .vs{
-          width: 7vw;
-        }
-      }
-      .stats{
-        display: flex;
-        flex-direction: column;
-        gap: 5vw;
-        .stat-type{
-          display: flex;
-          flex-direction: column;
-          gap: 2.5vw;
-          .title-stat{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: $white;
-            font-size: 3vw;
-            gap: 1vw;
-            svg{
-              width: 3.5vw;
-            }
-          }
-          .info-stats{
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-            .stat-team{
-              position: absolute;
-              background-color: #47B7AB;
-              border-radius: 3.125rem;
-              width: 60%;
-              height: 1.2vw;
-              z-index: 1;
-              span{
-                position: absolute;
-                top: -4.3vw;
-                left: 0;
-                color: #B5B4B4;
-                font-size: 2.5vw;
-              }
-            }
-            .stat-team-right{
-              right: 0;
-              width: 50%;
-              background-color: #E32052;
-              z-index: -1;
-              span{
-                left: auto;
-                right: 0;
-              }
-            }
-          }
-
-          .equal{
-            .stat-team{
-              border-top-right-radius: 0;
-              border-bottom-right-radius: 0;
-            }
-            .stat-team-right{
-              border-radius: 3.125rem;
-              border-top-left-radius: 0;
-              border-bottom-left-radius: 0;
-            }
           }
         }
       }
@@ -728,6 +631,104 @@ main{
   }
 }
 
+.view-stats{
+  flex-direction: column;
+  gap: 5vw;
+  display: none;
+  .teams-stats{
+    flex: 1;
+    display: flex;
+    gap: 5vw;
+    .team{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1vw;
+      flex: 1;
+      img{
+        width: 17vw;
+      }
+      span{
+        color: $white;
+        font-size: 3.2vw;
+      }
+    }
+    .vs{
+      width: 7vw;
+    }
+  }
+  .stats{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    .stat-type{
+      display: flex;
+      flex-direction: column;
+      gap: 2.5vw;
+      .title-stat{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        font-size: 3vw;
+        gap: 1vw;
+        svg{
+          width: 3.5vw;
+        }
+      }
+      .info-stats{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .stat-team{
+          position: absolute;
+          background-color: #47B7AB;
+          border-radius: 3.125rem;
+          width: 60%;
+          height: 1.2vw;
+          z-index: 1;
+          span{
+            position: absolute;
+            top: -4.3vw;
+            left: 0;
+            color: #B5B4B4;
+            font-size: 2.5vw;
+          }
+        }
+        .stat-team-right{
+          right: 0;
+          width: 50%;
+          background-color: #E32052;
+          z-index: -1;
+          span{
+            left: auto;
+            right: 0;
+          }
+        }
+      }
+
+      .equal{
+        .stat-team{
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+        .stat-team-right{
+          border-radius: 3.125rem;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+.show-list{
+  display: flex;
+}
+.hide-list{
+  display: none;
+}
 
 @media screen and (max-width: 252px){
   #root{
@@ -1011,8 +1012,98 @@ main{
     }
 
     .stream-desktop{
-      display: block;
-      background-color: green;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      .stream-gam-plan{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .match-info{
+          justify-content: space-between;
+          .item-info{
+          }
+        }
+
+        video{
+          width: 100%;
+          border-radius: .7rem;
+        }
+      }
+      .view-stats{
+        flex: 1;
+        gap: .8rem;
+          .teams-stats{
+            align-items: flex-start;
+            justify-content: space-around;
+            gap: 0;
+            .team{
+              flex: 0;
+              gap: 0.3rem;
+              img{
+                width: 5rem;
+              }
+              span{
+                font-size: 1.2rem;
+              }
+            }
+            .vs{
+              width: 2.1rem;
+            }
+          }
+
+          .stats{
+            gap: 3rem;
+            .stat-type{
+              gap: 1rem;
+              .title-stat{
+                gap: 0.5rem;
+                svg{
+                  width: 1rem;
+                }
+                font-size: 1.2rem;
+              }
+              .info-stats{
+                .stat-team{
+                  height: 0.3rem;
+                }
+                span{
+                  top: -1.4rem;
+                  font-size: 0.9rem;
+                }
+              }
+            }
+          }
+        }
+/*
+      display: flex;
+      .stream-gam-plan{
+        width: 100%;
+        background-color: green;
+        .match-info{
+          justify-content: space-between;
+        }
+      }
+      .view-stats{
+        flex: 1;
+        background-color: orange;
+        .teams-stats{
+          align-items: flex-start;
+          .team{
+            img{
+              width: 5rem;
+            }
+            span{
+              font-size: 1.2rem;
+            }
+          }
+        }
+        .vs{
+          width: 2.1rem;
+        }
+      }*/
     }
 /*
     .match-stream{
