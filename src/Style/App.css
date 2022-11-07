@@ -23,6 +23,10 @@ body {
   display: none;
 }
 
+.stream-desktop {
+  display: none;
+}
+
 .mobile-header {
   position: relative;
   display: flex;
@@ -832,6 +836,22 @@ main .match-info .item-info span {
     padding: 3.5rem 3.4rem 3.5rem 3.4rem;
     gap: 6rem;
     width: 100%;
+    /*
+        .match-stream{
+          gap: 1.5rem;
+          .match-info{
+            justify-content: space-between;
+          }
+        }
+
+        .details-match{
+          .group{
+            svg{
+              width:28.782rem;
+              height: 3.704rem;
+            }
+          }
+        }*/
   }
   main .group-matches {
     gap: 6rem;
@@ -908,11 +928,13 @@ main .match-info .item-info span {
     font-size: 3rem;
   }
   main .match-stream {
-    gap: 1.5rem;
+    display: none;
   }
-  main .details-match .group svg {
-    width: 28.782rem;
-    height: 3.704rem;
+  main .details-match {
+    display: none;
+  }
+  main .stream-desktop {
+    background-color: green;
   }
   main .match-info {
     justify-content: space-around;

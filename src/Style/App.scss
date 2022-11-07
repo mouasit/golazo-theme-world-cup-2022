@@ -41,6 +41,9 @@ body{
   display: none;
 }
 
+.stream-desktop{
+  display: none;
+}
 .mobile-header{
   position: relative;
   display: flex;
@@ -1000,7 +1003,22 @@ main{
     }
 
     .match-stream{
+      display: none;
+    }
+
+    .details-match{
+      display: none;
+    }
+
+    .stream-desktop{
+      background-color: green;
+    }
+/*
+    .match-stream{
       gap: 1.5rem;
+      .match-info{
+        justify-content: space-between;
+      }
     }
   
     .details-match{
@@ -1010,7 +1028,7 @@ main{
           height: 3.704rem;
         }
       }
-    }
+    }*/
 
     .match-info{
       justify-content: space-around;
