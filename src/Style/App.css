@@ -934,6 +934,7 @@ main .match-info .item-info span {
     display: none;
   }
   main .stream-desktop {
+    display: block;
     background-color: green;
   }
   main .match-info {
