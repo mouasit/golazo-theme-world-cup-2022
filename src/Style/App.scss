@@ -200,8 +200,8 @@ body{
 
 main{
   padding-top: 2rem;
-  //padding-bottom: 15.5vw;
-  padding-bottom: 6rem;
+  padding-bottom: 15.5vw;
+  //padding-bottom: 6rem;
   display: flex;
   flex-direction: column;
   gap: 9vw;
@@ -396,9 +396,9 @@ main{
           .hide-left{
             width: 1.5vw;
           }
-
+          
           .hide-right{
-            width: 2.5vw;
+            width: 3vw;
           }
           
           button{
@@ -414,7 +414,7 @@ main{
           }
           .hide-item-left{
             span{
-              padding-left: 2.5vw;
+              padding-left: 3vw;
             }
           }
         }
@@ -617,7 +617,7 @@ main{
       height: 100%;
     }
     .hide-left{
-      width: 2vw;
+      width: 2.5vw;
     }
     .hide-right{
       width: 4.4vw;
@@ -653,7 +653,7 @@ main{
 
     .hide-item-right{
       span{
-        padding-right: 2vw;
+        padding-right: 2.5vw;
       }
     }
   }

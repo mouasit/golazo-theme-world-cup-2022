@@ -179,7 +179,7 @@ body {
 
 main {
   padding-top: 2rem;
-  padding-bottom: 6rem;
+  padding-bottom: 15.5vw;
   display: flex;
   flex-direction: column;
   gap: 9vw;
@@ -369,7 +369,7 @@ main .details-match .view-gam-plan .teams-gam-plan .btn-display .hide-left {
   width: 1.5vw;
 }
 main .details-match .view-gam-plan .teams-gam-plan .btn-display .hide-right {
-  width: 2.5vw;
+  width: 3vw;
 }
 main .details-match .view-gam-plan .teams-gam-plan .btn-display button {
   width: 100%;
@@ -381,7 +381,7 @@ main .details-match .view-gam-plan .teams-gam-plan .btn-display .hide-item-right
   padding-right: 1.5vw;
 }
 main .details-match .view-gam-plan .teams-gam-plan .btn-display .hide-item-left span {
-  padding-left: 2.5vw;
+  padding-left: 3vw;
 }
 main .details-match .view-gam-plan .teams-gam-plan .team-players {
   display: flex;
@@ -571,7 +571,7 @@ main .btn-display .hide {
   height: 100%;
 }
 main .btn-display .hide-left {
-  width: 2vw;
+  width: 2.5vw;
 }
 main .btn-display .hide-right {
   width: 4.4vw;
@@ -599,7 +599,7 @@ main .btn-display .hide-item-left span {
   padding-left: 4.4vw;
 }
 main .btn-display .hide-item-right span {
-  padding-right: 2vw;
+  padding-right: 2.5vw;
 }
 main .match-info {
   display: flex;
