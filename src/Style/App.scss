@@ -689,9 +689,11 @@ main{
                   }
                   .number{
                     position: absolute;
-                    padding-top: .1vw;
+                    display: flex;
+                    align-items: center;
+                    padding-top: .3vw;
                     color: $white;
-                    font-size: 2.3vw;
+                    font-size: 1.8vw;
                     height: 100%;
                   }
                 }
@@ -1192,7 +1194,7 @@ main{
           }
         }
     }
-    
+
     .match-info{
       justify-content: space-around;
       gap: .5rem;
