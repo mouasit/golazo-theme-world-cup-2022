@@ -14,9 +14,12 @@ const StreamMatchDesktop = (props) => {
                     <video src= {Video} controls></video>
                 </div>
                 <Gamplan displayGamPlan = "view-gam-plan show-list" 
-                showLeft = {props.showLeft}
-                setShowLeft = {props.setShowLeft}
-                
+                showTeamLeft = {props.showTeamLeft}
+                setShowTeamLeft = {props.setShowTeamLeft}
+
+                showTeamRight = {props.showTeamRight}
+                setShowTeamRight = {props.setShowTeamRight}
+
                 displayFirstTeamLeft = {props.displayFirstTeamLeft}
                 setDisplayFirstTeamLeft = {props.setDisplayFirstTeamLeft}
         

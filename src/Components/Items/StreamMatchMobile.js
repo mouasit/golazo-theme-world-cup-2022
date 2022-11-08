@@ -8,6 +8,7 @@ import MatchStream from "../Items/MatchStream";
 const StreamMatchMobile = (props) => {
     const [displayGamPlan,setDisplayGamPlan] = useState("view-gam-plan show-list");
     const [displayStats,setDisplayStats] = useState("view-stats hide-list");
+    const [showInfo, setShowInfo] = useState(true);
     return (
         <React.Fragment>
                 <MatchStream lang ={props.lang} />
@@ -15,10 +16,14 @@ const StreamMatchMobile = (props) => {
                     <div className="group">
                         <Group nameGroup="G" lang={props.lang}/>
                     </div>
-                    <ButtonSwitchers leftName="Gam Plan" rightName="Stats" setDisplayGamPlan={setDisplayGamPlan} setDisplayStats={setDisplayStats}/>
-                    <Gamplan displayGamPlan={displayGamPlan} 
-                    showLeft = {props.showLeft}
-                    setShowLeft = {props.setShowLeft}
+                    <ButtonSwitchers leftName="Gam Plan" rightName="Stats" setDisplayGamPlan={setDisplayGamPlan} setDisplayStats={setDisplayStats} showInfo = {showInfo} setShowInfo = {setShowInfo}/>
+                    <Gamplan displayGamPlan={displayGamPlan}
+                    showTeamLeft = {props.showTeamLeft}
+                    setShowTeamLeft = {props.setShowTeamLeft}
+
+                    showTeamRight = {props.showTeamRight}
+                    setShowTeamRight = {props.setShowTeamRight}
+
                     displayFirstTeamLeft = {props.displayFirstTeamLeft}
                     setDisplayFirstTeamLeft = {props.setDisplayFirstTeamLeft}
             

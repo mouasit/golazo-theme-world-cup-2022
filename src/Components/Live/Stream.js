@@ -2,7 +2,8 @@ import StreamMatchMobile from "../Items/StreamMatchMobile";
 import StreamMatchDesktop from "../Items/StreamDesktop";
 import { useState } from "react";
 const Stream = (props) =>{
-    const [showLeft, setShowLeft] = useState(true);
+    const [showTeamLeft, setShowTeamLeft] = useState(true);
+    const [showTeamRight, setShowTeamRight] = useState(true);
     const [displayFirstTeamLeft,setDisplayFirstTeamLeft] = useState("list-positions show-list");
     const [displaySabstitutesLeft,setDisplaySabstitutesLeft] = useState("list-positions hide-list");
     const [displayFirstTeamRight,setDisplayFirstTeamRight] = useState("list-positions show-list");
@@ -10,8 +11,11 @@ const Stream = (props) =>{
     return(
         <main>
             <StreamMatchMobile lang={props.lang}
-            showLeft = {showLeft}
-            setShowLeft = {setShowLeft}
+            showTeamLeft = {showTeamLeft}
+            setShowTeamLeft = {setShowTeamLeft}
+
+            showTeamRight = {showTeamRight}
+            setShowTeamRight = {setShowTeamRight}
 
             displayFirstTeamLeft = {displayFirstTeamLeft}
             setDisplayFirstTeamLeft = {setDisplayFirstTeamLeft}
@@ -26,9 +30,12 @@ const Stream = (props) =>{
             />
             
             <StreamMatchDesktop lang={props.lang}
-            showLeft = {showLeft}
-            setShowLeft = {setShowLeft}
+            showTeamLeft = {showTeamLeft}
+            setShowTeamLeft = {setShowTeamLeft}
 
+            showTeamRight = {showTeamRight}
+            setShowTeamRight = {setShowTeamRight}
+            
             displayFirstTeamLeft = {displayFirstTeamLeft}
             setDisplayFirstTeamLeft = {setDisplayFirstTeamLeft}
 
