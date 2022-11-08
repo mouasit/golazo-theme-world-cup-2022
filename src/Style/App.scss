@@ -361,6 +361,7 @@ main{
       background-color: #60071E;
       position: absolute;
       height: 100%;
+      z-index: -1;
     }
     .hide-left{
       width: 2.5vw;
@@ -372,7 +373,6 @@ main{
       background: none;
       border: none;
       width: 34vw;
-      z-index: 1;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -641,11 +641,11 @@ main{
       .list-positions{
         display: flex;
         flex-direction: column;
-        gap: 4vw;
+        gap: 5vw;
         .players-postion{
           display: flex;
           flex-direction: column;
-          gap: 2.5vw;
+          gap: 5vw;
           .titlePosition{
             display: flex;
             justify-content: space-between;
@@ -689,6 +689,7 @@ main{
                   }
                   .number{
                     position: absolute;
+                    padding-top: .1vw;
                     color: $white;
                     font-size: 2.3vw;
                     height: 100%;
@@ -735,7 +736,8 @@ main{
     margin-right: auto;
     display: flex;
     padding: 0rem;
-    max-width: 180rem;
+    max-width: 120rem;
+    //max-width: 180rem;
     //padding-right: $size-padding;
   }
   .mobile-header{
@@ -1030,54 +1032,69 @@ main{
           }
         }
       }
-      .view-stats{
-        flex: 1;
-        gap: .8rem;
-          .teams-stats{
-            align-items: flex-start;
-            justify-content: space-around;
-            gap: 0;
-            .team{
-              flex: 0;
-              gap: 0.3rem;
-              img{
-                width: 5rem;
-              }
-              span{
-                font-size: 1.2rem;
-              }
-            }
-            .vs{
-              width: 2.1rem;
-            }
-          }
 
-          .stats{
-            gap: 3rem;
-            .stat-type{
-              gap: 1rem;
-              .title-stat{
-                gap: 0.5rem;
-                svg{
-                  width: 1rem;
-                }
-                font-size: 1.2rem;
-              }
-              .info-stats{
-                .stat-team{
-                  height: 0.3rem;
-                }
-                span{
-                  top: -1.4rem;
-                  font-size: 0.9rem;
-                }
-              }
-            }
+      .stats-info{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        flex: 1;
+        .group{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          svg{
+            width: 18rem;
           }
         }
+        .view-stats{
+          gap: .8rem;
+            .teams-stats{
+              align-items: flex-start;
+              justify-content: space-around;
+              gap: 0;
+              .team{
+                flex: 0;
+                gap: 0.3rem;
+                img{
+                  width: 5rem;
+                }
+                span{
+                  font-size: 1.2rem;
+                }
+              }
+              .vs{
+                width: 2.1rem;
+              }
+            }
+  
+            .stats{
+              gap: 3rem;
+              .stat-type{
+                gap: 1rem;
+                .title-stat{
+                  gap: 0.5rem;
+                  svg{
+                    width: 1rem;
+                  }
+                  font-size: 1.2rem;
+                }
+                .info-stats{
+                  .stat-team{
+                    height: 0.3rem;
+                  }
+                  span{
+                    top: -1.4rem;
+                    font-size: 0.9rem;
+                  }
+                }
+              }
+            }
+          }
+      }
         
         .view-gam-plan{
           .teams-gam-plan{
+            gap: 1.6rem;
             .info-team{
               gap: 1.3rem;
               .team{
@@ -1100,6 +1117,7 @@ main{
               }
             }
             .team-players{
+              gap: 1.7rem;
               .btn-display{
                 button{
                   span{
@@ -1128,6 +1146,7 @@ main{
               }
 
               .list-positions{
+                gap: 1.7rem;
                 .titlePosition{
                   gap: 0.5rem;
                   width: 100%;
@@ -1138,23 +1157,29 @@ main{
                     width: 100%;
                   }
                 }
-                .player{
-                  gap: .5rem !important;
-                  img{
-                    width: 3.5rem !important;
-                    height: 3.5rem !important;
-                  }
-                  .info-player{
-                    gap: 0;
-                    .name-player{
-                      font-size: 1rem !important;
-                    }
-                    .number-player{
-                      width: 2.5rem !important;
-                      .number{
-                        display: flex;
-                        padding-top: .1rem;
-                        font-size: .7rem !important;
+                .players-postion{
+                  gap: 1.7rem;
+                  .list-players{
+                    gap: 1.5rem;
+                    .player{
+                      gap: .5rem !important;
+                      img{
+                        width: 3.5rem !important;
+                        height: 3.5rem !important;
+                      }
+                      .info-player{
+                        gap: 0;
+                        .name-player{
+                          font-size: 1rem !important;
+                        }
+                        .number-player{
+                          width: 2.5rem !important;
+                          .number{
+                            display: flex;
+                            padding-top: .1rem;
+                            font-size: .7rem !important;
+                          }
+                        }
                       }
                     }
                   }
@@ -1166,51 +1191,8 @@ main{
             width: 2.1rem;
           }
         }
-/*
-      display: flex;
-      .stream-gam-plan{
-        width: 100%;
-        background-color: green;
-        .match-info{
-          justify-content: space-between;
-        }
-      }
-      .view-stats{
-        flex: 1;
-        background-color: orange;
-        .teams-stats{
-          align-items: flex-start;
-          .team{
-            img{
-              width: 5rem;
-            }
-            span{
-              font-size: 1.2rem;
-            }
-          }
-        }
-        .vs{
-          width: 2.1rem;
-        }
-      }*/
     }
-/*
-    .match-stream{
-      gap: 1.5rem;
-      .match-info{
-        justify-content: space-between;
-      }
-    }
-  
-    .details-match{
-      .group{
-        svg{
-          width:28.782rem;
-          height: 3.704rem;
-        }
-      }
-    }*/
-
+    
     .match-info{
       justify-content: space-around;
       gap: .5rem;

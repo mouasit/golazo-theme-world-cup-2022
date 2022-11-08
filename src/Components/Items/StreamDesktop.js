@@ -2,6 +2,7 @@ import MatchInfo from "./MatchInfo";
 import Stats from "./Stats";
 import Video from "../../assets/morocco.mp4";
 import Gamplan from "./GamPlan";
+import Group from "../Items/Group";
 
 
 const StreamMatchDesktop = (props) => {
@@ -14,7 +15,12 @@ const StreamMatchDesktop = (props) => {
                 </div>
                 <Gamplan displayGamPlan = "view-gam-plan show-list" />
             </div>
-            <Stats displayStats="view-stats show-list" />
+            <div className="stats-info">
+                <div className="group">
+                    <Group nameGroup="G" lang={props.lang}/>
+                </div>
+                <Stats displayStats="view-stats show-list" />
+            </div>
         </div>
     )
 }
