@@ -349,163 +349,6 @@ main{
         width: 70vw;
       }
     }
-
-    .view-gam-plan{
-      justify-content: space-between;
-      align-items: flex-start;
-      display: none;
-      .teams-gam-plan{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 5vw;
-        .info-team{
-          display: flex;
-          gap: 2.5vw;
-          .team{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 1vw;
-            img{
-              width: 17vw;
-            }
-            .team-name{
-              color: $white;
-              font-size: 3.2vw;
-            }
-          }
-          .gam-plan{
-            display: flex;
-            color: $white;
-            position: relative;
-            top: 1vw;
-            font-size: 3.2vw;
-            display: flex;
-            align-items: flex-start;
-            gap: 1vw;
-            svg{
-              position: relative;
-              top: .5vw;
-              width: 2.5vw;
-            }
-          }
-        }
-        .btn-display{
-          .hide-left{
-            width: 1.5vw;
-          }
-          
-          .hide-right{
-            width: 3vw;
-          }
-          
-          button{
-            width: 100%;
-            span{
-              font-size: 2vw;
-            }
-          }
-          .hide-item-right{
-            span{
-              padding-right: 1.5vw;
-            }
-          }
-          .hide-item-left{
-            span{
-              padding-left: 3vw;
-            }
-          }
-        }
-        .team-players{
-          display: flex;
-          flex-direction: column;
-          gap: 4vw;
-          .list-positions{
-            display: flex;
-            flex-direction: column;
-            gap: 4vw;
-            .players-postion{
-              display: flex;
-              flex-direction: column;
-              gap: 2.5vw;
-              .titlePosition{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 1vw;
-                svg{
-                  width: 12.8vw;
-                }
-                span{
-                  color: $white;
-                  font-size: 3vw;
-                }
-              }
-              .list-players{
-                display: flex;
-                flex-direction: column;
-                gap: 4vw;
-                .player{
-                  display: flex;
-                  gap: 2vw;
-                  img{
-                    width: 8vw;
-                    height: 8vw;
-                    border-radius: 3.125rem;
-                  }
-                  .info-player{
-                    display: flex;
-                    flex-direction: column;
-                    .name-player{
-                      color: $white;
-                      font-size: 2.8vw;
-                    }
-                    .number-player{
-                      position: relative;
-                      display: flex;
-                      width: 8vw;
-                      justify-content: center;
-                      align-items: center;
-                      svg{
-                        fill:#47B7AB
-                      }
-                      .number{
-                        position: absolute;
-                        color: $white;
-                        font-size: 2.3vw;
-                        height: 100%;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      .vs{
-        width: 7vw;
-      }
-      .team-gam-plan-right{
-        .info-team{
-          flex-direction: row-reverse;
-        }
-        .number-player-right{
-          svg{
-            fill: #E32052 !important;
-          }
-        }
-      }
-    }
-
-    .show-list{
-      display: flex;
-    }
-    .hide-list{
-      display: none;
-    }
   }
 
   .btn-display{
@@ -718,6 +561,156 @@ main{
           border-top-left-radius: 0;
           border-bottom-left-radius: 0;
         }
+      }
+    }
+  }
+}
+
+.view-gam-plan{
+  justify-content: space-between;
+  align-items: flex-start;
+  display: none;
+  .teams-gam-plan{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    .info-team{
+      display: flex;
+      gap: 2.5vw;
+      .team{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+        img{
+          width: 17vw;
+        }
+        .team-name{
+          color: $white;
+          font-size: 3.2vw;
+        }
+      }
+      .gam-plan{
+        display: flex;
+        color: $white;
+        position: relative;
+        top: 1vw;
+        font-size: 3.2vw;
+        display: flex;
+        align-items: flex-start;
+        gap: 1vw;
+        svg{
+          position: relative;
+          top: .5vw;
+          width: 2.5vw;
+        }
+      }
+    }
+    .btn-display{
+      .hide-left{
+        width: 1.5vw;
+      }
+      
+      .hide-right{
+        width: 3vw;
+      }
+      
+      button{
+        width: 100%;
+        span{
+          font-size: 2vw;
+        }
+      }
+      .hide-item-right{
+        span{
+          padding-right: 1.5vw;
+        }
+      }
+      .hide-item-left{
+        span{
+          padding-left: 3vw;
+        }
+      }
+    }
+    .team-players{
+      display: flex;
+      flex-direction: column;
+      gap: 4vw;
+      .list-positions{
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+        .players-postion{
+          display: flex;
+          flex-direction: column;
+          gap: 2.5vw;
+          .titlePosition{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1vw;
+            svg{
+              width: 12.8vw;
+            }
+            span{
+              color: $white;
+              font-size: 3vw;
+            }
+          }
+          .list-players{
+            display: flex;
+            flex-direction: column;
+            gap: 4vw;
+            .player{
+              display: flex;
+              gap: 2vw;
+              img{
+                width: 8vw;
+                height: 8vw;
+                border-radius: 3.125rem;
+              }
+              .info-player{
+                display: flex;
+                flex-direction: column;
+                .name-player{
+                  color: $white;
+                  font-size: 2.8vw;
+                }
+                .number-player{
+                  position: relative;
+                  display: flex;
+                  width: 8vw;
+                  justify-content: center;
+                  align-items: center;
+                  svg{
+                    fill:#47B7AB
+                  }
+                  .number{
+                    position: absolute;
+                    color: $white;
+                    font-size: 2.3vw;
+                    height: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .vs{
+    width: 7vw;
+  }
+  .team-gam-plan-right{
+    .info-team{
+      flex-direction: row-reverse;
+    }
+    .number-player-right{
+      svg{
+        fill: #E32052 !important;
       }
     }
   }
@@ -1017,19 +1010,24 @@ main{
       align-items: flex-start;
       gap: 1rem;
       .stream-gam-plan{
-        flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
-        .match-info{
-          justify-content: space-between;
-          .item-info{
+        gap: 1.5rem;
+        flex: 1;
+        .stream{
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          .match-info{
+            justify-content: space-between;
+            .item-info{
+            }
           }
-        }
-
-        video{
-          width: 100%;
-          border-radius: .7rem;
+  
+          video{
+            width: 100%;
+            border-radius: .7rem;
+          }
         }
       }
       .view-stats{
@@ -1075,6 +1073,97 @@ main{
                 }
               }
             }
+          }
+        }
+        
+        .view-gam-plan{
+          .teams-gam-plan{
+            .info-team{
+              gap: 1.3rem;
+              .team{
+                gap: 0.3rem;
+                img{
+                  width: 5rem;
+                }
+                span{
+                  font-size: 1.2rem;
+                } 
+              }
+              .gam-plan{
+                gap: .5rem;
+                font-size: 1.3rem;
+                top: .3rem;
+                svg{
+                  top: .3rem;
+                  width: .8rem;
+                }
+              }
+            }
+            .team-players{
+              .btn-display{
+                button{
+                  span{
+                    font-size: .9rem;
+                  }
+                }
+
+                .hide-left{
+                  width: .7rem;
+                }
+                .hide-right{
+                  width: 1.2rem;
+                }
+                
+                .hide-item-left{
+                  span{
+                    padding-left: 1.2rem;
+                  }
+                }
+            
+                .hide-item-right{
+                  span{
+                    padding-right: .7rem;
+                  }
+                }
+              }
+
+              .list-positions{
+                .titlePosition{
+                  gap: 0.5rem;
+                  width: 100%;
+                  span{
+                    font-size: 1.2rem;
+                  }
+                  svg{
+                    width: 100%;
+                  }
+                }
+                .player{
+                  gap: .5rem !important;
+                  img{
+                    width: 3.5rem !important;
+                    height: 3.5rem !important;
+                  }
+                  .info-player{
+                    gap: 0;
+                    .name-player{
+                      font-size: 1rem !important;
+                    }
+                    .number-player{
+                      width: 2.5rem !important;
+                      .number{
+                        display: flex;
+                        padding-top: .1rem;
+                        font-size: .7rem !important;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .vs{
+            width: 2.1rem;
           }
         }
 /*

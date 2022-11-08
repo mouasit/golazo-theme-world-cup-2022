@@ -321,149 +321,6 @@ main .details-match .group {
 main .details-match .group svg {
   width: 70vw;
 }
-main .details-match .view-gam-plan {
-  justify-content: space-between;
-  align-items: flex-start;
-  display: none;
-}
-main .details-match .view-gam-plan .teams-gam-plan {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 5vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .info-team {
-  display: flex;
-  gap: 2.5vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .info-team .team {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .info-team .team img {
-  width: 17vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .info-team .team .team-name {
-  color: #EEEEE4;
-  font-size: 3.2vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .info-team .gam-plan {
-  display: flex;
-  color: #EEEEE4;
-  position: relative;
-  top: 1vw;
-  font-size: 3.2vw;
-  display: flex;
-  align-items: flex-start;
-  gap: 1vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .info-team .gam-plan svg {
-  position: relative;
-  top: 0.5vw;
-  width: 2.5vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .btn-display .hide-left {
-  width: 1.5vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .btn-display .hide-right {
-  width: 3vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .btn-display button {
-  width: 100%;
-}
-main .details-match .view-gam-plan .teams-gam-plan .btn-display button span {
-  font-size: 2vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .btn-display .hide-item-right span {
-  padding-right: 1.5vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .btn-display .hide-item-left span {
-  padding-left: 3vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .team-players {
-  display: flex;
-  flex-direction: column;
-  gap: 4vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions {
-  display: flex;
-  flex-direction: column;
-  gap: 4vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .titlePosition {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .titlePosition svg {
-  width: 12.8vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .titlePosition span {
-  color: #EEEEE4;
-  font-size: 3vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players {
-  display: flex;
-  flex-direction: column;
-  gap: 4vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player {
-  display: flex;
-  gap: 2vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player img {
-  width: 8vw;
-  height: 8vw;
-  border-radius: 3.125rem;
-}
-main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player {
-  display: flex;
-  flex-direction: column;
-}
-main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .name-player {
-  color: #EEEEE4;
-  font-size: 2.8vw;
-}
-main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .number-player {
-  position: relative;
-  display: flex;
-  width: 8vw;
-  justify-content: center;
-  align-items: center;
-}
-main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .number-player svg {
-  fill: #47B7AB;
-}
-main .details-match .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .number-player .number {
-  position: absolute;
-  color: #EEEEE4;
-  font-size: 2.3vw;
-  height: 100%;
-}
-main .details-match .view-gam-plan .vs {
-  width: 7vw;
-}
-main .details-match .view-gam-plan .team-gam-plan-right .info-team {
-  flex-direction: row-reverse;
-}
-main .details-match .view-gam-plan .team-gam-plan-right .number-player-right svg {
-  fill: #E32052 !important;
-}
-main .details-match .show-list {
-  display: flex;
-}
-main .details-match .hide-list {
-  display: none;
-}
 main .btn-display {
   display: flex;
   position: relative;
@@ -653,6 +510,144 @@ main .match-info .item-info span {
   border-radius: 3.125rem;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.view-gam-plan {
+  justify-content: space-between;
+  align-items: flex-start;
+  display: none;
+}
+.view-gam-plan .teams-gam-plan {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+.view-gam-plan .teams-gam-plan .info-team {
+  display: flex;
+  gap: 2.5vw;
+}
+.view-gam-plan .teams-gam-plan .info-team .team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+.view-gam-plan .teams-gam-plan .info-team .team img {
+  width: 17vw;
+}
+.view-gam-plan .teams-gam-plan .info-team .team .team-name {
+  color: #EEEEE4;
+  font-size: 3.2vw;
+}
+.view-gam-plan .teams-gam-plan .info-team .gam-plan {
+  display: flex;
+  color: #EEEEE4;
+  position: relative;
+  top: 1vw;
+  font-size: 3.2vw;
+  display: flex;
+  align-items: flex-start;
+  gap: 1vw;
+}
+.view-gam-plan .teams-gam-plan .info-team .gam-plan svg {
+  position: relative;
+  top: 0.5vw;
+  width: 2.5vw;
+}
+.view-gam-plan .teams-gam-plan .btn-display .hide-left {
+  width: 1.5vw;
+}
+.view-gam-plan .teams-gam-plan .btn-display .hide-right {
+  width: 3vw;
+}
+.view-gam-plan .teams-gam-plan .btn-display button {
+  width: 100%;
+}
+.view-gam-plan .teams-gam-plan .btn-display button span {
+  font-size: 2vw;
+}
+.view-gam-plan .teams-gam-plan .btn-display .hide-item-right span {
+  padding-right: 1.5vw;
+}
+.view-gam-plan .teams-gam-plan .btn-display .hide-item-left span {
+  padding-left: 3vw;
+}
+.view-gam-plan .teams-gam-plan .team-players {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
+.view-gam-plan .teams-gam-plan .team-players .list-positions {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
+.view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vw;
+}
+.view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .titlePosition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1vw;
+}
+.view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .titlePosition svg {
+  width: 12.8vw;
+}
+.view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .titlePosition span {
+  color: #EEEEE4;
+  font-size: 3vw;
+}
+.view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
+.view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player {
+  display: flex;
+  gap: 2vw;
+}
+.view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player img {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 3.125rem;
+}
+.view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player {
+  display: flex;
+  flex-direction: column;
+}
+.view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .name-player {
+  color: #EEEEE4;
+  font-size: 2.8vw;
+}
+.view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .number-player {
+  position: relative;
+  display: flex;
+  width: 8vw;
+  justify-content: center;
+  align-items: center;
+}
+.view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .number-player svg {
+  fill: #47B7AB;
+}
+.view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .number-player .number {
+  position: absolute;
+  color: #EEEEE4;
+  font-size: 2.3vw;
+  height: 100%;
+}
+.view-gam-plan .vs {
+  width: 7vw;
+}
+.view-gam-plan .team-gam-plan-right .info-team {
+  flex-direction: row-reverse;
+}
+.view-gam-plan .team-gam-plan-right .number-player-right svg {
+  fill: #E32052 !important;
 }
 
 .show-list {
@@ -970,15 +965,20 @@ main .match-info .item-info span {
           }*/
   }
   main .stream-desktop .stream-gam-plan {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     flex: 1;
+  }
+  main .stream-desktop .stream-gam-plan .stream {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-  main .stream-desktop .stream-gam-plan .match-info {
+  main .stream-desktop .stream-gam-plan .stream .match-info {
     justify-content: space-between;
   }
-  main .stream-desktop .stream-gam-plan video {
+  main .stream-desktop .stream-gam-plan .stream video {
     width: 100%;
     border-radius: 0.7rem;
   }
@@ -1023,6 +1023,76 @@ main .match-info .item-info span {
   main .stream-desktop .view-stats .stats .stat-type .info-stats span {
     top: -1.4rem;
     font-size: 0.9rem;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .info-team {
+    gap: 1.3rem;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .info-team .team {
+    gap: 0.3rem;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .info-team .team img {
+    width: 5rem;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .info-team .team span {
+    font-size: 1.2rem;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .info-team .gam-plan {
+    gap: 0.5rem;
+    font-size: 1.3rem;
+    top: 0.3rem;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .info-team .gam-plan svg {
+    top: 0.3rem;
+    width: 0.8rem;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .btn-display button span {
+    font-size: 0.9rem;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .btn-display .hide-left {
+    width: 0.7rem;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .btn-display .hide-right {
+    width: 1.2rem;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .btn-display .hide-item-left span {
+    padding-left: 1.2rem;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .btn-display .hide-item-right span {
+    padding-right: 0.7rem;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .list-positions .titlePosition {
+    gap: 0.5rem;
+    width: 100%;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .list-positions .titlePosition span {
+    font-size: 1.2rem;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .list-positions .titlePosition svg {
+    width: 100%;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .list-positions .player {
+    gap: 0.5rem !important;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .list-positions .player img {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .list-positions .player .info-player {
+    gap: 0;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .list-positions .player .info-player .name-player {
+    font-size: 1rem !important;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .list-positions .player .info-player .number-player {
+    width: 2.5rem !important;
+  }
+  main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .list-positions .player .info-player .number-player .number {
+    display: flex;
+    padding-top: 0.1rem;
+    font-size: 0.7rem !important;
+  }
+  main .stream-desktop .view-gam-plan .vs {
+    width: 2.1rem;
   }
   main .match-info {
     justify-content: space-around;
