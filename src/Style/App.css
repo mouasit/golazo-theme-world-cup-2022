@@ -335,7 +335,7 @@ main .btn-display .hide {
   z-index: -1;
 }
 main .btn-display .hide-left {
-  width: 2.5vw;
+  width: 4.4vw;
 }
 main .btn-display .hide-right {
   width: 4.4vw;
@@ -560,7 +560,7 @@ main .match-info .item-info span {
   width: 2.5vw;
 }
 .view-gam-plan .teams-gam-plan .btn-display .hide-left {
-  width: 1.5vw;
+  width: 2.7vw;
 }
 .view-gam-plan .teams-gam-plan .btn-display .hide-right {
   width: 3vw;
@@ -575,7 +575,7 @@ main .match-info .item-info span {
   padding-right: 1.5vw;
 }
 .view-gam-plan .teams-gam-plan .btn-display .hide-item-left span {
-  padding-left: 3vw;
+  padding-left: 2.7vw;
 }
 .view-gam-plan .teams-gam-plan .team-players {
   display: flex;
@@ -1051,16 +1051,16 @@ main .match-info .item-info span {
     font-size: 0.9rem;
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .btn-display .hide-left {
-    width: 0.7rem;
+    width: 1.2rem;
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .btn-display .hide-right {
-    width: 1.2rem;
+    width: 1.5rem;
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .btn-display .hide-item-left span {
     padding-left: 1.2rem;
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .btn-display .hide-item-right span {
-    padding-right: 0.7rem;
+    padding-right: 1.5rem;
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .list-positions {
     gap: 1.7rem;
