@@ -28,6 +28,9 @@ const Gamplan = (props) => {
             </div>
             <div className="team-players">
                 <ButtonSwitchers leftName="1st Team" rightName="Sabstitutes" setDisplayFirstTeamLeft={setDisplayFirstTeamLeft} setDisplaySabstitutesLeft={setDisplaySabstitutesLeft} />
+                {
+                    console.log(displayFirstTeamLeft)
+                }
                 <div className={displayFirstTeamLeft}>
                     <div className="players-postion">
                         <TitlePositon namePosition="Goalkeeper" />

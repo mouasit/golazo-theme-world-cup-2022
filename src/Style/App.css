@@ -643,6 +643,12 @@ main .match-info .item-info span {
   font-size: 1.8vw;
   height: 100%;
 }
+.view-gam-plan .teams-gam-plan .team-players .show-list {
+  display: flex;
+}
+.view-gam-plan .teams-gam-plan .team-players .hide-list {
+  display: none;
+}
 .view-gam-plan .vs {
   width: 7vw;
 }

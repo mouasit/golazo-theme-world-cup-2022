@@ -702,6 +702,12 @@ main{
           }
         }
       }
+      .show-list{
+        display: flex;
+      }
+      .hide-list{
+        display: none;
+      }
     }
   }
   .vs{
