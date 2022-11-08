@@ -1,4 +1,3 @@
-import { useState } from "react";
 import TitlePositon from "../Items/TitlePosition";
 import ziyach from "../../assets/Players/ziyach.png";
 import BackgroundNumber from "../Items/BackgroundNumber";
@@ -8,10 +7,6 @@ import Vs from "../Items/Vs";
 import flagMorocoo from "../../assets/flags/teams/morocco.svg";
 import flagCroatia from "../../assets/flags/teams/croatia.svg";
 const Gamplan = (props) => {
-    const [displayFirstTeamLeft,setDisplayFirstTeamLeft] = useState("list-positions show-list");
-    const [displaySabstitutesLeft,setDisplaySabstitutesLeft] = useState("list-positions hide-list");
-    const [displayFirstTeamRight,setDisplayFirstTeamRight] = useState("list-positions show-list");
-    const [displaySabstitutesRight,setDisplaySabstitutesRight] = useState("list-positions hide-list");
     return(
     <div className={props.displayGamPlan}>
         <div className="teams-gam-plan">
@@ -27,11 +22,8 @@ const Gamplan = (props) => {
                 </div>
             </div>
             <div className="team-players">
-                <ButtonSwitchers leftName="1st Team" rightName="Sabstitutes" setDisplayFirstTeamLeft={setDisplayFirstTeamLeft} setDisplaySabstitutesLeft={setDisplaySabstitutesLeft} />
-                {
-                    console.log(displayFirstTeamLeft)
-                }
-                <div className={displayFirstTeamLeft}>
+                <ButtonSwitchers leftName="1st Team" rightName="Sabstitutes" setDisplayFirstTeamLeft={props.setDisplayFirstTeamLeft} setDisplaySabstitutesLeft={props.setDisplaySabstitutesLeft} />
+                <div className={props.displayFirstTeamLeft}>
                     <div className="players-postion">
                         <TitlePositon namePosition="Goalkeeper" />
                         <div className="list-players">
@@ -83,7 +75,7 @@ const Gamplan = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className={displaySabstitutesLeft}>
+                <div className={props.displaySabstitutesLeft}>
                     <div className="players-postion">
                         <TitlePositon namePosition="Goalkeeper" />
                         <div className="list-players">
@@ -151,8 +143,8 @@ const Gamplan = (props) => {
                 </div>
             </div>
             <div className="team-players">
-                <ButtonSwitchers leftName="1st Team" rightName="Sabstitutes" setDisplayFirstTeamRight={setDisplayFirstTeamRight} setDisplaySabstitutesRight={setDisplaySabstitutesRight}/>
-                <div className={displayFirstTeamRight}>
+                <ButtonSwitchers leftName="1st Team" rightName="Sabstitutes" setDisplayFirstTeamRight={props.setDisplayFirstTeamRight} setDisplaySabstitutesRight={props.setDisplaySabstitutesRight}/>
+                <div className={props.displayFirstTeamRight}>
                     <div className="players-postion">
                         <TitlePositon namePosition="Goalkeeper" />
                         <div className="list-players">
@@ -204,7 +196,7 @@ const Gamplan = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className={displaySabstitutesRight}>
+                <div className={props.displaySabstitutesRight}>
                     <div className="players-postion">
                         <TitlePositon namePosition="Goalkeeper" />
                         <div className="list-players">

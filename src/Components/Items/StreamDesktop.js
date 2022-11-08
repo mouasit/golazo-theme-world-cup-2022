@@ -13,7 +13,18 @@ const StreamMatchDesktop = (props) => {
                     <MatchInfo lang={props.lang}/>
                     <video src= {Video} controls></video>
                 </div>
-                <Gamplan displayGamPlan = "view-gam-plan show-list" />
+                <Gamplan displayGamPlan = "view-gam-plan show-list" 
+                displayFirstTeamLeft = {props.displayFirstTeamLeft}
+                setDisplayFirstTeamLeft = {props.setDisplayFirstTeamLeft}
+        
+                displaySabstitutesLeft = {props.displaySabstitutesLeft}
+                setDisplaySabstitutesLeft = {props.setDisplaySabstitutesLeft}
+        
+                displayFirstTeamRight = {props.displayFirstTeamRight}
+                setDisplayFirstTeamRight = {props.setDisplayFirstTeamRight}
+                displaySabstitutesRight = {props.displaySabstitutesRight}
+                setDisplaySabstitutesRight = {props.setDisplaySabstitutesRight}
+                />
             </div>
             <div className="stats-info">
                 <div className="group">

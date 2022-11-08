@@ -16,7 +16,19 @@ const StreamMatchMobile = (props) => {
                         <Group nameGroup="G" lang={props.lang}/>
                     </div>
                     <ButtonSwitchers leftName="Gam Plan" rightName="Stats" setDisplayGamPlan={setDisplayGamPlan} setDisplayStats={setDisplayStats}/>
-                    <Gamplan displayGamPlan={displayGamPlan} />
+                    <Gamplan displayGamPlan={displayGamPlan} 
+
+                    displayFirstTeamLeft = {props.displayFirstTeamLeft}
+                    setDisplayFirstTeamLeft = {props.setDisplayFirstTeamLeft}
+            
+                    displaySabstitutesLeft = {props.displaySabstitutesLeft}
+                    setDisplaySabstitutesLeft = {props.setDisplaySabstitutesLeft}
+            
+                    displayFirstTeamRight = {props.displayFirstTeamRight}
+                    setDisplayFirstTeamRight = {props.setDisplayFirstTeamRight}
+                    displaySabstitutesRight = {props.displaySabstitutesRight}
+                    setDisplaySabstitutesRight = {props.setDisplaySabstitutesRight}
+                    />
                     <Stats displayStats = {displayStats}  />
                 </section>
         </React.Fragment>
