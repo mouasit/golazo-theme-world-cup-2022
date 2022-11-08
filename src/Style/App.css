@@ -517,6 +517,9 @@ main .match-info .item-info span {
   align-items: flex-start;
   display: none;
 }
+.view-gam-plan .soccer-symbol {
+  display: none;
+}
 .view-gam-plan .teams-gam-plan {
   flex: 1;
   display: flex;
@@ -1003,11 +1006,25 @@ main .match-info .item-info span {
     top: -1.4rem;
     font-size: 0.9rem;
   }
+  main .stream-desktop .view-gam-plan {
+    position: relative;
+  }
+  main .stream-desktop .view-gam-plan .soccer-symbol {
+    display: block;
+    position: absolute;
+    width: 1.2rem;
+    right: 0;
+  }
+  main .stream-desktop .view-gam-plan .soccer-symbol:first-child {
+    left: 0;
+  }
   main .stream-desktop .view-gam-plan .teams-gam-plan {
     gap: 1.6rem;
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .info-team {
     gap: 1.3rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .info-team .team {
     gap: 0.3rem;
@@ -1085,8 +1102,14 @@ main .match-info .item-info span {
     padding-top: 0.1rem;
     font-size: 0.7rem !important;
   }
+  main .stream-desktop .view-gam-plan .team-gam-plan-right .info-team {
+    padding-left: 0;
+    padding-right: 2rem;
+  }
   main .stream-desktop .view-gam-plan .vs {
     width: 2.1rem;
+    position: relative;
+    top: 1rem;
   }
   main .match-info {
     justify-content: space-around;

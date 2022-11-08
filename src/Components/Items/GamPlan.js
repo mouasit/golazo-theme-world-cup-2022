@@ -6,9 +6,12 @@ import ButtonSwitchers from "../Items/ButtonSwitchers";
 import Vs from "../Items/Vs";
 import flagMorocoo from "../../assets/flags/teams/morocco.svg";
 import flagCroatia from "../../assets/flags/teams/croatia.svg";
+import SoccerSymbol from "./SoccerSymbol"
 const Gamplan = (props) => {
     return(
     <div className={props.displayGamPlan}>
+        <SoccerSymbol />
+        <SoccerSymbol />
         <div className="teams-gam-plan">
             <div className="info-team">
                 <div className="team">
@@ -22,7 +25,7 @@ const Gamplan = (props) => {
                 </div>
             </div>
             <div className="team-players">
-                <ButtonSwitchers leftName="1st Team" rightName="Sabstitutes" setDisplayFirstTeamLeft={props.setDisplayFirstTeamLeft} setDisplaySabstitutesLeft={props.setDisplaySabstitutesLeft} />
+                <ButtonSwitchers leftName="1st Team" rightName="Sabstitutes" setDisplayFirstTeamLeft={props.setDisplayFirstTeamLeft} setDisplaySabstitutesLeft={props.setDisplaySabstitutesLeft} showTeamLeft = {props.showLeft} setShowTeamLeft = {props.setShowLeft} />
                 <div className={props.displayFirstTeamLeft}>
                     <div className="players-postion">
                         <TitlePositon namePosition="Goalkeeper" />
@@ -143,7 +146,7 @@ const Gamplan = (props) => {
                 </div>
             </div>
             <div className="team-players">
-                <ButtonSwitchers leftName="1st Team" rightName="Sabstitutes" setDisplayFirstTeamRight={props.setDisplayFirstTeamRight} setDisplaySabstitutesRight={props.setDisplaySabstitutesRight}/>
+                <ButtonSwitchers leftName="1st Team" rightName="Sabstitutes" setDisplayFirstTeamRight={props.setDisplayFirstTeamRight} setDisplaySabstitutesRight={props.setDisplaySabstitutesRight} showTeamRight = {props.showLeft} setShowTeamRight = {props.setShowLeft}/>
                 <div className={props.displayFirstTeamRight}>
                     <div className="players-postion">
                         <TitlePositon namePosition="Goalkeeper" />

@@ -17,7 +17,8 @@ const StreamMatchMobile = (props) => {
                     </div>
                     <ButtonSwitchers leftName="Gam Plan" rightName="Stats" setDisplayGamPlan={setDisplayGamPlan} setDisplayStats={setDisplayStats}/>
                     <Gamplan displayGamPlan={displayGamPlan} 
-
+                    showLeft = {props.showLeft}
+                    setShowLeft = {props.setShowLeft}
                     displayFirstTeamLeft = {props.displayFirstTeamLeft}
                     setDisplayFirstTeamLeft = {props.setDisplayFirstTeamLeft}
             

@@ -570,6 +570,9 @@ main{
   justify-content: space-between;
   align-items: flex-start;
   display: none;
+  .soccer-symbol{
+    display: none;
+  }
   .teams-gam-plan{
     flex: 1;
     display: flex;
@@ -1101,10 +1104,22 @@ main{
       }
         
         .view-gam-plan{
+          position: relative;
+          .soccer-symbol{
+            display: block;
+            position: absolute;
+            width: 1.2rem;
+            right: 0;
+            &:first-child{
+              left: 0;
+            }
+          }
           .teams-gam-plan{
             gap: 1.6rem;
             .info-team{
               gap: 1.3rem;
+              padding-top: 1rem;
+              padding-left: 2rem;
               .team{
                 gap: 0.3rem;
                 img{
@@ -1195,8 +1210,16 @@ main{
               }
             }
           }
+          .team-gam-plan-right{
+            .info-team{
+              padding-left: 0;
+              padding-right: 2rem;
+            }
+          }
           .vs{
             width: 2.1rem;
+            position: relative;
+            top: 1rem;
           }
         }
     }
