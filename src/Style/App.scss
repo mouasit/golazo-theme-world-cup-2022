@@ -460,7 +460,6 @@ main{
     .date-row{
       display: flex;
       flex-direction: row-reverse;
-      margin-bottom: 9vw;
       .date{
         display: flex;
         width: auto;
@@ -1311,7 +1310,6 @@ main{
         }
       }
       .date-row{
-        margin-bottom: 6rem;
         .date{
           width: 15rem;
           span{

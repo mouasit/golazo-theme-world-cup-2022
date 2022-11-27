@@ -15,6 +15,7 @@ import React from "react";
 const MatchTime = (props) => {
     return(
         <React.Fragment>
+        <div className="list-match-time">
         {
             (props.date)?(
                 <div className="date-row">
@@ -25,7 +26,6 @@ const MatchTime = (props) => {
                 </div>
             ):null
         }
-        <div className="list-match-time">
             <div className="group-matches" aria-label="Group Matches">
                 <div className="group-head">
                     <Group nameGroup="F" lang={props.lang}/>
@@ -83,6 +83,18 @@ const MatchTime = (props) => {
                 </div>
             </div>
         </div>
+
+        {
+            (props.date)?(
+                <div className="date-row">
+                    <div className="date">
+                        <CalanderBackground />
+                        <span>12 / 12 / 2022</span>
+                    </div>
+                </div>
+            ):null
+        }
+
         <div className="group-matches" aria-label="Group Matches">
             <div className="group-head">
                 <Group nameGroup="G" lang={props.lang}/>

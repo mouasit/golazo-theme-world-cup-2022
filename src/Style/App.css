@@ -419,7 +419,6 @@ main .match-program .list-days-week .active-time span {
 main .match-program .date-row {
   display: flex;
   flex-direction: row-reverse;
-  margin-bottom: 9vw;
 }
 main .match-program .date-row .date {
   display: flex;
@@ -1189,9 +1188,6 @@ main .match-program .list-match-time {
   }
   main .match-program .list-days-week button span {
     font-size: 1rem;
-  }
-  main .match-program .date-row {
-    margin-bottom: 6rem;
   }
   main .match-program .date-row .date {
     width: 15rem;
