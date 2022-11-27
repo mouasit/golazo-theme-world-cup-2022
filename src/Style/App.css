@@ -1738,6 +1738,16 @@ main .match-program .list-match-time {
   main .match-program .list-days-week button span {
     font-size: 1.2rem;
   }
+  main .match-program .list-match-time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 6rem;
+  }
   .reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;

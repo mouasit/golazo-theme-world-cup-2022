@@ -1284,6 +1284,11 @@ main{
           }
         }
       }
+      .list-match-time{
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+      }
     }
   }
 
