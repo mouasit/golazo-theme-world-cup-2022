@@ -469,7 +469,7 @@ main .group-matches .all-matches .match .match-time .start-time .time {
   display: -ms-flexbox;
   display: flex;
   gap: 1vw;
-  width: 20.8vw;
+  width: 22vw;
   overflow: hidden;
 }
 
@@ -634,6 +634,7 @@ main .matche-program .list-days-week {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 1vw;
+  margin-bottom: 9vw;
 }
 
 main .matche-program .list-days-week button {
@@ -662,6 +663,17 @@ main .matche-program .list-days-week button span {
 
 main .matche-program .list-days-week .active-time span {
   color: #80192E;
+}
+
+main .matche-program .list-match-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 9vw;
 }
 
 .reverse main .all-matches .match .match-play {
@@ -1468,7 +1480,7 @@ main .matche-program .list-days-week .active-time span {
   main .group-matches .all-matches .match .match-time .start-time .time {
     gap: .5rem;
     width: auto;
-    width: 9.2rem;
+    width: 9.6rem;
   }
   main .group-matches .all-matches .match .match-time .start-time .time span {
     font-size: 3rem;
@@ -1715,6 +1727,10 @@ main .matche-program .list-days-week .active-time span {
   main .match-info .item-info span {
     padding-left: 2.7rem;
     font-size: 1rem;
+  }
+  main .matche-program .list-days-week {
+    gap: 1rem;
+    margin-bottom: 6rem;
   }
   main .matche-program .list-days-week button {
     width: 20rem;

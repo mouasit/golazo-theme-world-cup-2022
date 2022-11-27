@@ -310,7 +310,7 @@ main{
             .time{
               display: flex;
               gap: 1vw;
-              width: 20.8vw;
+              width: 22vw;
               overflow: hidden;
               span{
                 color: $white;
@@ -433,6 +433,7 @@ main{
       display: flex;
       justify-content: space-between;
       gap: 1vw;
+      margin-bottom: 9vw;
       button{
         width: 100%;
         background:none;
@@ -454,6 +455,11 @@ main{
             color: $color-text;
           }
       }
+    }
+    .list-match-time{
+      display: flex;
+      flex-direction: column;
+      gap: 9vw;
     }
   }
 
@@ -1026,7 +1032,7 @@ main{
               .time{
                 gap: .5rem;
                 width: auto;
-                width: 9.2rem;
+                width: 9.6rem;
                 span{
                   font-size: 3rem;
                 }
@@ -1269,6 +1275,8 @@ main{
 
     .matche-program{
       .list-days-week{
+        gap: 1rem;
+        margin-bottom: 6rem;
         button{
           width: 20rem;
           span{
