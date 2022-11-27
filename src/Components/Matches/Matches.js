@@ -14,7 +14,7 @@ const Matches = (props) =>{
                 {
                     (today)?( <MatchTime lang={props.lang}/> ):
                     (tomorrow)?( <MatchTime lang={props.lang}/> ):
-                    (thisWeek)?( <MatchTime lang={props.lang}/>):null
+                    (thisWeek)?( <MatchTime lang={props.lang} date={true}/>):null
                 }
             </section>
     </main>

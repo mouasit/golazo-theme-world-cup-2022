@@ -10,8 +10,21 @@ import flagBelgium from "../../assets/flags/teams/belgium.svg";
 import flagCroatia from "../../assets/flags/teams/croatia.svg";
 import flagBrazil from "../../assets/flags/teams/brazil.svg";
 import flagSerbia from "../../assets/flags/teams/serbia.svg";
+import CalanderBackground from "../Items/CalanderBackground";
+import React from "react";
 const MatchTime = (props) => {
     return(
+        <React.Fragment>
+        {
+            (props.date)?(
+                <div className="date-row">
+                    <div className="date">
+                        <CalanderBackground />
+                        <span>12 / 12 / 2022</span>
+                    </div>
+                </div>
+            ):null
+        }
         <div className="list-match-time">
             <div className="group-matches" aria-label="Group Matches">
                 <div className="group-head">
@@ -128,6 +141,7 @@ const MatchTime = (props) => {
             </div>
         </div>
     </div>
+    </React.Fragment>
     )
 }
 

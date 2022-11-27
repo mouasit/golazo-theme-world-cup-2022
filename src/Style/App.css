@@ -1,8 +1,7 @@
 @import url("http://fonts.cdnfonts.com/css/qatar2022-arabic");
 @import url("http://fonts.cdnfonts.com/css/qatar2022-arabic");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -30,164 +29,107 @@ body {
 
 .mobile-header {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   z-index: 1;
 }
-
 .mobile-header .logo {
   width: 40vw;
 }
-
 .mobile-header .layout-dropdown {
   position: relative;
   width: 26vw;
 }
-
 .mobile-header .layout-dropdown .dropdown {
   background: none;
   border: none;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   cursor: pointer;
 }
-
 .mobile-header .layout-dropdown .dropdown svg:first-child {
   width: 100%;
   height: 100%;
 }
-
 .mobile-header .layout-dropdown .dropdown .content-button {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   top: 0;
   bottom: 0;
   width: 100%;
   padding-left: 1.7vw;
   padding-right: 1.7vw;
 }
-
 .mobile-header .layout-dropdown .dropdown .content-button .arrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .mobile-header .layout-dropdown .dropdown .content-button .arrow svg:first-child {
   width: 5vw;
 }
-
 .mobile-header .layout-dropdown .dropdown .content-button .arrow svg:last-child {
   position: absolute;
   color: #EEEEE4;
   width: 4vw;
   height: 4vw;
 }
-
 .mobile-header .layout-dropdown .dropdown .content-button .name-flag {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 1.2vw;
 }
-
 .mobile-header .layout-dropdown .dropdown .content-button .name-flag img {
   width: 8vw;
 }
-
 .mobile-header .layout-dropdown .dropdown .content-button .name-flag span {
   font-family: "Qatar2022 Arabic", sans-serif;
   font-size: 4vw;
   color: #80192E;
 }
-
 .mobile-header .layout-dropdown .dropdown:hover {
   opacity: 0.9;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-transition: all 0.3s;
+  transform: scale(0.9);
   transition: all 0.3s;
 }
-
 .mobile-header .layout-dropdown .list-item {
   position: absolute;
   display: none;
   margin-top: 2vw;
 }
-
 .mobile-header .layout-dropdown .list-item .item {
   position: absolute;
   top: 0;
   bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   padding-left: 1.7vw;
   padding-right: 1.7vw;
   gap: 1.7vw;
   width: 100%;
 }
-
 .mobile-header .layout-dropdown .list-item .item button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 1.2vw;
   width: 100%;
   background: none;
   border: none;
   cursor: pointer;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   padding: 1vw;
 }
-
 .mobile-header .layout-dropdown .list-item .item button:hover, .mobile-header .layout-dropdown .list-item .item button:focus {
-  background-color: #d3d0d0;
+  background-color: rgb(211, 208, 208);
 }
-
 .mobile-header .layout-dropdown .list-item .item button img {
   width: 8vw;
 }
-
 .mobile-header .layout-dropdown .list-item .item button span {
   font-family: "Qatar2022 Arabic", sans-serif;
   font-size: 4vw;
@@ -200,56 +142,36 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: .3rem;
+  padding: 0.3rem;
   background-color: #EEEEE4;
   z-index: 2;
 }
-
 .mobile-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .mobile-nav ul li {
   list-style: none;
 }
-
 .mobile-nav ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #80192E;
   font-size: 8vw;
   border-radius: 3.125rem;
-  padding: .5rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
 }
-
 .mobile-nav ul li a:hover {
   color: rgba(128, 25, 46, 0.9);
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-transition: all 0.3s;
+  transform: scale(0.9);
   transition: all 0.3s;
 }
-
 .mobile-nav ul li .active {
   background-color: #E32052;
   color: #EEEEE4;
 }
-
 .mobile-nav ul li .active:hover {
   color: #EEEEE4;
   opacity: 0.9;
@@ -258,70 +180,37 @@ body {
 main {
   padding-top: 2rem;
   padding-bottom: 15.5vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 9vw;
   overflow: hidden;
 }
-
 main .group-matches {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 9vw;
 }
-
 main .group-matches .group-head {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 main .group-matches .group-head svg {
   width: 70vw;
 }
-
 main .group-matches .all-matches {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 5vw;
 }
-
 main .group-matches .all-matches .match {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 3vw;
 }
-
 main .group-matches .all-matches .match img {
   width: 15vw;
 }
-
 main .group-matches .all-matches .match .team-name {
   font-size: 4vw;
   color: #EEEEE4;
@@ -329,95 +218,50 @@ main .group-matches .all-matches .match .team-name {
   text-align: center;
   overflow: hidden;
 }
-
 main .group-matches .all-matches .match .match-play {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: .3rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.3rem;
 }
-
 main .group-matches .all-matches .match .match-play .team {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100%;
 }
-
 main .group-matches .all-matches .match .match-play .team-right {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
-
 main .group-matches .all-matches .match .match-play .play-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border: none;
   border-radius: 3.125rem;
   background: none;
   border: none;
   cursor: pointer;
 }
-
 main .group-matches .all-matches .match .match-play .play-button svg {
   width: 7vw;
 }
-
 main .group-matches .all-matches .match .match-time {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 main .group-matches .all-matches .match .match-time .teams {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  gap: .5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
-
 main .group-matches .all-matches .match .match-time .teams .team {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: .3rem;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.3rem;
 }
-
 main .group-matches .all-matches .match .match-time .teams .team span {
   width: 15vw;
   font-size: 3.5vw;
@@ -426,194 +270,116 @@ main .group-matches .all-matches .match .match-time .teams .team span {
   overflow: hidden;
   text-transform: uppercase;
 }
-
 main .group-matches .all-matches .match .match-time .teams .vs {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: flex-start;
+  justify-content: center;
 }
-
 main .group-matches .all-matches .match .match-time .teams .vs svg {
   width: 5.5vw;
 }
-
 main .group-matches .all-matches .match .match-time .start-time {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: flex-start;
   gap: 1.5vw;
 }
-
 main .group-matches .all-matches .match .match-time .start-time svg {
   width: 10vw;
 }
-
 main .group-matches .all-matches .match .match-time .start-time .time {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 1vw;
   width: 22vw;
   overflow: hidden;
 }
-
 main .group-matches .all-matches .match .match-time .start-time .time span {
   color: #EEEEE4;
   font-size: 7vw;
 }
-
 main .match-stream {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 3vw;
 }
-
 main .match-stream video {
   width: 100%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
-
 main .details-match {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 8vw;
 }
-
 main .details-match .group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 main .details-match .group svg {
   width: 70vw;
 }
-
 main .btn-display {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   overflow: hidden;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 main .btn-display .hide {
   background-color: #60071E;
   position: absolute;
   height: 100%;
   z-index: -1;
 }
-
 main .btn-display .hide-left {
   width: 4.4vw;
 }
-
 main .btn-display .hide-right {
   width: 4.4vw;
 }
-
 main .btn-display button {
   background: none;
   border: none;
   width: 34vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
-
 main .btn-display button span {
   position: absolute;
   color: #EEEEE4;
   font-family: "Qatar2022 Arabic", sans-serif;
   font-size: 3vw;
 }
-
 main .btn-display .show span {
   color: #60071E;
 }
-
 main .btn-display .hide-item-left span {
   padding-left: 4.4vw;
 }
-
 main .btn-display .hide-item-right span {
   padding-right: 2.5vw;
 }
-
 main .match-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 1rem;
 }
-
 main .match-info .item-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: auto;
   position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 main .match-info .item-info svg {
   width: 100%;
   height: 100%;
 }
-
 main .match-info .item-info span {
   position: absolute;
   padding-left: 6.4vw;
@@ -625,110 +391,88 @@ main .match-info .item-info span {
   text-align: center;
   white-space: nowrap;
 }
-
 main .match-program .list-days-week {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   gap: 1vw;
   margin-bottom: 9vw;
 }
-
 main .match-program .list-days-week button {
   width: 100%;
   background: none;
   border: none;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
-
 main .match-program .list-days-week button span {
   font-family: "Qatar2022 Arabic", sans-serif;
   position: absolute;
   color: #EEEEE4;
   font-size: 3vw;
 }
-
 main .match-program .list-days-week .active-time span {
   color: #80192E;
 }
-
-main .match-program .list-match-time {
-  display: -webkit-box;
-  display: -ms-flexbox;
+main .match-program .date-row {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: row-reverse;
+  margin-bottom: 9vw;
+}
+main .match-program .date-row .date {
+  display: flex;
+  width: auto;
+  position: relative;
+  align-items: center;
+  width: 35vw;
+}
+main .match-program .date-row .date svg {
+  width: 100%;
+  height: 100%;
+}
+main .match-program .date-row .date span {
+  position: absolute;
+  padding-left: 6.4vw;
+  width: 100%;
+  font-size: 2.5vw;
+  color: #EEEEE4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  white-space: nowrap;
+}
+main .match-program .list-match-time {
+  display: flex;
+  flex-direction: column;
   gap: 9vw;
 }
 
 .reverse main .all-matches .match .match-play {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
-
 .reverse main .all-matches .match .match-play .team {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 .reverse main .all-matches .match .match-play .team:first-child {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
-
 .reverse main .all-matches .match .match-play .team .team-name {
   direction: rtl;
 }
-
 .reverse main .all-matches .match .match-time {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
-
 .reverse main .all-matches .match .match-time .teams {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
-
 .reverse main .all-matches .match .start-time {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
-
 .reverse main .match-info {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
-
 .reverse main .match-info .item-info span {
   padding-left: 0;
   padding-right: 6.4vw;
@@ -737,108 +481,59 @@ main .match-program .list-match-time {
 }
 
 .view-stats {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 5vw;
   display: none;
 }
-
 .view-stats .teams-stats {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1;
   display: flex;
   gap: 5vw;
 }
-
 .view-stats .teams-stats .team {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1vw;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
-
 .view-stats .teams-stats .team img {
   width: 17vw;
 }
-
 .view-stats .teams-stats .team span {
   color: #EEEEE4;
   font-size: 3.2vw;
 }
-
 .view-stats .teams-stats .vs {
   width: 7vw;
 }
-
 .view-stats .stats {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 5vw;
 }
-
 .view-stats .stats .stat-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 2.5vw;
 }
-
 .view-stats .stats .stat-type .title-stat {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #EEEEE4;
   font-size: 3vw;
   gap: 1vw;
 }
-
 .view-stats .stats .stat-type .title-stat svg {
   width: 3.5vw;
 }
-
 .view-stats .stats .stat-type .info-stats {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   position: relative;
 }
-
 .view-stats .stats .stat-type .info-stats .stat-team {
   position: absolute;
   background-color: #47B7AB;
@@ -847,7 +542,6 @@ main .match-program .list-match-time {
   height: 1.2vw;
   z-index: 1;
 }
-
 .view-stats .stats .stat-type .info-stats .stat-team span {
   position: absolute;
   top: -4.3vw;
@@ -855,24 +549,20 @@ main .match-program .list-match-time {
   color: #B5B4B4;
   font-size: 2.5vw;
 }
-
 .view-stats .stats .stat-type .info-stats .stat-team-right {
   right: 0;
   width: 50%;
   background-color: #E32052;
   z-index: -1;
 }
-
 .view-stats .stats .stat-type .info-stats .stat-team-right span {
   left: auto;
   right: 0;
 }
-
 .view-stats .stats .stat-type .equal .stat-team {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-
 .view-stats .stats .stat-type .equal .stat-team-right {
   border-radius: 3.125rem;
   border-top-left-radius: 0;
@@ -880,265 +570,156 @@ main .match-program .list-match-time {
 }
 
 .view-gam-plan {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
   display: none;
 }
-
 .view-gam-plan .soccer-symbol {
   display: none;
 }
-
 .view-gam-plan .teams-gam-plan {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 5vw;
 }
-
 .view-gam-plan .teams-gam-plan .info-team {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 2.5vw;
 }
-
 .view-gam-plan .teams-gam-plan .info-team .team {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1vw;
 }
-
 .view-gam-plan .teams-gam-plan .info-team .team img {
   width: 17vw;
 }
-
 .view-gam-plan .teams-gam-plan .info-team .team .team-name {
   color: #EEEEE4;
   font-size: 3.2vw;
 }
-
 .view-gam-plan .teams-gam-plan .info-team .gam-plan {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #EEEEE4;
   position: relative;
   top: 1vw;
   font-size: 3.2vw;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
   gap: 1vw;
 }
-
 .view-gam-plan .teams-gam-plan .info-team .gam-plan svg {
   position: relative;
-  top: .5vw;
+  top: 0.5vw;
   width: 2.5vw;
 }
-
 .view-gam-plan .teams-gam-plan .btn-display .hide-left {
   width: 2.7vw;
 }
-
 .view-gam-plan .teams-gam-plan .btn-display .hide-right {
   width: 3vw;
 }
-
 .view-gam-plan .teams-gam-plan .btn-display button {
   width: 100%;
 }
-
 .view-gam-plan .teams-gam-plan .btn-display button span {
   font-size: 2vw;
 }
-
 .view-gam-plan .teams-gam-plan .btn-display .hide-item-right span {
   padding-right: 1.5vw;
 }
-
 .view-gam-plan .teams-gam-plan .btn-display .hide-item-left span {
   padding-left: 2.7vw;
 }
-
 .view-gam-plan .teams-gam-plan .team-players {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 4vw;
 }
-
 .view-gam-plan .teams-gam-plan .team-players .list-positions {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 5vw;
 }
-
 .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 5vw;
 }
-
 .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .titlePosition {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 1vw;
 }
-
 .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .titlePosition svg {
   width: 12.8vw;
 }
-
 .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .titlePosition span {
   color: #EEEEE4;
   font-size: 3vw;
 }
-
 .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 4vw;
 }
-
 .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 2vw;
 }
-
 .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player img {
   width: 8vw;
   height: 8vw;
   border-radius: 3.125rem;
 }
-
 .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .name-player {
   color: #EEEEE4;
   font-size: 2.8vw;
 }
-
 .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .number-player {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 8vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .number-player svg {
   fill: #47B7AB;
 }
-
 .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .number-player .number {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: .3vw;
+  align-items: center;
+  padding-top: 0.3vw;
   color: #EEEEE4;
   font-size: 1.8vw;
   height: 100%;
 }
-
 .view-gam-plan .teams-gam-plan .team-players .show-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .view-gam-plan .teams-gam-plan .team-players .hide-list {
   display: none;
 }
-
 .view-gam-plan .vs {
   width: 7vw;
 }
-
 .view-gam-plan .team-gam-plan-right .info-team {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
-
 .view-gam-plan .team-gam-plan-right .number-player-right svg {
   fill: #E32052 !important;
 }
 
 .show-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1151,13 +732,10 @@ main .match-program .list-match-time {
     width: 252px;
   }
 }
-
 @media screen and (min-width: 1000px) {
   #root {
     margin-left: auto;
     margin-right: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 0rem;
     max-width: 120rem;
@@ -1171,16 +749,9 @@ main .match-program .list-match-time {
   .side-nav {
     min-height: 100vh;
     width: 14rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
     gap: 2rem;
     position: fixed;
     padding: 1.5rem;
@@ -1192,16 +763,9 @@ main .match-program .list-match-time {
   }
   .side-nav ul {
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     gap: 5rem;
   }
   .side-nav ul li {
@@ -1209,24 +773,16 @@ main .match-program .list-match-time {
   }
   .side-nav ul li a {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .side-nav ul li a svg {
     fill: #60071e;
   }
   .side-nav ul li a:hover {
     opacity: 0.9;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    -webkit-transition: all 0.3s;
+    transform: scale(0.9);
     transition: all 0.3s;
   }
   .side-nav ul li a span {
@@ -1239,8 +795,6 @@ main .match-program .list-match-time {
     fill: #E32052;
   }
   .side-nav .layout-dropdown {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: relative;
   }
@@ -1248,45 +802,27 @@ main .match-program .list-match-time {
     background: none;
     border: none;
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     cursor: pointer;
     width: 12.5rem;
   }
   .side-nav .layout-dropdown .dropdown:hover {
     opacity: 0.9;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    -webkit-transition: all 0.3s;
+    transform: scale(0.9);
     transition: all 0.3s;
   }
   .side-nav .layout-dropdown .dropdown .arrow {
     position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    right: .7rem;
+    justify-content: center;
+    align-items: center;
+    right: 0.7rem;
   }
   .side-nav .layout-dropdown .dropdown .arrow .content-arrow {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .side-nav .layout-dropdown .dropdown .arrow .content-arrow svg:last-child {
     position: absolute;
@@ -1295,13 +831,9 @@ main .match-program .list-match-time {
   .side-nav .layout-dropdown .name-flag {
     position: absolute;
     left: 1.7rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: .5rem;
+    align-items: center;
+    gap: 0.5rem;
   }
   .side-nav .layout-dropdown .name-flag img {
     width: 2.2rem;
@@ -1313,55 +845,38 @@ main .match-program .list-match-time {
   }
   .side-nav .layout-dropdown .list-item {
     position: absolute;
-    bottom: -.5rem;
+    bottom: -0.5rem;
     left: 13rem;
     display: none;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
   }
   .side-nav .layout-dropdown .list-item .item {
     position: absolute;
     width: 100%;
-    top: .8rem;
+    top: 0.8rem;
     height: 7.7rem;
-    padding: .8rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    padding: 0.8rem;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: .8rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
   }
   .side-nav .layout-dropdown .list-item .item button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: .5rem;
+    align-items: center;
+    gap: 0.5rem;
     width: 100%;
     background: none;
     border: none;
     cursor: pointer;
-    border-radius: .3rem;
-    padding: .4rem;
+    border-radius: 0.3rem;
+    padding: 0.4rem;
   }
   .side-nav .layout-dropdown .list-item .item button:hover, .side-nav .layout-dropdown .list-item .item button:focus {
-    background-color: #d3d0d0;
+    background-color: rgb(211, 208, 208);
   }
   .side-nav .layout-dropdown .list-item .item button img {
     width: 2.2rem;
@@ -1372,8 +887,6 @@ main .match-program .list-match-time {
     color: #80192E;
   }
   .side-nav .layout-dropdown .show {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .separtor {
@@ -1381,15 +894,9 @@ main .match-program .list-match-time {
     padding: 1.5rem 0 1.5rem 0;
     position: fixed;
     margin-left: 17.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   main {
     margin-left: 18.5rem;
@@ -1419,31 +926,20 @@ main .match-program .list-match-time {
     width: auto;
   }
   main .group-matches .all-matches .match .match-play {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   main .group-matches .all-matches .match .match-play .team {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    gap: .3rem;
+    align-items: center;
+    flex: 1;
+    gap: 0.3rem;
   }
   main .group-matches .all-matches .match .match-play .team span {
     width: 8.7rem;
   }
   main .group-matches .all-matches .match .match-play .play-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     border: none;
     border-radius: 3.125rem;
     background: none;
@@ -1455,14 +951,11 @@ main .match-program .list-match-time {
     height: 49.27px;
   }
   main .group-matches .all-matches .match .match-time {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   main .group-matches .all-matches .match .match-time .teams .team {
-    gap: .3rem;
+    gap: 0.3rem;
   }
   main .group-matches .all-matches .match .match-time .teams .team span {
     width: 7.5rem;
@@ -1478,7 +971,7 @@ main .match-program .list-match-time {
     width: 4rem;
   }
   main .group-matches .all-matches .match .match-time .start-time .time {
-    gap: .5rem;
+    gap: 0.5rem;
     width: auto;
     width: 9.6rem;
   }
@@ -1492,91 +985,53 @@ main .match-program .list-match-time {
     display: none;
   }
   main .stream-desktop {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 1rem;
   }
   main .stream-desktop .stream-gam-plan {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 1.5rem;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    flex: 1;
   }
   main .stream-desktop .stream-gam-plan .stream {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 1rem;
   }
   main .stream-desktop .stream-gam-plan .stream .match-info {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   main .stream-desktop .stream-gam-plan .stream video {
     width: 100%;
-    border-radius: .7rem;
+    border-radius: 0.7rem;
   }
   main .stream-desktop .stats-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 3rem;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    flex: 1;
   }
   main .stream-desktop .stats-info .group {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   main .stream-desktop .stats-info .group svg {
     width: 18rem;
   }
   main .stream-desktop .stats-info .view-stats {
-    gap: .8rem;
+    gap: 0.8rem;
   }
   main .stream-desktop .stats-info .view-stats .teams-stats {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    align-items: flex-start;
+    justify-content: space-around;
     gap: 0;
   }
   main .stream-desktop .stats-info .view-stats .teams-stats .team {
-    -webkit-box-flex: 0;
-        -ms-flex: 0;
-            flex: 0;
+    flex: 0;
     gap: 0.3rem;
   }
   main .stream-desktop .stats-info .view-stats .teams-stats .team img {
@@ -1638,19 +1093,19 @@ main .match-program .list-match-time {
     font-size: 1.2rem;
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .info-team .gam-plan {
-    gap: .5rem;
+    gap: 0.5rem;
     font-size: 1.3rem;
-    top: .3rem;
+    top: 0.3rem;
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .info-team .gam-plan svg {
-    top: .3rem;
-    width: .8rem;
+    top: 0.3rem;
+    width: 0.8rem;
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .team-players {
     gap: 1.7rem;
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .btn-display button span {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .btn-display .hide-left {
     width: 1.2rem;
@@ -1684,7 +1139,7 @@ main .match-program .list-match-time {
     gap: 1.5rem;
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player {
-    gap: .5rem !important;
+    gap: 0.5rem !important;
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player img {
     width: 3.5rem !important;
@@ -1700,11 +1155,9 @@ main .match-program .list-match-time {
     width: 2.5rem !important;
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .number-player .number {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    padding-top: .1rem;
-    font-size: .7rem !important;
+    padding-top: 0.1rem;
+    font-size: 0.7rem !important;
   }
   main .stream-desktop .view-gam-plan .team-gam-plan-right .info-team {
     padding-left: 0;
@@ -1716,9 +1169,8 @@ main .match-program .list-match-time {
     top: 1rem;
   }
   main .match-info {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    gap: .5rem;
+    justify-content: space-around;
+    gap: 0.5rem;
   }
   main .match-info .item-info svg {
     width: 12.047rem;
@@ -1733,26 +1185,26 @@ main .match-program .list-match-time {
     margin-bottom: 6rem;
   }
   main .match-program .list-days-week button {
-    width: 20rem;
+    width: 12rem;
   }
   main .match-program .list-days-week button span {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  main .match-program .date-row {
+    margin-bottom: 6rem;
+  }
+  main .match-program .date-row .date {
+    width: 15rem;
+  }
+  main .match-program .date-row .date span {
+    padding-left: 3.2rem;
+    font-size: 1.3rem;
   }
   main .match-program .list-match-time {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     gap: 6rem;
   }
   .reverse {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   .reverse .side-nav {
     padding-right: 1.5rem;
@@ -1760,27 +1212,19 @@ main .match-program .list-match-time {
   }
   .reverse .side-nav .layout-dropdown .dropdown .arrow {
     right: 0;
-    left: .7rem;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    left: 0.7rem;
+    justify-content: flex-start;
   }
   .reverse .side-nav .layout-dropdown .dropdown .name-flag {
     left: 0;
     right: 1.7rem;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   .reverse .side-nav .list-item {
     left: -12rem;
   }
   .reverse .side-nav .list-item .item button {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   .reverse .separtor {
     margin-left: 0;
@@ -1794,5 +1238,4 @@ main .match-program .list-match-time {
     padding-left: 0;
     padding-right: 2.7rem;
   }
-}
-/*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=App.css.map */
