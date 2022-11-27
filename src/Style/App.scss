@@ -29,10 +29,6 @@ body{
   padding: 0.5rem;
 }
 
-
-
-
-
 .side-nav{
   display: none;
 }
@@ -431,6 +427,38 @@ main{
       }
     }
   }
+
+  .matche-program{
+    .list-days-week{
+      display: flex;
+      justify-content: space-between;
+      gap: 1vw;
+      button{
+        width: 100%;
+        background:none;
+        border: none;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        span{
+          font-family: $font;
+          position: absolute;
+          color: $white;
+          font-size: 3vw;
+        }
+      }
+      .active-time{
+          span{
+            color: $color-text;
+          }
+      }
+    }
+  }
+
+
+
 }
 
 .reverse{
@@ -1235,6 +1263,17 @@ main{
         span{
           padding-left:2.7rem;
           font-size: 1rem;
+        }
+      }
+    }
+
+    .matche-program{
+      .list-days-week{
+        button{
+          width: 20rem;
+          span{
+            font-size: 1.2rem;
+          }
         }
       }
     }

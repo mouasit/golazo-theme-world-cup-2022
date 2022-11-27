@@ -1,6 +1,5 @@
 import BackgroundButton from "../Items/BackgournButton";
 import ActiveButton from "../Items/ActiveButton";
-import { useState } from "react";
 const ButtonSwitchers = (props) => {
     return(
         <div className="btn-display">
