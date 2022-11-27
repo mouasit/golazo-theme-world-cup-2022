@@ -12,9 +12,9 @@ const Matches = (props) =>{
             <section className="match-program">
                 <ListButton setToday={setToday} setTomorrow={setTomorrow} setThisWeek ={setThisWeek} />
                 {
-                    (today)?( <MatchTime lang={props.lang} first="today"/> ):
-                    (tomorrow)?( <MatchTime lang={props.lang} first="tomorrow"/> ):
-                    (thisWeek)?( <MatchTime lang={props.lang} first="week"/>):null
+                    (today)?( <MatchTime lang={props.lang}/> ):
+                    (tomorrow)?( <MatchTime lang={props.lang}/> ):
+                    (thisWeek)?( <MatchTime lang={props.lang}/>):null
                 }
             </section>
     </main>

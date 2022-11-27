@@ -23,7 +23,7 @@ const MatchTime = (props) => {
                         <div className="teams">
                             <div className="team">
                                 <img src={flagMorocco} alt="" />
-                                <span className="team-name">{props.first}</span>
+                                <span className="team-name">mar</span>
                             </div>
                             <span className="vs">
                                 <Vs />
