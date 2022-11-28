@@ -1,7 +1,11 @@
 import CardRanking from "../Items/CardRanking";
-import SeparatorRanking from "../Items/SeparatorRanking";
+import SeparatorRankingDesktop from "../Items/SeparatorRankingDesktop";
+import SeparatorRankingMobile from "../Items/SeparatorRankingMobile";
 import SeparatorHeader from "../Items/SeparatorHeader";
-
+import flagQatar from "../../assets/flags-groups/Qatar.svg";
+import flagEquador from "../../assets/flags-groups/Equador.svg";
+import flagSenegal from "../../assets/flags-groups/Senegal.svg";
+import flagNetherland from "../../assets/flags-groups/Netherland.svg";
 const Ranking = () =>(
     <main>
         <div className="ranking">
@@ -26,12 +30,76 @@ const Ranking = () =>(
                             <SeparatorHeader />
                         </span>
                         <div className="body-ranking">
-
+                            <div className="team-row">
+                                <div className="team-info">
+                                    <span className="flag">
+                                        <img src={flagQatar} alt="" />
+                                    </span>
+                                    <span className="name">
+                                        Qatar
+                                    </span>
+                                </div>
+                                <div className="team-numbers">
+                                    <span>0</span>
+                                    <span>0</span>
+                                    <span>0</span>
+                                    <span>0</span>
+                                </div>
+                            </div>
+                            <div className="team-row">
+                                <div className="team-info">
+                                    <span className="flag">
+                                        <img src={flagEquador} alt="" />
+                                    </span>
+                                    <span className="name">
+                                        Ecuador
+                                    </span>
+                                </div>
+                                <div className="team-numbers">
+                                    <span>0</span>
+                                    <span>0</span>
+                                    <span>0</span>
+                                    <span>0</span>
+                                </div>
+                            </div>
+                            <div className="team-row">
+                                <div className="team-info">
+                                    <span className="flag">
+                                        <img src={flagSenegal} alt="" />
+                                    </span>
+                                    <span className="name">
+                                        Senegal
+                                    </span>
+                                </div>
+                                <div className="team-numbers">
+                                    <span>0</span>
+                                    <span>0</span>
+                                    <span>0</span>
+                                    <span>0</span>
+                                </div>
+                            </div>
+                            <div className="team-row">
+                                <div className="team-info">
+                                        <img src={flagNetherland} alt="" />
+                                    <span className="name">
+                                        Netherland
+                                    </span>
+                                </div>
+                                <div className="team-numbers">
+                                    <span>0</span>
+                                    <span>0</span>
+                                    <span>0</span>
+                                    <span>0</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="separator-ranking">
-                    <SeparatorRanking />
+                <div className="separator-ranking-desktop">
+                    <SeparatorRankingDesktop />
+                </div>
+                <div className="separator-ranking-mobile">
+                    <SeparatorRankingMobile />
                 </div>
             </div>
         </section>

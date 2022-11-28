@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 35.563 24.513">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#dab264"/>
+      <stop offset="0.482" stop-color="#be895f"/>
+      <stop offset="1" stop-color="#996a45"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <path id="Path_1822" data-name="Path 1822" d="M751.658,577.358a154.224,154.224,0,0,0-32.1,0,50.276,50.276,0,0,0,0,21.755,154.224,154.224,0,0,0,32.1,0,50.273,50.273,0,0,0,0-21.755Z" transform="translate(-718.37 -576.521)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_929" data-name="Group 929" transform="translate(-709.313 -567.463)">
+    <path id="Path_1819" data-name="Path 1819" d="M727.094,591.976a155.746,155.746,0,0,1-16.1-.84l-.385-.041-.086-.378a50.816,50.816,0,0,1,0-22l.086-.378.385-.041a154.756,154.756,0,0,1,32.211,0l.385.041.086.378a50.819,50.819,0,0,1,0,22l-.086.378-.385.041a155.746,155.746,0,0,1-16.1.84Z" fill="url(#linear-gradient)"/>
+    <g id="Group_928" data-name="Group 928" transform="translate(709.855 568.005)">
+      <g id="Group_927" data-name="Group 927" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <g id="Group_926" data-name="Group 926" transform="translate(-0.162 0)">
+          <g id="Group_925" data-name="Group 925">
+            <path id="Path_1820" data-name="Path 1820" d="M863.043,576.521l2.486,1.3-2.486,1.3,2.486,1.3-2.486,1.3,2.486,1.3-2.486,1.3,2.486,1.3-2.486,1.3,2.486,1.3-2.486,1.3,2.486,1.3-2.486,1.3,2.486,1.3-2.486,1.3,2.486,1.3-2.486,1.3,2.486,1.3-2.486,1.3h25.984V576.521Z" transform="translate(-854.225 -576.521)" fill="#80192e"/>
+            <path id="Path_1821" data-name="Path 1821" d="M715.669,576.521h8.818l2.486,1.3-2.486,1.3,2.486,1.3-2.486,1.3,2.486,1.3-2.486,1.3,2.486,1.3-2.486,1.3,2.486,1.3-2.486,1.3,2.486,1.3-2.486,1.3,2.486,1.3-2.486,1.3,2.486,1.3-2.486,1.3,2.486,1.3-2.486,1.3h-8.818V576.521Z" transform="translate(-715.669 -576.521)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
