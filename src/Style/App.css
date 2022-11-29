@@ -1382,6 +1382,27 @@ main .ranking .ranking-scorers {
   main .ranking .ranking-scorers-modal {
     display: none;
   }
+  main .ranking .head-list {
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    color: #EEEEE4;
+  }
+  main .ranking .head-list .title-list {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  main .ranking .head-list .title-list svg {
+    width: 2rem;
+  }
+  main .ranking .head-list .goals {
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+  }
   .reverse {
     flex-direction: row-reverse;
   }
