@@ -1553,7 +1553,6 @@ main{
     display: flex;
     align-items: center;
     gap: .5rem;
-    width: 15.7rem;
     .rank-player{
       display: flex;
       align-items: center;
@@ -1605,6 +1604,12 @@ main{
     width: 2.6rem;
     font-size: .9rem;
     color: $white;
+  }
+
+  .ranking-scorers{
+    .card-player{
+      width: 15.7rem;
+    }
   }
 }
 
