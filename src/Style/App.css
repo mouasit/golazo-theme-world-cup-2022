@@ -1020,7 +1020,7 @@ main .ranking .ranking-scorers {
   }
   main {
     margin-left: 18.5rem;
-    padding: 3.5rem 3.4rem 3.5rem 3.4rem;
+    padding: 3.5rem 1.5rem 3.5rem 1.5rem;
     gap: 6rem;
     width: 100%;
   }
@@ -1378,6 +1378,9 @@ main .ranking .ranking-scorers {
   main .ranking .ranking-scorers {
     display: unset;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
   main .ranking .ranking-scorers-modal {
     display: none;
@@ -1394,14 +1397,17 @@ main .ranking .ranking-scorers {
     flex: 1;
     align-items: center;
     gap: 0.2rem;
-    background-color: #E32052;
   }
   main .head-list .title-list svg {
     width: 2rem;
   }
   main .head-list .goals {
     display: flex;
-    background-color: #47B7AB;
+  }
+  main .list-player {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
   }
   main .list-player .row-player {
     display: flex;
@@ -1412,7 +1418,7 @@ main .ranking .ranking-scorers {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background-color: green;
+    width: 15.7rem;
   }
   main .card-player .rank-player {
     display: flex;
@@ -1457,6 +1463,13 @@ main .ranking .ranking-scorers {
   main .card-player .player-details div .country-player svg {
     width: 1rem;
     display: flex;
+  }
+  main .number-goals {
+    display: flex;
+    justify-content: center;
+    width: 2.6rem;
+    font-size: 0.9rem;
+    color: #EEEEE4;
   }
   .reverse {
     flex-direction: row-reverse;

@@ -1104,7 +1104,7 @@ main{
 
   main{
     margin-left: 18.5rem;
-    padding: 3.5rem 3.4rem 3.5rem 3.4rem;
+    padding: 3.5rem 1.5rem 3.5rem 1.5rem;
     gap: 6rem;
     width: 100%;
     .group-matches{
@@ -1507,6 +1507,11 @@ main{
     .ranking-scorers{
       display: unset;
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+
     }
     .ranking-scorers-modal{
       display: none;
@@ -1524,18 +1529,19 @@ main{
       flex: 1;
       align-items: center;
       gap: .2rem;
-      background-color:#E32052;
       svg{
         width: 2rem;
       }
     }
     .goals{
       display: flex;
-      background-color: #47B7AB;
     }
   }
 
   .list-player{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
     .row-player{
       display: flex;
       align-items: center;
@@ -1547,7 +1553,7 @@ main{
     display: flex;
     align-items: center;
     gap: .5rem;
-    background-color:green;
+    width: 15.7rem;
     .rank-player{
       display: flex;
       align-items: center;
@@ -1594,7 +1600,11 @@ main{
     }
   }
   .number-goals{
-
+    display: flex;
+    justify-content: center;
+    width: 2.6rem;
+    font-size: .9rem;
+    color: $white;
   }
 }
 
