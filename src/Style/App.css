@@ -1390,18 +1390,18 @@ main .ranking .ranking-scorers {
     color: #EEEEE4;
   }
   main .head-list .title-list {
-    flex: 2;
     display: flex;
+    flex: 1;
     align-items: center;
     gap: 0.2rem;
+    background-color: #E32052;
   }
   main .head-list .title-list svg {
     width: 2rem;
   }
   main .head-list .goals {
-    flex: 1;
     display: flex;
-    flex-direction: row-reverse;
+    background-color: #47B7AB;
   }
   main .list-player .row-player {
     display: flex;
@@ -1412,6 +1412,7 @@ main .ranking .ranking-scorers {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    background-color: green;
   }
   main .card-player .rank-player {
     display: flex;
