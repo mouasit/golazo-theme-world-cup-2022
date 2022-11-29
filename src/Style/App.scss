@@ -599,6 +599,7 @@ main{
       justify-content: center;
       align-items: center;
       border: 2px solid $white;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       &:hover{
         transform: scale(0.9);
         transition: all 0.3s
