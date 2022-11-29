@@ -1382,26 +1382,80 @@ main .ranking .ranking-scorers {
   main .ranking .ranking-scorers-modal {
     display: none;
   }
-  main .ranking .head-list {
+  main .head-list {
     display: flex;
     font-size: 1rem;
     align-items: center;
     justify-content: space-between;
     color: #EEEEE4;
   }
-  main .ranking .head-list .title-list {
+  main .head-list .title-list {
     flex: 2;
     display: flex;
     align-items: center;
     gap: 0.2rem;
   }
-  main .ranking .head-list .title-list svg {
+  main .head-list .title-list svg {
     width: 2rem;
   }
-  main .ranking .head-list .goals {
+  main .head-list .goals {
     flex: 1;
     display: flex;
     flex-direction: row-reverse;
+  }
+  main .list-player .row-player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .card-player {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  main .card-player .rank-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .card-player .rank-player svg {
+    width: 1.7rem;
+    fill: #EEEEE4;
+  }
+  main .card-player .rank-player span {
+    position: absolute;
+    font-size: 0.7rem;
+    color: #80192E;
+  }
+  main .card-player .player-details {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #EEEEE4;
+  }
+  main .card-player .player-details img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3.125rem;
+    display: flex;
+  }
+  main .card-player .player-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  main .card-player .player-details div .name-player {
+    font-size: 0.9rem;
+  }
+  main .card-player .player-details div .country-player {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    gap: 0.2rem;
+  }
+  main .card-player .player-details div .country-player svg {
+    width: 1rem;
+    display: flex;
   }
   .reverse {
     flex-direction: row-reverse;

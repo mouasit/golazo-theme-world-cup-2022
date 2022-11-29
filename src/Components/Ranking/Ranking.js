@@ -52,7 +52,10 @@ const Ranking = () => {
                 <span className="goals">Goals</span>
             </div>
             <div className="list-player">
-
+                <div className="row-player">
+                    <CardPlayer />
+                    <span className="number-goals">8</span>
+                </div>
             </div>
         </section>
         <section className="ranking-scorers-modal">
