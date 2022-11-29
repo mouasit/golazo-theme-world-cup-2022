@@ -1500,9 +1500,15 @@ main{
         }
       }
     }
+    .btn-modal{
+      display: none;
+    }
     .ranking-scorers{
       display: unset;
       width: 100%;
+    }
+    .ranking-scorers-modal{
+      display: none;
     }
   }
 }

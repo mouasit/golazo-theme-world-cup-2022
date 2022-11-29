@@ -1,8 +1,11 @@
+import { useState } from "react";
 import Card from "../Items/Card";
 import SeparatorGroups from "../Items/SeparatorGroups"
 
-const Ranking = () =>(
-    <main>
+const Ranking = () => {
+    const [scorers,setScorers] = useState(false);
+    return (
+        <main>
         <div className="ranking">
         <section className="ranking-teams">
             <div className="row-cards">
@@ -26,7 +29,9 @@ const Ranking = () =>(
                 <Card />
             </div>
         </section>
-        <button className="btn-modal">
+        <button className="btn-modal" aria-label="" onClick={() => {
+            setScorers(true);
+        }}>
             <svg xmlns="http://www.w3.org/2000/svg" width="60.509" height="60.642" viewBox="0 0 60.509 60.642">
                 <g id="Group_4537" data-name="Group 4537" transform="translate(-1.741 -1.679)">
                     <g id="_09-Goal" data-name="09-Goal">
@@ -38,8 +43,18 @@ const Ranking = () =>(
         <section className="ranking-scorers">
             hello
         </section>
+        <section className="ranking-scorers-modal">
+            {
+                (scorers)?(
+                    <button onClick={() => {
+                        setScorers(false);
+                    }}>hide</button>
+                ):null
+            }
+        </section>
         </div>
     </main>
-)
+    )
+}
 
 export default Ranking

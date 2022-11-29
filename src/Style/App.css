@@ -1372,9 +1372,15 @@ main .ranking .ranking-scorers {
   main .ranking .ranking-teams .row-cards .separator-ranking-mobile {
     display: none;
   }
+  main .ranking .btn-modal {
+    display: none;
+  }
   main .ranking .ranking-scorers {
     display: unset;
     width: 100%;
+  }
+  main .ranking .ranking-scorers-modal {
+    display: none;
   }
   .reverse {
     flex-direction: row-reverse;
