@@ -538,7 +538,7 @@ main{
               display: flex;
             }
             .body-ranking{
-              padding: 0 8vw 0 3vw;
+              padding: 1vw 8vw .5vw 3vw;
               height: 100%;
               display: flex;
               flex-direction: column;
@@ -582,6 +582,29 @@ main{
           width: 42vw;
         }
       }
+    }
+    .btn-modal{
+      position: fixed;
+      bottom: 5rem;
+      z-index: 99;
+      cursor: pointer;
+      right: 0.5rem;
+      background-color: #47B7AB;
+      border-radius: 3.125rem;
+      width: 4rem;
+      height: 4rem;
+      border: none;
+      padding: 1vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid $white;
+      svg{
+        width: 2.1rem;
+      }
+    }
+    .ranking-scorers{
+      display: none;
     }
   }
 
@@ -918,7 +941,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1rem;
     position: fixed;
     padding: $size-padding;
     padding-right: 0rem;
@@ -926,6 +949,7 @@ main{
   
     .logo{
       width: 100%;
+      display: flex;
     }
   
     ul{
@@ -933,7 +957,7 @@ main{
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 5rem;
+      gap: 2rem;
       
       li{
         list-style: none;
@@ -1065,6 +1089,7 @@ main{
   .separtor{
     min-height: 100vh;
     padding: $size-padding 0 $size-padding 0;
+    padding-top: 4rem;
     position: fixed;
     margin-left: 17.5rem;
     display: flex;
@@ -1419,100 +1444,63 @@ main{
     }
 
       .ranking{
+        display: flex;
+        gap: 1.5rem;
     .ranking-teams{
       display: flex;
       flex-direction: column;
-      gap: 8vw;
+      gap: 3rem;
       .row-cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8vw;
+        flex-direction: row;
+        gap: 1rem;
         .cards{
-          position: relative;
-          width: 85vw;
+          width: 20rem;
           .info-ranking{
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            padding: 5vw;
-            padding-bottom: 6.8vw;
-            display: flex;
-            flex-direction: column;
-            gap: 2vw;
+            padding: 1rem;
+            padding-bottom: 1.8rem;
+            gap: .2rem;
             .header-ranking{
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              padding: 0 8vw 0 3vw;
+              padding: 0 1rem 0 0.5rem;
               .title-group{
-                flex: 1;
-                display: flex;
-                font-size: 4vw;
-                color: $color-text;
+                font-size: 1.2rem;
               }
     
               .details-ranking{
-                flex: 1;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                color: $color-text;
-                font-size: 2.5vw;
+                font-size: 0.6rem;
               }
-            }
-            .separator-header{
-              display: flex;
             }
             .body-ranking{
-              padding: 0 8vw 0 3vw;
-              height: 100%;
-              display: flex;
-              flex-direction: column;
-              justify-content: space-between;
-              .team-row{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-              }
+              padding: .5rem 1rem 0.1rem 0.5rem;
               .team-info{
-                display: flex;
-                align-items: center;
-                flex: 1;
-                gap: 1vw;
+                gap: .3rem;
                 img{
-                  width: 7vw;
-                  position: relative;
-                  display: flex;
+                  width: 1.6rem;
                 }
                 .name{
-                  position: relative;
-                  color: $color-text;
-                  font-size: 3.2vw;
+                  font-size: .8rem;
                 }
               }
               .team-numbers{
-                flex: 1;
-                display: flex;
-                justify-content: space-between;
-                font-size: 2.5vw;
-                position: relative;
-                color: $color-text;
+                font-size: 0.6rem;
               }
             }
           }
         }
         .separator-ranking-desktop{
-          display: none;
+          display: unset;
+          width: 1rem;
         }
         .separator-ranking-mobile{
-          width: 42vw;
+          display: none;
         }
       }
     }
+    .ranking-scorers{
+      display: unset;
+      width: 100%;
+    }
   }
-  }
+}
 
   .reverse{
     flex-direction: row-reverse;
