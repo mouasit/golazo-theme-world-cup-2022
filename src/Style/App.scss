@@ -1107,6 +1107,7 @@ main{
     padding: 3.5rem 1.5rem 3.5rem 1.5rem;
     gap: 6rem;
     width: 100%;
+    position: relative;
     .group-matches{
       gap: 6rem;
       .group-head{
@@ -1510,7 +1511,6 @@ main{
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
-
 
     }
     .ranking-scorers-modal{

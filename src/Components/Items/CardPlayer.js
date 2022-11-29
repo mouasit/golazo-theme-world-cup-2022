@@ -3,12 +3,12 @@ import ShapeNumber from "./ShapeNumber";
 import ShapeFlageMorocco from "./ShapeFlagMorocco";
 import picturePlayer from "../../assets/Players/ziyach.png"
 
-export default function CardPlayer() {
+export default function CardPlayer(props) {
   return (
     <div className='card-player'>
         <div className='rank-player'>
           <ShapeNumber />
-          <span>01</span>
+          <span>{props.rank}</span>
         </div>
         <div className='player-details'>
           <img src={picturePlayer} alt="" />
