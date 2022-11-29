@@ -599,6 +599,10 @@ main{
       justify-content: center;
       align-items: center;
       border: 2px solid $white;
+      &:hover{
+        transform: scale(0.9);
+        transition: all 0.3s
+      }
       svg{
         width: 2.1rem;
       }

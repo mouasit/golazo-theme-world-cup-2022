@@ -555,6 +555,10 @@ main .ranking .btn-modal {
   align-items: center;
   border: 2px solid #EEEEE4;
 }
+main .ranking .btn-modal:hover {
+  transform: scale(0.9);
+  transition: all 0.3s;
+}
 main .ranking .btn-modal svg {
   width: 2.1rem;
 }
