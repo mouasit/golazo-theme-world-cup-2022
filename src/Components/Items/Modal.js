@@ -1,10 +1,9 @@
 import React from 'react'
 
-export default function Modal({open,children,onClose}) {
-    if(!open)
-        return null
+export default function Modal({children,onClose}) {
+
   return (
-    <div className='modal-container'>
+    <div id='modal' className='modal-container'>
       <div className='row-btn-close'>
           <button onClick={onClose}>
             <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 320.59 316.903">

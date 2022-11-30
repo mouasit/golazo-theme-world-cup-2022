@@ -5,7 +5,7 @@ import Modal from "../Items/Modal";
 import CardPlayer from "../Items/CardPlayer";
 
 const Ranking = () => {
-    const [isOpen, setIsOpen] = useState(false);
+
     
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
     const setWindowDimensions = () => {
@@ -15,9 +15,10 @@ const Ranking = () => {
         window.addEventListener('resize', setWindowDimensions);
 }, [])
 if(windowWidth >= 1000)
+{
     document.body.style.overflow = "auto";
-else if(isOpen)
-    document.body.style.overflow = "hidden";
+    document.getElementById("modal").style.display = "none";
+}
     return (
         <main>
         <div className="ranking">
@@ -44,8 +45,8 @@ else if(isOpen)
             </div>
         </section>
         <button className="btn-modal" aria-label="" onClick={() => {
-           document.body.style.overflow = "hidden";
-            setIsOpen(true);
+            document.getElementById("modal").style.display = "flex";
+            document.body.style.overflow = "hidden";
             } }>
             <svg xmlns="http://www.w3.org/2000/svg" width="60.509" height="60.642" viewBox="0 0 60.509 60.642">
                 <g id="Group_4537" data-name="Group 4537" transform="translate(-1.741 -1.679)">
@@ -98,10 +99,9 @@ else if(isOpen)
             </div>
         </section>
         <section className="ranking-scorers-modal">
-            <Modal open = {isOpen} onClose={()=>{
-            
+            <Modal onClose={()=>{
+                document.getElementById("modal").style.display = "none";
                 document.body.style.overflow = "auto";
-                setIsOpen(false)
                 }}>
                 <div className="list-player">
                     <div className="row-player">
