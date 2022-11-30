@@ -627,6 +627,7 @@ main{
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
         svg{
           width: 1.7rem;
           fill: $white;
@@ -714,7 +715,7 @@ main{
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #000;
+      background-color: rgba(0,0,0,.7);
       .modal{
         background-color: $white;
         display: flex;
@@ -722,8 +723,7 @@ main{
         width: 85vw;
         max-height: 100vw;
         overflow: auto;
-        gap: .5rem;
-        padding: 1rem;
+        padding: 3.2vw;
         gap: 4vw;
         border-radius: 2vw;
         .modal-header{
@@ -1124,6 +1124,7 @@ main{
 }
 
 @media screen and (min-width: 1000px){
+
   #root{
     margin-left: auto;
     margin-right: auto;

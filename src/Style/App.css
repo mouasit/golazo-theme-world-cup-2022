@@ -579,6 +579,7 @@ main .ranking .card-player .rank-player {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 main .ranking .card-player .rank-player svg {
   width: 1.7rem;
@@ -663,7 +664,7 @@ main .ranking .modal-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 main .ranking .modal-container .modal {
   background-color: #EEEEE4;
@@ -672,8 +673,7 @@ main .ranking .modal-container .modal {
   width: 85vw;
   max-height: 100vw;
   overflow: auto;
-  gap: 0.5rem;
-  padding: 1rem;
+  padding: 3.2vw;
   gap: 4vw;
   border-radius: 2vw;
 }

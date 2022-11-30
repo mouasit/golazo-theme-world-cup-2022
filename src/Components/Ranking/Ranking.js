@@ -31,7 +31,10 @@ const Ranking = () => {
                 <Card />
             </div>
         </section>
-        <button className="btn-modal" aria-label="" onClick={() => {setIsOpen(true)}}>
+        <button className="btn-modal" aria-label="" onClick={() => {
+           document.body.style.overflow = "hidden";
+            setIsOpen(true);
+            } }>
             <svg xmlns="http://www.w3.org/2000/svg" width="60.509" height="60.642" viewBox="0 0 60.509 60.642">
                 <g id="Group_4537" data-name="Group 4537" transform="translate(-1.741 -1.679)">
                     <g id="_09-Goal" data-name="09-Goal">
@@ -103,11 +106,7 @@ const Ranking = () => {
                         <span className="number-goals">8</span>
                     </div>
                     <div className="row-player">
-                        <CardPlayer rank="4"/>
-                        <span className="number-goals">8</span>
-                    </div>
-                    <div className="row-player">
-                        <CardPlayer rank="4"/>
+                        <CardPlayer rank="5"/>
                         <span className="number-goals">8</span>
                     </div>
                 </div>
