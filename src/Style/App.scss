@@ -802,13 +802,13 @@ main{
           width: 100%;
           border-radius: 2vw;
         }
-        button{
+        .arrow{
           position: absolute;
           width: 6vw;
           height: 6vw;
           border-radius: 3.125rem;
           top: 50%;
-          right: 2vw;
+          right: 2.5vw;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -817,8 +817,40 @@ main{
           cursor: pointer;
         }
         .arrow-left{
-          left: 2vw;
+          left: 2.5vw;
         }
+
+        .row-slide{
+          position: absolute;
+          bottom: 2.5vw;
+          padding-left: 2.5vw;
+          padding-right: 2.5vw;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1.5vw;
+          button{
+            background: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3.125rem;
+            border: none;
+            cursor: pointer;
+            svg{
+
+              width: 2vw;
+              fill: $white;
+            }
+          }
+          .active{
+            svg{
+                fill: $color-text;
+            }
+          }
+        }
+
       }
     }
   }

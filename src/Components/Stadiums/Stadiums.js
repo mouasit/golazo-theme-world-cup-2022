@@ -10,14 +10,14 @@ const Stadiums = () =>(
             <div className="card-stadiums">
                 <div className="container-pictures">
                     <img src={alThumama} alt="" />
-                    <button className="arrow-left">
+                    <button className="arrow arrow-left">
                         <ArrowLeft />
                     </button>
-                    <button className="arrow-right">
+                    <button className="arrow arrow-right">
                         <ArrowRight />
                     </button>
-                    {/* <div className="row-slide">
-                        <button>
+                    <div className="row-slide">
+                        <button className="active">
                             <ShapeSlide />
                         </button>
                         <button>
@@ -26,7 +26,7 @@ const Stadiums = () =>(
                         <button>
                             <ShapeSlide />
                         </button>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </div>

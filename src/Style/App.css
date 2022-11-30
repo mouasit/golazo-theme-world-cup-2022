@@ -738,13 +738,13 @@ main .stadiums .card-stadiums .container-pictures img {
   width: 100%;
   border-radius: 2vw;
 }
-main .stadiums .card-stadiums .container-pictures button {
+main .stadiums .card-stadiums .container-pictures .arrow {
   position: absolute;
   width: 6vw;
   height: 6vw;
   border-radius: 3.125rem;
   top: 50%;
-  right: 2vw;
+  right: 2.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -753,7 +753,34 @@ main .stadiums .card-stadiums .container-pictures button {
   cursor: pointer;
 }
 main .stadiums .card-stadiums .container-pictures .arrow-left {
-  left: 2vw;
+  left: 2.5vw;
+}
+main .stadiums .card-stadiums .container-pictures .row-slide {
+  position: absolute;
+  bottom: 2.5vw;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vw;
+}
+main .stadiums .card-stadiums .container-pictures .row-slide button {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3.125rem;
+  border: none;
+  cursor: pointer;
+}
+main .stadiums .card-stadiums .container-pictures .row-slide button svg {
+  width: 2vw;
+  fill: #EEEEE4;
+}
+main .stadiums .card-stadiums .container-pictures .row-slide .active svg {
+  fill: #80192E;
 }
 
 .reverse main .all-matches .match .match-play {
