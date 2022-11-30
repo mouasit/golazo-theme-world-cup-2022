@@ -716,7 +716,31 @@ main{
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       background-color: rgba(0,0,0,.7);
+      gap: 2vw;
+      .row-btn-close{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 85vw;
+        padding-right: 1vw;
+        button{
+          border-radius: 3.125rem;
+          cursor: pointer;
+          width: 5vw;
+          height: 5vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: none;
+          border: none;
+          background-color: $color-text;
+          svg{
+            width: 2vw;
+            fill: $white;
+          }
+        }
+      }
       .modal{
         background-color: $white;
         display: flex;
@@ -727,26 +751,6 @@ main{
         padding: 3.2vw;
         gap: 4vw;
         border-radius: 2vw;
-        .modal-header{
-          display: flex;
-          flex-direction: row-reverse;
-          button{
-            border-radius: 3.125rem;
-            cursor: pointer;
-            width: 5vw;
-            height: 5vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: none;
-            border: none;
-            background-color: $color-text;
-            svg{
-              width: 2vw;
-              fill: $white;
-            }
-          }
-        }
         .modal-body{
           display: flex;
           flex-direction: column;

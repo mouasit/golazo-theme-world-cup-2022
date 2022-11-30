@@ -663,24 +663,17 @@ main .ranking .modal-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-main .ranking .modal-container .modal {
-  background-color: #EEEEE4;
-  display: flex;
   flex-direction: column;
-  width: 85vw;
-  max-height: 100vw;
-  overflow: auto;
-  padding: 3.2vw;
-  gap: 4vw;
-  border-radius: 2vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  gap: 2vw;
 }
-main .ranking .modal-container .modal .modal-header {
+main .ranking .modal-container .row-btn-close {
   display: flex;
   flex-direction: row-reverse;
+  width: 85vw;
+  padding-right: 1vw;
 }
-main .ranking .modal-container .modal .modal-header button {
+main .ranking .modal-container .row-btn-close button {
   border-radius: 3.125rem;
   cursor: pointer;
   width: 5vw;
@@ -692,9 +685,20 @@ main .ranking .modal-container .modal .modal-header button {
   border: none;
   background-color: #80192E;
 }
-main .ranking .modal-container .modal .modal-header button svg {
+main .ranking .modal-container .row-btn-close button svg {
   width: 2vw;
   fill: #EEEEE4;
+}
+main .ranking .modal-container .modal {
+  background-color: #EEEEE4;
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  max-height: 100vw;
+  overflow: auto;
+  padding: 3.2vw;
+  gap: 4vw;
+  border-radius: 2vw;
 }
 main .ranking .modal-container .modal .modal-body {
   display: flex;

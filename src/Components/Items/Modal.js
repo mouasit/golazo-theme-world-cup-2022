@@ -5,8 +5,7 @@ export default function Modal({open,children,onClose}) {
         return null
   return (
     <div className='modal-container'>
-      <div className='modal'>
-        <div className='modal-header'>
+      <div className='row-btn-close'>
           <button onClick={onClose}>
             <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 320.59 316.903">
               <g id="Group_4540" data-name="Group 4540" transform="translate(0 -1.844)">
@@ -20,7 +19,8 @@ export default function Modal({open,children,onClose}) {
             </svg>
 
           </button>
-        </div>
+      </div>
+      <div className='modal'>
         <div className='modal-body'>
           <div className="head-list">
               <div className="title-list">
