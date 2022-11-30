@@ -543,7 +543,7 @@ main .ranking .ranking-scorers {
 }
 main .ranking .head-list {
   display: flex;
-  font-size: 1rem;
+  font-size: 3vw;
   align-items: center;
   justify-content: space-between;
   color: #EEEEE4;
@@ -552,10 +552,10 @@ main .ranking .head-list .title-list {
   display: flex;
   flex: 1;
   align-items: center;
-  gap: 0.2rem;
+  gap: 1vw;
 }
 main .ranking .head-list .title-list svg {
-  width: 2rem;
+  width: 6vw;
 }
 main .ranking .head-list .goals {
   display: flex;
@@ -563,7 +563,7 @@ main .ranking .head-list .goals {
 main .ranking .list-player {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 7vw;
 }
 main .ranking .list-player .row-player {
   display: flex;
@@ -573,7 +573,7 @@ main .ranking .list-player .row-player {
 main .ranking .card-player {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1.5vw;
 }
 main .ranking .card-player .rank-player {
   display: flex;
@@ -587,45 +587,44 @@ main .ranking .card-player .rank-player svg {
 }
 main .ranking .card-player .rank-player span {
   position: absolute;
-  font-size: 0.7rem;
+  font-size: 2.8vw;
   color: #80192E;
 }
 main .ranking .card-player .player-details {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.5vw;
   color: #EEEEE4;
 }
 main .ranking .card-player .player-details img {
-  width: 3rem;
-  height: 3rem;
+  width: 9vw;
+  height: 9vw;
   border-radius: 3.125rem;
   display: flex;
 }
 main .ranking .card-player .player-details div {
   display: flex;
   flex-direction: column;
-  gap: 0.1rem;
+  gap: 0;
 }
 main .ranking .card-player .player-details div .name-player {
-  font-size: 0.9rem;
+  font-size: 2.8vw;
 }
 main .ranking .card-player .player-details div .country-player {
   display: flex;
   align-items: center;
-  font-size: 0.7rem;
-  gap: 0.2rem;
+  font-size: 2vw;
+  gap: 0.1vw;
 }
 main .ranking .card-player .player-details div .country-player img {
-  width: 1rem;
-  height: 1rem;
+  width: 3.5vw;
+  height: 3.5vw;
   display: flex;
 }
 main .ranking .number-goals {
   display: flex;
   justify-content: center;
-  width: 2.6rem;
-  font-size: 0.9rem;
+  font-size: 3vw;
   color: #EEEEE4;
 }
 main .ranking .btn-modal {
@@ -704,19 +703,8 @@ main .ranking .modal-container .modal .modal-body {
 }
 main .ranking .modal-container .modal .modal-body .head-list {
   color: #80192E;
-  font-size: 3vw;
-}
-main .ranking .modal-container .modal .modal-body .head-list .title-list {
-  gap: 1vw;
-}
-main .ranking .modal-container .modal .modal-body .head-list .title-list svg {
-  width: 6vw;
-}
-main .ranking .modal-container .modal .modal-body .list-player {
-  gap: 7vw;
 }
 main .ranking .modal-container .modal .modal-body .list-player .row-player .card-player {
-  gap: 1.5vw;
   width: 80vw;
 }
 main .ranking .modal-container .modal .modal-body .list-player .row-player .card-player .rank-player svg {
@@ -725,34 +713,11 @@ main .ranking .modal-container .modal .modal-body .list-player .row-player .card
 }
 main .ranking .modal-container .modal .modal-body .list-player .row-player .card-player .rank-player span {
   color: #EEEEE4;
-  font-size: 2.8vw;
-}
-main .ranking .modal-container .modal .modal-body .list-player .row-player .card-player .player-details {
-  gap: 0.5vw;
-}
-main .ranking .modal-container .modal .modal-body .list-player .row-player .card-player .player-details img {
-  width: 9vw;
-  height: 9vw;
 }
 main .ranking .modal-container .modal .modal-body .list-player .row-player .card-player .player-details div {
   color: #80192E;
-  gap: 0vw;
-}
-main .ranking .modal-container .modal .modal-body .list-player .row-player .card-player .player-details div .name-player {
-  font-size: 2.8vw;
-}
-main .ranking .modal-container .modal .modal-body .list-player .row-player .card-player .player-details div .country-player {
-  gap: 0.1vw;
-}
-main .ranking .modal-container .modal .modal-body .list-player .row-player .card-player .player-details div .country-player img {
-  width: 3.7vw;
-  height: 3.7vw;
-}
-main .ranking .modal-container .modal .modal-body .list-player .row-player .card-player .player-details div .country-player span {
-  font-size: 2vw;
 }
 main .ranking .modal-container .modal .modal-body .list-player .row-player .number-goals {
-  font-size: 3vw;
   color: #80192E;
   width: 8.1vw;
 }
@@ -1583,7 +1548,7 @@ main .ranking .modal-container .modal .modal-body .list-player .row-player .numb
     gap: 0.2rem;
   }
   main .head-list .title-list svg {
-    width: 2rem;
+    width: 6vw;
   }
   main .list-player {
     gap: 2.5rem;

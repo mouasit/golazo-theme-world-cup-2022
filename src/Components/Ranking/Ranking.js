@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Card from "../Items/Card";
 import SeparatorGroups from "../Items/SeparatorGroups";
 import Modal from "../Items/Modal";
@@ -6,6 +6,18 @@ import CardPlayer from "../Items/CardPlayer";
 
 const Ranking = () => {
     const [isOpen, setIsOpen] = useState(false);
+    
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+    const setWindowDimensions = () => {
+    setWindowWidth(window.innerWidth)
+    }
+    useEffect(() => {
+        window.addEventListener('resize', setWindowDimensions);
+}, [])
+if(windowWidth >= 1000)
+    document.body.style.overflow = "auto";
+else if(isOpen)
+    document.body.style.overflow = "hidden";
     return (
         <main>
         <div className="ranking">
@@ -86,7 +98,11 @@ const Ranking = () => {
             </div>
         </section>
         <section className="ranking-scorers-modal">
-            <Modal open = {isOpen} onClose={()=>setIsOpen(false)}>
+            <Modal open = {isOpen} onClose={()=>{
+            
+                document.body.style.overflow = "auto";
+                setIsOpen(false)
+                }}>
                 <div className="list-player">
                     <div className="row-player">
                         <CardPlayer rank="1"/>
