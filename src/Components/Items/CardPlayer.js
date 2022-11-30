@@ -1,6 +1,6 @@
 import React from 'react'
 import ShapeNumber from "./ShapeNumber";
-import ShapeFlageMorocco from "./ShapeFlagMorocco";
+import ShapeFlageMorocco from "../../assets/flags-country-players/morocco.svg";
 import picturePlayer from "../../assets/Players/ziyach.png"
 
 export default function CardPlayer(props) {
@@ -15,7 +15,7 @@ export default function CardPlayer(props) {
           <div>
             <span className='name-player'>Hakim Ziyach</span>
             <span className='country-player'>
-              <ShapeFlageMorocco />
+              <img src= {ShapeFlageMorocco} alt="" />
               <span>Morocco</span>
             </span>
           </div>

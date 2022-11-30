@@ -583,6 +583,100 @@ main{
         }
       }
     }
+
+    .ranking-scorers{
+      display: none;
+    }
+
+    .head-list{
+      display: flex;
+      font-size: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      color: $white;
+      .title-list{
+        display: flex;
+        flex: 1;
+        align-items: center;
+        gap: .2rem;
+        svg{
+          width: 2rem;
+        }
+      }
+      .goals{
+        display: flex;
+      }
+    }
+  
+    .list-player{
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      .row-player{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  
+    .card-player{
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      .rank-player{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+          width: 1.7rem;
+          fill: $white;
+        }
+        span{
+          position: absolute;
+          font-size: .7rem;
+          color: $color-text;
+        }
+      }
+      .player-details{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        color: $white;
+        img{
+          width: 3rem;
+          height: 3rem;
+          border-radius: 3.125rem;
+          display: flex;
+        }
+        div{
+          display: flex;
+          flex-direction: column;
+          gap: .1rem;
+          .name-player{
+            font-size: .9rem;
+          }
+          .country-player{
+            display: flex;
+            align-items: center;
+            font-size: .7rem;
+            gap: .2rem;
+            img{
+              width: 1rem;
+              height: 1rem;
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+    .number-goals{
+      display: flex;
+      justify-content: center;
+      width: 2.6rem;
+      font-size: .9rem;
+      color: $white;
+    }
+
     .btn-modal{
       position: fixed;
       bottom: 5rem;
@@ -608,8 +702,114 @@ main{
         width: 2.1rem;
       }
     }
-    .ranking-scorers{
-      display: none;
+
+    .modal-container{
+      position: fixed;
+      top: 0;
+      z-index: 999;
+      width: 100%;
+      height: 100vh;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      .modal{
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        width: 85vw;
+        max-height: 100vw;
+        overflow: auto;
+        gap: .5rem;
+        padding: 1rem;
+        gap: 4vw;
+        border-radius: 2vw;
+        .modal-header{
+          display: flex;
+          flex-direction: row-reverse;
+          button{
+            border-radius: 3.125rem;
+            cursor: pointer;
+            width: 5vw;
+            height: 5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: none;
+            border: none;
+            background-color: $color-text;
+            svg{
+              width: 2vw;
+              fill: $white;
+            }
+          }
+        }
+        .modal-body{
+          display: flex;
+          flex-direction: column;
+          gap: 5vw;
+          .head-list{
+            color: $color-text;
+            font-size: 3vw;
+            .title-list{
+              gap: 1vw;
+              svg{
+                width: 6vw;
+              }
+            }
+          }
+          .list-player{
+            gap: 7vw;
+            .row-player{
+              .card-player{
+                gap: 1.5vw;
+                width: 80vw;
+                .rank-player{
+                  svg{
+                    width: 5.5vw;
+                    fill: $color-text;
+                  }
+                  span{
+                    color: $white;
+                    font-size: 2.8vw;
+                  }
+                }
+                .player-details{
+                  gap: .5vw;
+                  img{
+                    width: 9vw;
+                    height: 9vw;
+                  }
+                  div{
+                    color: $color-text;
+                    gap: 0vw;
+                    .name-player{
+                      font-size: 2.8vw;
+                    }
+                    .country-player{
+                      gap: 0.1vw;
+                      img{
+                        width: 3.7vw;
+                        height: 3.7vw;
+                      }
+                      span{
+                        font-size: 2vw;
+                      }
+                    }
+                  }
+                }
+              }
+              .number-goals{
+                font-size: 3vw;
+                color: $color-text;
+                width: 8.1vw;
+              }
+            }
+          }
+        }
+      }
     }
   }
 
@@ -1519,91 +1719,55 @@ main{
   }
 
   .head-list{
-    display: flex;
     font-size: 1rem;
-    align-items: center;
-    justify-content: space-between;
-    color: $white;
     .title-list{
-      display: flex;
-      flex: 1;
-      align-items: center;
       gap: .2rem;
       svg{
         width: 2rem;
       }
     }
-    .goals{
-      display: flex;
-    }
   }
 
   .list-player{
-    display: flex;
-    flex-direction: column;
     gap: 2.5rem;
-    .row-player{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
   }
 
   .card-player{
-    display: flex;
-    align-items: center;
     gap: .5rem;
     .rank-player{
-      display: flex;
-      align-items: center;
-      justify-content: center;
       svg{
         width: 1.7rem;
-        fill: $white;
       }
       span{
-        position: absolute;
         font-size: .7rem;
-        color: $color-text;
       }
     }
     .player-details{
-      display: flex;
-      align-items: center;
       gap: .5rem;
-      color: $white;
       img{
         width: 3rem;
         height: 3rem;
         border-radius: 3.125rem;
-        display: flex;
       }
       div{
-        display: flex;
-        flex-direction: column;
         gap: .1rem;
         .name-player{
           font-size: .9rem;
         }
         .country-player{
-          display: flex;
-          align-items: center;
           font-size: .7rem;
           gap: .2rem;
-          svg{
+          img{
             width: 1rem;
-            display: flex;
+            height: 1rem;
           }
         }
       }
     }
   }
   .number-goals{
-    display: flex;
-    justify-content: center;
     width: 2.6rem;
     font-size: .9rem;
-    color: $white;
   }
 
   .ranking-scorers{
@@ -1612,7 +1776,6 @@ main{
     }
   }
 }
-
   .reverse{
     flex-direction: row-reverse;
     .side-nav{

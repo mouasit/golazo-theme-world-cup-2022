@@ -83,9 +83,34 @@ const Ranking = () => {
             </div>
         </section>
         <section className="ranking-scorers-modal">
-            <Modal open = {isOpen}>
-                Hey im a modal
-                <button onClick={()=>{setIsOpen(false)}}>close</button>
+            <Modal open = {isOpen} onClose={()=>setIsOpen(false)}>
+                <div className="list-player">
+                    <div className="row-player">
+                        <CardPlayer rank="1"/>
+                        <span className="number-goals">8</span>
+                    </div>
+                    <div className="row-player">
+                        <CardPlayer rank="2"/>
+                        <span className="number-goals">8</span>
+                    </div>
+
+                    <div className="row-player">
+                        <CardPlayer rank="3"/>
+                        <span className="number-goals">8</span>
+                    </div>
+                    <div className="row-player">
+                        <CardPlayer rank="4"/>
+                        <span className="number-goals">8</span>
+                    </div>
+                    <div className="row-player">
+                        <CardPlayer rank="4"/>
+                        <span className="number-goals">8</span>
+                    </div>
+                    <div className="row-player">
+                        <CardPlayer rank="4"/>
+                        <span className="number-goals">8</span>
+                    </div>
+                </div>
             </Modal>
         </section>
         </div>
