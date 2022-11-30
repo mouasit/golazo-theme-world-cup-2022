@@ -17,7 +17,8 @@ const Ranking = () => {
 if(windowWidth >= 1000)
 {
     document.body.style.overflow = "auto";
-    document.getElementById("modal").style.display = "none";
+    if(document.getElementById("modal"))
+        document.getElementById("modal").style.display = "none";
 }
     return (
         <main>
@@ -100,7 +101,9 @@ if(windowWidth >= 1000)
         </section>
         <section className="ranking-scorers-modal">
             <Modal onClose={()=>{
-                document.getElementById("modal").style.display = "none";
+                
+                if(document.getElementById("modal"))
+                    document.getElementById("modal").style.display = "none";
                 document.body.style.overflow = "auto";
                 }}>
                 <div className="list-player">
