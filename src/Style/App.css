@@ -726,6 +726,35 @@ main .ranking .modal-container .modal .modal-body .list-player .row-player .numb
   color: #80192E;
   width: 8.1vw;
 }
+main .stadiums .card-stadiums .container-pictures {
+  background-color: #EEEEE4;
+  width: 100%;
+  padding: 1.2vw;
+  border-radius: 2vw;
+  position: relative;
+}
+main .stadiums .card-stadiums .container-pictures img {
+  display: flex;
+  width: 100%;
+  border-radius: 2vw;
+}
+main .stadiums .card-stadiums .container-pictures button {
+  position: absolute;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 3.125rem;
+  top: 50%;
+  right: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+main .stadiums .card-stadiums .container-pictures .arrow-left {
+  left: 2vw;
+}
 
 .reverse main .all-matches .match .match-play {
   flex-direction: row-reverse;

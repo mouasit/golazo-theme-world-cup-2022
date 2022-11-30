@@ -789,6 +789,39 @@ main{
     }
   }
 
+  .stadiums{
+    .card-stadiums{
+      .container-pictures{
+        background-color: $white;
+        width: 100%;
+        padding: 1.2vw;
+        border-radius: 2vw;
+        position: relative;
+        img{
+          display: flex;
+          width: 100%;
+          border-radius: 2vw;
+        }
+        button{
+          position: absolute;
+          width: 6vw;
+          height: 6vw;
+          border-radius: 3.125rem;
+          top: 50%;
+          right: 2vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
+        .arrow-left{
+          left: 2vw;
+        }
+      }
+    }
+  }
 }
 
 .reverse{
