@@ -1871,6 +1871,83 @@ main{
       width: 15.7rem;
     }
   }
+
+  .stadiums{
+    gap: 7vw;
+    .card-stadiums{
+      flex-direction: row;
+      gap: 4vw;
+      .container-pictures{
+        width: 100%;
+        padding: 1.2vw;
+        border-radius: 2vw;
+        img{
+          width: 100%;
+          border-radius: 2vw;
+        }
+        .arrow{
+          width: 6vw;
+          height: 6vw;
+          border-radius: 3.125rem;
+          top: 50%;
+          right: 2.5vw;
+        }
+        .arrow-left{
+          left: 2.5vw;
+        }
+
+        .row-slide{
+          bottom: 2.5vw;
+          padding-left: 2.5vw;
+          padding-right: 2.5vw;
+          width: 100%;
+          gap: 1.5vw;
+          button{
+            border-radius: 3.125rem;
+            svg{
+              width: 2vw;
+            }
+          }
+          .active{
+            svg{
+                fill: $color-text;
+            }
+          }
+        }
+
+      }
+      .stadium-details{
+        gap: 1rem;
+        .name-stadium{
+          text-align: left;
+          font-size: 2.4rem;
+        }
+        p{
+          text-align: left;
+          width: 35rem;
+          font-size: 1rem;
+        }
+        .stadium-place-loacation{
+          gap: 1rem;
+          justify-content: flex-start;
+          .item{
+            width: 14rem;
+            span{
+              padding-left: 2.6rem;
+              font-size: 1.2rem;
+              padding-top: .1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .row-separator{
+      svg{
+        width: 15vw;
+      }
+    }
+  }
 }
   .reverse{
     flex-direction: row-reverse;
