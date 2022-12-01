@@ -1955,16 +1955,16 @@ main{
   }
 }
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1300px){
   main{
     .match-stream{
       display: none;
     }
-
+    
     .details-match{
       display: none;
     }
-
+    
     .stream-desktop{
       display: flex;
       justify-content: space-between;
@@ -1982,14 +1982,14 @@ main{
           .match-info{
             justify-content: space-between;
           }
-  
+    
           video{
             width: 100%;
             border-radius: .7rem;
           }
         }
       }
-
+    
       .stats-info{
         display: flex;
         flex-direction: column;
@@ -2023,7 +2023,7 @@ main{
                 width: 2.1rem;
               }
             }
-  
+    
             .stats{
               gap: 3rem;
               .stat-type{
@@ -2091,9 +2091,10 @@ main{
                 button{
                   span{
                     font-size: .9rem;
+                    padding-left: 1rem;
                   }
                 }
-
+    
                 .hide-left{
                   width: 1.2rem;
                 }
@@ -2106,14 +2107,15 @@ main{
                     padding-left: 1.2rem;
                   }
                 }
-            
+                
                 .hide-item-right{
                   span{
                     padding-right: 1.5rem;
+                    padding-left: 1.5rem;
                   }
                 }
               }
-
+    
               .list-positions{
                 gap: 1.7rem;
                 .titlePosition{
@@ -2169,8 +2171,12 @@ main{
           }
         }
     }
+   
+  }
+}
 
-
+@media screen and (min-width: 1400px){
+  main{
     .stadiums{
       .card-stadiums{
         flex-direction: row;

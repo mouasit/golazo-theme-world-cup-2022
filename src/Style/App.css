@@ -1755,7 +1755,7 @@ main .stadiums .row-separator svg {
     padding-right: 2.7rem;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1300px) {
   main .match-stream {
     display: none;
   }
@@ -1884,6 +1884,7 @@ main .stadiums .row-separator svg {
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .btn-display button span {
     font-size: 0.9rem;
+    padding-left: 1rem;
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .btn-display .hide-left {
     width: 1.2rem;
@@ -1896,6 +1897,7 @@ main .stadiums .row-separator svg {
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .btn-display .hide-item-right span {
     padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .list-positions {
     gap: 1.7rem;
@@ -1946,6 +1948,8 @@ main .stadiums .row-separator svg {
     position: relative;
     top: 1rem;
   }
+}
+@media screen and (min-width: 1400px) {
   main .stadiums .card-stadiums {
     flex-direction: row;
     justify-content: flex-start;
