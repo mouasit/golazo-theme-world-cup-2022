@@ -790,7 +790,13 @@ main{
   }
 
   .stadiums{
+    display: flex;
+    flex-direction: column;
+    gap: 7vw;
     .card-stadiums{
+      display: flex;
+      flex-direction: column;
+      gap: 4vw;
       .container-pictures{
         background-color: $white;
         width: 100%;
@@ -851,6 +857,54 @@ main{
           }
         }
 
+      }
+      .stadium-details{
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+        .name-stadium{
+          text-align: center;
+          font-size: 6.2vw;
+        }
+        p{
+          text-align: center;
+          font-size: 2.4vw;
+        }
+        .stadium-place-loacation{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 2vw;
+          .item{
+            width: 40vw;
+            position: relative;
+            svg{
+              display: flex;
+            }
+
+            span{
+              position: absolute;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding-left: 9vw;
+              font-size: 3.2vw;
+            }
+          }
+        }
+      }
+    }
+
+    .row-separator{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      svg{
+        width: 15vw;
       }
     }
   }

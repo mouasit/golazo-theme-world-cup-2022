@@ -726,6 +726,16 @@ main .ranking .modal-container .modal .modal-body .list-player .row-player .numb
   color: #80192E;
   width: 8.1vw;
 }
+main .stadiums {
+  display: flex;
+  flex-direction: column;
+  gap: 7vw;
+}
+main .stadiums .card-stadiums {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
 main .stadiums .card-stadiums .container-pictures {
   background-color: #EEEEE4;
   width: 100%;
@@ -781,6 +791,52 @@ main .stadiums .card-stadiums .container-pictures .row-slide button svg {
 }
 main .stadiums .card-stadiums .container-pictures .row-slide .active svg {
   fill: #80192E;
+}
+main .stadiums .card-stadiums .stadium-details {
+  color: #EEEEE4;
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+main .stadiums .card-stadiums .stadium-details .name-stadium {
+  text-align: center;
+  font-size: 6.2vw;
+}
+main .stadiums .card-stadiums .stadium-details p {
+  text-align: center;
+  font-size: 2.4vw;
+}
+main .stadiums .card-stadiums .stadium-details .stadium-place-loacation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+main .stadiums .card-stadiums .stadium-details .stadium-place-loacation .item {
+  width: 40vw;
+  position: relative;
+}
+main .stadiums .card-stadiums .stadium-details .stadium-place-loacation .item svg {
+  display: flex;
+}
+main .stadiums .card-stadiums .stadium-details .stadium-place-loacation .item span {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 9vw;
+  font-size: 3.2vw;
+}
+main .stadiums .row-separator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .stadiums .row-separator svg {
+  width: 15vw;
 }
 
 .reverse main .all-matches .match .match-play {
