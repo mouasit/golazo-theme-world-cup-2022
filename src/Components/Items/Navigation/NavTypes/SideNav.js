@@ -19,7 +19,7 @@ const SideNav = (props) => {
         document.getElementById("root").removeAttribute("class");
     return (
         <nav className="side-nav">
-            <NavLink to="/" aria-label="Golazo">
+            <NavLink to="/" aria-label="Golazo" onClick={() => {document.getElementById("Path_1611").style.fill = "#E32052";}}>
                 <img className="logo" src={logo} alt=""/>
             </NavLink>
             <ul>

@@ -4,21 +4,21 @@ import Translate from "../../../src/Translate.json";
 const LinkStadiums = (props) => {
     if(props.lang === "en")
         return(
-            <NavLink to="/Stadiums" aria-label={Translate.sideNav.english.stadiums}>
+            <NavLink to="/Stadiums" aria-label={Translate.sideNav.english.stadiums}  onClick={() => {document.getElementById("Path_1611").style.fill = "#60071e";}}>
                 <Background />
                 <span>{Translate.sideNav.english.stadiums}</span>
             </NavLink>
         )
     if(props.lang === "fr")
         return(
-            <NavLink to="/Stadiums" aria-label={Translate.sideNav.frensh.stadiums}>
+            <NavLink to="/Stadiums" aria-label={Translate.sideNav.frensh.stadiums}  onClick={() => {document.getElementById("Path_1611").style.fill = "#60071e";}}>
                 <Background />
                 <span>{Translate.sideNav.frensh.stadiums}</span>
             </NavLink>
         )
     if(props.lang === "ar")
         return(
-            <NavLink to="/Stadiums" aria-label={Translate.sideNav.arabic.stadiums}>
+            <NavLink to="/Stadiums" aria-label={Translate.sideNav.arabic.stadiums}  onClick={() => {document.getElementById("Path_1611").style.fill = "#60071e";}}>
                 <Background />
                 <span>{Translate.sideNav.arabic.stadiums}</span>
             </NavLink>
