@@ -1154,6 +1154,8 @@ main{
               .info-player{
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
                 .name-player{
                   color: $white;
                   font-size: 2.8vw;
@@ -1490,217 +1492,179 @@ main{
       }
     }
 
-    .match-stream{
-      display: none;
-    }
+    gap: 4rem;
 
     .details-match{
-      display: none;
-    }
-
-    .stream-desktop{
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 1rem;
-      .stream-gam-plan{
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        flex: 1;
-        .stream{
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-          .match-info{
-            justify-content: space-between;
-          }
-  
-          video{
-            width: 100%;
-            border-radius: .7rem;
-          }
+      gap: 4rem;
+      .group{
+        svg{
+          width: 25rem;
         }
       }
 
-      .stats-info{
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        flex: 1;
-        .group{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          svg{
-            width: 18rem;
+      .btn-display{
+        .hide-left{
+          width: 2.5rem;
+        }
+        .hide-right{
+          width: 1.9rem;
+        }
+        button{
+          width: 13rem;
+          span{
+            font-size: 1.2rem !important;
+            padding-left: 1rem;
           }
         }
-        .view-stats{
-          gap: .8rem;
-            .teams-stats{
-              align-items: flex-start;
-              justify-content: space-around;
-              gap: 0;
-              .team{
-                flex: 0;
-                gap: 0.3rem;
-                img{
-                  width: 5rem;
-                }
-                span{
-                  font-size: 1.2rem;
-                }
-              }
-              .vs{
-                width: 2.1rem;
-              }
-            }
-  
-            .stats{
-              gap: 3rem;
-              .stat-type{
-                gap: 1rem;
-                .title-stat{
-                  gap: 0.5rem;
-                  svg{
-                    width: 1rem;
-                  }
-                  font-size: 1.2rem;
-                }
-                .info-stats{
-                  .stat-team{
-                    height: 0.3rem;
-                  }
-                  span{
-                    top: -1.4rem;
-                    font-size: 0.9rem;
-                  }
-                }
-              }
-            }
+
+        .hide-item-left{
+          span{
+            padding-left: 2.5rem;
+            padding-right: 1rem;
           }
+        }
+    
+        .hide-item-right{
+          span{
+            padding-right: 1.9rem;
+          }
+        }
       }
-        
-        .view-gam-plan{
-          position: relative;
-          .soccer-symbol{
-            display: block;
-            position: absolute;
-            width: 1.2rem;
-            right: 0;
-            &:first-child{
-              left: 0;
+      .view-gam-plan{
+        .teams-gam-plan{
+          gap: 4rem;
+          .info-team{
+            .team{
+              img{
+                width: 7rem;
+              }
+              .team-name{
+                font-size: 1.5rem;
+              }
+            }
+            .gam-plan{
+              font-size: 1.4rem;
+              svg{
+                width: 1rem;
+              }
             }
           }
-          .teams-gam-plan{
-            gap: 1.6rem;
-            .info-team{
-              gap: 1.3rem;
-              padding-top: 1rem;
-              padding-left: 2rem;
-              .team{
-                gap: 0.3rem;
-                img{
-                  width: 5rem;
-                }
-                span{
-                  font-size: 1.2rem;
-                } 
+          .team-players{
+            gap: 2rem;
+            .btn-display{
+              .hide-left{
+                width: 2rem;
               }
-              .gam-plan{
-                gap: .5rem;
-                font-size: 1.3rem;
-                top: .3rem;
+              .hide-right{
+                width: .7rem;
+              }
+              button{
+                width: 9.5rem;
+                span{
+                  font-size: 1rem !important;
+                }
+              }
+      
+              .hide-item-left{
+                span{
+                  padding-left: 2rem;
+                }
+              }
+          
+              .hide-item-right{
+                span{
+                  padding-right: .7rem;
+                }
+              }
+            }
+            .list-positions{
+              gap: 1.5rem;
+             .players-postion{
+              gap: 1.5rem;
+              .titlePosition{
+                span{
+                  font-size: 1.4rem;
+                }
                 svg{
-                  top: .3rem;
-                  width: .8rem;
+                  width: 5rem;
                 }
               }
-            }
-            .team-players{
-              gap: 1.7rem;
-              .btn-display{
-                button{
-                  span{
-                    font-size: .9rem;
+              .list-players{
+                gap: 1rem;
+                .player{
+                  img{
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 3.125rem;
                   }
-                }
+                  .info-player{
+                    gap: .1rem;
 
-                .hide-left{
-                  width: 1.2rem;
-                }
-                .hide-right{
-                  width: 1.5rem;
-                }
-                
-                .hide-item-left{
-                  span{
-                    padding-left: 1.2rem;
-                  }
-                }
-            
-                .hide-item-right{
-                  span{
-                    padding-right: 1.5rem;
-                  }
-                }
-              }
-
-              .list-positions{
-                gap: 1.7rem;
-                .titlePosition{
-                  gap: 0.5rem;
-                  width: 100%;
-                  span{
-                    font-size: 1.2rem;
-                  }
-                  svg{
-                    width: 100%;
-                  }
-                }
-                .players-postion{
-                  gap: 1.7rem;
-                  .list-players{
-                    gap: 1.5rem;
-                    .player{
-                      gap: .5rem !important;
-                      img{
-                        width: 3.5rem !important;
-                        height: 3.5rem !important;
+                    .name-player{
+                      font-size: 1rem;
+                    }
+                    .number-player{
+                      span{
+                        font-size: .8rem;
                       }
-                      .info-player{
-                        gap: 0;
-                        .name-player{
-                          font-size: 1rem !important;
-                        }
-                        .number-player{
-                          width: 2.5rem !important;
-                          .number{
-                            display: flex;
-                            padding-top: .1rem;
-                            font-size: .7rem !important;
-                          }
-                        }
+                      svg{
+                        width: 3rem;
                       }
                     }
                   }
                 }
               }
+             } 
             }
-          }
-          .team-gam-plan-right{
-            .info-team{
-              padding-left: 0;
-              padding-right: 2rem;
-            }
-          }
-          .vs{
-            width: 2.1rem;
-            position: relative;
-            top: 1rem;
           }
         }
+
+        .vs{
+          width: 2.5rem;
+        }
+      }
+
+      .view-stats{
+        gap: 1rem;
+        .teams-stats{
+          .team{
+            img{
+              width: 7rem;
+            }
+            span{
+              font-size: 1.5rem;
+            }
+          }
+
+          .vs{
+            width: 2.5rem;
+          }
+        }
+        .stats{
+          gap: 2.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .stat-type{
+            gap: .5rem;
+            width: 90%;
+            .title-stat{
+              font-size: 1.7rem;
+            }
+
+            .info-stats{
+              .stat-team{
+                height: .5rem;
+                span{
+                  font-size: 1.4rem;
+                  top: -2.3rem;
+                }
+              }
+            }
+          }   
+        }
+      }
     }
 
     .match-info{
@@ -1989,6 +1953,220 @@ main{
 
 @media screen and (min-width: 1400px){
   main{
+    .match-stream{
+      display: none;
+    }
+
+    .details-match{
+      display: none;
+    }
+
+    .stream-desktop{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      .stream-gam-plan{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        flex: 1;
+        .stream{
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          .match-info{
+            justify-content: space-between;
+          }
+  
+          video{
+            width: 100%;
+            border-radius: .7rem;
+          }
+        }
+      }
+
+      .stats-info{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        flex: 1;
+        .group{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          svg{
+            width: 18rem;
+          }
+        }
+        .view-stats{
+          gap: .8rem;
+            .teams-stats{
+              align-items: flex-start;
+              justify-content: space-around;
+              gap: 0;
+              .team{
+                flex: 0;
+                gap: 0.3rem;
+                img{
+                  width: 5rem;
+                }
+                span{
+                  font-size: 1.2rem;
+                }
+              }
+              .vs{
+                width: 2.1rem;
+              }
+            }
+  
+            .stats{
+              gap: 3rem;
+              .stat-type{
+                gap: 1rem;
+                .title-stat{
+                  gap: 0.5rem;
+                  svg{
+                    width: 1rem;
+                  }
+                  font-size: 1.2rem;
+                }
+                .info-stats{
+                  .stat-team{
+                    height: 0.3rem;
+                  }
+                  span{
+                    top: -1.4rem;
+                    font-size: 0.9rem;
+                  }
+                }
+              }
+            }
+          }
+      }
+        
+        .view-gam-plan{
+          position: relative;
+          .soccer-symbol{
+            display: block;
+            position: absolute;
+            width: 1.2rem;
+            right: 0;
+            &:first-child{
+              left: 0;
+            }
+          }
+          .teams-gam-plan{
+            gap: 1.6rem;
+            .info-team{
+              gap: 1.3rem;
+              padding-top: 1rem;
+              padding-left: 2rem;
+              .team{
+                gap: 0.3rem;
+                img{
+                  width: 5rem;
+                }
+                span{
+                  font-size: 1.2rem;
+                } 
+              }
+              .gam-plan{
+                gap: .5rem;
+                font-size: 1.3rem;
+                top: .3rem;
+                svg{
+                  top: .3rem;
+                  width: .8rem;
+                }
+              }
+            }
+            .team-players{
+              gap: 1.7rem;
+              .btn-display{
+                button{
+                  span{
+                    font-size: .9rem;
+                  }
+                }
+
+                .hide-left{
+                  width: 1.2rem;
+                }
+                .hide-right{
+                  width: 1.5rem;
+                }
+                
+                .hide-item-left{
+                  span{
+                    padding-left: 1.2rem;
+                  }
+                }
+            
+                .hide-item-right{
+                  span{
+                    padding-right: 1.5rem;
+                  }
+                }
+              }
+
+              .list-positions{
+                gap: 1.7rem;
+                .titlePosition{
+                  gap: 0.5rem;
+                  width: 100%;
+                  span{
+                    font-size: 1.2rem;
+                  }
+                  svg{
+                    width: 100%;
+                  }
+                }
+                .players-postion{
+                  gap: 1.7rem;
+                  .list-players{
+                    gap: 1.5rem;
+                    .player{
+                      gap: .5rem !important;
+                      img{
+                        width: 3.5rem !important;
+                        height: 3.5rem !important;
+                      }
+                      .info-player{
+                        gap: 0;
+                        .name-player{
+                          font-size: 1rem !important;
+                        }
+                        .number-player{
+                          width: 2.5rem !important;
+                          .number{
+                            display: flex;
+                            padding-top: .1rem;
+                            font-size: .7rem !important;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .team-gam-plan-right{
+            .info-team{
+              padding-left: 0;
+              padding-right: 2rem;
+            }
+          }
+          .vs{
+            width: 2.1rem;
+            position: relative;
+            top: 1rem;
+          }
+        }
+    }
+
+
     .stadiums{
       .card-stadiums{
         flex-direction: row;
