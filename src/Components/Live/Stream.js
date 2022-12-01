@@ -1,6 +1,7 @@
 import StreamMatchMobile from "../Items/StreamMatchMobile";
 import StreamMatchDesktop from "../Items/StreamDesktop";
 import { useState } from "react";
+import { useEffect } from "react";
 const Stream = (props) =>{
     const [showTeamLeft, setShowTeamLeft] = useState(true);
     const [showTeamRight, setShowTeamRight] = useState(true);
@@ -8,6 +9,11 @@ const Stream = (props) =>{
     const [displaySabstitutesLeft,setDisplaySabstitutesLeft] = useState("list-positions hide-list");
     const [displayFirstTeamRight,setDisplayFirstTeamRight] = useState("list-positions show-list");
     const [displaySabstitutesRight,setDisplaySabstitutesRight] = useState("list-positions hide-list");
+
+    useEffect(() => {
+        document.getElementById("Path_1611").style.fill = "#E32052";
+        document.getElementById("liveMobile").classList.add("active");
+      },[]);
     return(
         <main>
             <StreamMatchMobile lang={props.lang}
