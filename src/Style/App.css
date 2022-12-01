@@ -1872,7 +1872,7 @@ main .stadiums .row-separator svg {
     display: -ms-flexbox;
     display: flex;
     padding: 0rem;
-    max-width: 120rem;
+    max-width: 90rem;
   }
   .mobile-header {
     display: none;
@@ -2596,67 +2596,59 @@ main .stadiums .row-separator svg {
     width: 15.7rem;
   }
   main .stadiums {
-    gap: 7vw;
+    gap: 3rem;
   }
   main .stadiums .card-stadiums {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 4vw;
+    gap: 1.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   main .stadiums .card-stadiums .container-pictures {
-    width: 100%;
-    padding: 1.2vw;
-    border-radius: 2vw;
+    width: auto;
+    padding: .4rem;
+    border-radius: 1.2rem;
   }
   main .stadiums .card-stadiums .container-pictures img {
-    width: 100%;
-    border-radius: 2vw;
+    width: 40rem;
+    border-radius: 1.5rem;
   }
   main .stadiums .card-stadiums .container-pictures .arrow {
-    width: 6vw;
-    height: 6vw;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 3.125rem;
-    top: 50%;
-    right: 2.5vw;
+    right: 1.2rem;
   }
   main .stadiums .card-stadiums .container-pictures .arrow-left {
-    left: 2.5vw;
+    left: 1.2rem;
   }
   main .stadiums .card-stadiums .container-pictures .row-slide {
-    bottom: 2.5vw;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
-    width: 100%;
-    gap: 1.5vw;
+    bottom: 1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    gap: 1rem;
   }
   main .stadiums .card-stadiums .container-pictures .row-slide button {
     border-radius: 3.125rem;
   }
   main .stadiums .card-stadiums .container-pictures .row-slide button svg {
-    width: 2vw;
-  }
-  main .stadiums .card-stadiums .container-pictures .row-slide .active svg {
-    fill: #80192E;
+    width: .8rem;
   }
   main .stadiums .card-stadiums .stadium-details {
     gap: 1rem;
   }
   main .stadiums .card-stadiums .stadium-details .name-stadium {
-    text-align: left;
-    font-size: 2.4rem;
+    font-size: 2.1rem;
   }
   main .stadiums .card-stadiums .stadium-details p {
-    text-align: left;
     width: 35rem;
     font-size: 1rem;
   }
   main .stadiums .card-stadiums .stadium-details .stadium-place-loacation {
     gap: 1rem;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
   main .stadiums .card-stadiums .stadium-details .stadium-place-loacation .item {
     width: 14rem;
@@ -2667,7 +2659,7 @@ main .stadiums .row-separator svg {
     padding-top: .1rem;
   }
   main .stadiums .row-separator svg {
-    width: 15vw;
+    width: 7rem;
   }
   .reverse {
     -webkit-box-orient: horizontal;
@@ -2714,6 +2706,38 @@ main .stadiums .row-separator svg {
   .reverse main .match-info .item-info span {
     padding-left: 0;
     padding-right: 2.7rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  main .stadiums .card-stadiums {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  main .stadiums .card-stadiums .container-pictures img {
+    width: 30rem;
+  }
+  main .stadiums .card-stadiums .stadium-details .name-stadium {
+    text-align: left;
+  }
+  main .stadiums .card-stadiums .stadium-details p {
+    text-align: left;
+  }
+  main .stadiums .card-stadiums .stadium-details .stadium-place-loacation {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  main .stadiums .row-separator svg {
+    width: 7rem;
+  }
+  main .stadiums .row-separator svg:last-child {
+    display: none;
   }
 }
 /*# sourceMappingURL=App.css.map */

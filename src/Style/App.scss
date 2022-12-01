@@ -1225,7 +1225,7 @@ main{
     margin-right: auto;
     display: flex;
     padding: 0rem;
-    max-width: 120rem;
+    max-width: 90rem;
     //max-width: 180rem;
     //padding-right: $size-padding;
   }
@@ -1873,44 +1873,38 @@ main{
   }
 
   .stadiums{
-    gap: 7vw;
+    gap: 3rem;
     .card-stadiums{
-      flex-direction: row;
-      gap: 4vw;
+      gap: 1.5rem;
+      justify-content: center;
+      align-items: center;
       .container-pictures{
-        width: 100%;
-        padding: 1.2vw;
-        border-radius: 2vw;
+        width: auto;
+        padding: .4rem;
+        border-radius: 1.2rem;
         img{
-          width: 100%;
-          border-radius: 2vw;
+          width: 40rem;
+          border-radius: 1.5rem;
         }
         .arrow{
-          width: 6vw;
-          height: 6vw;
+          width: 2.5rem;
+          height: 2.5rem;
           border-radius: 3.125rem;
-          top: 50%;
-          right: 2.5vw;
+          right: 1.2rem;
         }
         .arrow-left{
-          left: 2.5vw;
+          left: 1.2rem;
         }
 
         .row-slide{
-          bottom: 2.5vw;
-          padding-left: 2.5vw;
-          padding-right: 2.5vw;
-          width: 100%;
-          gap: 1.5vw;
+          bottom: 1.2rem;
+          padding-left: 1.2rem;
+          padding-right: 1.2rem;
+          gap: 1rem;
           button{
             border-radius: 3.125rem;
             svg{
-              width: 2vw;
-            }
-          }
-          .active{
-            svg{
-                fill: $color-text;
+              width: .8rem;
             }
           }
         }
@@ -1919,17 +1913,14 @@ main{
       .stadium-details{
         gap: 1rem;
         .name-stadium{
-          text-align: left;
-          font-size: 2.4rem;
+          font-size: 2.1rem;
         }
         p{
-          text-align: left;
           width: 35rem;
           font-size: 1rem;
         }
         .stadium-place-loacation{
           gap: 1rem;
-          justify-content: flex-start;
           .item{
             width: 14rem;
             span{
@@ -1944,7 +1935,7 @@ main{
 
     .row-separator{
       svg{
-        width: 15vw;
+        width: 7rem;
       }
     }
   }
@@ -1989,6 +1980,42 @@ main{
           span{
             padding-left: 0;
             padding-right: 2.7rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px){
+  main{
+    .stadiums{
+      .card-stadiums{
+        flex-direction: row;
+        justify-content: flex-start;
+        .container-pictures{
+          img{
+            width: 30rem;
+          }
+        }
+        .stadium-details{
+          .name-stadium{
+            text-align: left;
+          }
+          p{
+            text-align: left;
+          }
+          .stadium-place-loacation{
+            justify-content: flex-start;
+          }
+        }
+      }
+  
+      .row-separator{
+        svg{
+          width: 7rem;
+          &:last-child{
+            display: none;
           }
         }
       }
