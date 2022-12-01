@@ -1532,7 +1532,7 @@ main{
       }
       .view-gam-plan{
         .teams-gam-plan{
-          gap: 4rem;
+          gap: 2rem;
           .info-team{
             .team{
               img{
@@ -1586,7 +1586,7 @@ main{
                   font-size: 1.4rem;
                 }
                 svg{
-                  width: 5rem;
+                  width: 6rem;
                 }
               }
               .list-players{
@@ -1598,14 +1598,18 @@ main{
                     border-radius: 3.125rem;
                   }
                   .info-player{
-                    gap: .1rem;
+                    gap: .5rem;
 
                     .name-player{
                       font-size: 1rem;
                     }
                     .number-player{
+                      justify-content: center;
+                      align-items: center;
+                      width: auto;
                       span{
                         font-size: .8rem;
+                        top: -.1rem;
                       }
                       svg{
                         width: 3rem;
@@ -1647,18 +1651,18 @@ main{
           justify-content: center;
           align-items: center;
           .stat-type{
-            gap: .5rem;
-            width: 90%;
+            gap: 1.5rem;
+            width: 80%;
             .title-stat{
-              font-size: 1.7rem;
+              font-size: 1.3rem;
             }
 
             .info-stats{
               .stat-team{
-                height: .5rem;
+                height: .4rem;
                 span{
-                  font-size: 1.4rem;
-                  top: -2.3rem;
+                  font-size: 1.1rem;
+                  top: -2.1rem;
                 }
               }
             }
