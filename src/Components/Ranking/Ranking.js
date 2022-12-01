@@ -14,7 +14,7 @@ const Ranking = () => {
     useEffect(() => {
         window.addEventListener('resize', setWindowDimensions);
 }, [])
-if(windowWidth >= 1000)
+if(windowWidth >= 1350)
 {
     document.body.style.overflow = "auto";
     if(document.getElementById("modal"))

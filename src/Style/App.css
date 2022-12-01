@@ -1550,10 +1550,13 @@ main .stadiums .row-separator svg {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    width: 100%;
   }
   main .ranking .ranking-teams .row-cards {
     flex-direction: row;
-    gap: 1rem;
+    gap: 3rem;
+    justify-content: center;
+    width: 100%;
   }
   main .ranking .ranking-teams .row-cards .cards {
     width: 20rem;
@@ -1595,17 +1598,40 @@ main .stadiums .row-separator svg {
     display: none;
   }
   main .ranking .btn-modal {
-    display: none;
+    bottom: 2rem;
+    right: 2rem;
   }
-  main .ranking .ranking-scorers {
-    display: unset;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  main .ranking .btn-modal svg {
+    width: 2rem;
+  }
+  main .ranking .ranking-scorers-modal .modal-container {
+    gap: 0.5rem;
+  }
+  main .ranking .ranking-scorers-modal .modal-container .row-btn-close {
+    width: 45%;
+    padding-right: 0.8rem;
+  }
+  main .ranking .ranking-scorers-modal .modal-container .row-btn-close button {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  main .ranking .ranking-scorers-modal .modal-container .row-btn-close button svg {
+    width: 0.6rem;
+  }
+  main .ranking .ranking-scorers-modal .modal-container .modal {
+    width: 45%;
+    max-height: 35rem;
+    padding: 1rem;
+    border-radius: 0.8rem;
+  }
+  main .ranking .ranking-scorers-modal .modal-container .modal .modal-body {
     gap: 1.5rem;
   }
-  main .ranking .ranking-scorers-modal {
-    display: none;
+  main .ranking .ranking-scorers-modal .modal-container .modal .modal-body .rank-player svg {
+    width: 1.5rem !important;
+  }
+  main .ranking .ranking-scorers-modal .modal-container .modal .modal-body .rank-player span {
+    font-size: 0.6rem;
   }
   main .head-list {
     font-size: 1rem;
@@ -1947,6 +1973,24 @@ main .stadiums .row-separator svg {
     width: 2.1rem;
     position: relative;
     top: 1rem;
+  }
+}
+@media screen and (min-width: 1350px) {
+  main .btn-modal {
+    display: none !important;
+  }
+  main .row-cards {
+    gap: 1rem !important;
+  }
+  main .ranking-scorers-modal {
+    display: none;
+  }
+  main .ranking-scorers {
+    display: unset;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
 @media screen and (min-width: 1400px) {

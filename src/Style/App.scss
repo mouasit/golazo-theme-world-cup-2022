@@ -1720,9 +1720,13 @@ main{
       display: flex;
       flex-direction: column;
       gap: 3rem;
+      width: 100%;
       .row-cards{
         flex-direction: row;
-        gap: 1rem;
+        // gap: 1rem;
+        gap: 3rem;
+        justify-content: center;
+        width: 100%;
         .cards{
           width: 20rem;
           .info-ranking{
@@ -1766,19 +1770,45 @@ main{
       }
     }
     .btn-modal{
-      display: none;
+      bottom: 2rem;
+      right: 2rem;
+        svg{
+          width: 2rem;
+        }
     }
 
-    .ranking-scorers{
-      display: unset;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-
-    }
     .ranking-scorers-modal{
-      display: none;
+      .modal-container{
+        gap: .5rem;
+        .row-btn-close{
+          width: 45%;
+          padding-right: .8rem;
+          button{
+            width: 1.5rem;
+            height: 1.5rem;
+            svg{
+              width: .6rem;
+            }
+          }
+        }
+        .modal{
+          width: 45%;
+          max-height: 35rem;
+          padding: 1rem;
+          border-radius: .8rem;
+          .modal-body{
+            gap: 1.5rem;
+            .rank-player{
+              svg{
+                width: 1.5rem !important;
+              }
+              span{
+                font-size: .6rem;
+              }
+            }
+          }
+        }
+      }
     }
   }
 
@@ -1957,6 +1987,7 @@ main{
 
 @media screen and (min-width: 1300px){
   main{
+
     .match-stream{
       display: none;
     }
@@ -2172,6 +2203,31 @@ main{
         }
     }
    
+  }
+}
+
+@media screen and (min-width: 1350px){
+  main{
+
+    .btn-modal{
+      display: none !important;
+    }
+
+    .row-cards{
+      gap: 1rem !important;
+    }
+    .ranking-scorers-modal{
+      display: none ;
+    }
+
+
+    .ranking-scorers{
+      display: unset;
+      width: 100%;
+      display: flex !important;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
   }
 }
 
