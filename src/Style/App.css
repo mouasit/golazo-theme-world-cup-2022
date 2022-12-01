@@ -2629,7 +2629,7 @@ main .stadiums .row-separator svg {
     bottom: 1.2rem;
     padding-left: 1.2rem;
     padding-right: 1.2rem;
-    gap: 1rem;
+    gap: .7rem;
   }
   main .stadiums .card-stadiums .container-pictures .row-slide button {
     border-radius: 3.125rem;
