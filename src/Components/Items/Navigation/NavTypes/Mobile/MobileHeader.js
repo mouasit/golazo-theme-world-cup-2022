@@ -6,10 +6,6 @@ import { NavLink } from "react-router-dom";
 import Language from "../../../Language";
 
 const MobileHeader = (props) => {
-    if (props.lang.language === "ar")
-        document.getElementById("root").classList.add("reverse");
-    else
-        document.getElementById("root").removeAttribute("class");
     return(
     <header  className="mobile-header">
         <NavLink to="/" aria-label="Golazo">

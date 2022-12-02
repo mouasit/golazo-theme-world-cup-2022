@@ -1,22 +1,14 @@
 
 import logo from "../../../../assets/logo.svg";
 import Button from "../../../Items/Button";
-import ButtonReverse from "../../ButtonReverse";
 import { BiChevronRight } from "react-icons/bi";
 import { BiChevronLeft } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
 import Language from "../../Language";
-import LinkLive from "../../LinkLive";
-import LinkRanking from "../../LinkRanking";
-import LinkMatches from "../../LinkMatches";
-import LinkStadiums from "../../LinkStadiums";
+import Background from "../../Background";
 
 
 const SideNav = (props) => {
-    if (props.lang.language === "ar")
-        document.getElementById("root").classList.add("reverse");
-    else
-        document.getElementById("root").removeAttribute("class");
     return (
         <nav className="side-nav">
             <NavLink to="/" aria-label="Golazo" onClick={() => {document.getElementById("Path_1611").style.fill = "#E32052";}}>
@@ -24,21 +16,33 @@ const SideNav = (props) => {
             </NavLink>
             <ul>
                 <li>
-                    <LinkLive lang = {props.lang.language}/>
+                <NavLink id="live" to="/" aria-label="Live" onClick={() => {document.getElementById("Path_1611").style.fill = "#E32052";}}>
+                    <Background />
+                    <span>Live</span>
+                </NavLink>
                 </li>
                  <li>
-                    <LinkRanking lang = {props.lang.language}/>
+                    <NavLink to="/Ranking" aria-label="Ranking" onClick={() => {document.getElementById("Path_1611").style.fill = "#60071e";}}>
+                        <Background />
+                        <span>Ranking</span>
+                    </NavLink>
                 </li>
                 <li>
-                    <LinkMatches lang = {props.lang.language} />
+                    <NavLink to="/Matches" aria-label="Matches"  onClick={() => {document.getElementById("Path_1611").style.fill = "#60071e";}}>
+                        <Background />
+                        <span>Matches</span>
+                    </NavLink>
                 </li>
                 <li>
-                    <LinkStadiums lang = {props.lang.language} />
+                    <NavLink to="/Stadiums" aria-label= "Stadiums"  onClick={() => {document.getElementById("Path_1611").style.fill = "#60071e";}}>
+                        <Background />
+                        <span>Stadiums</span>
+                    </NavLink>
                 </li>
             </ul>
             <div className="layout-dropdown">
                 <button  className="dropdown btn-dropdown" aria-label="Languages">
-                {(props.lang.language !== "ar")?(<Button />):(<ButtonReverse/>)}
+                    <Button />
                     <span className="name-flag">
                         <Language lang={{language: props.lang.language}}/>
                     </span>
@@ -48,12 +52,7 @@ const SideNav = (props) => {
                             <path id="Path_1738" data-name="Path 1738" d="M793.082,1047.652,782.435,1059.8l10.647,12.143,10.646-12.143Z" transform="translate(-782.435 -1047.652)" fill="#47b7ab"/>
                         </svg>
                         {
-                            (props.lang.language !== "ar")?(
-                                (props.arrow === "close")?(<BiChevronRight />):(<BiChevronLeft />)
-                            ):
-                            (
-                                (props.arrow === "close")?(<BiChevronLeft />):(<BiChevronRight />)
-                            )
+                            (props.arrow === "close")?(<BiChevronRight />):(<BiChevronLeft />)
                         }
                         </span>
                     </span>

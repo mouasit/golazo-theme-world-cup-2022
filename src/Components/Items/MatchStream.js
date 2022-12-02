@@ -4,7 +4,7 @@ import Video from "../../assets/morocco.mp4";
 const MatchStream = (props) => {
     return (
         <section className="match-stream">
-            <MatchInfo lang = {props.lang} />
+            <MatchInfo/>
             <video src= {Video} controls></video>
     </section>
     )

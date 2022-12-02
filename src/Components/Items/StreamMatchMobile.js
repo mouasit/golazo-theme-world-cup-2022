@@ -11,10 +11,10 @@ const StreamMatchMobile = (props) => {
     const [showInfo, setShowInfo] = useState(true);
     return (
         <React.Fragment>
-                <MatchStream lang ={props.lang} />
+                <MatchStream />
                 <section className="details-match">
                     <div className="group">
-                        <Group nameGroup="G" lang={props.lang}/>
+                        <Group nameGroup="G"/>
                     </div>
                     <ButtonSwitchers leftName="Gam Plan" rightName="Stats" setDisplayGamPlan={setDisplayGamPlan} setDisplayStats={setDisplayStats} showInfo = {showInfo} setShowInfo = {setShowInfo}/>
                     <Gamplan displayGamPlan={displayGamPlan}

@@ -28,7 +28,7 @@ const MatchTime = (props) => {
         }
             <div className="group-matches" aria-label="Group Matches">
                 <div className="group-head">
-                    <Group nameGroup="F" lang={props.lang}/>
+                    <Group nameGroup="F"/>
                 </div>
             <div className="all-matches">
                 <div className="match">
