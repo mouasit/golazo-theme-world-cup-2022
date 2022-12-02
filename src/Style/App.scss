@@ -293,10 +293,6 @@ main{
     color: $white;
   }
 
-  .group-matches{
-    display: flex;
-    flex-direction: column;
-    gap: 9vw;
     .group-head{
       display: flex;
       justify-content: center;
@@ -305,7 +301,7 @@ main{
         width: 70vw;
       }
     }
-    .all-matches{
+    .list-matches{
       display: flex;
       flex-direction: column;
       gap: 5vw;
@@ -412,7 +408,6 @@ main{
         }
       }
     }
-  }
 
   .match-stream{
     display: flex;
@@ -912,7 +907,7 @@ main{
 
 .reverse{
   main{
-    .all-matches{
+    .list-matches{
       .match{
         .match-play{
           flex-direction: row-reverse;
@@ -1406,8 +1401,6 @@ main{
     gap: 6rem;
     width: 100%;
     position: relative;
-    .group-matches{
-      gap: 6rem;
       .group-head{
         svg{
           width:28.782rem;
@@ -1415,7 +1408,7 @@ main{
         }
       }
 
-      .all-matches{
+      .list-matches{
         gap: 3rem;
         .match{
           gap: 2rem;
@@ -1490,8 +1483,6 @@ main{
           }
         }
       }
-    }
-
     gap: 4rem;
 
     .details-match{

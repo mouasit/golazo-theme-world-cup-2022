@@ -271,55 +271,50 @@ main .number-goals {
   font-size: 3vw;
   color: #EEEEE4;
 }
-main .group-matches {
-  display: flex;
-  flex-direction: column;
-  gap: 9vw;
-}
-main .group-matches .group-head {
+main .group-head {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .group-matches .group-head svg {
+main .group-head svg {
   width: 70vw;
 }
-main .group-matches .all-matches {
+main .list-matches {
   display: flex;
   flex-direction: column;
   gap: 5vw;
 }
-main .group-matches .all-matches .match {
+main .list-matches .match {
   display: flex;
   flex-direction: column;
   gap: 3vw;
 }
-main .group-matches .all-matches .match img {
+main .list-matches .match img {
   width: 15vw;
 }
-main .group-matches .all-matches .match .team-name {
+main .list-matches .match .team-name {
   font-size: 4vw;
   color: #EEEEE4;
   width: 26.8vw;
   text-align: center;
   overflow: hidden;
 }
-main .group-matches .all-matches .match .match-play {
+main .list-matches .match .match-play {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 0.3rem;
 }
-main .group-matches .all-matches .match .match-play .team {
+main .list-matches .match .match-play .team {
   display: flex;
   align-items: center;
   width: 100%;
 }
-main .group-matches .all-matches .match .match-play .team-right {
+main .list-matches .match .match-play .team-right {
   flex-direction: row-reverse;
 }
-main .group-matches .all-matches .match .match-play .play-button {
+main .list-matches .match .match-play .play-button {
   display: flex;
   align-items: center;
   border: none;
@@ -328,27 +323,27 @@ main .group-matches .all-matches .match .match-play .play-button {
   border: none;
   cursor: pointer;
 }
-main .group-matches .all-matches .match .match-play .play-button svg {
+main .list-matches .match .match-play .play-button svg {
   width: 7vw;
 }
-main .group-matches .all-matches .match .match-time {
+main .list-matches .match .match-time {
   display: flex;
   justify-content: space-between;
 }
-main .group-matches .all-matches .match .match-time .teams {
+main .list-matches .match .match-time .teams {
   flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 0.5rem;
 }
-main .group-matches .all-matches .match .match-time .teams .team {
+main .list-matches .match .match-time .teams .team {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   gap: 0.3rem;
 }
-main .group-matches .all-matches .match .match-time .teams .team span {
+main .list-matches .match .match-time .teams .team span {
   width: 15vw;
   font-size: 3.5vw;
   color: #EEEEE4;
@@ -356,32 +351,32 @@ main .group-matches .all-matches .match .match-time .teams .team span {
   overflow: hidden;
   text-transform: uppercase;
 }
-main .group-matches .all-matches .match .match-time .teams .vs {
+main .list-matches .match .match-time .teams .vs {
   height: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
-main .group-matches .all-matches .match .match-time .teams .vs svg {
+main .list-matches .match .match-time .teams .vs svg {
   width: 5.5vw;
 }
-main .group-matches .all-matches .match .match-time .start-time {
+main .list-matches .match .match-time .start-time {
   display: flex;
   flex: 1;
   justify-content: flex-end;
   align-items: flex-start;
   gap: 1.5vw;
 }
-main .group-matches .all-matches .match .match-time .start-time svg {
+main .list-matches .match .match-time .start-time svg {
   width: 10vw;
 }
-main .group-matches .all-matches .match .match-time .start-time .time {
+main .list-matches .match .match-time .start-time .time {
   display: flex;
   gap: 1vw;
   width: 22vw;
   overflow: hidden;
 }
-main .group-matches .all-matches .match .match-time .start-time .time span {
+main .list-matches .match .match-time .start-time .time span {
   color: #EEEEE4;
   font-size: 7vw;
 }
@@ -839,25 +834,25 @@ main .stadiums .row-separator svg {
   width: 15vw;
 }
 
-.reverse main .all-matches .match .match-play {
+.reverse main .list-matches .match .match-play {
   flex-direction: row-reverse;
 }
-.reverse main .all-matches .match .match-play .team {
+.reverse main .list-matches .match .match-play .team {
   flex-direction: row;
 }
-.reverse main .all-matches .match .match-play .team:first-child {
+.reverse main .list-matches .match .match-play .team:first-child {
   flex-direction: row-reverse;
 }
-.reverse main .all-matches .match .match-play .team .team-name {
+.reverse main .list-matches .match .match-play .team .team-name {
   direction: rtl;
 }
-.reverse main .all-matches .match .match-time {
+.reverse main .list-matches .match .match-time {
   flex-direction: row-reverse;
 }
-.reverse main .all-matches .match .match-time .teams {
+.reverse main .list-matches .match .match-time .teams {
   flex-direction: row-reverse;
 }
-.reverse main .all-matches .match .start-time {
+.reverse main .list-matches .match .start-time {
   flex-direction: row-reverse;
 }
 .reverse main .match-info {
@@ -1300,40 +1295,37 @@ main .stadiums .row-separator svg {
     position: relative;
     gap: 4rem;
   }
-  main .group-matches {
-    gap: 6rem;
-  }
-  main .group-matches .group-head svg {
+  main .group-head svg {
     width: 28.782rem;
     height: 3.704rem;
   }
-  main .group-matches .all-matches {
+  main .list-matches {
     gap: 3rem;
   }
-  main .group-matches .all-matches .match {
+  main .list-matches .match {
     gap: 2rem;
   }
-  main .group-matches .all-matches .match img {
+  main .list-matches .match img {
     width: 7.5rem;
   }
-  main .group-matches .all-matches .match .team-name {
+  main .list-matches .match .team-name {
     font-size: 1.6rem;
     color: #EEEEE4;
     width: auto;
   }
-  main .group-matches .all-matches .match .match-play {
+  main .list-matches .match .match-play {
     justify-content: space-around;
   }
-  main .group-matches .all-matches .match .match-play .team {
+  main .list-matches .match .match-play .team {
     display: flex;
     align-items: center;
     flex: 1;
     gap: 0.3rem;
   }
-  main .group-matches .all-matches .match .match-play .team span {
+  main .list-matches .match .match-play .team span {
     width: 8.7rem;
   }
-  main .group-matches .all-matches .match .match-play .play-button {
+  main .list-matches .match .match-play .play-button {
     display: flex;
     align-items: center;
     border: none;
@@ -1342,36 +1334,36 @@ main .stadiums .row-separator svg {
     border: none;
     cursor: pointer;
   }
-  main .group-matches .all-matches .match .match-play .play-button svg {
+  main .list-matches .match .match-play .play-button svg {
     width: 49.27px;
     height: 49.27px;
   }
-  main .group-matches .all-matches .match .match-time {
+  main .list-matches .match .match-time {
     display: flex;
     justify-content: space-around;
   }
-  main .group-matches .all-matches .match .match-time .teams .team {
+  main .list-matches .match .match-time .teams .team {
     gap: 0.3rem;
   }
-  main .group-matches .all-matches .match .match-time .teams .team span {
+  main .list-matches .match .match-time .teams .team span {
     width: 7.5rem;
     font-size: 1.5rem;
   }
-  main .group-matches .all-matches .match .match-time .teams .vs svg {
+  main .list-matches .match .match-time .teams .vs svg {
     width: 2.1rem;
   }
-  main .group-matches .all-matches .match .match-time .start-time {
+  main .list-matches .match .match-time .start-time {
     gap: 1.4rem;
   }
-  main .group-matches .all-matches .match .match-time .start-time svg {
+  main .list-matches .match .match-time .start-time svg {
     width: 4rem;
   }
-  main .group-matches .all-matches .match .match-time .start-time .time {
+  main .list-matches .match .match-time .start-time .time {
     gap: 0.5rem;
     width: auto;
     width: 9.6rem;
   }
-  main .group-matches .all-matches .match .match-time .start-time .time span {
+  main .list-matches .match .match-time .start-time .time span {
     font-size: 3rem;
   }
   main .details-match {
