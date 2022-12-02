@@ -5,13 +5,13 @@ import flagEquador from "../../assets/flags-groups/Equador.svg";
 import flagSenegal from "../../assets/flags-groups/Senegal.svg";
 import flagNetherland from "../../assets/flags-groups/Netherland.svg";
 
-const Card = () => (
+const Card = (props) => (
     <div className="cards">
     <CardRanking />
     <div className="info-ranking">
         <div className="header-ranking">
             <span className="title-group">
-                Group A
+                {"Group " + props.group}
             </span>
             <span className="details-ranking">
                 <span>P</span>

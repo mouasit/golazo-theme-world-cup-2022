@@ -23,26 +23,26 @@ if(windowWidth >= 1350)
     return (
         <main>
         <div className="ranking">
-        <section className="ranking-teams">
-            <div className="row-cards">
-                <Card />
-                <SeparatorGroups />
-                <Card />
+            <section className="ranking-teams">
+                <div className="row-cards">
+                    <Card group = "A"/>
+                    <SeparatorGroups />
+                    <Card group = "B"/>
+                </div>
+                <div className="row-cards">
+                    <Card  group = "C"/>
+                    <SeparatorGroups />
+                    <Card group = "D" />
             </div>
             <div className="row-cards">
-                <Card />
+                <Card group = "E" />
                 <SeparatorGroups />
-                <Card />
+                <Card group="F" />
             </div>
             <div className="row-cards">
-                <Card />
+                <Card group="G" />
                 <SeparatorGroups />
-                <Card />
-            </div>
-            <div className="row-cards">
-                <Card />
-                <SeparatorGroups />
-                <Card />
+                <Card group="H" />
             </div>
         </section>
         <button className="btn-modal" aria-label="" onClick={() => {
