@@ -14,7 +14,7 @@ const StreamMatchMobile = (props) => {
                 <MatchStream matchInfo={props.data.matchInfo}/>
                 <section className="details-match">
                     <div className="group">
-                        <Group nameGroup="G"/>
+                        <Group nameGroup="F"/>
                     </div>
                     <ButtonSwitchers leftName="Gam Plan" rightName="Stats" setDisplayGamPlan={setDisplayGamPlan} setDisplayStats={setDisplayStats} showInfo = {showInfo} setShowInfo = {setShowInfo}/>
                     <Gamplan displayGamPlan={displayGamPlan}

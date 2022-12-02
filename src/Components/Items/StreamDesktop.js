@@ -35,7 +35,7 @@ const StreamMatchDesktop = (props) => {
             </div>
             <div className="stats-info">
                 <div className="group">
-                    <Group nameGroup="" lang={props.lang}/>
+                    <Group nameGroup="F" lang={props.lang}/>
                 </div>
                 <Stats displayStats="view-stats show-list" />
             </div>
