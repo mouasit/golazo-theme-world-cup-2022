@@ -13,7 +13,7 @@ export default function CardStadium(props) {
     <div className="container-pictures">
         <img src={props.pictures[currentIndex]} alt=""/>
         <button className="arrow arrow-left" onClick={()=>{
-            if(currentIndex == 0)
+            if(currentIndex === 0)
                 setCurrentIndex(props.pictures.length - 1);
             else{
                 setCurrentIndex(currentIndex - 1);
@@ -22,7 +22,7 @@ export default function CardStadium(props) {
             <ArrowLeft />
         </button>
         <button className="arrow arrow-right" onClick={()=>{
-            if(currentIndex == props.pictures.length - 1)
+            if(currentIndex === props.pictures.length - 1)
                 setCurrentIndex(0);
             else{
                 setCurrentIndex(currentIndex + 1);
@@ -31,15 +31,24 @@ export default function CardStadium(props) {
             <ArrowRight />
         </button>
         <div className="row-slide">
-            <button className="active">
-                <ShapeSlide />
-            </button>
-            <button>
-                <ShapeSlide />
-            </button>
-            <button>
-                <ShapeSlide />
-            </button>
+            {
+                props.pictures.map( (e,index) => {
+                    if(index === currentIndex)
+                        return(
+                            <button key={index} className="active" onClick={()=>{setCurrentIndex(index);}}>
+                            <ShapeSlide />
+                            </button>
+                        )
+                    else
+                    {
+                        return(
+                            <button key={index} onClick={()=>{setCurrentIndex(index);}}>
+                                <ShapeSlide />
+                            </button>
+                        ) 
+                    } 
+                })
+            }
         </div>
     </div>
     <div className="stadium-details">
