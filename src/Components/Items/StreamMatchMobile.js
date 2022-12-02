@@ -11,7 +11,7 @@ const StreamMatchMobile = (props) => {
     const [showInfo, setShowInfo] = useState(true);
     return (
         <React.Fragment>
-                <MatchStream />
+                <MatchStream matchInfo={props.data.matchInfo}/>
                 <section className="details-match">
                     <div className="group">
                         <Group nameGroup="G"/>

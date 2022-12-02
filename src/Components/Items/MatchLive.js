@@ -11,7 +11,7 @@ export default function MatchLive(props) {
             <img src={flagMorocco} alt={"Flag " + props.firstTeam} />
             <span className="team-name">{props.firstTeam}</span>
         </span>
-        <NavLink to= '/Stream'className="play-button" aria-label="Play Button">
+        <NavLink to= '/Stream' state= {props.data}className="play-button" aria-label="Play Button">
             <PlayIcon />
         </NavLink>
         <span className="team team-right">

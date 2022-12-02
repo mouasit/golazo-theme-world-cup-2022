@@ -6,11 +6,12 @@ import Group from "../Items/Group";
 
 
 const StreamMatchDesktop = (props) => {
+    let matchInfo = props.data.matchInfo;
     return (
         <div className="stream-desktop">
             <div className="stream-gam-plan">
                 <div className="stream">
-                    <MatchInfo lang={props.lang}/>
+                    <MatchInfo stadium={matchInfo.stadium} channel={matchInfo.channel} commentator={matchInfo.commentator}/>
                     <video src= {Video} controls></video>
                 </div>
                 <Gamplan displayGamPlan = "view-gam-plan show-list" 
@@ -34,7 +35,7 @@ const StreamMatchDesktop = (props) => {
             </div>
             <div className="stats-info">
                 <div className="group">
-                    <Group nameGroup="G" lang={props.lang}/>
+                    <Group nameGroup="" lang={props.lang}/>
                 </div>
                 <Stats displayStats="view-stats show-list" />
             </div>

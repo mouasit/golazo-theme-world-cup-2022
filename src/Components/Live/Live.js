@@ -8,7 +8,17 @@ const Live = () =>{
         <div className="list-matches">
                 <div className="match">
                     <MatchInfo stadium="Al Bayt" channel="Beinsport 4" commentator="Issam Chaouali"/>
-                    <MatchLive firstTeam="Morocco" secondTeam="Croatia" />
+                    <MatchLive firstTeam="Morocco" secondTeam="Croatia" data={{
+                        matchInfo:{
+                            stadium:"Al Bayt",
+                            channel:"Beinsport 4",
+                            commentator:"Issam Chaouali"
+                        },
+                        teams:{
+                            firstTeam: "Morocco",
+                            secondTeam: "Croatia"
+                        }
+                    }}/>
                 </div>
                 <div className="match">
                     <MatchInfo stadium="Al Bayt" channel="Beinsport 4" commentator="Issam Chaouali"/>
