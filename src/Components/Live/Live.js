@@ -2,7 +2,7 @@ import MatchInfo from "../Items/MatchInfo";
 import MatchLive from "../Items/MatchLive";
 import MatchClock from "../Items/MatchClock";
 
-const Live = (props) =>{
+const Live = () =>{
     return(
     <main>
         <div className="list-matches">
