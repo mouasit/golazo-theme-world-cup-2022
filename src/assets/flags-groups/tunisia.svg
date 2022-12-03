@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="419.51" height="289.166" viewBox="0 0 419.51 289.166">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#dab264"/>
+      <stop offset="0.482" stop-color="#be895f"/>
+      <stop offset="1" stop-color="#996a45"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <path id="Path_13221" data-name="Path 13221" d="M567.647,142.1a1819.438,1819.438,0,0,0-378.629,0A576.1,576.1,0,0,0,174.97,270.417a576.1,576.1,0,0,0,14.048,128.314,1823.376,1823.376,0,0,0,189.315,9.877,1823.356,1823.356,0,0,0,189.314-9.877A576.1,576.1,0,0,0,581.7,270.417,576.1,576.1,0,0,0,567.647,142.1Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_5742" data-name="Group 5742" transform="translate(-168.578 -126.53)">
+    <path id="Path_12523" data-name="Path 12523" d="M378.325,415.7a1837.527,1837.527,0,0,1-189.978-9.912L183.8,405.3l-1.016-4.459a585.269,585.269,0,0,1-14.207-129.732,585.265,585.265,0,0,1,14.207-129.733l1.016-4.459,4.546-.479a1825.521,1825.521,0,0,1,379.971,0l4.547.479,1.016,4.459a585.323,585.323,0,0,1,14.207,129.733,585.327,585.327,0,0,1-14.207,129.732l-1.016,4.459-4.547.479A1837.493,1837.493,0,0,1,378.341,415.7Z" fill="url(#linear-gradient)"/>
+    <g id="Group_5741" data-name="Group 5741">
+      <g id="Group_5740" data-name="Group 5740" clip-path="url(#clip-path)">
+        <g id="Group_5739" data-name="Group 5739">
+          <g id="Group_5738" data-name="Group 5738">
+            <g id="Group_5737" data-name="Group 5737">
+              <rect id="Rectangle_958" data-name="Rectangle 958" width="660" height="293.418" transform="translate(48.333 124.404)" fill="#f20300"/>
+              <path id="Path_13220" data-name="Path 13220" d="M378.325,197.758a73.357,73.357,0,1,0,73.353,73.36,73.355,73.355,0,0,0-73.353-73.36Zm0,18.344a54.975,54.975,0,0,1,44.485,22.632,44.009,44.009,0,1,0,0,64.762A55.014,55.014,0,1,1,378.325,216.1Zm4.474,23.616,14.089,19.4,22.813-7.4-14.094,19.4,14.094,19.4-22.813-7.409-14.089,19.4V278.527l-22.814-7.409L382.8,263.7V239.718Z" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

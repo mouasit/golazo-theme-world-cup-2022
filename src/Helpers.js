@@ -31,6 +31,26 @@ import flagWalesGroup from "../src/assets/flags-groups/wales.svg";
 import flagPolandGroup from "../src/assets/flags-groups/poland.svg";
 import flagMexicoGroup from "../src/assets/flags-groups/mexico.svg";
 import flagSaudiArabiaGroup from "../src/assets/flags-groups/saudi-arabia.svg";
+import flagFranceGroup from "../src/assets/flags-groups/france.svg";
+import flagAustraliaGroup from "../src/assets/flags-groups/australia.svg";
+import flagTunisiaGroup from "../src/assets/flags-groups/tunisia.svg";
+import flagDenmarkGroup from "../src/assets/flags-groups/denmark.svg";
+import flagJapanGroup from "../src/assets/flags-groups/japan.svg";
+import flagSpainGroup from "../src/assets/flags-groups/spain.svg";
+import flagGermanyGroup from "../src/assets/flags-groups/germany.svg";
+import flagCostaRicaGroup from "../src/assets/flags-groups/costa-rica.svg";
+import flagMoroccoGroup from "../src/assets/flags-groups/morocco.svg";
+import flagCroatiaGroup from "../src/assets/flags-groups/croatia.svg";
+import flagBelgiumGroup from "../src/assets/flags-groups/belgium.svg";
+import flagCanadaGroup from "../src/assets/flags-groups/canada.svg";
+import flagBrazilGroup from "../src/assets/flags-groups/brazil.svg";
+import flagSwitzerlandGroup from "../src/assets/flags-groups/switzerland.svg";
+import flagCameroonGroup from "../src/assets/flags-groups/cameroon.svg";
+import flagSerbiaGroup from "../src/assets/flags-groups/serbia.svg";
+import flagPortugalGroup from "../src/assets/flags-groups/portugal.svg";
+import flagSouthKoreaGroup from "../src/assets/flags-groups/south-korea.svg";
+import flagUruguayGroup from "../src/assets/flags-groups/uruguay.svg";
+import flagGhanaGroup from "../src/assets/flags-groups/ghana.svg";
 
 export const getFlagTeamGroup = (nameTeam)=>{
 
@@ -58,6 +78,48 @@ export const getFlagTeamGroup = (nameTeam)=>{
         return flagMexicoGroup;
     if (nameTeam === "Saudi Arabia")
         return flagSaudiArabiaGroup;
+    if (nameTeam === "France")
+        return flagFranceGroup;
+    if (nameTeam === "Australia")
+        return flagAustraliaGroup;
+    if (nameTeam === "Tunisia")
+        return flagTunisiaGroup;
+    if (nameTeam === "Denmark")
+        return flagDenmarkGroup;
+    if (nameTeam === "Japan")
+        return flagJapanGroup;
+    if (nameTeam === "Spain")
+        return flagSpainGroup;
+    if (nameTeam === "Germany")
+        return flagGermanyGroup;
+    if (nameTeam === "Costa Rica")
+        return flagCostaRicaGroup;
+    if (nameTeam === "Morocco")
+        return flagMoroccoGroup;
+    if (nameTeam === "Croatia")
+        return flagCroatiaGroup;
+    if (nameTeam === "Belgium")
+        return flagBelgiumGroup;
+    if (nameTeam === "Canada")
+        return flagCanadaGroup;
+    if (nameTeam === "Brazil")
+        return flagBrazilGroup;
+    if (nameTeam === "Switzerland")
+        return flagSwitzerlandGroup;
+    if (nameTeam === "Cameroon")
+        return flagCameroonGroup;
+    if (nameTeam === "Serbia")
+        return flagSerbiaGroup;
+    if (nameTeam === "Portugal")
+        return flagPortugalGroup;
+    if (nameTeam === "South Korea")
+        return flagSouthKoreaGroup;
+    if (nameTeam === "Uruguay")
+        return flagUruguayGroup;
+    if (nameTeam === "Ghana")
+        return flagGhanaGroup;
+    
+
 }
 
 
