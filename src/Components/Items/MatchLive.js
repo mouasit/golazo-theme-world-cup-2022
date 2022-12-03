@@ -1,22 +1,21 @@
 import React from 'react';
-import flagCroatia from "../../assets/flags/teams/croatia.svg";
 import PlayIcon from "../Items/Icons/PlayIcon";
-import flagMorocco from "../../assets/flags/teams/morocco.svg";
 import { NavLink } from "react-router-dom";
+import { getFlagTeamMatch } from '../../Helpers';
 
 export default function MatchLive(props) {
   return (
     <div className="match-play">
         <span className="team">
-            <img src={flagMorocco} alt={"Flag " + props.firstTeam} />
-            <span className="team-name">{props.firstTeam}</span>
+            <img src={getFlagTeamMatch(props.firstTeam[0].name)} alt={"Flag " + props.firstTeam[0].name} />
+            <span className="team-name">{props.firstTeam[0].name}</span>
         </span>
-        <NavLink to= '/Stream' state= {props.data}className="play-button" aria-label="Play Button">
+        <NavLink to= '/Stream' state= {props.data} className="play-button" aria-label="Play Button">
             <PlayIcon />
         </NavLink>
         <span className="team team-right">
-            <img src={flagCroatia} alt={"Flag " + props.secondTeam} />
-            <span className="team-name">{props.secondTeam}</span>
+            <img src={getFlagTeamMatch(props.secondTeam[0].name)} alt={"Flag " + props.secondTeam[0].name} />
+            <span className="team-name">{props.secondTeam[0].name}</span>
         </span>
     </div>
   )

@@ -3,18 +3,20 @@ import flagCroatia from "../../assets/flags/teams/croatia.svg";
 import Vs from "../Items/Vs";
 import RedCard from "../Items/RedCard";
 import YellowCard from "../Items/YellowCard";
+import { getFlagTeamMatch } from "../../Helpers";
+
 const Stats = (props) => {
     return (
         <div className={props.displayStats}>
         <div className="teams-stats">
             <div className="team">
-                <img src={flagMorocoo} alt="" />
-                <span>MAR</span>
+                <img src={getFlagTeamMatch(props.homeTeam.name)} alt={"Flag " + props.homeTeam.name } />
+                <span>{props.homeTeam.tla}</span>
             </div>
             <Vs />
             <div className="team">
-                <img src={flagCroatia} alt="" />
-                <span>COR</span>
+                <img src={getFlagTeamMatch(props.awayTeam.name)} alt={"Flag " + props.awayTeam.name} />
+                <span>{props.awayTeam.tla}</span>
             </div>
         </div>
         <div className="stats">

@@ -9,6 +9,9 @@ const StreamMatchMobile = (props) => {
     const [displayGamPlan,setDisplayGamPlan] = useState("view-gam-plan show-list");
     const [displayStats,setDisplayStats] = useState("view-stats hide-list");
     const [showInfo, setShowInfo] = useState(true);
+
+    let homeTeam = props.data.homeTeam;
+    let awayTeam = props.data.awayTeam;
     return (
         <React.Fragment>
                 <MatchStream matchInfo={props.data.matchInfo}/>
@@ -18,6 +21,10 @@ const StreamMatchMobile = (props) => {
                     </div>
                     <ButtonSwitchers leftName="Gam Plan" rightName="Stats" setDisplayGamPlan={setDisplayGamPlan} setDisplayStats={setDisplayStats} showInfo = {showInfo} setShowInfo = {setShowInfo}/>
                     <Gamplan displayGamPlan={displayGamPlan}
+
+                    homeTeam={homeTeam}
+                    awayTeam={awayTeam}
+
                     showTeamLeft = {props.showTeamLeft}
                     setShowTeamLeft = {props.setShowTeamLeft}
 
@@ -35,7 +42,7 @@ const StreamMatchMobile = (props) => {
                     displaySabstitutesRight = {props.displaySabstitutesRight}
                     setDisplaySabstitutesRight = {props.setDisplaySabstitutesRight}
                     />
-                    <Stats displayStats = {displayStats}  />
+                    <Stats homeTeam={homeTeam} awayTeam={awayTeam} displayStats = {displayStats}  />
                 </section>
         </React.Fragment>
     )

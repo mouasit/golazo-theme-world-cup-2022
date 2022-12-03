@@ -2,11 +2,11 @@ import TitlePositon from "../Items/TitlePosition";
 import PointSymbol from "../Items/PointSymbol";
 import ButtonSwitchers from "../Items/ButtonSwitchers";
 import Vs from "../Items/Vs";
-import flagMorocoo from "../../assets/flags/teams/morocco.svg";
-import flagCroatia from "../../assets/flags/teams/croatia.svg";
 import SoccerSymbol from "./SoccerSymbol";
 import PlayerGamplan from "./PlayerGamplan";
+import { getFlagTeamMatch } from "../../Helpers";
 const Gamplan = (props) => {
+
     return(
     <div className={props.displayGamPlan}>
         <SoccerSymbol />
@@ -14,8 +14,8 @@ const Gamplan = (props) => {
         <div className="teams-gam-plan">
             <div className="info-team">
                 <div className="team">
-                    <img src={flagMorocoo} alt="" />
-                    <span className="team-name">MAR</span>
+                    <img src={getFlagTeamMatch(props.homeTeam.name)} alt={"Flag " + props.homeTeam.name } />
+                    <span className="team-name">{props.homeTeam.tla}</span>
                 </div>
                 <div className="gam-plan">
                     <PointSymbol />
@@ -59,8 +59,8 @@ const Gamplan = (props) => {
         <div className="teams-gam-plan team-gam-plan-right">
             <div className="info-team">
                 <div className="team">
-                    <img src={flagCroatia} alt="" />
-                    <span className="team-name">COR</span>
+                    <img src={getFlagTeamMatch(props.awayTeam.name)} alt={"Flag " + props.awayTeam.name} />
+                    <span className="team-name">{props.awayTeam.tla}</span>
                 </div>
                 <div className="gam-plan">
                     <PointSymbol />

@@ -7,6 +7,9 @@ import Group from "../Items/Group";
 
 const StreamMatchDesktop = (props) => {
     let matchInfo = props.data.matchInfo;
+    let homeTeam = props.data.homeTeam;
+    let awayTeam = props.data.awayTeam;
+
     return (
         <div className="stream-desktop">
             <div className="stream-gam-plan">
@@ -14,7 +17,11 @@ const StreamMatchDesktop = (props) => {
                     <MatchInfo stadium={matchInfo.stadium} channel={matchInfo.channel} commentator={matchInfo.commentator}/>
                     <video src= {Video} controls></video>
                 </div>
-                <Gamplan displayGamPlan = "view-gam-plan show-list" 
+                <Gamplan displayGamPlan = "view-gam-plan show-list"
+
+                homeTeam={homeTeam}
+                awayTeam={awayTeam}
+                
                 showTeamLeft = {props.showTeamLeft}
                 setShowTeamLeft = {props.setShowTeamLeft}
 
@@ -37,7 +44,7 @@ const StreamMatchDesktop = (props) => {
                 <div className="group">
                     <Group nameGroup="F" lang={props.lang}/>
                 </div>
-                <Stats displayStats="view-stats show-list" />
+                <Stats homeTeam={homeTeam} awayTeam={awayTeam} displayStats="view-stats show-list" />
             </div>
         </div>
     )

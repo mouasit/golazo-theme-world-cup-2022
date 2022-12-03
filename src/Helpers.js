@@ -1,3 +1,6 @@
+
+import axios from "axios";
+
 import flagMoroccoMatch from "../src/assets/flags/teams/morocco.svg";
 import flagNetherlandsMatch from "../src/assets/flags/teams/netherlands.svg";
 import flagunitedStatesMatch from "../src/assets/flags/teams/united-states.svg";
@@ -13,7 +16,8 @@ import flagBrazilMatch from "../src/assets/flags/teams/brazil.svg";
 import flagSouthKorealMatch from "../src/assets/flags/teams/south-korea.svg";
 import flagSpainMatch from "../src/assets/flags/teams/spain.svg";
 import flagPortugalMatch from "../src/assets/flags/teams/portugal.svg";
-import flagSwitzerlandMatch from "../src/assets/flags/teams/switzerland.svg"
+import flagSwitzerlandMatch from "../src/assets/flags/teams/switzerland.svg";
+
 
 
 export const getFlagTeamMatch = (nameTeam)=>{
@@ -187,4 +191,50 @@ export const handleDropdown = (buttonDropdown,setArrow) =>{
             }
         }
     });
+}
+
+
+const token = "6613335ea3b645f383893070f84e740a";
+const baseUrl = "/v4/competitions/2000";
+
+function getDateToday(){
+    const date = new Date();
+        
+    let day = date.getDate();
+    if(day.toString().length === 1)
+        day = ('0' + day).slice(-2);
+    day = day.split("").reverse().join("");
+
+    let month = date.getMonth() + 1;
+    if(month.toString().length === 1)
+        month = ('0' + month).slice(-2);
+
+    month = month.toString().split("").reverse().join("");
+
+    let year = date.getFullYear();
+    if(year.toString().length === 1)
+        year = ('0' + year).slice(-2);
+    year = year.toString().split("").reverse().join("");
+
+    let currentDate = `${day}-${month}-${year}`;
+    return currentDate.split("").reverse().join("");
+}
+
+export async function  getMatchesToday(){
+    const url = `${baseUrl}/matches`;
+
+    return axios.get(url,{
+         headers:{
+             "X-Auth-Token": token
+         }
+     }).then((res)=> {
+         let currentDate = getDateToday();
+
+         let matches = res.data.matches.filter((e)=>{
+             let splitDate = e.utcDate.split("T");
+             if(splitDate[0] === currentDate)
+                 return e;
+         })
+         return matches;
+     })
 }
