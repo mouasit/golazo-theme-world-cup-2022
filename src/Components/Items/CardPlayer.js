@@ -13,10 +13,10 @@ export default function CardPlayer(props) {
         <div className='player-details'>
           <img src={picturePlayer} alt="" />
           <div>
-            <span className='name-player'>Hakim Ziyach</span>
+            <span className='name-player'>{props.name}</span>
             <span className='country-player'>
               <img src= {ShapeFlageMorocco} alt="" />
-              <span>Morocco</span>
+              <span>{props.team}</span>
             </span>
           </div>
         </div>

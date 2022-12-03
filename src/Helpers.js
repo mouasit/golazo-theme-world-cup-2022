@@ -274,3 +274,16 @@ export async function  getStandings(){
          return res.data.standings;
      })
 }
+
+export async function  getScorers(){
+    const url = `${baseUrl}/scorers`;
+
+    return axios.get(url,{
+         headers:{
+             "X-Auth-Token": token
+         }
+     }).then((res)=> {
+        return res.data.scorers;
+     })
+}
+

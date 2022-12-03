@@ -4,7 +4,7 @@ import SeparatorGroups from "../Items/SeparatorGroups";
 import Modal from "../Items/Modal";
 import CardPlayer from "../Items/CardPlayer";
 
-import { getStandings } from "../../Helpers";
+import { getStandings, getScorers } from "../../Helpers";
 
 function checkPair(number)
 {
@@ -17,6 +17,8 @@ const Ranking = () => {
     
     
     const[standings,setStandings] = useState(false);
+    const[scorers,setScorers] = useState(false);
+
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
     const setWindowDimensions = () => {
     setWindowWidth(window.innerWidth)
@@ -25,7 +27,11 @@ const Ranking = () => {
         window.addEventListener('resize', setWindowDimensions);
         getStandings().then((res) => {
             setStandings(res);
-        })
+        });
+
+        getScorers().then((res) => {
+            setScorers(res);
+        });
 }, [])
 if(windowWidth >= 1350)
 {
@@ -65,21 +71,6 @@ if(windowWidth >= 1350)
                         })
                     ):null
                 }
-                {/* <div className="row-cards">
-                    <Card  group = "C"/>
-                    <SeparatorGroups />
-                    <Card group = "D" />
-            </div>
-            <div className="row-cards">
-                <Card group = "E" />
-                <SeparatorGroups />
-                <Card group="F" />
-            </div>
-            <div className="row-cards">
-                <Card group="G" />
-                <SeparatorGroups />
-                <Card group="H" />
-            </div> */}
         </section>
         <button className="btn-modal" aria-label="" onClick={() => {
             document.getElementById("modal").style.display = "flex";
@@ -105,34 +96,18 @@ if(windowWidth >= 1350)
                 <span className="goals">Goals</span>
             </div>
             <div className="list-player">
-                <div className="row-player">
-                    <CardPlayer rank="1"/>
-                    <span className="number-goals">8</span>
-                </div>
-                <div className="row-player">
-                    <CardPlayer rank="2" />
-                    <span className="number-goals">8</span>
-                </div>
-                <div className="row-player">
-                    <CardPlayer rank="3" />
-                    <span className="number-goals">8</span>
-                </div>
-                <div className="row-player">
-                    <CardPlayer rank="4"/>
-                    <span className="number-goals">8</span>
-                </div>
-                <div className="row-player">
-                    <CardPlayer rank="5"/>
-                    <span className="number-goals">8</span>
-                </div>
-                <div className="row-player">
-                    <CardPlayer rank="6"/>
-                    <span className="number-goals">8</span>
-                </div>
-                <div className="row-player">
-                    <CardPlayer rank="7"/>
-                    <span className="number-goals">8</span>
-                </div>
+                {
+                    (scorers)?(
+                        scorers.map((player,index)=>{
+                            return(
+                                <div className="row-player" key={player.player.id}>
+                                    <CardPlayer rank={index + 1} name={player.player.name} team={player.team.name}/>
+                                    <span className="number-goals">{player.goals}</span>
+                                </div>
+                            )
+                        })
+                    ):null
+                }
             </div>
         </section>
         <section className="ranking-scorers-modal">
@@ -143,27 +118,18 @@ if(windowWidth >= 1350)
                 document.body.style.overflow = "auto";
                 }}>
                 <div className="list-player">
-                    <div className="row-player">
-                        <CardPlayer rank="1"/>
-                        <span className="number-goals">8</span>
-                    </div>
-                    <div className="row-player">
-                        <CardPlayer rank="2"/>
-                        <span className="number-goals">8</span>
-                    </div>
-
-                    <div className="row-player">
-                        <CardPlayer rank="3"/>
-                        <span className="number-goals">8</span>
-                    </div>
-                    <div className="row-player">
-                        <CardPlayer rank="4"/>
-                        <span className="number-goals">8</span>
-                    </div>
-                    <div className="row-player">
-                        <CardPlayer rank="5"/>
-                        <span className="number-goals">8</span>
-                    </div>
+                {
+                    (scorers)?(
+                        scorers.map((player,index)=>{
+                            return(
+                                <div className="row-player" key={player.player.id}>
+                                    <CardPlayer rank={index + 1} name={player.player.name} team={player.team.name}/>
+                                    <span className="number-goals">{player.goals}</span>
+                                </div>
+                            )
+                        })
+                    ):null
+                }
                 </div>
             </Modal>
         </section>

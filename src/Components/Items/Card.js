@@ -24,7 +24,6 @@ const Card = (props) => (
         <div className="body-ranking">
             {
                 props.table.map((team)=> {
-                    console.log(team);
                     return(
                         <div className="team-row" key={team.position}>
                             <div className="team-info">
