@@ -4,15 +4,28 @@ import SeparatorGroups from "../Items/SeparatorGroups";
 import Modal from "../Items/Modal";
 import CardPlayer from "../Items/CardPlayer";
 
-const Ranking = () => {
+import { getStandings } from "../../Helpers";
 
+function checkPair(number)
+{
+    return number % 2;
+}
+
+let groupTmp = [];
+
+const Ranking = () => {
     
+    
+    const[standings,setStandings] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
     const setWindowDimensions = () => {
     setWindowWidth(window.innerWidth)
     }
     useEffect(() => {
         window.addEventListener('resize', setWindowDimensions);
+        getStandings().then((res) => {
+            setStandings(res);
+        })
 }, [])
 if(windowWidth >= 1350)
 {
@@ -20,16 +33,33 @@ if(windowWidth >= 1350)
     if(document.getElementById("modal"))
         document.getElementById("modal").style.display = "none";
 }
+
     return (
         <main>
         <div className="ranking">
             <section className="ranking-teams">
-                <div className="row-cards">
-                    <Card group = "A"/>
-                    <SeparatorGroups />
-                    <Card group = "B"/>
-                </div>
-                <div className="row-cards">
+                {
+                    (standings)?(
+                        standings.map((group,index) => {
+
+                            groupTmp.push(group);
+
+                            if(checkPair(index))
+                            {
+                                let previousGroup = groupTmp[0];
+                                groupTmp = [];
+                                return(
+                                    <div className="row-cards" key={index}>
+                                        <Card group = {previousGroup.group.split("_")[1]}/>
+                                        <SeparatorGroups />
+                                        <Card group = {group.group.split("_")[1]}/>
+                                    </div>
+                                )
+                            }                       
+                        })
+                    ):null
+                }
+                {/* <div className="row-cards">
                     <Card  group = "C"/>
                     <SeparatorGroups />
                     <Card group = "D" />
@@ -43,7 +73,7 @@ if(windowWidth >= 1350)
                 <Card group="G" />
                 <SeparatorGroups />
                 <Card group="H" />
-            </div>
+            </div> */}
         </section>
         <button className="btn-modal" aria-label="" onClick={() => {
             document.getElementById("modal").style.display = "flex";

@@ -261,3 +261,16 @@ export async function  getMatchesTomorrow(){
          return matches;
      })
 }
+
+
+export async function  getStandings(){
+    const url = `${baseUrl}/standings`;
+
+    return axios.get(url,{
+         headers:{
+             "X-Auth-Token": token
+         }
+     }).then((res)=> {
+         return res.data.standings;
+     })
+}
