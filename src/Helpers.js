@@ -7,6 +7,13 @@ import flagJapanMatch from "../src/assets/flags/teams/japan.svg";
 import flagFranceMatch from "../src/assets/flags/teams/france.svg";
 import flagPolandMatch from "../src/assets/flags/teams/poland.svg";
 import flagEnglandMatch from "../src/assets/flags/teams/england.svg";
+import flagSenegalMatch from "../src/assets/flags/teams/senegal.svg";
+import flagCroatiaMatch from "../src/assets/flags/teams/croatia.svg";
+import flagBrazilMatch from "../src/assets/flags/teams/brazil.svg";
+import flagSouthKorealMatch from "../src/assets/flags/teams/south-korea.svg";
+import flagSpainMatch from "../src/assets/flags/teams/spain.svg";
+import flagPortugalMatch from "../src/assets/flags/teams/portugal.svg";
+import flagSwitzerlandMatch from "../src/assets/flags/teams/switzerland.svg"
 
 
 export const getFlagTeamMatch = (nameTeam)=>{
@@ -27,8 +34,22 @@ export const getFlagTeamMatch = (nameTeam)=>{
         return flagPolandMatch;
     if (nameTeam === "England")
         return flagEnglandMatch;
+    if (nameTeam === "Senegal")
+        return flagSenegalMatch;
     if (nameTeam === "Japan")
         return flagJapanMatch;
+    if (nameTeam === "Croatia")
+        return flagCroatiaMatch;
+    if (nameTeam === "Brazil")
+        return flagBrazilMatch;
+    if (nameTeam === "South Korea")
+        return flagSouthKorealMatch;
+    if (nameTeam === "Spain")
+        return flagSpainMatch;
+    if (nameTeam === "Portugal")
+        return flagPortugalMatch;
+    if (nameTeam === "Switzerland")
+        return flagSwitzerlandMatch;
 }
 
 
