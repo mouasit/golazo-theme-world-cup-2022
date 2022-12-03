@@ -1,23 +1,23 @@
 import React from 'react'
-import flagCanada from "../../assets/flags/teams/canada.svg";
-import flagBelgium from "../../assets/flags/teams/belgium.svg";
 import Vs from "../../Components/Items/Icons/Vs";
 import Clock from "../Items/Icons/Clock";
+
+import { getFlagTeamMatch } from '../../Helpers';
 
 export default function MatchClock(props) {
   return (
     <div className="match-time">
         <div className="teams">
             <div className="team">
-                <img src={props.firstTeam[1]} alt={"Flag " + props.firstTeam} />
-                <span>{props.firstTeam[0]}</span>
+                <img src={getFlagTeamMatch(props.firstTeam[0].name)} alt={"Flag " + props.firstTeam[0].name} />
+                <span>{props.firstTeam[0].tla}</span>
             </div>
             <span className="vs">
                 <Vs />
             </span>
             <div className="team">
-                <img src={props.secondTeam[1]} alt={"Flag" + props.secondTeam} />
-                <span>{props.secondTeam[0]}</span>
+                <img src={getFlagTeamMatch(props.secondTeam[0].name)} alt={"Flag " + props.secondTeam[0].name} />
+                <span>{props.secondTeam[0].tla}</span>
             </div>
         </div>
         <div className="start-time">

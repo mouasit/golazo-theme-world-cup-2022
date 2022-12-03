@@ -1,3 +1,5 @@
+import flagMoroccoMatch from "../src/assets/flags/teams/morocco.svg";
+
 export const handleDropdown = (buttonDropdown,setArrow) =>{
     let listDropdown = document.body.querySelectorAll(".list-item");
     let lock = true;
@@ -131,4 +133,12 @@ export const handleDropdown = (buttonDropdown,setArrow) =>{
             }
         }
     });
+}
+
+export const getFlagTeamMatch = (nameTeam)=>{
+
+    if (nameTeam === "Netherlands")
+        return flagMoroccoMatch;
+    if(nameTeam === "United States")
+        return flagMoroccoMatch;
 }

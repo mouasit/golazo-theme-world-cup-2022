@@ -69,7 +69,7 @@ const  Live = () =>{
                         return(
                         <div className="match" key={match.id}>
                             <MatchInfo stadium="Al Bayt" channel="Beinsport 4" commentator="Issam Chaouali"/>
-                            <MatchClock firstTeam={[match.homeTeam.tla,match.homeTeam.crest]} secondTeam={[match.awayTeam.tla,match.awayTeam.crest]} time={match.utcDate.split("T")[1].substring(0,5)}/>
+                            <MatchClock firstTeam={[match.homeTeam,match.homeTeam.crest]} secondTeam={[match.awayTeam,match.awayTeam.crest]} time={match.utcDate.split("T")[1].substring(0,5)}/>
                         </div>
                         )
                     })
