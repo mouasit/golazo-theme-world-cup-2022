@@ -1,4 +1,37 @@
 import flagMoroccoMatch from "../src/assets/flags/teams/morocco.svg";
+import flagNetherlandsMatch from "../src/assets/flags/teams/netherlands.svg";
+import flagunitedStatesMatch from "../src/assets/flags/teams/united-states.svg";
+import flagArgentinaMatch from "../src/assets/flags/teams/argentina.svg";
+import flagAustraliaMatch from "../src/assets/flags/teams/australia.svg";
+import flagJapanMatch from "../src/assets/flags/teams/japan.svg";
+import flagFranceMatch from "../src/assets/flags/teams/france.svg";
+import flagPolandMatch from "../src/assets/flags/teams/poland.svg";
+import flagEnglandMatch from "../src/assets/flags/teams/england.svg";
+
+
+export const getFlagTeamMatch = (nameTeam)=>{
+
+    if (nameTeam === "Morocco")
+        return flagMoroccoMatch;
+    if (nameTeam === "Netherlands")
+        return flagNetherlandsMatch;
+    if(nameTeam === "United States")
+        return flagunitedStatesMatch;
+    if(nameTeam === "Argentina")
+        return flagArgentinaMatch;
+    if (nameTeam === "Australia")
+        return flagAustraliaMatch;
+    if (nameTeam === "France")
+        return flagFranceMatch;
+    if (nameTeam === "Poland")
+        return flagPolandMatch;
+    if (nameTeam === "England")
+        return flagEnglandMatch;
+    if (nameTeam === "Japan")
+        return flagJapanMatch;
+}
+
+
 
 export const handleDropdown = (buttonDropdown,setArrow) =>{
     let listDropdown = document.body.querySelectorAll(".list-item");
@@ -133,12 +166,4 @@ export const handleDropdown = (buttonDropdown,setArrow) =>{
             }
         }
     });
-}
-
-export const getFlagTeamMatch = (nameTeam)=>{
-
-    if (nameTeam === "Netherlands")
-        return flagMoroccoMatch;
-    if(nameTeam === "United States")
-        return flagMoroccoMatch;
 }

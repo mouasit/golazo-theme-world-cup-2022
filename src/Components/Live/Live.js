@@ -45,8 +45,9 @@ const  Live = () =>{
              let currentDate = getDateToday();
  
              let matches = res.data.matches.filter((e)=>{
+                console.log(e);
                  let splitDate = e.utcDate.split("T");
-                 if(splitDate[0] === currentDate)
+                 if(splitDate[0] >= currentDate)
                      return e;
              })
              return matches;
