@@ -50,9 +50,15 @@ if(windowWidth >= 1350)
                                 groupTmp = [];
                                 return(
                                     <div className="row-cards" key={index}>
-                                        <Card group = {previousGroup.group.split("_")[1]}/>
+                                        <Card 
+                                            group = {previousGroup.group.split("_")[1]}
+                                            table={previousGroup.table}
+                                            />
                                         <SeparatorGroups />
-                                        <Card group = {group.group.split("_")[1]}/>
+                                        <Card
+                                            group = {group.group.split("_")[1]}
+                                            table= {group.table}
+                                        />
                                     </div>
                                 )
                             }                       

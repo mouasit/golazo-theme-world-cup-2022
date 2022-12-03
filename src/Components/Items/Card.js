@@ -1,9 +1,6 @@
 import CardRanking from "../Items/CardRanking";
 import SeparatorHeader from "../Items/SeparatorHeader";
 import flagQatar from "../../assets/flags-groups/Qatar.svg";
-import flagEquador from "../../assets/flags-groups/Equador.svg";
-import flagSenegal from "../../assets/flags-groups/Senegal.svg";
-import flagNetherland from "../../assets/flags-groups/Netherland.svg";
 
 const Card = (props) => (
     <div className="cards">
@@ -25,68 +22,30 @@ const Card = (props) => (
             <SeparatorHeader />
         </span>
         <div className="body-ranking">
-            <div className="team-row">
-                <div className="team-info">
-                    <span className="flag">
-                        <img src={flagQatar} alt="" />
-                    </span>
-                    <span className="name">
-                        Qatar
-                    </span>
-                </div>
-                <div className="team-numbers">
-                    <span>0</span>
-                    <span>0</span>
-                    <span>0</span>
-                    <span>0</span>
-                </div>
-            </div>
-            <div className="team-row">
-                <div className="team-info">
-                    <span className="flag">
-                        <img src={flagEquador} alt="" />
-                    </span>
-                    <span className="name">
-                        Ecuador
-                    </span>
-                </div>
-                <div className="team-numbers">
-                    <span>0</span>
-                    <span>0</span>
-                    <span>0</span>
-                    <span>0</span>
-                </div>
-            </div>
-            <div className="team-row">
-                <div className="team-info">
-                    <span className="flag">
-                        <img src={flagSenegal} alt="" />
-                    </span>
-                    <span className="name">
-                        Senegal
-                    </span>
-                </div>
-                <div className="team-numbers">
-                    <span>0</span>
-                    <span>0</span>
-                    <span>0</span>
-                    <span>0</span>
-                </div>
-            </div>
-            <div className="team-row">
-                <div className="team-info">
-                        <img src={flagNetherland} alt="" />
-                    <span className="name">
-                        Netherland
-                    </span>
-                </div>
-                <div className="team-numbers">
-                    <span>0</span>
-                    <span>0</span>
-                    <span>0</span>
-                    <span>0</span>
-                </div>
-            </div>
+            {
+                props.table.map((team)=> {
+                    console.log(team);
+                    return(
+                        <div className="team-row" key={team.position}>
+                            <div className="team-info">
+                                <span className="flag">
+                                    <img src={flagQatar} alt="" />
+                                </span>
+                            <span className="name">
+                                {team.team.name}
+                            </span>
+                        </div>
+                        <div className="team-numbers">
+                            <span>{team.playedGames}</span>
+                            <span>{team.won}</span>
+                            <span>{team.draw}</span>
+                            <span>{team.lost}</span>
+                            <span>{team.points}</span>
+                        </div>
+                    </div>
+                    )
+                })
+            }
         </div>
     </div>
 </div>
