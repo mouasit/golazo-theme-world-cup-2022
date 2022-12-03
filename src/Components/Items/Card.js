@@ -1,6 +1,7 @@
 import CardRanking from "../Items/CardRanking";
 import SeparatorHeader from "../Items/SeparatorHeader";
-import flagQatar from "../../assets/flags-groups/Qatar.svg";
+
+import { getFlagTeamGroup } from "../../Helpers";
 
 const Card = (props) => (
     <div className="cards">
@@ -28,7 +29,7 @@ const Card = (props) => (
                         <div className="team-row" key={team.position}>
                             <div className="team-info">
                                 <span className="flag">
-                                    <img src={flagQatar} alt="" />
+                                    <img src={getFlagTeamGroup(team.team.name)} alt={"Flag " + team.team.name} />
                                 </span>
                             <span className="name">
                                 {team.team.name}

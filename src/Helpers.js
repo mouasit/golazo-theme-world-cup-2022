@@ -19,6 +19,47 @@ import flagPortugalMatch from "../src/assets/flags/teams/portugal.svg";
 import flagSwitzerlandMatch from "../src/assets/flags/teams/switzerland.svg";
 
 
+import flagQatarGroup from "../src/assets/flags-groups/qatar.svg";
+import flagArgentinaGroup from "../src/assets/flags-groups/argentina.svg";
+import flagNetherlandsGroup from "../src/assets/flags-groups/netherlands.svg";
+import flagSenegalGroup from "../src/assets/flags-groups/senegal.svg";
+import flagEcuadorGroup from "../src/assets/flags-groups/ecuador.svg";
+import flagEnglandGroup from "../src/assets/flags-groups/england.svg";
+import flagUnitedStatesGroup from "../src/assets/flags-groups/united-states.svg";
+import flagIranGroup from "../src/assets/flags-groups/iran.svg";
+import flagWalesGroup from "../src/assets/flags-groups/wales.svg";
+import flagPolandGroup from "../src/assets/flags-groups/poland.svg";
+import flagMexicoGroup from "../src/assets/flags-groups/mexico.svg";
+import flagSaudiArabiaGroup from "../src/assets/flags-groups/saudi-arabia.svg";
+
+export const getFlagTeamGroup = (nameTeam)=>{
+
+    if (nameTeam === "Netherlands")
+        return flagNetherlandsGroup;
+    if (nameTeam === "Senegal")
+        return flagSenegalGroup;
+    if (nameTeam === "Ecuador")
+        return flagEcuadorGroup;
+    if (nameTeam === "Qatar")
+        return flagQatarGroup;
+    if (nameTeam === "England")
+        return flagEnglandGroup;
+    if (nameTeam === "United States")
+        return flagUnitedStatesGroup;
+    if (nameTeam === "Iran")
+        return flagIranGroup;
+    if (nameTeam === "Wales")
+        return flagWalesGroup;
+    if (nameTeam === "Argentina")
+        return flagArgentinaGroup;
+    if (nameTeam === "Poland")
+        return flagPolandGroup;
+    if (nameTeam === "Mexico")
+        return flagMexicoGroup;
+    if (nameTeam === "Saudi Arabia")
+        return flagSaudiArabiaGroup;
+}
+
 
 export const getFlagTeamMatch = (nameTeam)=>{
 
