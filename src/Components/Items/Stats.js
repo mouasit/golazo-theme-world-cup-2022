@@ -1,5 +1,3 @@
-import flagMorocoo from "../../assets/flags/teams/morocco.svg";
-import flagCroatia from "../../assets/flags/teams/croatia.svg";
 import Vs from "../Items/Vs";
 import RedCard from "../Items/RedCard";
 import YellowCard from "../Items/YellowCard";

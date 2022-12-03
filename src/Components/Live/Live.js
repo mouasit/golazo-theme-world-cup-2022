@@ -21,7 +21,6 @@ const  Live = () =>{
             {
                 (matches)?(
                     matches.map((match) => {
-                        console.log(match);
                         if(match.score.fullTime.home != null)
                         {
 
@@ -55,7 +54,7 @@ const  Live = () =>{
                         }
                         return(
                         <div className="match" key={match.id}>
-                            <MatchInfo stadium="Al Bayt" channel="Beinsport 4" commentator="Issam Chaouali"/>
+                            <MatchInfo stadium="Ahmad Bin Ali" channel="Beinsport 2 Max" commentator="Issam Chaouali"/>
                             <MatchClock firstTeam={[match.homeTeam,match.homeTeam.crest]} secondTeam={[match.awayTeam,match.awayTeam.crest]} time={match.utcDate.split("T")[1].substring(0,5)}/>
                         </div>
                         )

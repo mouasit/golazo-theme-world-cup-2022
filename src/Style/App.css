@@ -1513,10 +1513,12 @@ main .stadiums .row-separator svg {
   main .match-info .item-info span {
     padding-left: 2.7rem;
     font-size: 1rem;
+    padding-right: 0.2rem;
   }
   main .match-program .list-days-week {
     gap: 1rem;
     margin-bottom: 6rem;
+    justify-content: space-evenly;
   }
   main .match-program .list-days-week button {
     width: 12rem;

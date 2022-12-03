@@ -1,4 +1,3 @@
-import CalanderBackground from "../Items/CalanderBackground";
 
 import MatchClock from "../Items/MatchClock"
 
@@ -7,23 +6,18 @@ const MatchTime = (props) => {
     return(
         <React.Fragment>
         <div className="list-match-time">
-        {
-            (props.date)?(
-                <div className="date-row">
-                    <div className="date">
-                        <CalanderBackground />
-                        <span>12 / 12 / 2022</span>
-                    </div>
-                </div>
-            ):null
-        }
             <div className="list-matches">
-                <div className="match">
-                    <MatchClock firstTeam="bel" secondTeam="can" time="20:00"/>
-                </div>
-                <div className="match">
-                    <MatchClock firstTeam="bel" secondTeam="can" time="20:00"/>
-                </div>
+                {
+                    (props.matches)?(
+                        props.matches.map((match)=>{
+                            return(
+                                <div className="match" key={match.id}>
+                                    <MatchClock firstTeam={[match.homeTeam,match.homeTeam.crest]} secondTeam={[match.awayTeam,match.awayTeam.crest]} time={match.utcDate.split("T")[1].substring(0,5)}/>
+                                </div>
+                            )
+                        })
+                    ):null
+                }
             </div>
         </div>
     </React.Fragment>
