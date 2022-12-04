@@ -10,6 +10,7 @@ const MatchTime = (props) => {
                 {
                     (props.matches)?(
                         props.matches.map((match)=>{
+                            document.getElementById("preloaderMatch").style.display = "none";
                             return(
                                 <div className="match" key={match.id}>
                                     <MatchClock firstTeam={[match.homeTeam,match.homeTeam.crest]} secondTeam={[match.awayTeam,match.awayTeam.crest]} time={match.utcDate.split("T")[1].substring(0,5)}/>

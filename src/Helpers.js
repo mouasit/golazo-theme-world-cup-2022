@@ -353,7 +353,7 @@ export const handleDropdown = (buttonDropdown,setArrow) =>{
 }
 
 
-const token = "93373a20f41444c7ad3308690882fe45";
+const token = "6613335ea3b645f383893070f84e740a";
 const baseUrl = "/v4/competitions/2000";
 
 function getDateToday(){

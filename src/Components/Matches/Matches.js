@@ -24,6 +24,9 @@ const Matches = (props) =>{
     },[])
     return (
         <main>
+            <div id="preloaderMatch" className="spinner-container">
+                <div className="spinner"></div>
+            </div>
             <section className="match-program">
                 <ListButton setToday={setToday} setTomorrow={setTomorrow} />
                 {

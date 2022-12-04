@@ -4,11 +4,11 @@ import MatchClock from "../Items/MatchClock";
 import { useEffect } from "react";
 import { useState } from "react";
 
-import { getMatchesToday } from "../../Helpers";
+import { getMatchesToday, getStats } from "../../Helpers";
 const  Live = () =>{
 
     const[matches,setMatches] = useState(false);
-
+    let checkMatch = false;
     useEffect(()=>{
         getMatchesToday().then((res) => {
             setMatches(res);
@@ -16,15 +16,19 @@ const  Live = () =>{
     },[])
     
     return(
-    <main>
+        <main>
+        <div id="preloader" className="spinner-container">
+            <div className="spinner"></div>
+        </div>
         <div className="list-matches">
             {
+            
                 (matches)?(
                     matches.map((match) => {
-                        console.log(match.status);
+                        document.getElementById("preloader").style.display = "none";
                         if(match.status === "START")
                         {
-
+                            checkMatch = true;
                             return(
                                 <div className="match" key={match.id}>
                                     <MatchInfo stadium="Khalifa" channel="Beinsport 1 Max" commentator="Ali Muhammad Ali"/>
@@ -55,6 +59,7 @@ const  Live = () =>{
                         }
                         else if(match.status === "TIMED")
                         {
+                            checkMatch = true;
                             return(
                                 <div className="match" key={match.id}>
                                     <MatchInfo stadium="Ahmad Bin Ali" channel="Beinsport 2 Max" commentator="Issam Chaouali"/>

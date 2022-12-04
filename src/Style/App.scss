@@ -2259,3 +2259,39 @@ main{
     }
   }
 }
+
+#headList{
+  display: none;
+}
+
+
+.spinner-container {
+  position: fixed;
+  width: 74%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner {
+  border: 3px solid $background-active; 
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  border-radius: 50%;
+  border-right: 3px solid #47B7AB;
+  animation-name: spin;
+  animation-duration: 900ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.53, 0.21, 0.29, 0.67);
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  /*50% {width:24px;height:24px} /*shrinking effect*/
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { -webkit-transform: rotate(0deg);}
+ /*50% {width:24px;height:24px} /*shrinking effect*/
+  100% { -webkit-transform: rotate(360deg); }
+}
