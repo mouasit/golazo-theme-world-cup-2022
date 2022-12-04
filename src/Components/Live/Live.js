@@ -21,7 +21,8 @@ const  Live = () =>{
             {
                 (matches)?(
                     matches.map((match) => {
-                        if(match.score.fullTime.home != null)
+                        console.log(match.status);
+                        if(match.status === "START")
                         {
 
                             return(
@@ -52,12 +53,15 @@ const  Live = () =>{
                                 </div>
                             )
                         }
-                        return(
-                        <div className="match" key={match.id}>
-                            <MatchInfo stadium="Ahmad Bin Ali" channel="Beinsport 2 Max" commentator="Issam Chaouali"/>
-                            <MatchClock firstTeam={[match.homeTeam,match.homeTeam.crest]} secondTeam={[match.awayTeam,match.awayTeam.crest]} time={match.utcDate.split("T")[1].substring(0,5)}/>
-                        </div>
-                        )
+                        else if(match.status === "TIMED")
+                        {
+                            return(
+                                <div className="match" key={match.id}>
+                                    <MatchInfo stadium="Ahmad Bin Ali" channel="Beinsport 2 Max" commentator="Issam Chaouali"/>
+                                    <MatchClock firstTeam={[match.homeTeam,match.homeTeam.crest]} secondTeam={[match.awayTeam,match.awayTeam.crest]} time={match.utcDate.split("T")[1].substring(0,5)}/>
+                                </div>
+                            )
+                        }
                     })
                 ):null
             }
