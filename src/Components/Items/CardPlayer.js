@@ -1,7 +1,6 @@
 import React from 'react'
 import ShapeNumber from "./ShapeNumber";
-import ShapeFlageMorocco from "../../assets/flags-country-players/morocco.svg";
-import picturePlayer from "../../assets/Players/ziyach.png"
+import { getFlagTeamRanking } from '../../Helpers';
 
 export default function CardPlayer(props) {
   return (
@@ -11,11 +10,11 @@ export default function CardPlayer(props) {
           <span>{props.rank}</span>
         </div>
         <div className='player-details'>
-          <img src={picturePlayer} alt="" />
+          <img src="https://digitalhub.fifa.com/transform/96ff445c-211f-4bc3-b0d8-cc6bb5777982/Morocco-Portraits-FIFA-World-Cup-Qatar-2022?io=transform:fill,width:792,height:900" alt="" />
           <div>
             <span className='name-player'>{props.name}</span>
             <span className='country-player'>
-              <img src= {ShapeFlageMorocco} alt="" />
+              <img src= {getFlagTeamRanking(props.team)} alt={"Flag " + props.team} />
               <span>{props.team}</span>
             </span>
           </div>

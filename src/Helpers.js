@@ -52,6 +52,62 @@ import flagSouthKoreaGroup from "../src/assets/flags-groups/south-korea.svg";
 import flagUruguayGroup from "../src/assets/flags-groups/uruguay.svg";
 import flagGhanaGroup from "../src/assets/flags-groups/ghana.svg";
 
+import flagEcuadorRank from "../src/assets/flags-team-ranking/ecuador.svg";
+import flagEnglandRank from "../src/assets/flags-team-ranking/england.svg";
+import flagNetherlandsRank from "../src/assets/flags-team-ranking/netherlands.svg";
+import flagArgentinaRank from "../src/assets/flags-team-ranking/argentina.svg";
+import flagFranceRank from "../src/assets/flags-team-ranking/france.svg";
+import flagSpainRank from "../src/assets/flags-team-ranking/spain.svg";
+import flagIranRank from "../src/assets/flags-team-ranking/iran.svg";
+import flagSaudiaArabiaRank from "../src/assets/flags-team-ranking/saudia-arabia.svg";
+import flagPortugalRank from "../src/assets/flags-team-ranking/portugal.svg";
+import flagSwitzerlandRank from "../src/assets/flags-team-ranking/switzerland.svg";
+import flagSenegalRank from "../src/assets/flags-team-ranking/senegal.svg";
+import flagMoroccoRank from "../src/assets/flags-team-ranking/morocco.svg";
+import flagPolandRank from "../src/assets/flags-team-ranking/poland.svg";
+import flagJapanRank from "../src/assets/flags-team-ranking/japan.svg";
+import flagCroatiaRank from "../src/assets/flags-team-ranking/croatia.svg";
+import flagBrazilRank from "../src/assets/flags-team-ranking/brazil.svg";
+import flagSouthKoreaRank from "../src/assets/flags-team-ranking/south-korea.svg";
+
+export const getFlagTeamRanking = (nameTeam)=>{
+
+    if(nameTeam === "Morocco")
+        return flagMoroccoRank;
+    if(nameTeam === "Ecuador")
+        return flagEcuadorRank;
+    if(nameTeam === "England")
+        return flagEnglandRank;
+    if(nameTeam === "Netherlands")
+        return flagNetherlandsRank;
+    if(nameTeam === "Argentina")
+        return flagArgentinaRank;
+    if(nameTeam === "France")
+        return flagFranceRank;
+    if(nameTeam === "Spain")
+        return flagSpainRank;
+    if(nameTeam === "Iran")
+        return flagIranRank;
+    if(nameTeam === "Saudi Arabia")
+        return flagSaudiaArabiaRank;
+    if(nameTeam === "Portugal")
+        return flagPortugalRank;
+    if (nameTeam === "Switzerland")
+        return flagSwitzerlandRank;
+    if (nameTeam === "Senegal")
+        return flagSenegalRank;
+    if (nameTeam === "Poland")
+        return flagPolandRank;
+    if (nameTeam === "Japan")
+        return flagJapanRank;
+    if (nameTeam === "Croatia")
+        return flagCroatiaRank;
+    if (nameTeam === "Brazil")
+        return flagBrazilRank;
+    if (nameTeam === "South Korea")
+        return flagSouthKoreaRank;
+}
+
 export const getFlagTeamGroup = (nameTeam)=>{
 
     if (nameTeam === "Netherlands")
@@ -297,7 +353,7 @@ export const handleDropdown = (buttonDropdown,setArrow) =>{
 }
 
 
-const token = "6613335ea3b645f383893070f84e740a";
+const token = "93373a20f41444c7ad3308690882fe45";
 const baseUrl = "/v4/competitions/2000";
 
 function getDateToday(){
@@ -332,7 +388,6 @@ export async function  getMatchesToday(){
          }
      }).then((res)=> {
          let currentDate = getDateToday();
-
          let matches = res.data.matches.filter((e)=>{
              let splitDate = e.utcDate.split("T");
              if(splitDate[0] === currentDate)
