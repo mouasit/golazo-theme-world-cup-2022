@@ -1687,7 +1687,7 @@ main .stadiums .row-separator svg {
     font-size: 2.1rem;
   }
   main .stadiums .card-stadiums .stadium-details p {
-    width: 35rem;
+    width: 28rem;
     font-size: 1rem;
   }
   main .stadiums .card-stadiums .stadium-details .stadium-place-loacation {
@@ -1952,7 +1952,7 @@ main .stadiums .row-separator svg {
     gap: 1.5rem;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1300px) {
   main .stadiums .card-stadiums {
     flex-direction: row;
     justify-content: flex-start;
@@ -1988,6 +1988,7 @@ main .stadiums .row-separator svg {
   justify-content: center;
   align-items: center;
   background-color: #711329;
+  z-index: 999;
 }
 
 .spinner {

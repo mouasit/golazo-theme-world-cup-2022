@@ -1869,7 +1869,7 @@ main{
           font-size: 2.1rem;
         }
         p{
-          width: 35rem;
+          width: 28rem;
           font-size: 1rem;
         }
         .stadium-place-loacation{
@@ -2186,7 +2186,7 @@ main{
   }
 }
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1300px){
   main{
     .stadiums{
       .card-stadiums{
@@ -2235,6 +2235,7 @@ main{
   justify-content: center;
   align-items: center;
   background-color: #711329;
+  z-index: 999;
 }
 .spinner {
   border: 3px solid $background-active; 

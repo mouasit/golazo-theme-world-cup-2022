@@ -5,6 +5,7 @@ import Modal from "../Items/Modal";
 import CardPlayer from "../Items/CardPlayer";
 import ListButton from "../Items/ListButton";
 import PlayOffsTournement from "../Items/PlayOffs";
+import SeparatorRankingMobile from "../Items/SeparatorRankingMobile";
 
 import { getStandings, getScorers } from "../../Helpers";
 
@@ -74,6 +75,13 @@ if(windowWidth >= 1350)
                                                 group = {group.group.split("_")[1]}
                                                 table= {group.table}
                                             />
+                                            {
+                                               (!(index + 1 === standings.length))?(
+                                                <div className="separator-ranking-mobile">
+                                                <SeparatorRankingMobile />
+                                            </div>
+                                               ):null
+                                            }
                                         </div>
                                     )
                                 }                       
@@ -81,6 +89,8 @@ if(windowWidth >= 1350)
                         ):null
                     ):(playOffs)?(
                         (document.getElementById("preloaderRank"))?(document.getElementById("preloaderRank").style.display = "none"):null,
+                        (document.getElementById("headList"))?(document.getElementById("headList").style.display = "flex"):null,
+
                         <div className="play-offs">
                           <PlayOffsTournement />
                         </div>
