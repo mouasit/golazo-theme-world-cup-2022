@@ -2272,6 +2272,7 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #711329;
 }
 .spinner {
   border: 3px solid $background-active; 
@@ -2294,4 +2295,35 @@ main{
   0% { -webkit-transform: rotate(0deg);}
  /*50% {width:24px;height:24px} /*shrinking effect*/
   100% { -webkit-transform: rotate(360deg); }
+}
+
+.main-matches{
+  gap: 15vw;
+}
+.mobile-header{
+  img{
+    display: flex;
+  }
+}
+.round{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  svg{
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .main-matches{
+    height: 100vh;
+    gap: 6rem;
+  }
+
+  .round{
+    svg{
+      width: 28rem;
+    }
+  }
 }

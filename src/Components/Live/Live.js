@@ -3,12 +3,25 @@ import MatchLive from "../Items/MatchLive";
 import MatchClock from "../Items/MatchClock";
 import { useEffect } from "react";
 import { useState } from "react";
+import {Round16} from "../Items/Round"
 
 import { getMatchesToday, getStats } from "../../Helpers";
 const  Live = () =>{
 
     const[matches,setMatches] = useState(false);
     let checkMatch = false;
+
+    let dataMatchs = [{
+            stadium: "Al Janoub",
+            channel:"Bein Sports 1 Max",
+            commentator: "Raouf Khaleef",
+        },
+        {
+            stadium: "Stadium 974",
+            channel:"Bein Sports 2 Max",
+            commentator: "Issam Chaouali",
+        }
+    ]
     useEffect(()=>{
         getMatchesToday().then((res) => {
             setMatches(res);
@@ -16,31 +29,34 @@ const  Live = () =>{
     },[])
     
     return(
-        <main>
+        <main className="main-matches">
         <div id="preloader" className="spinner-container">
             <div className="spinner"></div>
+        </div>
+        <div className="round">
+            <Round16 />
         </div>
         <div className="list-matches">
             {
             
                 (matches)?(
-                    matches.map((match) => {
+                    matches.map((match,index) => {
                         document.getElementById("preloader").style.display = "none";
                         if(match.status === "START")
                         {
                             checkMatch = true;
                             return(
                                 <div className="match" key={match.id}>
-                                    <MatchInfo stadium="Khalifa" channel="Beinsport 1 Max" commentator="Ali Muhammad Ali"/>
+                                    <MatchInfo stadium={dataMatchs[index].stadium} channel={dataMatchs[index].channel} commentator={dataMatchs[index].commentator}/>
                                     <MatchLive 
                                     firstTeam={[match.homeTeam,match.homeTeam.crest]} 
                                     secondTeam={[match.awayTeam,match.awayTeam.crest]} time={match.utcDate.split("T")[1].substring(0,5)}
                                     data = {
                                         {
                                             matchInfo:{
-                                                stadium:"Khalifa",
-                                                channel:"Beinsport 1 Max",
-                                                commentator:"Ali Muhammad Ali"
+                                                stadium: dataMatchs[index].stadium,
+                                                channel:dataMatchs[index].channel,
+                                                commentator: dataMatchs[index].commentator,
                                             },
                                             homeTeam:{
                                                 name: match.homeTeam.name,
@@ -62,7 +78,7 @@ const  Live = () =>{
                             checkMatch = true;
                             return(
                                 <div className="match" key={match.id}>
-                                    <MatchInfo stadium="Ahmad Bin Ali" channel="Beinsport 2 Max" commentator="Issam Chaouali"/>
+                                    <MatchInfo stadium={dataMatchs[index].stadium} channel={dataMatchs[index].channel} commentator={dataMatchs[index].commentator}/>
                                     <MatchClock firstTeam={[match.homeTeam,match.homeTeam.crest]} secondTeam={[match.awayTeam,match.awayTeam.crest]} time={match.utcDate.split("T")[1].substring(0,5)}/>
                                 </div>
                             )
