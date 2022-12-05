@@ -1288,6 +1288,11 @@ export function getPicturePlayer(namePlayer,nameTeam){
         if(dataTeams[index].name.toLowerCase() == nameTeam.toLowerCase())
         {
             for (let i = 0; i < dataTeams[index].squad.length; i++) {
+                if(dataTeams[index].squad[i].last_name == null)
+                if(dataTeams[index].squad[i].first_name.toLowerCase() == namePlayer.latinize().toLowerCase())
+                {
+                    return dataTeams[index].squad[i].image_url;
+                }
                 if(dataTeams[index].squad[i].first_name.concat(" ", dataTeams[index].squad[i].last_name).toLowerCase() == namePlayer.latinize().toLowerCase())
                 {
                     return dataTeams[index].squad[i].image_url;

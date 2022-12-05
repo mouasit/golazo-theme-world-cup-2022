@@ -1611,6 +1611,7 @@ main .stadiums .row-separator svg {
   }
   main .card-player .rank-player span {
     font-size: 0.7rem;
+    top: 0.4rem;
   }
   main .card-player .player-details {
     gap: 0.5rem;
@@ -2092,7 +2093,7 @@ main .stadiums .row-separator svg {
     width: 28rem;
   }
   .list-days-week {
-    gap: 2rem;
+    gap: 1rem;
     margin-bottom: 4rem;
     justify-content: flex-start;
   }

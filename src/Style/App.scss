@@ -1788,6 +1788,7 @@ main{
       }
       span{
         font-size: .7rem;
+        top: .4rem;
       }
     }
     .player-details{
@@ -2335,7 +2336,7 @@ main{
   }
 
   .list-days-week{
-    gap: 2rem;
+    gap: 1rem;
     margin-bottom: 4rem;
     justify-content: flex-start;
     button{

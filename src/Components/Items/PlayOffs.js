@@ -902,7 +902,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_4977" data-name="Group 4977">
         <g id="Group_4947" data-name="Group 4947">
-          <g id="Group_4946" data-name="Group 4946" clip-path="url(#clip-path)">
+          <g id="Group_4946" data-name="Group 4946" clipPath="url(#clip-path)">
             <g id="Group_4976" data-name="Group 4976">
               <g id="Group_4975" data-name="Group 4975">
                 <g id="Rectangle_728" data-name="Rectangle 728">
@@ -1086,7 +1086,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_4977-2" data-name="Group 4977">
         <g id="Group_4949" data-name="Group 4949">
-          <g id="Group_4948" data-name="Group 4948" clip-path="url(#clip-path-2)">
+          <g id="Group_4948" data-name="Group 4948" clipPath="url(#clip-path-2)">
             <g id="Group_4976-2" data-name="Group 4976">
               <g id="Group_4975-2" data-name="Group 4975">
                 <g id="Rectangle_728-2" data-name="Rectangle 728">
@@ -1270,7 +1270,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_5009" data-name="Group 5009">
         <g id="Group_4951" data-name="Group 4951">
-          <g id="Group_4950" data-name="Group 4950" clip-path="url(#clip-path-3)">
+          <g id="Group_4950" data-name="Group 4950" clipPath="url(#clip-path-3)">
             <g id="Group_5008" data-name="Group 5008">
               <g id="Group_5007" data-name="Group 5007">
                 <g id="Rectangle_748" data-name="Rectangle 748">
@@ -1497,7 +1497,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_5009-2" data-name="Group 5009">
         <g id="Group_4954" data-name="Group 4954">
-          <g id="Group_4953" data-name="Group 4953" clip-path="url(#clip-path-4)">
+          <g id="Group_4953" data-name="Group 4953" clipPath="url(#clip-path-4)">
             <g id="Group_4952" data-name="Group 4952">
               <rect id="Rectangle_364" data-name="Rectangle 364" width="188.921" height="23.014" transform="translate(298.936 163.896)" fill="#e60000"/>
               <rect id="Rectangle_365" data-name="Rectangle 365" width="188.921" height="23.014" transform="translate(298.936 186.91)" fill="#fff"/>
@@ -1513,7 +1513,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_5009-3" data-name="Group 5009">
         <g id="Group_4957" data-name="Group 4957">
-          <g id="Group_4956" data-name="Group 4956" clip-path="url(#clip-path-5)">
+          <g id="Group_4956" data-name="Group 4956" clipPath="url(#clip-path-5)">
             <g id="Group_4955" data-name="Group 4955">
               <rect id="Rectangle_381" data-name="Rectangle 381" width="188.921" height="23.014" transform="translate(684.191 294.761)" fill="#e60000"/>
               <rect id="Rectangle_382" data-name="Rectangle 382" width="188.921" height="23.014" transform="translate(684.191 317.776)" fill="#fff"/>
@@ -1529,7 +1529,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_6012" data-name="Group 6012">
         <g id="Group_4959" data-name="Group 4959">
-          <g id="Group_4958" data-name="Group 4958" clip-path="url(#clip-path-6)">
+          <g id="Group_4958" data-name="Group 4958" clipPath="url(#clip-path-6)">
             <g id="Group_6011" data-name="Group 6011">
               <g id="Group_6010" data-name="Group 6010">
                 <g id="Path_14621" data-name="Path 14621">
@@ -1550,7 +1550,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_5606" data-name="Group 5606">
         <g id="Group_4965" data-name="Group 4965">
-          <g id="Group_4964" data-name="Group 4964" clip-path="url(#clip-path-7)">
+          <g id="Group_4964" data-name="Group 4964" clipPath="url(#clip-path-7)">
             <g id="Group_5605" data-name="Group 5605">
               <g id="Group_4594" data-name="Group 4594">
                 <g id="Group_4593" data-name="Group 4593">
@@ -1563,7 +1563,7 @@ export default function Playoffs() {
                     <g id="Group_4585" data-name="Group 4585">
                       <g id="Group_5602" data-name="Group 5602">
                         <g id="Group_4961" data-name="Group 4961">
-                          <g id="Group_4960" data-name="Group 4960" clip-path="url(#clip-path-8)">
+                          <g id="Group_4960" data-name="Group 4960" clipPath="url(#clip-path-8)">
                             <g id="Group_5601" data-name="Group 5601">
                               <g id="Group_4584" data-name="Group 4584">
                                 <g id="Group_4583" data-name="Group 4583">
@@ -1583,7 +1583,7 @@ export default function Playoffs() {
                     <g id="Group_4588" data-name="Group 4588">
                       <g id="Group_5604" data-name="Group 5604">
                         <g id="Group_4963" data-name="Group 4963">
-                          <g id="Group_4962" data-name="Group 4962" clip-path="url(#clip-path-9)">
+                          <g id="Group_4962" data-name="Group 4962" clipPath="url(#clip-path-9)">
                             <g id="Group_5603" data-name="Group 5603">
                               <g id="Group_4587" data-name="Group 4587">
                                 <g id="Group_4586" data-name="Group 4586">
@@ -1674,7 +1674,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_6810" data-name="Group 6810">
         <g id="Group_4967" data-name="Group 4967">
-          <g id="Group_4966" data-name="Group 4966" clip-path="url(#clip-path-10)">
+          <g id="Group_4966" data-name="Group 4966" clipPath="url(#clip-path-10)">
             <g id="Group_6809" data-name="Group 6809">
               <g id="Group_6808" data-name="Group 6808">
                 <g id="Group_6795" data-name="Group 6795">
@@ -1877,7 +1877,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_6810-2" data-name="Group 6810">
         <g id="Group_4969" data-name="Group 4969">
-          <g id="Group_4968" data-name="Group 4968" clip-path="url(#clip-path-11)">
+          <g id="Group_4968" data-name="Group 4968" clipPath="url(#clip-path-11)">
             <g id="Group_6809-2" data-name="Group 6809">
               <g id="Group_6808-2" data-name="Group 6808">
                 <g id="Group_6795-2" data-name="Group 6795">
@@ -2080,7 +2080,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_7333" data-name="Group 7333">
         <g id="Group_4971" data-name="Group 4971">
-          <g id="Group_4970" data-name="Group 4970" clip-path="url(#clip-path-12)">
+          <g id="Group_4970" data-name="Group 4970" clipPath="url(#clip-path-12)">
             <g id="Group_7332" data-name="Group 7332">
               <g id="Group_7331" data-name="Group 7331">
                 <g id="Rectangle_1619" data-name="Rectangle 1619">
@@ -2097,16 +2097,16 @@ export default function Playoffs() {
                     <path id="Path_8169" data-name="Path 8169" d="M384.642,1374.554a38.281,38.281,0,0,0-5.293.374,16.27,16.27,0,0,0-.817,2.352,36.051,36.051,0,0,1,6.11-.524,35.019,35.019,0,0,1,23.474,8.992,14.2,14.2,0,0,0,.547-2.435,37.19,37.19,0,0,0-24.021-8.759Z" fill="#fff"/>
                   </g>
                   <g id="Path_21416" data-name="Path 21416">
-                    <path id="Path_8170" data-name="Path 8170" d="M380.307,1376.65a.735.735,0,0,0-.178-1.449.676.676,0,0,0-.565.771l.006.034a.685.685,0,0,0,.723.645Zm-.031-.267a.444.444,0,0,0,.326-.506.42.42,0,0,0-.432-.409h-.01a.427.427,0,0,0-.332.5.437.437,0,0,0,.448.411Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8170" data-name="Path 8170" d="M380.307,1376.65a.735.735,0,0,0-.178-1.449.676.676,0,0,0-.565.771l.006.034a.685.685,0,0,0,.723.645Zm-.031-.267a.444.444,0,0,0,.326-.506.42.42,0,0,0-.432-.409h-.01a.427.427,0,0,0-.332.5.437.437,0,0,0,.448.411Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21417" data-name="Path 21417">
-                    <path id="Path_8171" data-name="Path 8171" d="M381.5,1376.524l.264-.023-.036-.541.6-.04a.478.478,0,0,0,.424-.494.471.471,0,0,0-.492-.427l-.847.059Zm.209-.835.565-.036a.2.2,0,0,0,.172-.206.176.176,0,0,0-.181-.172h-.01l-.572.031Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8171" data-name="Path 8171" d="M381.5,1376.524l.264-.023-.036-.541.6-.04a.478.478,0,0,0,.424-.494.471.471,0,0,0-.492-.427l-.847.059Zm.209-.835.565-.036a.2.2,0,0,0,.172-.206.176.176,0,0,0-.181-.172h-.01l-.572.031Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21418" data-name="Path 21418">
                     <path id="Path_8172" data-name="Path 8172" d="M382.738,1376.435c-.012-.209-.036-.667-.356-.65l-.4.027c.455-.027.491.436.516.639Z" fill="#00a133"/>
                   </g>
                   <g id="Path_21419" data-name="Path 21419">
-                    <path id="Path_8173" data-name="Path 8173" d="M383.365,1376.408l.681-.015a.632.632,0,0,0,.627-.635v-.007l-.013-.209a.633.633,0,0,0-.638-.617l-.682.015Zm.258-.279.4-.01a.389.389,0,0,0,.387-.39v-.144a.393.393,0,0,0-.393-.384l-.4.01Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8173" data-name="Path 8173" d="M383.365,1376.408l.681-.015a.632.632,0,0,0,.627-.635v-.007l-.013-.209a.633.633,0,0,0-.638-.617l-.682.015Zm.258-.279.4-.01a.389.389,0,0,0,.387-.39v-.144a.393.393,0,0,0-.393-.384l-.4.01Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21420" data-name="Path 21420">
                     <path id="Path_8174" data-name="Path 8174" d="M385.207,1376.389l1.326.046.013-.276-1.063-.037.012-.371.842.021v-.248l-.829-.031v-.289l1.013.034v-.276l-1.253-.043Z" fill="#00a133"/>
@@ -2118,19 +2118,19 @@ export default function Playoffs() {
                     <path id="Path_8176" data-name="Path 8176" d="M390.107,1376.807l1.1.184.03-.246-.828-.141.055-.328.688.117.031-.252-.669-.114.03-.23.81.141.03-.248-1.043-.185Z" fill="#00a133"/>
                   </g>
                   <g id="Path_21423" data-name="Path 21423">
-                    <path id="Path_8177" data-name="Path 8177" d="M392.894,1377.353l.258.072.148-.524.558.141a.467.467,0,0,0,.572-.328.482.482,0,0,0-.332-.565l-.81-.209Zm.479-.724.541.144a.175.175,0,0,0,.217-.12l0-.015a.189.189,0,0,0-.129-.23l-.547-.141Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8177" data-name="Path 8177" d="M392.894,1377.353l.258.072.148-.524.558.141a.467.467,0,0,0,.572-.328.482.482,0,0,0-.332-.565l-.81-.209Zm.479-.724.541.144a.175.175,0,0,0,.217-.12l0-.015a.189.189,0,0,0-.129-.23l-.547-.141Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21424" data-name="Path 21424">
-                    <path id="Path_8178" data-name="Path 8178" d="M394.694,1377.833l.264.08.166-.516.547.175a.464.464,0,0,0,.583-.3.456.456,0,0,0-.291-.576l0,0-.81-.254Zm.509-.7.541.172a.19.19,0,0,0,.233-.126.177.177,0,0,0-.1-.228l-.018-.005-.534-.172Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8178" data-name="Path 8178" d="M394.694,1377.833l.264.08.166-.516.547.175a.464.464,0,0,0,.583-.3.456.456,0,0,0-.291-.576l0,0-.81-.254Zm.509-.7.541.172a.19.19,0,0,0,.233-.126.177.177,0,0,0-.1-.228l-.018-.005-.534-.172Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21425" data-name="Path 21425">
                     <path id="Path_8179" data-name="Path 8179" d="M395.878,1378.207c.068-.2.2-.636-.092-.731l-.375-.123c.429.142.295.578.227.78Z" fill="#00a133"/>
                   </g>
                   <g id="Path_21426" data-name="Path 21426">
-                    <path id="Path_8180" data-name="Path 8180" d="M397.082,1378.64a.7.7,0,0,0,.872-.454.664.664,0,1,0-1.186-.6.626.626,0,0,0-.048.127.705.705,0,0,0,.362.924Zm.092-.258a.426.426,0,0,0,.527-.289v-.006a.428.428,0,0,0-.2-.568.443.443,0,0,0-.534.3A.433.433,0,0,0,397.174,1378.382Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8180" data-name="Path 8180" d="M397.082,1378.64a.7.7,0,0,0,.872-.454.664.664,0,1,0-1.186-.6.626.626,0,0,0-.048.127.705.705,0,0,0,.362.924Zm.092-.258a.426.426,0,0,0,.527-.289v-.006a.428.428,0,0,0-.2-.568.443.443,0,0,0-.534.3A.433.433,0,0,0,397.174,1378.382Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21427" data-name="Path 21427">
-                    <path id="Path_8181" data-name="Path 8181" d="M398.808,1379.337a.736.736,0,0,0,.583-1.345.69.69,0,0,0-.889.405v0A.7.7,0,0,0,398.808,1379.337Zm.11-.252a.417.417,0,0,0,.531-.256l0-.011a.433.433,0,0,0-.166-.58.47.47,0,0,0-.369.847Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8181" data-name="Path 8181" d="M398.808,1379.337a.736.736,0,0,0,.583-1.345.69.69,0,0,0-.889.405v0A.7.7,0,0,0,398.808,1379.337Zm.11-.252a.417.417,0,0,0,.531-.256l0-.011a.433.433,0,0,0-.166-.58.47.47,0,0,0-.369.847Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21428" data-name="Path 21428">
                     <path id="Path_8182" data-name="Path 8182" d="M399.194,1378.7l.516.224-.1.191-.5-.227Z" fill="#00a133"/>
@@ -2139,7 +2139,7 @@ export default function Playoffs() {
                     <path id="Path_8183" data-name="Path 8183" d="M399.514,1378.839l.2.089-.3.67-.179-.086Z" fill="#00a133"/>
                   </g>
                   <g id="Path_21430" data-name="Path 21430">
-                    <path id="Path_8184" data-name="Path 8184" d="M399.913,1379.828l.239.119.239-.491.521.267a.46.46,0,0,0,.412-.823l-.743-.375Zm.6-.608.5.249a.185.185,0,0,0,.249-.077l0-.006a.191.191,0,0,0-.08-.252l-.516-.252Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8184" data-name="Path 8184" d="M399.913,1379.828l.239.119.239-.491.521.267a.46.46,0,0,0,.412-.823l-.743-.375Zm.6-.608.5.249a.185.185,0,0,0,.249-.077l0-.006a.191.191,0,0,0-.08-.252l-.516-.252Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21431" data-name="Path 21431">
                     <path id="Path_8185" data-name="Path 8185" d="M401.018,1380.384c.092-.188.295-.6.018-.74l-.362-.185c.424.212.214.624.129.808Z" fill="#00a133"/>
@@ -2154,7 +2154,7 @@ export default function Playoffs() {
                     <path id="Path_8188" data-name="Path 8188" d="M405.279,1382.425c-.092.117-.024.262.147.384s.3.129.357.049c.166-.24-.743-.66-.424-1.081.264-.365.676-.049.823.055a.477.477,0,0,1,.191.647l-.019.032-.252-.187c.08-.126,0-.255-.141-.356s-.227-.138-.319-.013c-.148.194.73.63.435,1.05-.227.314-.583.154-.8-.012-.2-.141-.491-.46-.276-.758Z" fill="#00a133"/>
                   </g>
                   <g id="Path_21435" data-name="Path 21435">
-                    <path id="Path_8189" data-name="Path 8189" d="M406.759,1384.114a.738.738,0,1,0,0-1.044.638.638,0,0,0-.055.061.7.7,0,0,0,.054.982Zm.172-.218a.424.424,0,0,0,.59-.109l.005-.008a.431.431,0,0,0-.024-.6.465.465,0,0,0-.571.715Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8189" data-name="Path 8189" d="M406.759,1384.114a.738.738,0,1,0,0-1.044.638.638,0,0,0-.055.061.7.7,0,0,0,.054.982Zm.172-.218a.424.424,0,0,0,.59-.109l.005-.008a.431.431,0,0,0-.024-.6.465.465,0,0,0-.571.715Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21436" data-name="Path 21436">
                     <path id="Path_8190" data-name="Path 8190" d="M380.866,1377.728l-.2.626.319.1Z" fill="#fff"/>
@@ -2979,7 +2979,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_7333-2" data-name="Group 7333">
         <g id="Group_4973-3" data-name="Group 4973">
-          <g id="Group_4972" data-name="Group 4972" clip-path="url(#clip-path-13)">
+          <g id="Group_4972" data-name="Group 4972" clipPath="url(#clip-path-13)">
             <g id="Group_7332-2" data-name="Group 7332">
               <g id="Group_7331-2" data-name="Group 7331">
                 <g id="Rectangle_1619-2" data-name="Rectangle 1619">
@@ -2996,16 +2996,16 @@ export default function Playoffs() {
                     <path id="Path_8464" data-name="Path 8464" d="M769.862,1506.069a38.282,38.282,0,0,0-5.293.374,16.153,16.153,0,0,0-.816,2.352,36.049,36.049,0,0,1,6.109-.524,35.02,35.02,0,0,1,23.474,8.992,14.075,14.075,0,0,0,.547-2.435,37.181,37.181,0,0,0-24.021-8.758Z" fill="#fff"/>
                   </g>
                   <g id="Path_21416-2" data-name="Path 21416">
-                    <path id="Path_8465" data-name="Path 8465" d="M765.527,1508.165a.735.735,0,0,0-.178-1.449.676.676,0,0,0-.564.772l.006.033a.684.684,0,0,0,.722.645Zm-.031-.267a.444.444,0,0,0,.326-.506.421.421,0,0,0-.432-.409h-.01a.427.427,0,0,0-.332.5.439.439,0,0,0,.448.411Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8465" data-name="Path 8465" d="M765.527,1508.165a.735.735,0,0,0-.178-1.449.676.676,0,0,0-.564.772l.006.033a.684.684,0,0,0,.722.645Zm-.031-.267a.444.444,0,0,0,.326-.506.421.421,0,0,0-.432-.409h-.01a.427.427,0,0,0-.332.5.439.439,0,0,0,.448.411Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21417-2" data-name="Path 21417">
-                    <path id="Path_8466" data-name="Path 8466" d="M766.725,1508.04l.264-.024-.037-.541.595-.04a.478.478,0,0,0,.424-.494.469.469,0,0,0-.491-.426l-.848.058Zm.208-.835.565-.037a.2.2,0,0,0,.172-.206.176.176,0,0,0-.181-.172h-.009l-.572.031Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8466" data-name="Path 8466" d="M766.725,1508.04l.264-.024-.037-.541.595-.04a.478.478,0,0,0,.424-.494.469.469,0,0,0-.491-.426l-.848.058Zm.208-.835.565-.037a.2.2,0,0,0,.172-.206.176.176,0,0,0-.181-.172h-.009l-.572.031Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21418-2" data-name="Path 21418">
                     <path id="Path_8467" data-name="Path 8467" d="M767.959,1507.951c-.012-.209-.037-.667-.356-.651l-.4.027c.455-.027.492.436.516.639Z" fill="#00a133"/>
                   </g>
                   <g id="Path_21419-2" data-name="Path 21419">
-                    <path id="Path_8468" data-name="Path 8468" d="M768.585,1507.923l.682-.015a.631.631,0,0,0,.626-.635v-.007l-.012-.209a.635.635,0,0,0-.639-.617l-.682.016Zm.258-.279.4-.01a.387.387,0,0,0,.387-.389v-.145a.393.393,0,0,0-.393-.384l-.405.01Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8468" data-name="Path 8468" d="M768.585,1507.923l.682-.015a.631.631,0,0,0,.626-.635v-.007l-.012-.209a.635.635,0,0,0-.639-.617l-.682.016Zm.258-.279.4-.01a.387.387,0,0,0,.387-.389v-.145a.393.393,0,0,0-.393-.384l-.405.01Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21420-2" data-name="Path 21420">
                     <path id="Path_8469" data-name="Path 8469" d="M770.427,1507.905l1.327.046.012-.277-1.062-.036.012-.372.841.022v-.249l-.829-.031v-.289l1.013.035v-.277l-1.253-.043Z" fill="#00a133"/>
@@ -3017,19 +3017,19 @@ export default function Playoffs() {
                     <path id="Path_8471" data-name="Path 8471" d="M775.327,1508.322l1.1.185.031-.246-.829-.142.055-.328.688.117.031-.252-.669-.113.03-.231.81.141.031-.248-1.044-.185Z" fill="#00a133"/>
                   </g>
                   <g id="Path_21423-2" data-name="Path 21423">
-                    <path id="Path_8472" data-name="Path 8472" d="M778.115,1508.869l.258.071.147-.524.559.142a.467.467,0,0,0,.571-.329.482.482,0,0,0-.331-.565l-.81-.209Zm.479-.725.54.144a.175.175,0,0,0,.217-.12l0-.015a.189.189,0,0,0-.129-.23l-.546-.141Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8472" data-name="Path 8472" d="M778.115,1508.869l.258.071.147-.524.559.142a.467.467,0,0,0,.571-.329.482.482,0,0,0-.331-.565l-.81-.209Zm.479-.725.54.144a.175.175,0,0,0,.217-.12l0-.015a.189.189,0,0,0-.129-.23l-.546-.141Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21424-2" data-name="Path 21424">
-                    <path id="Path_8473" data-name="Path 8473" d="M779.914,1509.348l.264.08.167-.516.546.175a.463.463,0,0,0,.583-.3.455.455,0,0,0-.291-.576h0l-.809-.255Zm.51-.7.54.172a.19.19,0,0,0,.233-.127.176.176,0,0,0-.105-.227l-.018-.006-.534-.172Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8473" data-name="Path 8473" d="M779.914,1509.348l.264.08.167-.516.546.175a.463.463,0,0,0,.583-.3.455.455,0,0,0-.291-.576h0l-.809-.255Zm.51-.7.54.172a.19.19,0,0,0,.233-.127.176.176,0,0,0-.105-.227l-.018-.006-.534-.172Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21425-2" data-name="Path 21425">
                     <path id="Path_8474" data-name="Path 8474" d="M781.1,1509.722c.068-.2.2-.636-.092-.73l-.374-.123c.428.141.294.577.227.779Z" fill="#00a133"/>
                   </g>
                   <g id="Path_21426-2" data-name="Path 21426">
-                    <path id="Path_8475" data-name="Path 8475" d="M782.3,1510.155a.7.7,0,0,0,.872-.454.664.664,0,1,0-1.186-.6.727.727,0,0,0-.048.127.706.706,0,0,0,.362.924Zm.093-.258a.424.424,0,0,0,.526-.289v-.006a.428.428,0,0,0-.2-.568.444.444,0,0,0-.534.3A.432.432,0,0,0,782.4,1509.9Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8475" data-name="Path 8475" d="M782.3,1510.155a.7.7,0,0,0,.872-.454.664.664,0,1,0-1.186-.6.727.727,0,0,0-.048.127.706.706,0,0,0,.362.924Zm.093-.258a.424.424,0,0,0,.526-.289v-.006a.428.428,0,0,0-.2-.568.444.444,0,0,0-.534.3A.432.432,0,0,0,782.4,1509.9Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21427-2" data-name="Path 21427">
-                    <path id="Path_8476" data-name="Path 8476" d="M784.028,1510.852a.736.736,0,0,0,.583-1.345.69.69,0,0,0-.889.405v0A.7.7,0,0,0,784.028,1510.852Zm.11-.252a.417.417,0,0,0,.531-.256l0-.011a.434.434,0,0,0-.167-.58.47.47,0,0,0-.368.847Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8476" data-name="Path 8476" d="M784.028,1510.852a.736.736,0,0,0,.583-1.345.69.69,0,0,0-.889.405v0A.7.7,0,0,0,784.028,1510.852Zm.11-.252a.417.417,0,0,0,.531-.256l0-.011a.434.434,0,0,0-.167-.58.47.47,0,0,0-.368.847Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21428-2" data-name="Path 21428">
                     <path id="Path_8477" data-name="Path 8477" d="M784.415,1510.22l.515.224-.1.19-.5-.227Z" fill="#00a133"/>
@@ -3038,7 +3038,7 @@ export default function Playoffs() {
                     <path id="Path_8478" data-name="Path 8478" d="M784.734,1510.355l.2.089-.3.669-.179-.086Z" fill="#00a133"/>
                   </g>
                   <g id="Path_21430-2" data-name="Path 21430">
-                    <path id="Path_8479" data-name="Path 8479" d="M785.133,1511.343l.24.119.238-.491.522.267a.46.46,0,1,0,.411-.822l-.743-.375Zm.6-.608.5.249a.185.185,0,0,0,.249-.077l0-.006a.192.192,0,0,0-.079-.252l-.517-.252Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8479" data-name="Path 8479" d="M785.133,1511.343l.24.119.238-.491.522.267a.46.46,0,1,0,.411-.822l-.743-.375Zm.6-.608.5.249a.185.185,0,0,0,.249-.077l0-.006a.192.192,0,0,0-.079-.252l-.517-.252Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21431-2" data-name="Path 21431">
                     <path id="Path_8480" data-name="Path 8480" d="M786.238,1511.9c.092-.188.3-.6.019-.74l-.363-.185c.424.212.215.624.129.808Z" fill="#00a133"/>
@@ -3053,7 +3053,7 @@ export default function Playoffs() {
                     <path id="Path_8483" data-name="Path 8483" d="M790.5,1513.94c-.092.117-.023.262.148.384s.3.129.356.049c.167-.239-.743-.66-.424-1.08.264-.366.676-.05.823.055a.476.476,0,0,1,.191.646l-.019.032-.252-.187c.08-.126,0-.255-.141-.356s-.227-.138-.319-.012c-.148.193.73.629.436,1.05-.227.313-.584.153-.8-.013-.2-.141-.491-.46-.276-.758Z" fill="#00a133"/>
                   </g>
                   <g id="Path_21435-2" data-name="Path 21435">
-                    <path id="Path_8484" data-name="Path 8484" d="M791.979,1515.629a.739.739,0,1,0,0-1.044.8.8,0,0,0-.055.061.7.7,0,0,0,.055.983Zm.172-.218a.425.425,0,0,0,.59-.108l.006-.009a.432.432,0,0,0-.024-.6.466.466,0,0,0-.572.715Z" fill="#00a133" fill-rule="evenodd"/>
+                    <path id="Path_8484" data-name="Path 8484" d="M791.979,1515.629a.739.739,0,1,0,0-1.044.8.8,0,0,0-.055.061.7.7,0,0,0,.055.983Zm.172-.218a.425.425,0,0,0,.59-.108l.006-.009a.432.432,0,0,0-.024-.6.466.466,0,0,0-.572.715Z" fill="#00a133" fillRule="evenodd"/>
                   </g>
                   <g id="Path_21436-2" data-name="Path 21436">
                     <path id="Path_8485" data-name="Path 8485" d="M766.086,1509.243l-.2.627.318.1Z" fill="#fff"/>
@@ -3878,7 +3878,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_8312" data-name="Group 8312">
         <g id="Group_4975-3" data-name="Group 4975">
-          <g id="Group_4974-3" data-name="Group 4974" clip-path="url(#clip-path-14)">
+          <g id="Group_4974-3" data-name="Group 4974" clipPath="url(#clip-path-14)">
             <g id="Group_8311" data-name="Group 8311">
               <g id="Group_8310" data-name="Group 8310">
                 <g id="Group_8309" data-name="Group 8309">
@@ -3925,7 +3925,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_4988" data-name="Group 4988">
         <g id="Group_4977-3" data-name="Group 4977">
-          <g id="Group_4976-3" data-name="Group 4976" clip-path="url(#clip-path-15)">
+          <g id="Group_4976-3" data-name="Group 4976" clipPath="url(#clip-path-15)">
             <g id="Group_4987" data-name="Group 4987">
               <g id="Group_4986" data-name="Group 4986">
                 <g id="Rectangle_740" data-name="Rectangle 740">
@@ -3946,7 +3946,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_4988-2" data-name="Group 4988">
         <g id="Group_4979" data-name="Group 4979">
-          <g id="Group_4978-3" data-name="Group 4978" clip-path="url(#clip-path-16)">
+          <g id="Group_4978-3" data-name="Group 4978" clipPath="url(#clip-path-16)">
             <g id="Group_4987-2" data-name="Group 4987">
               <g id="Group_4986-2" data-name="Group 4986">
                 <g id="Rectangle_740-2" data-name="Rectangle 740">
@@ -3967,7 +3967,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_3275" data-name="Group 3275">
         <g id="Group_4981" data-name="Group 4981">
-          <g id="Group_4980" data-name="Group 4980" clip-path="url(#clip-path-17)">
+          <g id="Group_4980" data-name="Group 4980" clipPath="url(#clip-path-17)">
             <g id="Group_3274" data-name="Group 3274">
               <g id="Group_3273" data-name="Group 3273">
                 <g id="Path_5323" data-name="Path 5323">
@@ -3991,7 +3991,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_5474" data-name="Group 5474">
         <g id="Group_4983" data-name="Group 4983">
-          <g id="Group_4982" data-name="Group 4982" clip-path="url(#clip-path-18)">
+          <g id="Group_4982" data-name="Group 4982" clipPath="url(#clip-path-18)">
             <g id="Group_5473" data-name="Group 5473">
               <g id="Group_5472" data-name="Group 5472">
                 <g id="Path_11821" data-name="Path 11821">
@@ -4015,7 +4015,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_5474-2" data-name="Group 5474">
         <g id="Group_4985" data-name="Group 4985">
-          <g id="Group_4984" data-name="Group 4984" clip-path="url(#clip-path-19)">
+          <g id="Group_4984" data-name="Group 4984" clipPath="url(#clip-path-19)">
             <g id="Group_5473-2" data-name="Group 5473">
               <g id="Group_5472-2" data-name="Group 5472">
                 <g id="Path_11821-2" data-name="Path 11821">
@@ -4039,7 +4039,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_5094" data-name="Group 5094">
         <g id="Group_4987-3" data-name="Group 4987">
-          <g id="Group_4986-3" data-name="Group 4986" clip-path="url(#clip-path-20)">
+          <g id="Group_4986-3" data-name="Group 4986" clipPath="url(#clip-path-20)">
             <g id="Group_5093" data-name="Group 5093">
               <g id="Group_5092" data-name="Group 5092">
                 <g id="Rectangle_829" data-name="Rectangle 829">
@@ -4060,7 +4060,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_6638" data-name="Group 6638">
         <g id="Group_4989-3" data-name="Group 4989">
-          <g id="Group_4988-3" data-name="Group 4988" clip-path="url(#clip-path-21)">
+          <g id="Group_4988-3" data-name="Group 4988" clipPath="url(#clip-path-21)">
             <g id="Group_6637" data-name="Group 6637">
               <g id="Group_6636" data-name="Group 6636">
                 <g id="Path_17945" data-name="Path 17945">
@@ -4081,7 +4081,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_6167" data-name="Group 6167">
         <g id="Group_4991" data-name="Group 4991">
-          <g id="Group_4990" data-name="Group 4990" clip-path="url(#clip-path-22)">
+          <g id="Group_4990" data-name="Group 4990" clipPath="url(#clip-path-22)">
             <g id="Group_6166" data-name="Group 6166">
               <g id="Group_6165" data-name="Group 6165">
                 <g id="Rectangle_1043" data-name="Rectangle 1043">
@@ -4624,7 +4624,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_8092" data-name="Group 8092">
         <g id="Group_4993" data-name="Group 4993">
-          <g id="Group_4992" data-name="Group 4992" clip-path="url(#clip-path-23)">
+          <g id="Group_4992" data-name="Group 4992" clipPath="url(#clip-path-23)">
             <g id="Group_8091" data-name="Group 8091">
               <g id="effectFlag">
                 <g id="Rectangle_1988" data-name="Rectangle 1988">
@@ -5504,7 +5504,7 @@ export default function Playoffs() {
       </g>
       <g id="Group_7510" data-name="Group 7510">
         <g id="Group_4995" data-name="Group 4995">
-          <g id="Group_4994" data-name="Group 4994" clip-path="url(#clip-path-24)">
+          <g id="Group_4994" data-name="Group 4994" clipPath="url(#clip-path-24)">
             <g id="Group_7509" data-name="Group 7509">
               <g id="Group_7508" data-name="Group 7508">
                 <g id="Path_22866" data-name="Path 22866">

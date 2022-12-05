@@ -140,22 +140,22 @@ export let dataTeams = [
         {
           "image_url": "https://digitalhub.fifa.com/transform/6f442f76-255f-4989-9fc7-e3263e2e9a0a/1443020790?io=transform:fill,width:792,height:900",
           "first_name": "ALISSON",
-          "last_name": "Goalkeeper"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/7583607b-8cc5-4062-b33c-fe2e0524bbaa/1443020872?io=transform:fill,width:792,height:900",
           "first_name": "WEVERTON",
-          "last_name": "Goalkeeper"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/eabd9fa0-3641-48c7-afbe-21220c7a69d0/1443021430?io=transform:fill,width:792,height:900",
           "first_name": "EDERSON",
-          "last_name": "Goalkeeper"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/f730d6f2-bcd5-4e1d-965c-4edfdd69ec3f/1443025794?io=transform:fill,width:792,height:900",
           "first_name": "DANILO",
-          "last_name": "Defender"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/328d2c02-44e8-479c-97e1-764e3affac8c/1443023175?io=transform:fill,width:792,height:900",
@@ -165,7 +165,7 @@ export let dataTeams = [
         {
           "image_url": "https://digitalhub.fifa.com/transform/a29ddb25-361b-4f6f-8fb3-50690cb01dbf/1443022046?io=transform:fill,width:792,height:900",
           "first_name": "MARQUINHOS",
-          "last_name": "Defender"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/3b8d2886-0097-4c87-97dd-206fe5007de2/1443021934?io=transform:fill,width:792,height:900",
@@ -190,12 +190,12 @@ export let dataTeams = [
         {
           "image_url": "https://digitalhub.fifa.com/transform/1406843e-640a-41a3-b43a-00602d1f5008/1443022026?io=transform:fill,width:792,height:900",
           "first_name": "BREMER",
-          "last_name": "Defender"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/dcc8b999-a4e2-4bd6-badb-97b4c448789f/1443025808?io=transform:fill,width:792,height:900",
           "first_name": "CASEMIRO",
-          "last_name": "Midfielder"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/f7387d44-c265-4de5-b361-6e2563d7cc23/1443021748?io=transform:fill,width:792,height:900",
@@ -205,12 +205,12 @@ export let dataTeams = [
         {
           "image_url": "https://digitalhub.fifa.com/transform/c3ebc1c0-29c7-4d2d-826e-4bf2748a3ac8/1443022121?io=transform:fill,width:792,height:900",
           "first_name": "FRED",
-          "last_name": "Midfielder"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/456fc1be-6aca-48bd-8f39-a9061e360470/1443022099?io=transform:fill,width:792,height:900",
           "first_name": "FABINHO",
-          "last_name": "Midfielder"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/f85c50c3-8376-4121-99e6-7ff9f700dada/1443021835?io=transform:fill,width:792,height:900",
@@ -225,17 +225,17 @@ export let dataTeams = [
         {
           "image_url": "https://digitalhub.fifa.com/transform/49fe3ff4-3fd9-4555-981d-615d711ce248/1443023503?io=transform:fill,width:792,height:900",
           "first_name": "RICHARLISON",
-          "last_name": "Forward"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/c4e4c789-9423-47cd-8e4e-21a416f2cb06/1443025860?io=transform:fill,width:792,height:900",
           "first_name": "NEYMAR",
-          "last_name": "Forward"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/896f5ae1-98f6-47df-a717-85320040f605/1443022143?io=transform:fill,width:792,height:900",
           "first_name": "RAPHINHA",
-          "last_name": "Forward"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/a3fba875-a9c9-4d5b-aa92-ff7319d1177a/1443021717?io=transform:fill,width:792,height:900",
@@ -245,7 +245,7 @@ export let dataTeams = [
         {
           "image_url": "https://digitalhub.fifa.com/transform/a7a2866a-2d16-4c3f-803d-e27df5fbdabc/1443021980?io=transform:fill,width:792,height:900",
           "first_name": "ANTONY",
-          "last_name": "Forward"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/f7e48956-e85e-403d-b728-2b2f3a6419ec/1443025821?io=transform:fill,width:792,height:900",
@@ -255,12 +255,12 @@ export let dataTeams = [
         {
           "image_url": "https://digitalhub.fifa.com/transform/f03a612a-1563-4fd2-93d4-85f2b53da0b3/1443021592?io=transform:fill,width:792,height:900",
           "first_name": "RODRYGO",
-          "last_name": "Forward"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/b8477576-af53-4b1a-92dd-f7a6688c6266/1443021995?io=transform:fill,width:792,height:900",
           "first_name": "PEDRO",
-          "last_name": "Forward"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/708e64be-d322-44ed-b1de-1c305e7da442/1443021960?io=transform:fill,width:792,height:900",
@@ -1420,17 +1420,17 @@ export let dataTeams = [
         {
           "image_url": "https://digitalhub.fifa.com/transform/87132c4b-85cb-4eeb-add2-06ea6489d9ec/1442552127?io=transform:fill,width:792,height:900",
           "first_name": "KOKE",
-          "last_name": "Midfielder"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/3accf767-b78f-4bf4-87f8-25ab808366c4/1442551912?io=transform:fill,width:792,height:900",
           "first_name": "GAVI",
-          "last_name": "Midfielder"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/5e614c86-4c65-4d3a-b211-7ca38710187c/1442551426?io=transform:fill,width:792,height:900",
           "first_name": "RODRI",
-          "last_name": "Midfielder"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/422d4d27-2116-480f-9651-80561352a2b2/1442551423?io=transform:fill,width:792,height:900",
@@ -1645,7 +1645,7 @@ export let dataTeams = [
         {
           "image_url": "https://digitalhub.fifa.com/transform/930157af-3408-4d6e-aa2d-33d2fa062d3c/1442847606?io=transform:fill,width:792,height:900",
           "first_name": "PEPE",
-          "last_name": "Defender"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/be68559f-6bda-4cac-8514-39c853ddee1f/1442847980?io=transform:fill,width:792,height:900",
@@ -1660,7 +1660,7 @@ export let dataTeams = [
         {
           "image_url": "https://digitalhub.fifa.com/transform/20458725-2feb-41d3-a507-cc205dd4553e/1442847629?io=transform:fill,width:792,height:900",
           "first_name": "DANILO",
-          "last_name": "Defender"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/481d8bde-2a68-4eff-89f5-7891c1863947/1442847954?io=transform:fill,width:792,height:900",
@@ -1690,12 +1690,12 @@ export let dataTeams = [
         {
           "image_url": "https://digitalhub.fifa.com/transform/89980cdc-a356-443f-8ca8-38dbd2862f35/1442847659?io=transform:fill,width:792,height:900",
           "first_name": "WILLIAM",
-          "last_name": "Midfielder"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/827510dd-33d7-4ef8-b918-f7a299d12099/1442848694?io=transform:fill,width:792,height:900",
           "first_name": "VITINHA",
-          "last_name": "Midfielder"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/5322c6a4-90bd-4776-94bd-a62d174f72a3/1442847835?io=transform:fill,width:792,height:900",
@@ -1715,7 +1715,7 @@ export let dataTeams = [
         {
           "image_url": "https://digitalhub.fifa.com/transform/61199054-6cb0-4e99-b8e6-f179ba40582b/1442848641?io=transform:fill,width:792,height:900",
           "first_name": "OTAVIO",
-          "last_name": "Midfielder"
+          "last_name": null
         },
         {
           "image_url": "https://digitalhub.fifa.com/transform/8fe3826e-c297-436a-9df9-5db29f5cc92b/1442847713?io=transform:fill,width:792,height:900",
