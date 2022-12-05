@@ -517,11 +517,11 @@ main{
   .match-program{
     .list-days-week{
       display: flex;
-      justify-content: space-between;
-      gap: 1vw;
-      margin-bottom: 9vw;
+      justify-content: center;
+      gap: 4vw;
+      margin-bottom: 15vw;
       button{
-        width: 100%;
+        width: 35vw;
         background:none;
         border: none;
         position: relative;
@@ -1680,9 +1680,9 @@ main{
 
     .match-program{
       .list-days-week{
-        gap: 1rem;
-        margin-bottom: 6rem;
-        justify-content: space-evenly;
+        gap: 2rem;
+        margin-bottom: 4rem;
+        justify-content: flex-start;
         button{
           width: 12rem;
           span{
@@ -2298,7 +2298,7 @@ main{
 }
 
 .main-matches{
-  gap: 15vw;
+  gap: 15vw !important;
 }
 .mobile-header{
   img{
@@ -2315,13 +2315,19 @@ main{
   }
 }
 
+.list-match-time{
+  .round{
+    padding-top: 0;
+  }
+}
+
 @media screen and (min-width: 1000px){
   .main-matches{
-    height: 100vh;
-    gap: 6rem;
+    gap: 6rem !important;
   }
 
   .round{
+    padding-top: 0;
     svg{
       width: 28rem;
     }

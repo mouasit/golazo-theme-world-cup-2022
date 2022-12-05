@@ -1,11 +1,14 @@
 
-import MatchClock from "../Items/MatchClock"
-
+import MatchClock from "../Items/MatchClock";
+import Round from "../Items/Round";
 import React from "react";
 const MatchTime = (props) => {
     return(
         <React.Fragment>
-        <div className="list-match-time">
+        <div className="list-match-time main-matches">
+            <div className="round">
+                <Round />
+            </div>
             <div className="list-matches">
                 {
                     (props.matches)?(

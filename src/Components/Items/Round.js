@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function Round16() {
+export default function Round() {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 381.22 31.313">
   <g id="Group_4546" data-name="Group 4546" transform="translate(-852.869 -177.16)">

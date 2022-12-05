@@ -3,7 +3,7 @@ import MatchLive from "../Items/MatchLive";
 import MatchClock from "../Items/MatchClock";
 import { useEffect } from "react";
 import { useState } from "react";
-import {Round16} from "../Items/Round"
+import Round from "../Items/Round";
 
 import { getMatchesToday, getStats } from "../../Helpers";
 const  Live = () =>{
@@ -34,7 +34,7 @@ const  Live = () =>{
             <div className="spinner"></div>
         </div>
         <div className="round">
-            <Round16 />
+            <Round />
         </div>
         <div className="list-matches">
             {
@@ -42,7 +42,7 @@ const  Live = () =>{
                 (matches)?(
                     matches.map((match,index) => {
                         document.getElementById("preloader").style.display = "none";
-                        if(match.status === "START")
+                        if(match.status === "IN_PLAY")
                         {
                             checkMatch = true;
                             return(
