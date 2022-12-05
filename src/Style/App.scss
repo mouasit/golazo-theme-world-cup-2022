@@ -515,34 +515,6 @@ main{
   }
 
   .match-program{
-    .list-days-week{
-      display: flex;
-      justify-content: center;
-      gap: 4vw;
-      margin-bottom: 15vw;
-      button{
-        width: 35vw;
-        background:none;
-        border: none;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        span{
-          font-family: $font;
-          position: absolute;
-          color: $white;
-          font-size: 3vw;
-        }
-      }
-      .active-time{
-          span{
-            color: $color-text;
-          }
-      }
-    }
-
     .date-row{
       display: flex;
       flex-direction: row-reverse;
@@ -1679,17 +1651,6 @@ main{
     }
 
     .match-program{
-      .list-days-week{
-        gap: 2rem;
-        margin-bottom: 4rem;
-        justify-content: flex-start;
-        button{
-          width: 12rem;
-          span{
-            font-size: 1rem;
-          }
-        }
-      }
       .date-row{
         .date{
           width: 15rem;
@@ -1832,8 +1793,8 @@ main{
     .player-details{
       gap: .5rem;
       img{
-        width: 3rem;
-        height: 3rem;
+        width: 3.8rem;
+        height: 3.8rem;
         border-radius: 3.125rem;
       }
       div{
@@ -2321,6 +2282,46 @@ main{
   }
 }
 
+
+.list-days-week{
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  margin-bottom: 15vw;
+  button{
+    width: 35vw;
+    background:none;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    span{
+      font-family: $font;
+      position: absolute;
+      color: $white;
+      font-size: 3vw;
+    }
+  }
+  .active-time{
+      span{
+        color: $color-text;
+      }
+  }
+}
+
+.ranking-teams{
+  .list-days-week{
+    margin-bottom: 1rem;
+  }
+}
+
+.play-offs{
+  display: flex;
+  width: 100%;
+}
+
 @media screen and (min-width: 1000px){
   .main-matches{
     gap: 6rem !important;
@@ -2331,5 +2332,22 @@ main{
     svg{
       width: 28rem;
     }
+  }
+
+  .list-days-week{
+    gap: 2rem;
+    margin-bottom: 4rem;
+    justify-content: flex-start;
+    button{
+      width: 12rem;
+      span{
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .play-offs{
+    display: flex;
+    width: 43rem;
   }
 }

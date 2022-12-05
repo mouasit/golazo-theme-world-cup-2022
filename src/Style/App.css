@@ -472,31 +472,6 @@ main .match-info .item-info span {
   text-align: center;
   white-space: nowrap;
 }
-main .match-program .list-days-week {
-  display: flex;
-  justify-content: center;
-  gap: 4vw;
-  margin-bottom: 15vw;
-}
-main .match-program .list-days-week button {
-  width: 35vw;
-  background: none;
-  border: none;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-main .match-program .list-days-week button span {
-  font-family: "Qatar2022 Arabic", sans-serif;
-  position: absolute;
-  color: #EEEEE4;
-  font-size: 3vw;
-}
-main .match-program .list-days-week .active-time span {
-  color: #80192E;
-}
 main .match-program .date-row {
   display: flex;
   flex-direction: row-reverse;
@@ -1515,17 +1490,6 @@ main .stadiums .row-separator svg {
     font-size: 1rem;
     padding-right: 0.2rem;
   }
-  main .match-program .list-days-week {
-    gap: 2rem;
-    margin-bottom: 4rem;
-    justify-content: flex-start;
-  }
-  main .match-program .list-days-week button {
-    width: 12rem;
-  }
-  main .match-program .list-days-week button span {
-    font-size: 1rem;
-  }
   main .match-program .date-row .date {
     width: 15rem;
   }
@@ -1652,8 +1616,8 @@ main .stadiums .row-separator svg {
     gap: 0.5rem;
   }
   main .card-player .player-details img {
-    width: 3rem;
-    height: 3rem;
+    width: 3.8rem;
+    height: 3.8rem;
     border-radius: 3.125rem;
   }
   main .card-player .player-details div {
@@ -2082,6 +2046,41 @@ main .stadiums .row-separator svg {
   padding-top: 0;
 }
 
+.list-days-week {
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  margin-bottom: 15vw;
+}
+.list-days-week button {
+  width: 35vw;
+  background: none;
+  border: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.list-days-week button span {
+  font-family: "Qatar2022 Arabic", sans-serif;
+  position: absolute;
+  color: #EEEEE4;
+  font-size: 3vw;
+}
+.list-days-week .active-time span {
+  color: #80192E;
+}
+
+.ranking-teams .list-days-week {
+  margin-bottom: 1rem;
+}
+
+.play-offs {
+  display: flex;
+  width: 100%;
+}
+
 @media screen and (min-width: 1000px) {
   .main-matches {
     gap: 6rem !important;
@@ -2091,5 +2090,20 @@ main .stadiums .row-separator svg {
   }
   .round svg {
     width: 28rem;
+  }
+  .list-days-week {
+    gap: 2rem;
+    margin-bottom: 4rem;
+    justify-content: flex-start;
+  }
+  .list-days-week button {
+    width: 12rem;
+  }
+  .list-days-week button span {
+    font-size: 1rem;
+  }
+  .play-offs {
+    display: flex;
+    width: 43rem;
   }
 }/*# sourceMappingURL=App.css.map */

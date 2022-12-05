@@ -3,6 +3,8 @@ import Card from "../Items/Card";
 import SeparatorGroups from "../Items/SeparatorGroups";
 import Modal from "../Items/Modal";
 import CardPlayer from "../Items/CardPlayer";
+import ListButton from "../Items/ListButton";
+import PlayOffsTournement from "../Items/PlayOffs";
 
 import { getStandings, getScorers } from "../../Helpers";
 
@@ -17,6 +19,9 @@ let groupTmp = [];
 const Ranking = () => {
     const[standings,setStandings] = useState(false);
     const[scorers,setScorers] = useState(false);
+
+    const [playOffs,setPlayOffs] = useState(true);
+    const [groupStage,setGroupStage] = useState(false);
     
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
     const setWindowDimensions = () => {
@@ -46,32 +51,41 @@ if(windowWidth >= 1350)
             </div>
         <div className="ranking">
             <section className="ranking-teams">
+            <ListButton groupStage={setGroupStage} playOffs={setPlayOffs} first="Playoffs" second ="Group Stage"/>
                 {
-                    (standings)?(
-                        standings.map((group,index) => {
-                            document.getElementById("preloaderRank").style.display = "none";
-                            document.getElementById("headList").style.display = "flex";
-                            groupTmp.push(group);
-                            if(checkPair(index))
-                            {
-                                let previousGroup = groupTmp[0];
-                                groupTmp = [];
-                                return(
-                                    <div className="row-cards" key={index}>
-                                        <Card 
-                                            group = {previousGroup.group.split("_")[1]}
-                                            table={previousGroup.table}
+                    (groupStage)?(
+                        (standings)?(
+                            standings.map((group,index) => {
+                                document.getElementById("preloaderRank").style.display = "none";
+                                document.getElementById("headList").style.display = "flex";
+                                groupTmp.push(group);
+                                if(checkPair(index))
+                                {
+                                    let previousGroup = groupTmp[0];
+                                    groupTmp = [];
+                                    return(
+                                        <div className="row-cards" key={index}>
+                                            <Card 
+                                                group = {previousGroup.group.split("_")[1]}
+                                                table={previousGroup.table}
+                                                />
+                                            <SeparatorGroups />
+                                            <Card
+                                                group = {group.group.split("_")[1]}
+                                                table= {group.table}
                                             />
-                                        <SeparatorGroups />
-                                        <Card
-                                            group = {group.group.split("_")[1]}
-                                            table= {group.table}
-                                        />
-                                    </div>
-                                )
-                            }                       
-                        })
+                                        </div>
+                                    )
+                                }                       
+                            })
+                        ):null
+                    ):(playOffs)?(
+                        (document.getElementById("preloaderRank"))?(document.getElementById("preloaderRank").style.display = "none"):null,
+                        <div className="play-offs">
+                          <PlayOffsTournement />
+                        </div>
                     ):null
+
                 }
         </section>
         <button className="btn-modal" aria-label="" onClick={() => {

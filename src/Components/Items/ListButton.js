@@ -13,22 +13,41 @@ const ListButton = (props) => {
             setActiveToday(true);
             setActiveTomorrow(false);
 
-            props.setToday(true);
-            props.setTomorrow(false);
+            if(props.groupStage && props.playOffs)
+            {
+                props.playOffs(true);
+                props.groupStage(false);
+            }
+
+            if(props.setTomorrow && props.setToday)
+            {
+                 props.setToday(true);
+                 props.setTomorrow(false);  
+            }
         }}>
             {(activeToday)?(<ActiveButton/>):(<BackgroundButton />)}
-            <span>Today</span>
+            <span>{(props.first)?(props.first):"Today"}</span>
         </button>
         <button  className= {(activeTomorrow)?("active-time"):null} onClick={()=> {
 
             setActiveTomorrow(true);
             setActiveToday(false);
 
-            props.setTomorrow(true);
-            props.setToday(false);
+            if(props.setTomorrow && props.setToday)
+            {
+                props.setTomorrow(true);
+                props.setToday(false);   
+            }
+
+            if(props.groupStage && props.playOffs)
+            {
+                props.playOffs(false);
+                props.groupStage(true);
+            }
+
         }}>
             {(activeTomorrow)?(<ActiveButton/>):(<BackgroundButton />)}
-            <span>Tomorrow</span>
+            <span>{(props.second)?(props.second):"Tomorrow"}</span>
         </button>
     </div>
     )
