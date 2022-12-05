@@ -1982,8 +1982,9 @@ main .stadiums .row-separator svg {
 
 .spinner-container {
   position: fixed;
-  width: 74%;
-  height: 85%;
+  left: 0;
+  width: 100%;
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2107,5 +2108,10 @@ main .stadiums .row-separator svg {
   .play-offs {
     display: flex;
     width: 43rem;
+  }
+  .spinner-container {
+    left: unset;
+    width: 74%;
+    height: 85%;
   }
 }/*# sourceMappingURL=App.css.map */

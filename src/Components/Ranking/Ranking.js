@@ -90,7 +90,6 @@ if(windowWidth >= 1350)
                     ):(playOffs)?(
                         (document.getElementById("preloaderRank"))?(document.getElementById("preloaderRank").style.display = "none"):null,
                         (document.getElementById("headList"))?(document.getElementById("headList").style.display = "flex"):null,
-
                         <div className="play-offs">
                           <PlayOffsTournement />
                         </div>
