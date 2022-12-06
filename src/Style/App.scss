@@ -890,6 +890,7 @@ main{
             }
             .team-name{
               direction: rtl;
+              
             }
           }
         }
@@ -1391,7 +1392,7 @@ main{
           .team-name{
             font-size: 1.6rem;
             color: $white;
-            width: auto;
+            width: auto !important;
           }
           .match-play{
             justify-content: space-around;

@@ -1286,7 +1286,7 @@ main .stadiums .row-separator svg {
   main .list-matches .match .team-name {
     font-size: 1.6rem;
     color: #EEEEE4;
-    width: auto;
+    width: auto !important;
   }
   main .list-matches .match .match-play {
     justify-content: space-around;
