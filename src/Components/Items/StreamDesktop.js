@@ -4,6 +4,8 @@ import Video from "../../assets/morocco.mp4";
 import Gamplan from "./GamPlan";
 import Round from "../Items/Round";
 
+import ReactPlayer from "react-player";
+
 
 const StreamMatchDesktop = (props) => {
     let matchInfo = props.data.matchInfo;
@@ -15,7 +17,11 @@ const StreamMatchDesktop = (props) => {
             <div className="stream-gam-plan">
                 <div className="stream">
                     <MatchInfo stadium={matchInfo.stadium} channel={matchInfo.channel} commentator={matchInfo.commentator}/>
-                    <video src= {Video} controls></video>
+                    <ReactPlayer 
+                    url="https://www.youtube.com/watch?v=ZKQNmleYhkM"
+                    controls
+                    playing
+                    />
                 </div>
                 <Gamplan displayGamPlan = "view-gam-plan show-list"
 
