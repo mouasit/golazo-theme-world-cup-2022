@@ -476,16 +476,32 @@ return fill;
 }
 
 
-export async function  getPositions(squad,position){
+export async function  getPositions(squad,position,team){
     const url = `${baseUrl}/teams`;
 
-    console.log(squad);
     return axios.get(url,{
-         headers:{
-             "X-Auth-Token": token
-         }
-     }).then((res)=> {
-
+        headers:{
+            "X-Auth-Token": token
+        }
+    }).then((res)=> {
+         let fill = [];
+        for (let j = 0; j < squad.length; j++) {
+            for (var index = 0; index < res.data.teams.length; index++) {
+                if (res.data.teams[index].name === team){
+                    for (let i = 0; i < res.data.teams[index].squad.length; i++) {
+                        if(res.data.teams[index].squad[i].name.latinize().toLowerCase() === squad[j].name.toLowerCase())
+                        {
+                            if(res.data.teams[index].squad[i].position === position)
+                            {
+                                fill.push(squad[j])
+                            }
+                        }
+                    }
+                }
+                
+            }   
+        }
+        return fill;
      })
 }
 

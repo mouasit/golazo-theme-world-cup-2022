@@ -1,11 +1,12 @@
 import React from 'react'
-import ziyach from "../../assets/Players/ziyach.png";
 import BackgroundNumber from "../Items/BackgroundNumber";
+import { getPicturePlayer } from '../../Helpers';
 
 export default function PlayerGamplan(props) {
+  console.log(props);
   return (
     <div className="player">
-        <img src={ziyach} alt="" />
+        <img src={getPicturePlayer(props.namePlayer,props.team)} alt="" />
         <div className="info-player">
             <span className="name-player">{props.namePlayer}</span>
             <span className="number-player">

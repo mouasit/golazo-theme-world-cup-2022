@@ -2,7 +2,7 @@ import MatchInfo from "./MatchInfo";
 import Stats from "./Stats";
 import Video from "../../assets/morocco.mp4";
 import Gamplan from "./GamPlan";
-import Group from "../Items/Group";
+import Round from "../Items/Round";
 
 
 const StreamMatchDesktop = (props) => {
@@ -42,7 +42,7 @@ const StreamMatchDesktop = (props) => {
             </div>
             <div className="stats-info">
                 <div className="group">
-                    <Group nameGroup="F" lang={props.lang}/>
+                    <Round />
                 </div>
                 <Stats homeTeam={homeTeam} awayTeam={awayTeam} displayStats="view-stats show-list" />
             </div>

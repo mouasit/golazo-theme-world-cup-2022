@@ -4,9 +4,17 @@ import ButtonSwitchers from "../Items/ButtonSwitchers";
 import Vs from "../Items/Vs";
 import SoccerSymbol from "./SoccerSymbol";
 import PlayerGamplan from "./PlayerGamplan";
-import { getFlagTeamMatch } from "../../Helpers";
+import { getFlagTeamMatch , getPositions} from "../../Helpers";
+import {useState, useEffect} from "react";
+
 const Gamplan = (props) => {
-    console.log(props.homeTeam);
+    const [homeGkStarting,sethomeGkStarting] = useState(false);
+
+    useEffect(()=>{
+        getPositions(props.homeTeam.lineup.starting,"Goalkeeper", props.homeTeam.name).then((res)=>{
+            sethomeGkStarting(res)
+        })
+    },[])
     return(
     <div className={props.displayGamPlan}>
         <SoccerSymbol />
@@ -29,29 +37,38 @@ const Gamplan = (props) => {
                     <div className="players-postion">
                         <TitlePositon namePosition="Goalkeeper" />
                         <div className="list-players">
-                            <PlayerGamplan namePlayer="Mustapha" numberKit={"10"}/>
+                            {
+                                (homeGkStarting)?(
+                                    homeGkStarting.map((e,index)=>{
+                                        return(
+                                        
+                                            <PlayerGamplan team={props.homeTeam.name} namePlayer={e.name} numberKit={e.kitNumber} key={index}/>
+                                        )
+                                    })
+                                ):null
+                            }
                         </div>
                     </div>
-                    <div className="players-postion">
+                    {/* <div className="players-postion">
                         <TitlePositon namePosition="Defenders" />
                         <div className="list-players">
                             <PlayerGamplan namePlayer="Mustapha" numberKit={10}/>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className={props.displaySabstitutesLeft}>
-                    <div className="players-postion">
+                    {/* <div className="players-postion">
                         <TitlePositon namePosition="Goalkeeper" />
                         <div className="list-players">
                             <PlayerGamplan namePlayer="Mustapha" numberKit={10}/>
                         </div>
-                    </div>
-                    <div className="players-postion">
+                    </div> */}
+                    {/* <div className="players-postion">
                         <TitlePositon namePosition="Defenders" />
                         <div className="list-players">
                             <PlayerGamplan namePlayer="Mustapha" numberKit={10}/>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
@@ -71,32 +88,32 @@ const Gamplan = (props) => {
             <div className="team-players">
                 <ButtonSwitchers leftName="1st Team" rightName="Sabstitutes" setDisplayFirstTeamRight={props.setDisplayFirstTeamRight} setDisplaySabstitutesRight={props.setDisplaySabstitutesRight} showTeamRight = {props.showTeamRight} setShowTeamRight = {props.setShowTeamRight}/>
                 <div className={props.displayFirstTeamRight}>
-                    <div className="players-postion">
+                    {/* <div className="players-postion">
                         <TitlePositon namePosition="Goalkeeper" />
                         <div className="list-players">
                             <PlayerGamplan namePlayer="Mustapha" numberKit={10}/>
                         </div>
-                    </div>
-                    <div className="players-postion">
+                    </div> */}
+                    {/* <div className="players-postion">
                         <TitlePositon namePosition="Defenders" />
                         <div className="list-players">
                             <PlayerGamplan namePlayer="Mustapha" numberKit={10}/>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className={props.displaySabstitutesRight}>
-                    <div className="players-postion">
+                    {/* <div className="players-postion">
                         <TitlePositon namePosition="Goalkeeper" />
                         <div className="list-players">
                             <PlayerGamplan namePlayer="Mustapha" numberKit={10}/>
                         </div>
-                    </div>
-                    <div className="players-postion">
+                    </div> */}
+                    {/* <div className="players-postion">
                         <TitlePositon namePosition="Defenders" />
                         <div className="list-players">
                             <PlayerGamplan namePlayer="Mustapha" numberKit={10}/>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

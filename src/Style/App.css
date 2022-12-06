@@ -1921,7 +1921,7 @@ main .stadiums .row-separator svg {
   }
   main .stream-desktop .view-gam-plan .teams-gam-plan .team-players .list-positions .players-postion .list-players .player .info-player .number-player .number {
     display: flex;
-    padding-top: 0.1rem;
+    padding-top: 0.2rem;
     font-size: 0.7rem !important;
   }
   main .stream-desktop .view-gam-plan .team-gam-plan-right .info-team {
