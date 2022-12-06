@@ -18,7 +18,7 @@ const StreamMatchDesktop = (props) => {
                 <div className="stream">
                     <MatchInfo stadium={matchInfo.stadium} channel={matchInfo.channel} commentator={matchInfo.commentator}/>
                     <ReactPlayer 
-                    url="https://www.youtube.com/watch?v=ZKQNmleYhkM"
+                    url="https://youtu.be/8UFHFQRW8dE"
                     controls
                     playing
                     />

@@ -9,9 +9,10 @@ const MatchStream = (props) => {
         <section className="match-stream">
             <MatchInfo stadium={matchInfo.stadium} channel={matchInfo.channel} commentator={matchInfo.commentator}/>
             <ReactPlayer 
-                    url="https://www.youtube.com/watch?v=ZKQNmleYhkM"
+                    url="https://youtu.be/8UFHFQRW8dE"
                     controls
                     playing
+                    width="100%"
                     />
     </section>
     )
