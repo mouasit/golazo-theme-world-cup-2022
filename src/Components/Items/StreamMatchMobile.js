@@ -5,6 +5,7 @@ import { useState } from "react";
 import Gamplan from "../Items/GamPlan";
 import Stats from "../Items/Stats";
 import MatchStream from "../Items/MatchStream";
+import Round from "./Round";
 const StreamMatchMobile = (props) => {
     const [displayGamPlan,setDisplayGamPlan] = useState("view-gam-plan show-list");
     const [displayStats,setDisplayStats] = useState("view-stats hide-list");
@@ -17,7 +18,7 @@ const StreamMatchMobile = (props) => {
                 <MatchStream matchInfo={props.data.matchInfo}/>
                 <section className="details-match">
                     <div className="group">
-                        <Group nameGroup="F"/>
+                        <Round />
                     </div>
                     <ButtonSwitchers leftName="Gam Plan" rightName="Stats" setDisplayGamPlan={setDisplayGamPlan} setDisplayStats={setDisplayStats} showInfo = {showInfo} setShowInfo = {setShowInfo}/>
                     <Gamplan displayGamPlan={displayGamPlan}
