@@ -6,7 +6,7 @@ import SoccerSymbol from "./SoccerSymbol";
 import PlayerGamplan from "./PlayerGamplan";
 import { getFlagTeamMatch } from "../../Helpers";
 const Gamplan = (props) => {
-
+    console.log(props.homeTeam);
     return(
     <div className={props.displayGamPlan}>
         <SoccerSymbol />
@@ -19,7 +19,7 @@ const Gamplan = (props) => {
                 </div>
                 <div className="gam-plan">
                     <PointSymbol />
-                    4-2-3-1
+                    {props.homeTeam.lineup.gamPlan}
                     <PointSymbol />
                 </div>
             </div>

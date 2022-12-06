@@ -446,6 +446,49 @@ export async function  getScorers(){
      })
 }
 
+
+export function getSquad(teamPlayers)
+{
+
+    let splitTeam = teamPlayers.split(" ");
+    let fill = [];
+    let squad = [];
+
+for (let index = 0; index < splitTeam.length; index++) {
+
+    fill.push(splitTeam[index]);
+    if(Number(splitTeam[index + 1]) || index === splitTeam.length - 1)
+    {
+
+        squad.push(fill);
+        fill = [];
+    }
+}
+
+for (var index = 0; index < squad.length; index++) {
+    let obj = {};
+    [obj.kitNumber,...obj.name] = squad[index];
+    obj.name = obj.name.join(" ");
+    fill.push(obj);
+}
+
+return fill;
+}
+
+
+export async function  getPositions(squad,position){
+    const url = `${baseUrl}/teams`;
+
+    console.log(squad);
+    return axios.get(url,{
+         headers:{
+             "X-Auth-Token": token
+         }
+     }).then((res)=> {
+
+     })
+}
+
 var Latinise={};Latinise.latin_map={"Á":"A",
 "Ă":"A",
 "Ắ":"A",
