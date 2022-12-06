@@ -24,9 +24,9 @@ const  Live = () =>{
             commentator: "Raouf Khaleef",
         },
         {
-            stadium: "Stadium 974",
+            stadium: "Lusail",
             channel:"Bein Sports 2 Max",
-            commentator: "Issam Chaouali",
+            commentator: "Hafid Derradji",
         }
     ]
     useEffect(()=>{
@@ -49,43 +49,12 @@ const  Live = () =>{
                 (matches)?(
                     matches.map((match,index) => {
                         document.getElementById("preloader").style.display = "none";
-                        if(match.status === "IN_PLAY")
+                        if(match.status === "IN_PLAY" || match.homeTeam.name === "Morocco")  
                         {
                             checkMatch = true;
                             return(
                                 <div className="match" key={match.id}>
-                                    <MatchInfo stadium={dataMatchs[index].stadium} channel={dataMatchs[index].channel} commentator={dataMatchs[index].commentator}/>
-                                    <MatchLive 
-                                    firstTeam={[match.homeTeam,match.homeTeam.crest]} 
-                                    secondTeam={[match.awayTeam,match.awayTeam.crest]} time={match.utcDate.split("T")[1].substring(0,5)}
-                                    data = {
-                                        {
-                                            matchInfo:{
-                                                stadium: dataMatchs[index].stadium,
-                                                channel:dataMatchs[index].channel,
-                                                commentator: dataMatchs[index].commentator,
-                                            },
-                                            homeTeam:{
-                                                name: match.homeTeam.name,
-                                                tla:  match.homeTeam.tla
-                                            },
-
-                                            awayTeam:{
-                                                name: match.awayTeam.name,
-                                                tla: match.awayTeam.tla
-                                            }
-                                        }
-                                    }
-                                    />
-                                </div>
-                            )
-                        }
-                        else if(match.status === "TIMED")
-                        {
-                            checkMatch = true;
-                            return(
-                                <div className="match" key={match.id}>
-                                   <MatchInfo stadium={dataMatchs[index].stadium} channel={dataMatchs[index].channel} commentator={dataMatchs[index].commentator}/>
+                                   <MatchInfo stadium="Education City" channel="Bein Sports 1 Max" commentator="Jawad Bada"/>
                                     <MatchLive 
                                     firstTeam={[match.homeTeam,match.homeTeam.crest]} 
                                     secondTeam={[match.awayTeam,match.awayTeam.crest]} time={match.utcDate.split("T")[1].substring(0,5)}
@@ -121,8 +90,16 @@ const  Live = () =>{
                                         }
                                     }
                                     />
-                                    {/* <MatchInfo stadium={dataMatchs[index].stadium} channel={dataMatchs[index].channel} commentator={dataMatchs[index].commentator}/>
-                                    <MatchClock firstTeam={[match.homeTeam,match.homeTeam.crest]} secondTeam={[match.awayTeam,match.awayTeam.crest]} time={match.utcDate.split("T")[1].substring(0,5)}/> */}
+                                </div>
+                            )
+                        }
+                        else if(match.status === "TIMED")
+                        {
+                            checkMatch = true;
+                            return(
+                                <div className="match" key={match.id}>
+                                    <MatchInfo stadium={dataMatchs[index].stadium} channel={dataMatchs[index].channel} commentator={dataMatchs[index].commentator}/>
+                                    <MatchClock firstTeam={[match.homeTeam,match.homeTeam.crest]} secondTeam={[match.awayTeam,match.awayTeam.crest]} time={match.utcDate.split("T")[1].substring(0,5)}/>
                                 </div>
                             )
                         }

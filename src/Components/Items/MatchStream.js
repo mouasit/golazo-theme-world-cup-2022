@@ -9,7 +9,7 @@ const MatchStream = (props) => {
         <section className="match-stream">
             <MatchInfo stadium={matchInfo.stadium} channel={matchInfo.channel} commentator={matchInfo.commentator}/>
             <ReactPlayer 
-                    url="https://youtu.be/8UFHFQRW8dE"
+                    url="https://youtu.be/yHOmiwqUgeg"
                     controls
                     playing
                     width="100%"

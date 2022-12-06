@@ -11,14 +11,14 @@ const StreamMatchDesktop = (props) => {
     let matchInfo = props.data.matchInfo;
     let homeTeam = props.data.homeTeam;
     let awayTeam = props.data.awayTeam;
-
+    
     return (
         <div className="stream-desktop">
             <div className="stream-gam-plan">
                 <div className="stream">
                     <MatchInfo stadium={matchInfo.stadium} channel={matchInfo.channel} commentator={matchInfo.commentator}/>
                     <ReactPlayer 
-                    url="https://youtu.be/8UFHFQRW8dE"
+                    url="https://youtu.be/yHOmiwqUgeg"
                     controls
                     playing
                     />
