@@ -1,5 +1,5 @@
 import './Style/App.css';
-import {BrowserRouter,Routes,Route} from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./Components/Items/Navigation/Navigation";
 import Separator from './Components/Items/Separator';
 import Live from './Components/Live/Live';
@@ -12,24 +12,23 @@ import { useState } from 'react';
 
 function App() {
   let languageStart = localStorage.getItem("language");
-  if (!languageStart)
-  {
+  if (!languageStart) {
     localStorage.setItem("language", "en");
     languageStart = "en";
   }
-  const [lang,setLang] = useState(languageStart);
-  return(
-    <BrowserRouter>
-    <Navigation lang={{language: lang, set:setLang}} />
-    <Separator />
+  const [lang, setLang] = useState(languageStart);
+  return (
+    <HashRouter>
+      <Navigation lang={{ language: lang, set: setLang }} />
+      <Separator />
       <Routes>
-        <Route path='/' element={<Live lang = {lang} />} />
-        <Route path='/Stream' element={<Stream lang = {lang} />} />
-        <Route path='/Ranking' element={<Ranking lang = {lang} />} />
-        <Route path='/Matches' element={<Matches lang = {lang} />} />
-        <Route path='/Stadiums' element={<Stadiums lang = {lang} />} />
+        <Route path='/' element={<Live lang={lang} />} />
+        <Route path='/Stream' element={<Stream lang={lang} />} />
+        <Route path='/Ranking' element={<Ranking lang={lang} />} />
+        <Route path='/Matches' element={<Matches lang={lang} />} />
+        <Route path='/Stadiums' element={<Stadiums lang={lang} />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
