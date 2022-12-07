@@ -6,24 +6,8 @@ import { useState,useEffect } from "react";
 
 
 const Live = () => {
-
-    const [preloader, setPreloader] = useState(true);
-
-    useEffect(()=>{
-        setTimeout(() => {
-            setPreloader(false)
-        }, 1000);
-    }, [])
-
     return (
         <main className="main-matches">
-            {
-                (preloader)?(
-                    <div className="spinner-container">
-                        <div className="spinner"></div>
-                    </div>
-                ):null
-            }
             <div className="round">
                 <Round />
             </div>

@@ -2,6 +2,9 @@
 import axios from "axios";
 import { dataTeams } from "../src/dataTeams";
 
+import { standings } from "./Standings";
+import {scorers} from "./Scorers";
+
 import flagMoroccoMatch from "../src/assets/flags/teams/morocco.svg";
 import flagNetherlandsMatch from "../src/assets/flags/teams/netherlands.svg";
 import flagunitedStatesMatch from "../src/assets/flags/teams/united-states.svg";
@@ -354,31 +357,13 @@ export const handleDropdown = (buttonDropdown,setArrow) =>{
 }
 
 
-const token = "6613335ea3b645f383893070f84e740a";
-const baseUrl = "/v4/competitions/2000";
+export function  getStandings(){
 
-export async function  getStandings(){
-    const url = `${baseUrl}/standings`;
-
-    return axios.get(url,{
-         headers:{
-             "X-Auth-Token": token
-         }
-     }).then((res)=> {
-         return res.data.standings;
-     })
+    return standings
 }
 
-export async function  getScorers(){
-    const url = `${baseUrl}/scorers`;
-
-    return axios.get(url,{
-         headers:{
-             "X-Auth-Token": token
-         }
-     }).then((res)=> {
-        return res.data.scorers;
-     })
+export function  getScorers(){
+    return scorers;
 }
 
 

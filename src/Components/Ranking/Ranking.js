@@ -18,6 +18,7 @@ let groupTmp = [];
 
 
 const Ranking = () => {
+
     const[standings,setStandings] = useState(false);
     const[scorers,setScorers] = useState(false);
 
@@ -30,14 +31,10 @@ const Ranking = () => {
     }
     useEffect(() => {
         window.addEventListener('resize', setWindowDimensions);
-        getStandings().then((res) => {
-            setStandings(res);
-        });
-
-        getScorers().then((res) => {
-            setScorers(res);
-        });
-}, [])
+        
+        setStandings(getStandings());
+        setScorers(getScorers());
+    }, [])
 if(windowWidth >= 1350)
 {
     document.body.style.overflow = "auto";
@@ -47,9 +44,6 @@ if(windowWidth >= 1350)
 
     return (
         <main>
-            <div id="preloaderRank" className="spinner-container">
-                <div className="spinner"></div>
-            </div>
         <div className="ranking">
             <section className="ranking-teams">
             <ListButton groupStage={setGroupStage} playOffs={setPlayOffs} first="Playoffs" second ="Group Stage"/>
@@ -57,7 +51,6 @@ if(windowWidth >= 1350)
                     (groupStage)?(
                         (standings)?(
                             standings.map((group,index) => {
-                                document.getElementById("preloaderRank").style.display = "none";
                                 document.getElementById("headList").style.display = "flex";
                                 groupTmp.push(group);
                                 if(checkPair(index))
