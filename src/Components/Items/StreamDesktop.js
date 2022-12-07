@@ -4,9 +4,6 @@ import Video from "../../assets/morocco.mp4";
 import Gamplan from "./GamPlan";
 import Round from "../Items/Round";
 
-import ReactPlayer from "react-player";
-
-
 const StreamMatchDesktop = (props) => {
     let matchInfo = props.data.matchInfo;
     let homeTeam = props.data.homeTeam;
@@ -17,11 +14,7 @@ const StreamMatchDesktop = (props) => {
             <div className="stream-gam-plan">
                 <div className="stream">
                     <MatchInfo stadium={matchInfo.stadium} channel={matchInfo.channel} commentator={matchInfo.commentator}/>
-                    <ReactPlayer 
-                    url="https://youtu.be/yHOmiwqUgeg"
-                    controls
-                    playing
-                    />
+                    <video src={Video} controls></video>
                 </div>
                 <Gamplan displayGamPlan = "view-gam-plan show-list"
 
@@ -50,7 +43,7 @@ const StreamMatchDesktop = (props) => {
                 <div className="group">
                     <Round />
                 </div>
-                <Stats homeTeam={homeTeam} awayTeam={awayTeam} displayStats="view-stats show-list" />
+                <Stats possesion={{homeTeam:"23%",awayTeam:"77%"}} PassAccuracy={{homeTeam:"70%",awayTeam:"90%"}} homeTeam={homeTeam} awayTeam={awayTeam} displayStats="view-stats show-list" />
             </div>
         </div>
     )

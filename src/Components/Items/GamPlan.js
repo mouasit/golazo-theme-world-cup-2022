@@ -4,124 +4,9 @@ import ButtonSwitchers from "../Items/ButtonSwitchers";
 import Vs from "../Items/Vs";
 import SoccerSymbol from "./SoccerSymbol";
 import PlayerGamplan from "./PlayerGamplan";
-import { getFlagTeamMatch , getPositions} from "../../Helpers";
-import {useState, useEffect} from "react";
+import { getFlagTeamMatch} from "../../Helpers";
 
 const Gamplan = (props) => {
-    const [homeGkStarting,sethomeGkStarting] = useState(false);
-    const [homeDfStarting,sethomeDfStarting] = useState(false);
-    const [homeMdStarting,sethomeMdStarting] = useState(false);
-    const [homeFoStarting,sethomeFoStarting] = useState(false);
-
-    const [awayGkStarting,setawayGkStarting] = useState(false);
-    const [awayDfStarting,setawayDfStarting] = useState(false);
-    const [awayMdStarting,setawayMdStarting] = useState(false);
-    const [awayFoStarting,setawayFoStarting] = useState(false);
-
-    const [homeGkSubstitutions,sethomeGkSubstitutions] = useState(false);
-    const [homeDfSubstitutions,sethomeDfSubstitutions] = useState(false);
-    const [homeMdSubstitutions,sethomeMdSubstitutions] = useState(false);
-    const [homeFoSubstitutions,sethomeFoSubstitutions] = useState(false);
-
-    const [awayGkSubstitutions,setawayGkSubstitutions] = useState(false);
-    const [awayDfSubstitutions,setawayDfSubstitutions] = useState(false);
-    const [awayMdSubstitutions,setawayMdSubstitutions] = useState(false);
-    const [awayFoSubstitutions,setawayFoSubstitutions] = useState(false);
-
-
-    useEffect(()=>{
-        getPositions(props.homeTeam.lineup.starting,"Goalkeeper", props.homeTeam.name).then((res)=>{
-            if (res.length > 0) 
-                sethomeGkStarting(res);
-        });
-
-        getPositions(props.homeTeam.lineup.starting,"Defence", props.homeTeam.name).then((res)=>{
-            if (res.length > 0) 
-                sethomeDfStarting(res);
-        });
-
-        getPositions(props.homeTeam.lineup.starting,"Midfield", props.homeTeam.name).then((res)=>{
-            if (res.length > 0) 
-                sethomeMdStarting(res);
-        });
-        getPositions(props.homeTeam.lineup.starting,"Offence", props.homeTeam.name).then((res)=>{
-            if (res.length > 0) 
-                sethomeFoStarting(res);
-        });
-
-
-        getPositions(props.awayTeam.lineup.starting,"Goalkeeper", props.awayTeam.name).then((res)=>{
-            if (res.length > 0) 
-                setawayGkStarting(res);
-        });
-
-        getPositions(props.awayTeam.lineup.starting,"Defence", props.awayTeam.name).then((res)=>{
-            if (res.length > 0) 
-                setawayDfStarting(res);
-        });
-
-        getPositions(props.awayTeam.lineup.starting,"Midfield", props.awayTeam.name).then((res)=>{
-            if (res.length > 0) 
-                setawayMdStarting(res);
-        });
-        getPositions(props.awayTeam.lineup.starting,"Offence", props.awayTeam.name).then((res)=>{
-            if (res.length > 0) 
-                setawayFoStarting(res);
-        });
-
-
-
-
-
-
-
-
-
-
-
-
-
-        getPositions(props.homeTeam.lineup.substitutions,"Goalkeeper", props.homeTeam.name).then((res)=>{
-            if (res.length > 0) 
-                sethomeGkSubstitutions(res);
-        });
-
-        getPositions(props.homeTeam.lineup.substitutions,"Defence", props.homeTeam.name).then((res)=>{
-            if (res.length > 0) 
-                sethomeDfSubstitutions(res);
-        });
-
-        getPositions(props.homeTeam.lineup.substitutions,"Midfield", props.homeTeam.name).then((res)=>{
-            if (res.length > 0) 
-                sethomeMdSubstitutions(res);
-        });
-        getPositions(props.homeTeam.lineup.substitutions,"Offence", props.homeTeam.name).then((res)=>{
-            if (res.length > 0) 
-                sethomeFoSubstitutions(res);
-        });
-
-
-        getPositions(props.awayTeam.lineup.substitutions,"Goalkeeper", props.awayTeam.name).then((res)=>{
-            if (res.length > 0) 
-                setawayGkSubstitutions(res);
-        });
-
-        getPositions(props.awayTeam.lineup.substitutions,"Defence", props.awayTeam.name).then((res)=>{
-            if (res.length > 0) 
-                setawayDfSubstitutions(res);
-        });
-
-        getPositions(props.awayTeam.lineup.substitutions,"Midfield", props.awayTeam.name).then((res)=>{
-            if (res.length > 0) 
-                setawayMdSubstitutions(res);
-        });
-        getPositions(props.awayTeam.lineup.substitutions,"Offence", props.awayTeam.name).then((res)=>{
-            if (res.length > 0) 
-                setawayFoSubstitutions(res);
-        });
-
-
-    },[])
     return(
     <div className={props.displayGamPlan}>
         <SoccerSymbol />
@@ -134,7 +19,7 @@ const Gamplan = (props) => {
                 </div>
                 <div className="gam-plan">
                     <PointSymbol />
-                    {props.homeTeam.lineup.gamPlan}
+                    4-3-3
                     <PointSymbol />
                 </div>
             </div>
@@ -144,128 +29,70 @@ const Gamplan = (props) => {
                     <div className="players-postion">
                         <TitlePositon namePosition="Goalkeeper" />
                         <div className="list-players">
-                            {
-                                (homeGkStarting)?(
-                                    homeGkStarting.map((e,index)=>{
-                                        return(
-                                        
-                                            <PlayerGamplan team={props.homeTeam.name} namePlayer={e.name} numberKit={e.kitNumber} key={index}/>
-                                        )
-                                    })
-                                ):null
-                            }
+                            <PlayerGamplan team="Morocco" namePlayer="Yassine BOUNOU" numberKit="1"/>
                         </div>
                     </div>
-
                     <div className="players-postion">
                         <TitlePositon namePosition="Defenders" />
                         <div className="list-players">
-                            {
-                                (homeDfStarting)?(
-                                    homeDfStarting.map((e,index)=>{
-                                        return(
-                                        
-                                            <PlayerGamplan team={props.homeTeam.name} namePlayer={e.name} numberKit={e.kitNumber} key={index}/>
-                                        )
-                                    })
-                                ):null
-                            }
+                            <PlayerGamplan team="Morocco" namePlayer="Achraf HAKIMI" numberKit="2"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Noussair MAZRAOUI" numberKit="3"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Nayef AGUERD" numberKit="5"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Romain SAISS" numberKit="6"/>
                         </div>
                     </div>
                     <div className="players-postion">
                         <TitlePositon namePosition="Midfielders" />
                         <div className="list-players">
-                            {
-                                (homeMdStarting)?(
-                                    homeMdStarting.map((e,index)=>{
-                                        return(
-                                        
-                                            <PlayerGamplan team={props.homeTeam.name} namePlayer={e.name} numberKit={e.kitNumber} key={index}/>
-                                        )
-                                    })
-                                ):null
-                            }
+                            <PlayerGamplan team="Morocco" namePlayer="Sofyan AMRABAT" numberKit="4"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Azzedine OUNAHI" numberKit="8"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Selim AMALLAH" numberKit="15"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Hakim ZIYECH" numberKit="7"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Sofiane BOUFAL" numberKit="17"/>
                         </div>
                     </div>
-
                     <div className="players-postion">
-                        <TitlePositon namePosition="Forward" />
+                        <TitlePositon namePosition="Forwards" />
                         <div className="list-players">
-                            {
-                                (homeFoStarting)?(
-                                    homeFoStarting.map((e,index)=>{
-                                        return(
-                                        
-                                            <PlayerGamplan team={props.homeTeam.name} namePlayer={e.name} numberKit={e.kitNumber} key={index}/>
-                                        )
-                                    })
-                                ):null
-                            }
+                            <PlayerGamplan team="Morocco" namePlayer="Youssef EN NESYRI" numberKit="19"/>
                         </div>
                     </div>
                 </div>
                 <div className={props.displaySabstitutesLeft}>
-                <div className="players-postion">
+                    <div className="players-postion">
                         <TitlePositon namePosition="Goalkeeper" />
                         <div className="list-players">
-                            {
-                                (homeGkSubstitutions)?(
-                                    homeGkSubstitutions.map((e,index)=>{
-                                        return(
-                                        
-                                            <PlayerGamplan team={props.homeTeam.name} namePlayer={e.name} numberKit={e.kitNumber} key={index}/>
-                                        )
-                                    })
-                                ):null
-                            }
+                            <PlayerGamplan team="Morocco" namePlayer="Monir EL KAJOUI" numberKit="12"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Ahmed TAGNAOUTI" numberKit="22"/>
                         </div>
-                    </div>
-
-                    <div className="players-postion">
+                        <div className="players-postion">
                         <TitlePositon namePosition="Defenders" />
                         <div className="list-players">
-                            {
-                                (homeDfSubstitutions)?(
-                                    homeDfSubstitutions.map((e,index)=>{
-                                        return(
-                                        
-                                            <PlayerGamplan team={props.homeTeam.name} namePlayer={e.name} numberKit={e.kitNumber} key={index}/>
-                                        )
-                                    })
-                                ):null
-                            }
+                            <PlayerGamplan team="Morocco" namePlayer="Jawad EL YAMIQ" numberKit="18"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Achraf DARI" numberKit="20"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Badr BENOUN" numberKit="24"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Yahya ATTIAT-ALLAH" numberKit="25"/>
                         </div>
                     </div>
                     <div className="players-postion">
                         <TitlePositon namePosition="Midfielders" />
                         <div className="list-players">
-                            {
-                                (homeMdSubstitutions)?(
-                                    homeMdSubstitutions.map((e,index)=>{
-                                        return(
-                                        
-                                            <PlayerGamplan team={props.homeTeam.name} namePlayer={e.name} numberKit={e.kitNumber} key={index}/>
-                                        )
-                                    })
-                                ):null
-                            }
+                            <PlayerGamplan team="Morocco" namePlayer="Anass ZAROURY" numberKit="10"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Ilias CHAIR" numberKit="13"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Zakaria ABOUKHLAL" numberKit="14"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Bilal EL KHANNOUSS" numberKit="23"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Yahya JABRANE" numberKit="26"/>
                         </div>
                     </div>
-
                     <div className="players-postion">
-                        <TitlePositon namePosition="Forward" />
+                        <TitlePositon namePosition="Forwards" />
                         <div className="list-players">
-                            {
-                                (homeFoSubstitutions)?(
-                                    homeFoSubstitutions.map((e,index)=>{
-                                        return(
-                                        
-                                            <PlayerGamplan team={props.homeTeam.name} namePlayer={e.name} numberKit={e.kitNumber} key={index}/>
-                                        )
-                                    })
-                                ):null
-                            }
+                            <PlayerGamplan team="Morocco" namePlayer="Abderrazak HAMDALLAH" numberKit="9"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Abdelhamid SABIRI" numberKit="11"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Abde EZZALZOULI" numberKit="16"/>
+                            <PlayerGamplan team="Morocco" namePlayer="Walid CHEDDIRA" numberKit="21"/>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -279,137 +106,79 @@ const Gamplan = (props) => {
                 </div>
                 <div className="gam-plan">
                     <PointSymbol />
-                    {props.awayTeam.lineup.gamPlan}
+                        4-3-3
                     <PointSymbol />
                 </div>
             </div>
             <div className="team-players">
                 <ButtonSwitchers leftName="1st Team" rightName="Sabstitutes" setDisplayFirstTeamRight={props.setDisplayFirstTeamRight} setDisplaySabstitutesRight={props.setDisplaySabstitutesRight} showTeamRight = {props.showTeamRight} setShowTeamRight = {props.setShowTeamRight}/>
                 <div className={props.displayFirstTeamRight}>
-                    <div className="players-postion">
+                <div className="players-postion">
                         <TitlePositon namePosition="Goalkeeper" />
                         <div className="list-players">
-                            {
-                                (awayGkStarting)?(
-                                    awayGkStarting.map((e,index)=>{
-                                        return(
-                                        
-                                            <PlayerGamplan team={props.awayTeam.name} namePlayer={e.name} numberKit={e.kitNumber} key={index}/>
-                                        )
-                                    })
-                                ):null
-                            }
+                            <PlayerGamplan team="Spain" namePlayer="Unai SIMON" numberKit="23"/>
                         </div>
                     </div>
-
                     <div className="players-postion">
                         <TitlePositon namePosition="Defenders" />
                         <div className="list-players">
-                            {
-                                (awayDfStarting)?(
-                                    awayDfStarting.map((e,index)=>{
-                                        return(
-                                        
-                                            <PlayerGamplan team={props.awayTeam.name} namePlayer={e.name} numberKit={e.kitNumber} key={index}/>
-                                        )
-                                    })
-                                ):null
-                            }
+                            <PlayerGamplan team="Spain" namePlayer="Marcos LLORENTE" numberKit="6"/>
+                            <PlayerGamplan team="Spain" namePlayer="RODRI" numberKit="16"/>
+                            <PlayerGamplan team="Spain" namePlayer="Jordi ALBA" numberKit="18"/>
+                            <PlayerGamplan team="Spain" namePlayer="Aymeric LAPORTE" numberKit="24"/>
                         </div>
                     </div>
                     <div className="players-postion">
                         <TitlePositon namePosition="Midfielders" />
                         <div className="list-players">
-                            {
-                                (awayMdStarting)?(
-                                    awayMdStarting.map((e,index)=>{
-                                        return(
-                                        
-                                            <PlayerGamplan team={props.awayTeam.name} namePlayer={e.name} numberKit={e.kitNumber} key={index}/>
-                                        )
-                                    })
-                                ):null
-                            }
+                            <PlayerGamplan team="Spain" namePlayer="Sergio BUSQUETS" numberKit="5"/>
+                            <PlayerGamplan team="Spain" namePlayer="GAVI" numberKit="9"/>
+                            <PlayerGamplan team="Spain" namePlayer="Pedri GONZALEZ" numberKit="26"/>
                         </div>
                     </div>
-
                     <div className="players-postion">
-                        <TitlePositon namePosition="Forward" />
+                        <TitlePositon namePosition="Forwards" />
                         <div className="list-players">
-                            {
-                                (awayFoStarting)?(
-                                    awayFoStarting.map((e,index)=>{
-                                        return(
-                                        
-                                            <PlayerGamplan team={props.awayTeam.name} namePlayer={e.name} numberKit={e.kitNumber} key={index}/>
-                                        )
-                                    })
-                                ):null
-                            }
+                            <PlayerGamplan team="Spain" namePlayer="Marco ASENSIO" numberKit="10"/>
+                            <PlayerGamplan team="Spain" namePlayer="Ferran TORRES" numberKit="10"/>
+                            <PlayerGamplan team="Spain" namePlayer="Dani OLMO" numberKit="21"/>
                         </div>
                     </div>
                 </div>
                 <div className={props.displaySabstitutesRight}>
-                <div className="players-postion">
+                    <div className="players-postion">
                         <TitlePositon namePosition="Goalkeeper" />
                         <div className="list-players">
-                            {
-                                (awayGkSubstitutions)?(
-                                    awayGkSubstitutions.map((e,index)=>{
-                                        return(
-                                        
-                                            <PlayerGamplan team={props.awayTeam.name} namePlayer={e.name} numberKit={e.kitNumber} key={index}/>
-                                        )
-                                    })
-                                ):null
-                            }
+                            <PlayerGamplan team="Spain" namePlayer="Robert SANCHEZ" numberKit="1"/>
+                            <PlayerGamplan team="Spain" namePlayer="David RAYA" numberKit="13"/>
                         </div>
                     </div>
-
                     <div className="players-postion">
                         <TitlePositon namePosition="Defenders" />
                         <div className="list-players">
-                            {
-                                (awayDfSubstitutions)?(
-                                    awayDfSubstitutions.map((e,index)=>{
-                                        return(
-                                        
-                                            <PlayerGamplan team={props.awayTeam.name} namePlayer={e.name} numberKit={e.kitNumber} key={index}/>
-                                        )
-                                    })
-                                ):null
-                            }
+                            <PlayerGamplan team="Spain" namePlayer="Cesar AZPILICUETA" numberKit="2"/>
+                            <PlayerGamplan team="Spain" namePlayer="Eric GARCIA" numberKit="3"/>
+                            <PlayerGamplan team="Spain" namePlayer="Pau TORRES" numberKit="4"/>
+                            <PlayerGamplan team="Spain" namePlayer="Alejandro BALDE" numberKit="14"/>
+                            <PlayerGamplan team="Spain" namePlayer="Hugo GUILLAMON" numberKit="15"/>
+                            <PlayerGamplan team="Spain" namePlayer="Dani CARVAJAL" numberKit="20"/>
                         </div>
                     </div>
                     <div className="players-postion">
                         <TitlePositon namePosition="Midfielders" />
                         <div className="list-players">
-                            {
-                                (awayMdSubstitutions)?(
-                                    awayMdSubstitutions.map((e,index)=>{
-                                        return(
-                                        
-                                            <PlayerGamplan team={props.awayTeam.name} namePlayer={e.name} numberKit={e.kitNumber} key={index}/>
-                                        )
-                                    })
-                                ):null
-                            }
+                            <PlayerGamplan team="Spain" namePlayer="KOKE" numberKit="8"/>
+                            <PlayerGamplan team="Spain" namePlayer="Carlos SOLER" numberKit="19"/>
                         </div>
                     </div>
-
                     <div className="players-postion">
-                        <TitlePositon namePosition="Forward" />
+                        <TitlePositon namePosition="Forwards" />
                         <div className="list-players">
-                            {
-                                (awayFoSubstitutions)?(
-                                    awayFoSubstitutions.map((e,index)=>{
-                                        return(
-                                        
-                                            <PlayerGamplan team={props.awayTeam.name} namePlayer={e.name} numberKit={e.kitNumber} key={index}/>
-                                        )
-                                    })
-                                ):null
-                            }
+                            <PlayerGamplan team="Spain" namePlayer="Alvaro MORATA" numberKit="7"/>
+                            <PlayerGamplan team="Spain" namePlayer="Nico WILLIAMS" numberKit="12"/>
+                            <PlayerGamplan team="Spain" namePlayer="Yeremy PINO" numberKit="17"/>
+                            <PlayerGamplan team="Spain" namePlayer="Pablo SARABIA" numberKit="22"/>
+                            <PlayerGamplan team="Spain" namePlayer="Ansu FATI" numberKit="25"/>
                         </div>
                     </div>
                 </div>

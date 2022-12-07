@@ -476,35 +476,6 @@ return fill;
 }
 
 
-export async function  getPositions(squad,position,team){
-    const url = `${baseUrl}/teams`;
-
-    return axios.get(url,{
-        headers:{
-            "X-Auth-Token": token
-        }
-    }).then((res)=> {
-         let fill = [];
-         for (let j = 0; j < squad.length; j++) {
-             for (var index = 0; index < res.data.teams.length; index++) {
-                 if (res.data.teams[index].name === team){
-                     for (let i = 0; i < res.data.teams[index].squad.length; i++) {
-                         if(res.data.teams[index].squad[i].name.latinize().toLowerCase() === squad[j].name.toLowerCase())
-                         {
-                            if(res.data.teams[index].squad[i].position === position)
-                            {
-                                fill.push(squad[j])
-                            }
-                        }
-                    }
-                }
-                
-            }   
-        }
-        return fill;
-     })
-}
-
 var Latinise={};Latinise.latin_map={"Á":"A",
 "Ă":"A",
 "Ắ":"A",
@@ -1335,12 +1306,6 @@ String.prototype.isLatin=function(){return this==this.latinise()}
 
 export function getPicturePlayer(namePlayer,nameTeam){
 
-    if(namePlayer === "Youssef En-nesyri")
-        return ("https://digitalhub.fifa.com/transform/2cbd2bc3-0cd6-442e-9877-3cd951e63234/Morocco-Portraits-FIFA-World-Cup-Qatar-2022?io=transform:fill,width:792,height:900");
-    if(namePlayer === "Munir Mohamedi")
-        return("https://digitalhub.fifa.com/transform/6cf7f058-8faa-483b-8f66-e12e879393a2/Morocco-Portraits-FIFA-World-Cup-Qatar-2022?io=transform:fill,width:792,height:900");
-    if(namePlayer === "Ahmed Reda Tagnaouti")
-        return("https://digitalhub.fifa.com/transform/fb93ad1a-14a1-41b8-be41-8dbed03eea0d/Morocco-Portraits-FIFA-World-Cup-Qatar-2022?io=transform:fill,width:792,height:900")
     if(namePlayer === "Enner Valencia")
         return("https://digitalhub.fifa.com/transform/e9817141-9985-4b8a-818e-3a06260d7a8c/1442153993?io=transform:fill,width:792,height:900");
 
@@ -1348,12 +1313,6 @@ export function getPicturePlayer(namePlayer,nameTeam){
         return("https://digitalhub.fifa.com/transform/69a40254-ff99-4324-964b-11a9d1a65d40/1441897703?io=transform:fill,width:792,height:900");
     if(namePlayer === "Salem Al-Dawsari")
         return ("https://digitalhub.fifa.com/transform/072ede2c-c624-4479-8a6d-7abe03473692/1442476890?io=transform:fill,width:792,height:900")
-    if(namePlayer === "Azpilicueta")
-        return("https://digitalhub.fifa.com/transform/2a40ece5-6fa5-423e-81e4-b8f404480d7c/1442552014?io=transform:fill,width:792,height:900")
-    if(namePlayer ==="Busquets" )
-        return ("https://digitalhub.fifa.com/transform/2dec5173-d2fd-4a06-8715-398332b2cc44/1442551723?io=transform:fill,width:792,height:900")
-    if(namePlayer ==="Pedri" )
-        return ("https://digitalhub.fifa.com/transform/103c93e3-a3d4-4022-9bde-1285f4677ba8/1442551614?io=transform:fill,width:792,height:900")
         for (var index = 0; index < dataTeams.length; index++) {
 
         if(dataTeams[index].name.toLowerCase() == nameTeam.toLowerCase())

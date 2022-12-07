@@ -1,6 +1,5 @@
 import MatchInfo from "./MatchInfo";
 import Video from "../../assets/morocco.mp4";
-import ReactPlayer from "react-player";
 
 const MatchStream = (props) => {
     let matchInfo = props.matchInfo;
@@ -8,12 +7,7 @@ const MatchStream = (props) => {
     return (
         <section className="match-stream">
             <MatchInfo stadium={matchInfo.stadium} channel={matchInfo.channel} commentator={matchInfo.commentator}/>
-            <ReactPlayer 
-                    url="https://youtu.be/yHOmiwqUgeg"
-                    controls
-                    playing
-                    width="100%"
-                    />
+            <video src={Video} controls></video>
     </section>
     )
 }

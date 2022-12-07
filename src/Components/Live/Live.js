@@ -2,12 +2,28 @@ import MatchInfo from "../Items/MatchInfo";
 import MatchLive from "../Items/MatchLive";
 import MatchClock from "../Items/MatchClock";
 import Round from "../Items/Round";
+import { useState,useEffect } from "react";
 
 
 const Live = () => {
+
+    const [preloader, setPreloader] = useState(true);
+
+    useEffect(()=>{
+        setTimeout(() => {
+            setPreloader(false)
+        }, 1000);
+    }, [])
+
     return (
         <main className="main-matches">
-
+            {
+                (preloader)?(
+                    <div className="spinner-container">
+                        <div className="spinner"></div>
+                    </div>
+                ):null
+            }
             <div className="round">
                 <Round />
             </div>
@@ -26,12 +42,12 @@ const Live = () => {
                                 },
                                 homeTeam: {
                                     name: "Morocco",
-                                    tla: "Mar"
+                                    tla: "MAR"
                                 },
 
                                 awayTeam: {
                                     name: "Spain",
-                                    tla: "Esp",
+                                    tla: "ESP",
                                 }
                             }
                         }

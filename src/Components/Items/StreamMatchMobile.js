@@ -43,7 +43,7 @@ const StreamMatchMobile = (props) => {
                     displaySabstitutesRight = {props.displaySabstitutesRight}
                     setDisplaySabstitutesRight = {props.setDisplaySabstitutesRight}
                     />
-                    <Stats homeTeam={homeTeam} awayTeam={awayTeam} displayStats = {displayStats}  />
+                    <Stats possesion={{homeTeam:"23%",awayTeam:"77%"}} PassAccuracy={{homeTeam:"70%",awayTeam:"90%"}}  homeTeam={homeTeam} awayTeam={awayTeam} displayStats = {displayStats}  />
                 </section>
         </React.Fragment>
     )

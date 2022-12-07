@@ -898,7 +898,7 @@ main .stadiums .row-separator svg {
   position: absolute;
   background-color: #47B7AB;
   border-radius: 3.125rem;
-  width: 60%;
+  width: 50%;
   height: 1.2vw;
   z-index: 1;
 }
@@ -2084,6 +2084,10 @@ main .stadiums .row-separator svg {
   width: 100%;
 }
 
+.team-gam-plan-right .number-player svg {
+  fill: #E32052 !important;
+}
+
 @media screen and (min-width: 1000px) {
   .main-matches {
     gap: 6rem !important;
@@ -2111,7 +2115,7 @@ main .stadiums .row-separator svg {
   }
   .spinner-container {
     left: unset;
-    width: 74%;
+    width: 74.8%;
     height: 85%;
   }
 }/*# sourceMappingURL=App.css.map */
