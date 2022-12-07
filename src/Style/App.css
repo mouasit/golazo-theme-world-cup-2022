@@ -1951,6 +1951,10 @@ main .stadiums .row-separator svg {
     flex-direction: column;
     gap: 1.5rem;
   }
+  .play-offs {
+    display: flex;
+    width: 43rem !important;
+  }
 }
 @media screen and (min-width: 1300px) {
   main .stadiums .card-stadiums {
@@ -2118,7 +2122,10 @@ video {
   }
   .play-offs {
     display: flex;
-    width: 43rem;
+    width: 100%;
+  }
+  .play-offs svg {
+    width: 100%;
   }
   .spinner-container {
     left: unset;
