@@ -7,15 +7,15 @@ export default function MatchLive(props) {
   return (
     <div className="match-play">
         <span className="team">
-            <img src={getFlagTeamMatch(props.firstTeam[0].name)} alt={"Flag " + props.firstTeam[0].name} />
-            <span className="team-name">{props.firstTeam[0].name}</span>
+            <img src={getFlagTeamMatch(props.homeTeam)} alt={"Flag " + props.homeTeam} />
+            <span className="team-name">{props.homeTeam}</span>
         </span>
         <NavLink to= '/Stream' state= {props.data} className="play-button" aria-label="Play Button">
             <PlayIcon />
         </NavLink>
         <span className="team team-right">
-            <img src={getFlagTeamMatch(props.secondTeam[0].name)} alt={"Flag " + props.secondTeam[0].name} />
-            <span className="team-name">{props.secondTeam[0].name}</span>
+            <img src={getFlagTeamMatch(props.awayTeam)} alt={"Flag " + props.awayTeam} />
+            <span className="team-name">{props.awayTeam}</span>
         </span>
     </div>
   )
