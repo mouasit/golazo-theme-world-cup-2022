@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="419.51" height="289.166" viewBox="0 0 419.51 289.166">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#dab264"/>
+      <stop offset="0.482" stop-color="#be895f"/>
+      <stop offset="1" stop-color="#996a45"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <path id="Path_24034" data-name="Path 24034" d="M528.647,117.1a1819.437,1819.437,0,0,0-378.629,0A576.1,576.1,0,0,0,135.97,245.417a576.1,576.1,0,0,0,14.048,128.314,1823.376,1823.376,0,0,0,189.315,9.877,1823.356,1823.356,0,0,0,189.314-9.877A576.1,576.1,0,0,0,542.7,245.417,576.1,576.1,0,0,0,528.647,117.1Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_7689" data-name="Group 7689" transform="translate(-129.578 -101.434)">
+    <path id="Path_22869" data-name="Path 22869" d="M339.325,390.6a1837.519,1837.519,0,0,1-189.978-9.912l-4.546-.479-1.016-4.459a585.269,585.269,0,0,1-14.207-129.732,585.258,585.258,0,0,1,14.207-129.733l1.016-4.459,4.546-.479a1825.519,1825.519,0,0,1,379.971,0l4.547.479,1.016,4.459a585.316,585.316,0,0,1,14.207,129.733A585.327,585.327,0,0,1,534.881,375.75l-1.016,4.459-4.547.479A1837.485,1837.485,0,0,1,339.341,390.6Z" fill="url(#linear-gradient)"/>
+    <g id="Group_7688" data-name="Group 7688">
+      <g id="Group_7687" data-name="Group 7687" clip-path="url(#clip-path)">
+        <g id="Group_7686" data-name="Group 7686">
+          <path id="Path_24030" data-name="Path 24030" d="M258.528,407.61h161.6V84.423h-161.6V407.61Z" fill="#e60000"/>
+          <path id="Path_24031" data-name="Path 24031" d="M420.124,407.61h161.6V84.423h-161.6V407.61Z" fill="#ffc400"/>
+          <path id="Path_24032" data-name="Path 24032" d="M96.937,407.61H258.528V84.423H96.937V407.61Z" fill="#00a133"/>
+          <path id="Path_24033" data-name="Path 24033" d="M339.33,192.157l12.088,37.219h39.144l-31.668,23,12.1,37.218-31.661-23.01L307.661,289.6l12.1-37.218-31.668-23h39.138l12.1-37.219Z" fill="#ffc400"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
