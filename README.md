@@ -2,8 +2,6 @@
 
 ![live-preview](./src/assets/preview.png)
 
-## Available Scripts
-
 In the project directory, you can run:
 
 ### `npm start`
