@@ -3,8 +3,6 @@
 
 import CardStadium from "../Items/CardStadium";
 import RowSeparator from "../Items/RowSeparator";
-import { useEffect } from "react";
-import { useState } from "react";
 
 import Pictures from "../../Pictures";
 

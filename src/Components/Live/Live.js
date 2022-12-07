@@ -2,8 +2,6 @@ import MatchInfo from "../Items/MatchInfo";
 import MatchLive from "../Items/MatchLive";
 import MatchClock from "../Items/MatchClock";
 import Round from "../Items/Round";
-import { useState,useEffect } from "react";
-
 
 const Live = () => {
     return (
