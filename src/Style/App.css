@@ -2090,7 +2090,7 @@ main .stadiums .row-separator svg {
 
 video {
   border: 1.5px solid #EEEEE4;
-  border-radius: 1.2rem;
+  border-radius: 1.2rem !important;
   padding: 0.2rem;
   background-color: #EEEEE4;
 }

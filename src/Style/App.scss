@@ -2338,7 +2338,7 @@ main{
 
 video{
   border: 1.5px solid $white;
-  border-radius: 1.2rem;
+  border-radius: 1.2rem !important;
   padding: .2rem;
   background-color: $white;
 }
