@@ -357,29 +357,6 @@ export const handleDropdown = (buttonDropdown,setArrow) =>{
 const token = "6613335ea3b645f383893070f84e740a";
 const baseUrl = "/v4/competitions/2000";
 
-function getDateToday(){
-    const date = new Date();
-        
-    let day = date.getDate();
-    if(day.toString().length === 1)
-        day = ('0' + day).slice(-2);
-    day = day.split("").reverse().join("");
-
-    let month = date.getMonth() + 1;
-    if(month.toString().length === 1)
-        month = ('0' + month).slice(-2);
-
-    month = month.toString().split("").reverse().join("");
-
-    let year = date.getFullYear();
-    if(year.toString().length === 1)
-        year = ('0' + year).slice(-2);
-    year = year.toString().split("").reverse().join("");
-
-    let currentDate = `${day}-${month}-${year}`;
-    return currentDate.split("").reverse().join("");
-}
-
 export async function  getStandings(){
     const url = `${baseUrl}/standings`;
 
@@ -1260,7 +1237,7 @@ var Latinise={};Latinise.latin_map={"Á":"A",
 "ₓ":"x"};
 String.prototype.latinise=function(){return this.replace(/[^A-Za-z0-9\[\] ]/g,function(a){return Latinise.latin_map[a]||a})};
 String.prototype.latinize=String.prototype.latinise;
-String.prototype.isLatin=function(){return this==this.latinise()}
+String.prototype.isLatin=function(){return this===this.latinise()}
 
 export function getPicturePlayer(namePlayer,nameTeam){
 
@@ -1273,15 +1250,15 @@ export function getPicturePlayer(namePlayer,nameTeam){
         return ("https://digitalhub.fifa.com/transform/072ede2c-c624-4479-8a6d-7abe03473692/1442476890?io=transform:fill,width:792,height:900")
         for (var index = 0; index < dataTeams.length; index++) {
 
-        if(dataTeams[index].name.toLowerCase() == nameTeam.toLowerCase())
+        if(dataTeams[index].name.toLowerCase() === nameTeam.toLowerCase())
         {
             for (let i = 0; i < dataTeams[index].squad.length; i++) {
                 if(dataTeams[index].squad[i].last_name == null)
-                if(dataTeams[index].squad[i].first_name.toLowerCase() == namePlayer.latinize().toLowerCase())
+                if(dataTeams[index].squad[i].first_name.toLowerCase() === namePlayer.latinize().toLowerCase())
                 {
                     return dataTeams[index].squad[i].image_url;
                 }
-                if(dataTeams[index].squad[i].first_name.concat(" ", dataTeams[index].squad[i].last_name).toLowerCase() == namePlayer.latinize().toLowerCase())
+                if(dataTeams[index].squad[i].first_name.concat(" ", dataTeams[index].squad[i].last_name).toLowerCase() === namePlayer.latinize().toLowerCase())
                 {
                     return dataTeams[index].squad[i].image_url;
                 }
