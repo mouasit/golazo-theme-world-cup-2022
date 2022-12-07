@@ -7,7 +7,7 @@ const MatchStream = (props) => {
     return (
         <section className="match-stream">
             <MatchInfo stadium={matchInfo.stadium} channel={matchInfo.channel} commentator={matchInfo.commentator}/>
-            <video src={Video} controls></video>
+            <video src={Video} autoPlay></video>
     </section>
     )
 }

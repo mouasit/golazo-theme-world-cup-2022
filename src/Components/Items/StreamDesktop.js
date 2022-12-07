@@ -14,7 +14,7 @@ const StreamMatchDesktop = (props) => {
             <div className="stream-gam-plan">
                 <div className="stream">
                     <MatchInfo stadium={matchInfo.stadium} channel={matchInfo.channel} commentator={matchInfo.commentator}/>
-                    <video src={Video} controls></video>
+                    <video src={Video} autoPlay></video>
                 </div>
                 <Gamplan displayGamPlan = "view-gam-plan show-list"
 
