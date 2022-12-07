@@ -21,14 +21,14 @@ const Stats = (props) => {
             <div className="stat-type">
                 <div className="title-stat">Possession</div>
                 <div className="info-stats">
-                    <div className="stat-team"><span>80%</span></div>
+                    <div className="stat-team"><span>50%</span></div>
                     <div className="stat-team stat-team-right"><span>50%</span></div>
                 </div>
             </div>
             <div className="stat-type">
                 <div className="title-stat">Pass Accuracy</div>
                 <div className="info-stats">
-                    <div className="stat-team"><span>80%</span></div>
+                    <div className="stat-team"><span>50%</span></div>
                     <div className="stat-team stat-team-right"><span>50%</span></div>
                 </div>
             </div>
