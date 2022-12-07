@@ -8,4 +8,4 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Demo page: [https://mouasit.github.io/golazo-theme-world-cup-2022/]([https://mouasit.github.io/golazo-theme-world-cup-2022])\
+Demo page: [https://mouasit.github.io/golazo-theme-world-cup-2022/]([https://mouasit.github.io/golazo-theme-world-cup-2022])
