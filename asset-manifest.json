@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/golazo-theme-world-cup-2022/static/css/main.204892ee.css",
+    "main.css": "/golazo-theme-world-cup-2022/static/css/main.f175072b.css",
     "main.js": "/golazo-theme-world-cup-2022/static/js/main.e3cb00f7.js",
     "static/js/787.28cb0dcd.chunk.js": "/golazo-theme-world-cup-2022/static/js/787.28cb0dcd.chunk.js",
     "static/media/morocco.mp4": "/golazo-theme-world-cup-2022/static/media/morocco.d05943645af7dd76ffa5.mp4",
@@ -45,12 +45,12 @@
     "static/media/japan.svg": "/golazo-theme-world-cup-2022/static/media/japan.c0f5b18de97a09b96768e29105555abf.svg",
     "static/media/netherlands.svg": "/golazo-theme-world-cup-2022/static/media/netherlands.9fa507b67a3b2f28c73c9465a4a253d4.svg",
     "index.html": "/golazo-theme-world-cup-2022/index.html",
-    "main.204892ee.css.map": "/golazo-theme-world-cup-2022/static/css/main.204892ee.css.map",
+    "main.f175072b.css.map": "/golazo-theme-world-cup-2022/static/css/main.f175072b.css.map",
     "main.e3cb00f7.js.map": "/golazo-theme-world-cup-2022/static/js/main.e3cb00f7.js.map",
     "787.28cb0dcd.chunk.js.map": "/golazo-theme-world-cup-2022/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.204892ee.css",
+    "static/css/main.f175072b.css",
     "static/js/main.e3cb00f7.js"
   ]
 }
