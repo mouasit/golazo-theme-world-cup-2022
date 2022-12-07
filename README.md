@@ -1,6 +1,6 @@
 # Golazo | Theme World Cup 2022
 
-![desktop-preview](./src/preview.png)
+![desktop-preview](./src/assets/preview.png)
 
 ## Available Scripts
 
