@@ -11,15 +11,19 @@ const MatchTime = (props) => {
             </div>
             <div className="list-matches">
                 {
-                    (props.matches)?(
-                        props.matches.map((match)=>{
-                            document.getElementById("preloaderMatch").style.display = "none";
-                            return(
-                                <div className="match" key={match.id}>
-                                    <MatchClock firstTeam={[match.homeTeam,match.homeTeam.crest]} secondTeam={[match.awayTeam,match.awayTeam.crest]} time={match.utcDate.split("T")[1].substring(0,5)}/>
-                                </div>
-                            )
-                        })
+                    (props.today)?(
+                        <div className="match">
+                            <MatchClock homeTeam= {["Morocco","Mar"]} awayTeam={["Spain","Esp"]} time="16:00"/>
+                            <MatchClock homeTeam= {["Portugal","Por"]} awayTeam={["Switzerland", "Sui"]} time="20:00"/>
+                        </div>
+                    ):
+                    (props.tomorrow)?(
+                        <div className="match">
+                            <div className="match">
+                                <MatchClock homeTeam= {["Croatia","Cro"]} awayTeam={["Brazil","Bra"]} time="16:00"/>
+                                <MatchClock homeTeam= {["Netherlands","Hol"]} awayTeam={["Argentina", "Arg"]} time="20:00"/>
+                            </div>
+                        </div>
                     ):null
                 }
             </div>

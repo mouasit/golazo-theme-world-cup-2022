@@ -380,48 +380,6 @@ function getDateToday(){
     return currentDate.split("").reverse().join("");
 }
 
-export async function  getMatchesToday(){
-    const url = `${baseUrl}/matches`;
-
-    return axios.get(url,{
-         headers:{
-             "X-Auth-Token": token
-         }
-     }).then((res)=> {
-         let currentDate = getDateToday();
-         let matches = res.data.matches.filter((e)=>{
-             let splitDate = e.utcDate.split("T");
-             if(splitDate[0] === currentDate)
-                 return e;
-         })
-         return matches;
-     })
-}
-
-export async function  getMatchesTomorrow(){
-    const url = `${baseUrl}/matches`;
-
-    return axios.get(url,{
-         headers:{
-             "X-Auth-Token": token
-         }
-     }).then((res)=> {
-         let currentDate = getDateToday();
-
-         let matches = res.data.matches.filter((e)=>{
-             let splitDate = e.utcDate.split("T");
-
-             let dayMatch = splitDate[0].split("-")[2];
-             let currentDay = currentDate.split("-")[2];
-
-             if((Number(dayMatch) - Number(currentDay)) === 1 )
-                 return e;
-         })
-         return matches;
-     })
-}
-
-
 export async function  getStandings(){
     const url = `${baseUrl}/standings`;
 

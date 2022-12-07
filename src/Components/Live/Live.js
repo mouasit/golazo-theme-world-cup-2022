@@ -55,7 +55,7 @@ const Live = () => {
                 </div>
                 <div className="match">
                     <MatchInfo stadium="Lusail" channel="Bein Sports 2 Max" commentator="Hafid Derradji" />
-                    <MatchClock homeTeam="Portugal" awayTeam="Switzerland" time="20:00" />
+                    <MatchClock homeTeam={["Portugal","Por"]} awayTeam={["Switzerland","Sui"]} time="20:00" />
                 </div>
 
             </div>

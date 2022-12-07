@@ -9,15 +9,15 @@ export default function MatchClock(props) {
     <div className="match-time">
         <div className="teams">
             <div className="team">
-                <img src={getFlagTeamMatch(props.homeTeam)} alt={"Flag " + props.homeTeam} />
-                <span>por</span>
+                <img src={getFlagTeamMatch(props.homeTeam[0])} alt={"Flag " + props.homeTeam[0]} />
+                <span>{props.homeTeam[1]}</span>
             </div>
             <span className="vs">
                 <Vs />
             </span>
             <div className="team">
-                <img src={getFlagTeamMatch(props.awayTeam)} alt={"Flag " + props.awayTeam} />
-                <span>sui</span>
+                <img src={getFlagTeamMatch(props.awayTeam[0])} alt={"Flag " + props.awayTeam[0]} />
+                <span>{props.awayTeam[1]}</span>
             </div>
         </div>
         <div className="start-time">
